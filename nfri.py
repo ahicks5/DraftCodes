@@ -1,4 +1,8 @@
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+
 
 class NFRI:
     def __init__(self, data_csv):
@@ -11,22 +15,41 @@ class NFRI:
         df['date'] = df['date'].astype('str')
         df['date'] = df['date'].str[:-1]
         df['date'] = pd.to_datetime(df['date'], format='%Y%m%d')
-        df['date'] = df['date'].dt.strftime('%m-%d-%Y')
+
+        # adjust team names
+        name_changes = {
+            'Los Angeles Angels of Anaheim': 'Los Angeles Angels',
+            'Cleveland Indians': 'Cleveland Guardians',
+            'Florida Marlins': 'Miami Marlins'
+        }
+
+        for key in name_changes:
+            df = df.replace(key, name_changes[key])
 
         return df
 
-    def pitcher_names(self):
-        df = self.historical_df()
-        combined_columns = df['away_s_pitcher'].append(df['home_s_pitcher'])
-        pitchers = combined_columns.unique().tolist()
-        pitchers.sort()
+    def pitcher_names(self, df):
+        if df.empty:
+            df = self.historical_df()
+            combined_columns = df['away_s_pitcher'].append(df['home_s_pitcher'])
+            pitchers = combined_columns.unique().tolist()
+            pitchers.sort()
+        else:
+            combined_columns = df['away_s_pitcher'].append(df['home_s_pitcher'])
+            pitchers = combined_columns.unique().tolist()
+            pitchers.sort()
         return pitchers
 
-    def team_names(self):
-        df = self.historical_df()
-        combined_columns = df['away_team'].append(df['home_team'])
-        teams = combined_columns.unique().tolist()
-        teams.sort()
+    def team_names(self, df):
+        if df.empty:
+            df = self.historical_df()
+            combined_columns = df['away_team'].append(df['home_team'])
+            teams = combined_columns.unique().tolist()
+            teams.sort()
+        else:
+            combined_columns = df['away_team'].append(df['home_team'])
+            teams = combined_columns.unique().tolist()
+            teams.sort()
         return teams
 
     def pitcher_df(self, pitcher_name):
@@ -121,70 +144,118 @@ class NFRI:
 
         return nrfi_percent
 
-    def all_pitcher_nrfi(self, end_date=0):
+    def all_pitcher_nrfi(self, names, end_date=0):
         all_data = {}
-        for pitcher in self.pitcher_names():
+        for pitcher in names:
             all_data[pitcher] = self.nrfi_percent_pitcher(pitcher, end_date)
             print(pitcher, all_data[pitcher])
 
         return all_data
 
-    def all_team_nrfi(self, end_date=0):
+    def all_team_nrfi(self, names, end_date=0):
         all_data = {}
-        for team in self.team_names():
+        for team in names:
             all_data[team] = self.nrfi_percent_team(team, end_date)
             print(team, all_data[team])
 
         return all_data
 
-    def test_model(self, end_date, p_wt, t_wt):
-        df = self.historical_df()
+    def get_pitchers_teams_from_testset(self, new_df, end_date):
+        # get names of teams / players
+        comb_col = new_df['away_s_pitcher'].append(new_df['home_s_pitcher'])
+        test_pitchers = comb_col.unique().tolist()
+        test_pitchers.sort()
 
-        # test data
-        new_mask = df['date'] >= end_date
-        new_df = df[new_mask]
+        comb_col = new_df['away_team'].append(new_df['home_team'])
+        test_teams = comb_col.unique().tolist()
+        test_teams.sort()
 
-        pitcher_data = self.all_pitcher_nrfi(end_date)
-        team_data = self.all_team_nrfi(end_date)
+        pitcher_data = self.all_pitcher_nrfi(test_pitchers, end_date)
+        team_data = self.all_team_nrfi(test_teams, end_date)
 
-        df['NRFI_predict'] = 0
-        df['NRFI_outcome'] = 0
-        df['NRFI_success'] = 0
+        return pitcher_data, team_data
 
-        for index, row in df.iterrows():
-            try:
-                top_inn = (pitcher_data[row['home_s_pitcher']] * p_wt) + (team_data[row['away_team']] * t_wt)
-                bot_inn = (pitcher_data[row['away_s_pitcher']] * p_wt) + (team_data[row['home_team']] * t_wt)
+    def test_model(self, end_date, p_wt, t_wt, pitcher_data, team_data, new_df):
+        for index, row in new_df.iterrows():
+            top_inn = (pitcher_data[row['home_s_pitcher']] * p_wt) + (team_data[row['away_team']] * t_wt)
+            bot_inn = (pitcher_data[row['away_s_pitcher']] * p_wt) + (team_data[row['home_team']] * t_wt)
 
-                first_inn_score_percent = top_inn * bot_inn
+            first_inn_score_percent = 1 - (1 - top_inn) * (1 - bot_inn)
 
-                if first_inn_score_percent > 0.5:
-                    prediction = True
-                    if (row['a_1'] + row['h_1']) > 0:
-                        outcome = True
-                    else:
-                        outcome = False
-                elif first_inn_score_percent <= 0.5:
-                    prediction = False
-                    if (row['a_1'] + row['h_1']) > 0:
-                        outcome = True
-                    else:
-                        outcome = False
-
-                if prediction == outcome:
-                    success = True
+            if first_inn_score_percent > 0.5:
+                prediction = True
+                if (row['a_1'] + row['h_1']) > 0:
+                    outcome = True
                 else:
-                    success = False
+                    outcome = False
+            else:
+                prediction = False
+                if (row['a_1'] + row['h_1']) > 0:
+                    outcome = True
+                else:
+                    outcome = False
 
-                df.loc[index, 'NRFI_predict'] = prediction
-                df.loc[index, 'NRFI_outcome'] = outcome
-                df.loc[index, 'NRFI_success'] = success
-            except:
-                continue
+            if prediction == outcome:
+                success = True
+            else:
+                success = False
 
-        df.to_csv('test_data.csv', index=False)
+            new_df.loc[index, 'NRFI_predict'] = prediction
+            new_df.loc[index, 'NRFI_outcome'] = outcome
+            new_df.loc[index, 'NRFI_success'] = success
+
+        fin_dict = {
+            'end_date': end_date,
+            'p_wt': p_wt,
+            't_wt': t_wt,
+            'success_rate': new_df['NRFI_success'].mean()
+        }
+
+        return fin_dict
+
+    def optimize_wts(self):
+        historical_df = self.historical_df()
+
+        dates = ['12/31/2022', '7/1/2022', '12/31/2021', '7/1/2021', '12/31/2020', '7/1/2020', '12/31/2019', '7/1/2019']
+
+        final_list = []
+
+        for date in dates:
+            new_df = historical_df[historical_df['date'] >= date]
+            pitcher_data = self.all_pitcher_nrfi(self.pitcher_names(new_df), date)
+            team_data = self.all_team_nrfi(self.team_names(new_df), date)
+
+            for i in range(0, 100):
+                fin_dict = self.test_model(date, i/100, (1-i/100), pitcher_data, team_data, new_df)
+                final_list.append(fin_dict)
+                df = pd.DataFrame(final_list)
+                df.to_csv('optimize_wts.csv', index=False)
+                print(fin_dict)
+
+    @staticmethod
+    def contour_map_wt_optimize(df):
+        #for date in ['12/31/2022', '7/1/2022', '12/31/2021', '7/1/2021', '12/31/2020', '7/1/2020', '12/31/2019', '7/1/2019']:
+        date = '7/1/2022'
+        df = df[df['end_date'] == date]
+        df = df.drop(columns=['end_date'])
+
+        # Reshape the p_wt and t_wt values to a 10x10 grid
+        p_wt_grid = df['p_wt'].values.reshape(10, 10)
+        t_wt_grid = df['t_wt'].values.reshape(10, 10)
+
+        # Reshape the success_rate values to a 10x10 grid
+        success_rate_grid = df['success_rate'].values.reshape(10, 10)
+
+        # Generate the contour plot
+        plt.figure()
+        contour = plt.contour(p_wt_grid, t_wt_grid, success_rate_grid, levels=20, cmap='RdYlBu_r')
+        plt.xlabel('P Weight')
+        plt.ylabel('T Weight')
+        plt.colorbar(contour, label='Success Rate')
+        plt.title(f'Success Rate Contour Plot: {date}')
+        plt.show()
 
 
 if __name__ == '__main__':
     analysis = NFRI(r'All_Games.csv')
-    print(analysis.test_model('12-31-2022', 0.5, 0.5))
+    analysis.optimize_wts()
