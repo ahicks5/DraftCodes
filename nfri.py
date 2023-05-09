@@ -118,16 +118,24 @@ class NFRI:
 
         return df_team
 
-    def nrfi_percent_pitcher(self, pitcher_name, end_date=0):
+    def nrfi_percent_pitcher(self, pitcher_name, game_limit, end_date=0):
         df_pitcher = self.pitcher_df(pitcher_name)
 
         if end_date != 0:
             hist_mask = df_pitcher['date'] < end_date
             df_pitcher = df_pitcher[hist_mask]
 
-        game_num = len(df_pitcher)
-        nrfi_count = (df_pitcher['inning_1'] > 0).sum()
-        nrfi_percent = nrfi_count / game_num
+        if game_limit != 0:
+            if len(df_pitcher) > game_limit:
+                game_num = len(df_pitcher)
+                nrfi_count = (df_pitcher['inning_1'] > 0).sum()
+                nrfi_percent = nrfi_count / game_num
+            else:
+                nrfi_percent = -99
+        else:
+            game_num = len(df_pitcher)
+            nrfi_count = (df_pitcher['inning_1'] > 0).sum()
+            nrfi_percent = nrfi_count / game_num
 
         return nrfi_percent
 
@@ -144,11 +152,15 @@ class NFRI:
 
         return nrfi_percent
 
-    def all_pitcher_nrfi(self, names, end_date=0):
+    def all_pitcher_nrfi(self, names, game_limit, end_date=0):
         all_data = {}
         for pitcher in names:
-            all_data[pitcher] = self.nrfi_percent_pitcher(pitcher, end_date)
-            print(pitcher, all_data[pitcher])
+            nrfi_percent = self.nrfi_percent_pitcher(pitcher, game_limit, end_date)
+            if nrfi_percent == -99:
+                continue
+            else:
+                all_data[pitcher] = nrfi_percent
+                print(pitcher, all_data[pitcher])
 
         return all_data
 
@@ -177,32 +189,36 @@ class NFRI:
 
     def test_model(self, end_date, p_wt, t_wt, pitcher_data, team_data, new_df):
         for index, row in new_df.iterrows():
-            top_inn = (pitcher_data[row['home_s_pitcher']] * p_wt) + (team_data[row['away_team']] * t_wt)
-            bot_inn = (pitcher_data[row['away_s_pitcher']] * p_wt) + (team_data[row['home_team']] * t_wt)
+            try:
+                top_inn = (pitcher_data[row['home_s_pitcher']] * p_wt) + (team_data[row['away_team']] * t_wt)
+                bot_inn = (pitcher_data[row['away_s_pitcher']] * p_wt) + (team_data[row['home_team']] * t_wt)
 
-            first_inn_score_percent = 1 - (1 - top_inn) * (1 - bot_inn)
+                first_inn_score_percent = 1 - (1 - top_inn) * (1 - bot_inn)
 
-            if first_inn_score_percent > 0.5:
-                prediction = True
-                if (row['a_1'] + row['h_1']) > 0:
-                    outcome = True
+                if first_inn_score_percent > 0.5:
+                    prediction = True
+                    if (row['a_1'] + row['h_1']) > 0:
+                        outcome = True
+                    else:
+                        outcome = False
                 else:
-                    outcome = False
-            else:
-                prediction = False
-                if (row['a_1'] + row['h_1']) > 0:
-                    outcome = True
+                    prediction = False
+                    if (row['a_1'] + row['h_1']) > 0:
+                        outcome = True
+                    else:
+                        outcome = False
+
+                if prediction == outcome:
+                    success = True
                 else:
-                    outcome = False
+                    success = False
 
-            if prediction == outcome:
-                success = True
-            else:
-                success = False
-
-            new_df.loc[index, 'NRFI_predict'] = prediction
-            new_df.loc[index, 'NRFI_outcome'] = outcome
-            new_df.loc[index, 'NRFI_success'] = success
+                new_df.loc[index, 'NRFI_predict'] = prediction
+                new_df.loc[index, 'NRFI_outcome'] = outcome
+                new_df.loc[index, 'NRFI_success'] = success
+            except Exception as e:
+                print(f'{e}')
+                continue
 
         fin_dict = {
             'end_date': end_date,
@@ -222,7 +238,8 @@ class NFRI:
 
         for date in dates:
             new_df = historical_df[historical_df['date'] >= date]
-            pitcher_data = self.all_pitcher_nrfi(self.pitcher_names(new_df), date)
+            game_limit = 5
+            pitcher_data = self.all_pitcher_nrfi(self.pitcher_names(new_df), game_limit, date)
             team_data = self.all_team_nrfi(self.team_names(new_df), date)
 
             for i in range(0, 100):
@@ -234,26 +251,26 @@ class NFRI:
 
     @staticmethod
     def contour_map_wt_optimize(df):
-        #for date in ['12/31/2022', '7/1/2022', '12/31/2021', '7/1/2021', '12/31/2020', '7/1/2020', '12/31/2019', '7/1/2019']:
-        date = '7/1/2022'
-        df = df[df['end_date'] == date]
-        df = df.drop(columns=['end_date'])
+        for date in ['12/31/2022', '7/1/2022', '12/31/2021', '7/1/2021', '12/31/2020', '7/1/2020', '12/31/2019', '7/1/2019']:
+            #date = '7/1/2022'
+            df = df[df['end_date'] == date]
+            df = df.drop(columns=['end_date'])
 
-        # Reshape the p_wt and t_wt values to a 10x10 grid
-        p_wt_grid = df['p_wt'].values.reshape(10, 10)
-        t_wt_grid = df['t_wt'].values.reshape(10, 10)
+            # Reshape the p_wt and t_wt values to a 10x10 grid
+            p_wt_grid = df['p_wt'].values.reshape(10, 10)
+            t_wt_grid = df['t_wt'].values.reshape(10, 10)
 
-        # Reshape the success_rate values to a 10x10 grid
-        success_rate_grid = df['success_rate'].values.reshape(10, 10)
+            # Reshape the success_rate values to a 10x10 grid
+            success_rate_grid = df['success_rate'].values.reshape(10, 10)
 
-        # Generate the contour plot
-        plt.figure()
-        contour = plt.contour(p_wt_grid, t_wt_grid, success_rate_grid, levels=20, cmap='RdYlBu_r')
-        plt.xlabel('P Weight')
-        plt.ylabel('T Weight')
-        plt.colorbar(contour, label='Success Rate')
-        plt.title(f'Success Rate Contour Plot: {date}')
-        plt.show()
+            # Generate the contour plot
+            plt.figure()
+            contour = plt.contour(p_wt_grid, t_wt_grid, success_rate_grid, levels=20, cmap='RdYlBu_r')
+            plt.xlabel('P Weight')
+            plt.ylabel('T Weight')
+            plt.colorbar(contour, label='Success Rate')
+            plt.title(f'Success Rate Contour Plot: {date}')
+            plt.show()
 
 
 if __name__ == '__main__':
