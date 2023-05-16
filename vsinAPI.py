@@ -141,7 +141,6 @@ class VsinSharp:
         return over, under
 
 
-
 if __name__ == '__main__':
     vsin_sharp = VsinSharp()
     data = vsin_sharp.get_data()
