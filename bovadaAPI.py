@@ -96,5 +96,6 @@ class PullBovada:
         return df
 
 
-bov = PullBovada()
-bov.scrape_main_sports().to_csv('test_bov.csv', index=False)
+if __name__ == '__main__':
+    bov = PullBovada()
+    bov.scrape_main_sports().to_csv('test_bov.csv', index=False)
