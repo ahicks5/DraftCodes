@@ -1,5 +1,6 @@
 from bovadaAPI import PullBovada
 from Indicators import Indicators
+import datetime
 
 
 def generate_table(template_html, identifier, final_html):
@@ -21,23 +22,18 @@ def generate_table(template_html, identifier, final_html):
         }
         table {
             border-collapse: collapse;
-            width: 50%;
+            width: 75%;
         }
         th, td {
             border: 1px solid black;
             padding: 10px;
             text-align: center;
-        }
-        th {
-            background-color: #D3D3D3;
-        }
-        tr:nth-child(3n){
-            background-color: #f1f1f1;
+            font-size: 14px; /* Adjust the font size as needed */
         }
     </style>
     <div class="table-container">
         <table>
-            <tr><th>Sport</th><th>Team Name</th><th>Handicap</th><th>Moneyline</th></tr>
+            <tr><td>Sport</td><td>Team Name</td><td>Handicap</td><td>Moneyline</td></tr>
     '''
 
     for i, row in df_short.iterrows():
@@ -63,6 +59,13 @@ def generate_table(template_html, identifier, final_html):
 
     modified_html = html_content.replace(identifier, table)
 
+    current_datetime = datetime.datetime.now()
+    current_datetime_str = current_datetime.strftime("%Y-%m-%d %H:%M:%s")
+
+    modified_html = modified_html.replace('{This is a placeholder}', current_datetime_str)
+
+    # add time
+
     with open(final_html, 'w') as f:
         f.write(modified_html)
 
@@ -70,8 +73,8 @@ def generate_table(template_html, identifier, final_html):
 
 
 if __name__ == '__main__':
-    template_html = 'practice_template.html'
-    identifier = '{identifier}'
-    final_html = 'practice_main.html'
+    template_html = '/var/www/html/Templates/subscribetemplate.html'
+    identifier = '{Upcoming Sports}'
+    final_html = '/var/www/html/subscribe.html'
 
     generate_table(template_html, identifier, final_html)

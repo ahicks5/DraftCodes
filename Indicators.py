@@ -3,7 +3,8 @@ from bovadaAPI import PullBovada
 from vsinAPI import VsinSharp
 from connectSources import ConnectSources
 
-ref_df = pd.read_excel('References.xlsx')
+#ref_df = pd.read_excel('References.csv')
+ref_df = pd.read_csv('/var/www/html/Scripts/References.csv')
 
 
 class Indicators:
