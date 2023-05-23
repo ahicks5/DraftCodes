@@ -1,5 +1,6 @@
 import pandas as pd
 import requests
+import pytz
 
 
 class PullBovada:
@@ -88,12 +89,37 @@ class PullBovada:
         df = pd.DataFrame(all_games)
         return df
 
+    def add_date_columns(self, df):
+        # Convert the time column from milliseconds to datetime
+        df['game_startTime'] = pd.to_datetime(df['game_startTime'], unit='ms')
+        # Convert UTC to Central Time
+        df['game_startTime_cst'] = df['game_startTime'].dt.tz_localize('UTC').dt.tz_convert('America/Chicago')
+        # Create a date column
+        df['game_date'] = df['game_startTime_cst'].dt.date
+        # Create a time column
+        df['game_time'] = df['game_startTime_cst'].dt.strftime('%I:%M %p')
+
+        return df
+
+    def filter_for_newly_upcoming_games(self, df):
+        today = pd.Timestamp.today().date()
+        #tomorrow = today + pd.DateOffset(days=1)
+        #filtered_df = df[df['game_date'].isin([today, tomorrow])]
+        filtered_df = df[df['game_date'] == today]
+
+        return filtered_df
+
     def scrape_main_sports(self):
         league_lists = []
         for sport in self.pregame_sport_links:
             league_lists.append(self.scrape_single_page(self.pregame_sport_links[sport]))
 
         df = self.bovada_data_to_dataframe(league_lists)
+        df = self.add_date_columns(df)
+
+        # filter for today
+        df = self.filter_for_newly_upcoming_games(df)
+
         return df
 
 

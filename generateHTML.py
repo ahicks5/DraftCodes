@@ -3,78 +3,161 @@ from Indicators import Indicators
 import datetime
 
 
-def generate_table(template_html, identifier, final_html):
-    ind = Indicators()
-    df = ind.sharp_indicator()
+class HtmlTable:
+    def __init__(self):
+        ind = Indicators()
+        self.df = ind.sharp_indicator()
 
-    cols = ['game_sport', 'competitor_1', 'competitor_2', 'team_1_hcap', 'team_2_hcap', 'team_1_ml_odds', 'team_2_ml_odds', 'Spread_Ind']
+    def generate_table(self):
+        table = '''
+        <style>
+            .table-container {
+                width: 75%;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;  /* Adjust the width as per your requirement */
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 10px;
+                text-align: center;
+                font-size: 14px; /* Adjust the font size as needed */
+            }
+            @media screen and (max-width: 600px) {
+                th, td {
+                    font-size: 12px; /* Reduce font size on smaller screens */
+                }
+            }
+        </style>
+        <div class="table-container">
+            <table>
+        '''
 
-    df_short = df[cols]
+        header_row = '<tr><td>Date/Time</td><td>Team Name</td><td>Handicap</td><td>Moneyline</td><td>Over/Under</td></tr>'
 
-    # only baseball for now
-    #df_short = df_short[df_short['game_sport'] == 'SOCC']
+        sports_dict = {sport: self.df[self.df['game_sport'] == sport] for sport in self.df['game_sport'].unique()}
+        space_row_html = '<tr><td colspan="5" style="border:none;"></td></tr>'
 
-    table = '''
-    <style>
-        .table-container {
-            display: flex;
-            justify-content: center;
-        }
-        table {
-            border-collapse: collapse;
-            width: 75%;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-            font-size: 14px; /* Adjust the font size as needed */
-        }
-    </style>
-    <div class="table-container">
-        <table>
-            <tr><td>Sport</td><td>Team Name</td><td>Handicap</td><td>Moneyline</td></tr>
-    '''
+        for sport, df in sports_dict.items():
+            table += f'<tr><td colspan="5"><b>{sport}</b></td></tr>' + space_row_html
+            for i, row in df.iterrows():
+                table += header_row
+                row_html = self.generate_row(row)
+                table += row_html
 
-    for i, row in df_short.iterrows():
-        if row['Spread_Ind'] == 'Away':
-            away_team_row_html = f'<tr><td>{row["game_sport"]}</td><td>{row["competitor_1"]}</td><td style="background-color: #32CD32">{row["team_1_hcap"]}</td><td>{row["team_1_ml_odds"]}</td></tr>'
-            home_team_row_html = f'<tr><td>{row["game_sport"]}</td><td>{row["competitor_2"]}</td><td>{row["team_2_hcap"]}</td><td>{row["team_2_ml_odds"]}</td></tr>'
-        elif row['Spread_Ind'] == 'Home':
-            away_team_row_html = f'<tr><td>{row["game_sport"]}</td><td>{row["competitor_1"]}</td><td>{row["team_1_hcap"]}</td><td>{row["team_1_ml_odds"]}</td></tr>'
-            home_team_row_html = f'<tr><td>{row["game_sport"]}</td><td>{row["competitor_2"]}</td><td style="background-color: #32CD32">{row["team_2_hcap"]}</td><td>{row["team_2_ml_odds"]}</td></tr>'
+        table += '</table></div>'
+
+        return table
+
+    def generate_row(self, row):
+        space_row_html = '<tr><td colspan="5" style="border:none;"></td></tr>'
+
+        away_sp_cell, home_sp_cell = self.spread_sharp_tags(row['sharp_spread_ind'], row['team_1_hcap'], row['team_2_hcap'])
+        away_ml_cell, home_ml_cell = self.ml_sharp_tags(row['sharp_moneyline_ind'], row['team_1_ml_odds'],
+                                                            row['team_2_ml_odds'])
+        over_cell, under_cell = self.total_sharp_tags(row['sharp_total_ind'], row['total_over'],
+                                                            row['total_under'])
+
+        row_html = f'<tr><td>{row["game_date"].strftime("%m/%d/%y")}</td><td>{row["competitor_1"]}</td>'
+        row_html += away_sp_cell + away_ml_cell + over_cell + '</tr>'
+
+        row_html += f'<tr><td>{row["game_time"]}</td><td>{row["competitor_2"]}</td>'
+        row_html += home_sp_cell + home_ml_cell + under_cell + '</tr>' + space_row_html
+
+        return row_html
+
+    def spread_sharp_tags(self, indicator, value_1, value_2):
+        if indicator == 'Away':
+            away_sp_cell = f'<td style="background-color: #32CD32">{value_1}</td>'
+            home_sp_cell = f'<td>{value_2}</td>'
+        elif indicator == 'Home':
+            away_sp_cell = f'<td>{value_1}</td>'
+            home_sp_cell = f'<td style="background-color: #32CD32">{value_2}</td>'
         else:
-            away_team_row_html = f'<tr><td>{row["game_sport"]}</td><td>{row["competitor_1"]}</td><td>{row["team_1_hcap"]}</td><td>{row["team_1_ml_odds"]}</td></tr>'
-            home_team_row_html = f'<tr><td>{row["game_sport"]}</td><td>{row["competitor_2"]}</td><td>{row["team_2_hcap"]}</td><td>{row["team_2_ml_odds"]}</td></tr>'
+            away_sp_cell = f'<td>{value_1}</td>'
+            home_sp_cell = f'<td>{value_2}</td>'
 
-        # Add space row
-        space_row_html = '<tr><td colspan="4" style="border:none;"></td></tr>'
+        return away_sp_cell, home_sp_cell
 
-        table += away_team_row_html + home_team_row_html + space_row_html
+    def ml_sharp_tags(self, indicator, value_1, value_2):
+        if indicator == 'Away':
+            away_ml_cell = f'<td style="background-color: #32CD32">{value_1}</td>'
+            home_ml_cell = f'<td>{value_2}</td>'
+        elif indicator == 'Home':
+            away_ml_cell = f'<td>{value_1}</td>'
+            home_ml_cell = f'<td style="background-color: #32CD32">{value_2}</td>'
+        else:
+            away_ml_cell = f'<td>{value_1}</td>'
+            home_ml_cell = f'<td>{value_2}</td>'
 
-    table += '</table></div>'
+        return away_ml_cell, home_ml_cell
 
-    with open(template_html, 'r') as f:
-        html_content = f.read()
+    def total_sharp_tags(self, indicator, value_1, value_2):
+        if indicator == 'Over':
+            over_cell = f'<td style="background-color: #32CD32">{value_1}</td>'
+            under_cell = f'<td>{value_2}</td>'
+        elif indicator == 'Under':
+            over_cell = f'<td>{value_1}</td>'
+            under_cell = f'<td style="background-color: #32CD32">{value_2}</td>'
+        else:
+            over_cell = f'<td>{value_1}</td>'
+            under_cell = f'<td>{value_2}</td>'
 
-    modified_html = html_content.replace(identifier, table)
+        return over_cell, under_cell
 
-    current_datetime = datetime.datetime.now()
-    current_datetime_str = current_datetime.strftime("%Y-%m-%d %H:%M:%s")
+    def replace_production(self):
+        table = self.generate_table()
 
-    modified_html = modified_html.replace('{This is a placeholder}', current_datetime_str)
+        template_html = '/var/www/html/Templates/subscribetemplate.html'
+        identifier = '{Upcoming Sports}'
+        final_html = '/var/www/html/subscribe.html'
 
-    # add time
+        with open(template_html, 'r') as f:
+            html_content = f.read()
 
-    with open(final_html, 'w') as f:
-        f.write(modified_html)
+        modified_html = html_content.replace(identifier, table)
 
-    print('Python script ran and is done!')
+        current_datetime = datetime.datetime.now()
+        current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%Y-%m-%d %I:%M %p")
+
+        modified_html = modified_html.replace('{This is a placeholder}', current_datetime_str)
+
+        # add time
+
+        with open(final_html, 'w') as f:
+            f.write(modified_html)
+
+        print('Python script ran and is done!')
+
+    def replace_local(self):
+        table = self.generate_table()
+
+        template_html = 'practice_template.html'
+        identifier = '{Upcoming Sports}'
+        final_html = 'practice_main.html'
+
+        with open(template_html, 'r') as f:
+            html_content = f.read()
+
+        modified_html = html_content.replace(identifier, table)
+
+        current_datetime = datetime.datetime.now()
+        current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%m/%d/%Y %I:%M %p")
+
+        modified_html = modified_html.replace('{This is a placeholder}', current_datetime_str)
+
+        # add time
+
+        with open(final_html, 'w') as f:
+            f.write(modified_html)
+
+        print('Python script ran and is done!')
 
 
 if __name__ == '__main__':
-    template_html = '/var/www/html/Templates/subscribetemplate.html'
-    identifier = '{Upcoming Sports}'
-    final_html = '/var/www/html/subscribe.html'
-
-    generate_table(template_html, identifier, final_html)
+    html = HtmlTable()
+    html.replace_local()

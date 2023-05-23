@@ -19,7 +19,9 @@ class Indicators:
     def sharp_indicator(self):
         merged_df = self.merged_df
 
-        merged_df['Spread_Ind'] = merged_df.apply(self.sharp_spread, axis=1)
+        merged_df['sharp_spread_ind'] = merged_df.apply(self.sharp_spread, axis=1)
+        merged_df['sharp_moneyline_ind'] = merged_df.apply(self.sharp_moneyline, axis=1)
+        merged_df['sharp_total_ind'] = merged_df.apply(self.sharp_overunder, axis=1)
 
         return merged_df
 
@@ -28,6 +30,22 @@ class Indicators:
             return 'Away'
         elif (row['away_spread_handle'] < row['home_spread_handle']) and (row['away_spread_bets'] < row['home_spread_bets']):
             return 'Home'
+        else:
+            return None
+
+    def sharp_moneyline(self, row):
+        if (row['away_ml_handle'] > row['home_ml_handle']) and (row['away_ml_bets'] > row['home_ml_bets']):
+            return 'Away'
+        elif (row['away_ml_handle'] < row['home_ml_handle']) and (row['away_ml_bets'] < row['home_ml_bets']):
+            return 'Home'
+        else:
+            return None
+
+    def sharp_overunder(self, row):
+        if (row['total_over_handle'] > row['total_under_handle']) and (row['total_over_bets'] > row['total_under_bets']):
+            return 'Over'
+        elif (row['total_over_handle'] < row['total_under_handle']) and (row['total_over_bets'] < row['total_under_bets']):
+            return 'Under'
         else:
             return None
 

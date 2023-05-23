@@ -52,6 +52,9 @@ class ConnectSources:
 
         merge_df = merge_df.dropna(subset=['Sport'])
 
+        # drop duplicates (when multiple matchups in back to back games like baseball)
+        merge_df = merge_df.drop_duplicates(subset='game_id', keep='first')
+
         return merge_df
 
 
