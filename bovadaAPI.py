@@ -1,6 +1,7 @@
 import pandas as pd
 import requests
 import pytz
+from datetime import datetime, timedelta
 
 
 class PullBovada:
@@ -102,10 +103,10 @@ class PullBovada:
         return df
 
     def filter_for_newly_upcoming_games(self, df):
-        today = pd.Timestamp.today().date()
-        #tomorrow = today + pd.DateOffset(days=1)
-        #filtered_df = df[df['game_date'].isin([today, tomorrow])]
-        filtered_df = df[df['game_date'] == today]
+        central = pytz.timezone('US/Central')
+        current_time = datetime.now(central)
+        two_days_from_now = current_time + timedelta(days=2)
+        filtered_df = df[(df['game_startTime_cst'] >= current_time) & (df['game_startTime_cst'] <= two_days_from_now)]
 
         return filtered_df
 

@@ -1,6 +1,7 @@
 from bovadaAPI import PullBovada
 from Indicators import Indicators
 import datetime
+import pytz
 
 
 class HtmlTable:
@@ -12,7 +13,7 @@ class HtmlTable:
         table = '''
         <style>
             .table-container {
-                width: 75%;
+                width: 90%;
                 justify-content: center;
                 margin-left: auto;
                 margin-right: auto;
@@ -37,7 +38,7 @@ class HtmlTable:
             <table>
         '''
 
-        header_row = '<tr><td>Date/Time</td><td>Team Name</td><td>Handicap</td><td>Moneyline</td><td>Over/Under</td></tr>'
+        header_row = '<tr><td width="15%">Game Time</td><td width="36%">Team</td><td width="17%">Spread</td><td width="17%">ML</td><td width="17%">O/U</td></tr>'
 
         sports_dict = {sport: self.df[self.df['game_sport'] == sport] for sport in self.df['game_sport'].unique()}
         space_row_html = '<tr><td colspan="5" style="border:none;"></td></tr>'
@@ -121,8 +122,8 @@ class HtmlTable:
 
         modified_html = html_content.replace(identifier, table)
 
-        current_datetime = datetime.datetime.now()
-        current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%Y-%m-%d %I:%M %p")
+        current_datetime = datetime.datetime.now(pytz.timezone('US/Central'))
+        current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%m/%d/%Y %I:%M %p") + ' CST'
 
         modified_html = modified_html.replace('{This is a placeholder}', current_datetime_str)
 
@@ -160,4 +161,4 @@ class HtmlTable:
 
 if __name__ == '__main__':
     html = HtmlTable()
-    html.replace_local()
+    html.replace_production()
