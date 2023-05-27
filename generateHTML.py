@@ -113,9 +113,9 @@ class HtmlTable:
     def replace_production(self):
         table = self.generate_table()
 
-        template_html = '/var/www/html/Templates/subscribetemplate.html'
+        template_html = '/var/www/html/Website/Templates/subscribetemplate.html'
         identifier = '{Upcoming Sports}'
-        final_html = '/var/www/html/subscribe.html'
+        final_html = '/var/www/html/Website/subscribe.html'
 
         with open(template_html, 'r') as f:
             html_content = f.read()

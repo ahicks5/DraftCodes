@@ -4,7 +4,7 @@ from vsinAPI import VsinSharp
 from connectSources import ConnectSources
 
 #ref_df = pd.read_csv('References.csv')
-ref_df = pd.read_csv('/var/www/html/Scripts/References.csv')
+ref_df = pd.read_csv('/var/www/html/Website/References.csv')
 
 
 class Indicators:
