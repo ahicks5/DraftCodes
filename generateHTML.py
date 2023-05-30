@@ -40,7 +40,7 @@ class HtmlTable:
 
         header_row = '<tr><td width="15%">Game Time</td><td width="36%">Team</td><td width="17%">Spread</td><td width="17%">ML</td><td width="17%">O/U</td></tr>'
 
-        sports_dict = {sport: self.df[self.df['game_sport'] == sport] for sport in self.df['game_sport'].unique()}
+        sports_dict = {sport: self.df[self.df['Clean_Sport'] == sport] for sport in self.df['Clean_Sport'].unique()}
         space_row_html = '<tr><td colspan="5" style="border:none;"></td></tr>'
 
         for sport, df in sports_dict.items():

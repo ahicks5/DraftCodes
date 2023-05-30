@@ -1,122 +1,101 @@
 away_team,home_team,away_spread,home_spread,away_spread_handle,home_spread_handle,away_spread_bets,home_spread_bets,total_over,total_under,total_over_handle,total_under_handle,total_over_bets,total_under_bets,away_ml,home_ml,away_ml_handle,home_ml_handle,away_ml_bets,home_ml_bets,Sport,away_team_clean,home_team_clean,Comp_GameID
-BOS Celtics,MIA Heat,+1.5,-1.5,30%,70%,34%,66%,217,217,88%,12%,82%,18%,+100,-120,61%,39%,53%,47%,NBA,Boston Celtics,Miami Heat,Boston Celtics-Miami Heat
-DET Lions,KC Chiefs,+6.5,-6.5,57%,43%,52%,48%,53.5,53.5,74%,26%,68%,32%,+220,-260,48%,52%,22%,78%,NFL,Detroit Lions,Kansas City Chiefs,Detroit Lions-Kansas City Chiefs
-HOU Texans,BAL Ravens,+9,-9,13%,87%,40%,60%,45.5,45.5,14%,86%,38%,62%,+320,-390,4%,96%,6%,94%,NFL,Houston Texans,Baltimore Ravens,Houston Texans-Baltimore Ravens
-CIN Bengals,CLE Browns,-2.5,+2.5,79%,21%,82%,18%,47,47,61%,39%,50%,50%,-130,+110,83%,17%,79%,21%,NFL,Cincinnati Bengals,Cleveland Browns,Cincinnati Bengals-Cleveland Browns
-SF 49ers,PIT Steelers,-3,+3,46%,54%,65%,35%,42,42,15%,85%,44%,56%,-145,+125,72%,28%,75%,25%,NFL,San Francisco 49ers,Pittsburgh Steelers,San Francisco 49ers-Pittsburgh Steelers
-JAX Jaguars,IND Colts,-3.5,+3.5,82%,18%,75%,25%,43.5,43.5,54%,46%,65%,35%,-175,+150,82%,18%,83%,17%,NFL,Jacksonville Jaguars,Indianapolis Colts,Jacksonville Jaguars-Indianapolis Colts
-ARI Cardinals,WAS Commanders,+5.5,-5.5,19%,81%,62%,38%,40.5,40.5,54%,46%,65%,35%,+185,-215,11%,89%,31%,69%,NFL,Arizona Cardinals,Washington Commanders,Arizona Cardinals-Washington Commanders
-TB Buccaneers,MIN Vikings,+6.5,-6.5,81%,19%,42%,58%,46.5,46.5,30%,70%,39%,61%,+225,-265,43%,57%,10%,90%,NFL,Tampa Bay Buccaneers,Minnesota Vikings,Tampa Bay Buccaneers-Minnesota Vikings
-CAR Panthers,ATL Falcons,+2.5,-2.5,13%,87%,54%,46%,43.5,43.5,9%,91%,36%,64%,+125,-145,24%,76%,51%,49%,NFL,Carolina Panthers,Atlanta Falcons,Carolina Panthers-Atlanta Falcons
-TEN Titans,NO Saints,+3.5,-3.5,47%,53%,51%,49%,42,42,51%,49%,55%,45%,+150,-175,32%,68%,33%,67%,NFL,Tennessee Titans,New Orleans Saints,Tennessee Titans-New Orleans Saints
-PHI Eagles,NE Patriots,-4.5,+4.5,70%,30%,80%,20%,46,46,35%,65%,58%,42%,-200,+170,48%,52%,91%,9%,NFL,Philadelphia Eagles,New England Patriots,Philadelphia Eagles-New England Patriots
-LV Raiders,DEN Broncos,+3.5,-3.5,51%,49%,55%,45%,45,45,18%,82%,29%,71%,+150,-175,36%,64%,36%,64%,NFL,Las Vegas Raiders,Denver Broncos,Las Vegas Raiders-Denver Broncos
-MIA Dolphins,LA Chargers,+2.5,-2.5,44%,56%,58%,42%,49.5,49.5,71%,29%,71%,29%,+115,-135,70%,30%,57%,43%,NFL,Miami Dolphins,Los Angeles Chargers,Miami Dolphins-Los Angeles Chargers
-DAL Cowboys,NY Giants,-3,+3,78%,22%,63%,37%,47,47,12%,88%,42%,58%,-150,+130,81%,19%,67%,33%,NFL,Dallas Cowboys,New York Giants,Dallas Cowboys-New York Giants
-GB Packers,CHI Bears,+2.5,-2.5,18%,82%,21%,79%,44,44,36%,64%,42%,58%,+110,-130,32%,68%,27%,73%,NFL,Green Bay Packers,Chicago Bears,Green Bay Packers-Chicago Bears
-LA Rams,SEA Seahawks,+5.5,-5.5,13%,87%,55%,45%,46.5,46.5,39%,61%,52%,48%,+200,-240,29%,71%,26%,74%,NFL,Los Angeles Rams,Seattle Seahawks,Los Angeles Rams-Seattle Seahawks
-BUF Bills,NY Jets,-1.5,+1.5,36%,64%,69%,31%,48,48,15%,85%,50%,50%,-120,+100,49%,51%,62%,38%,NFL,Buffalo Bills,New York Jets,Buffalo Bills-New York Jets
-MIN Vikings,PHI Eagles,+6,-6,1%,99%,24%,76%,,,0%,0%,0%,0%,+210,-250,26%,74%,12%,88%,NFL,Minnesota Vikings,Philadelphia Eagles,Minnesota Vikings-Philadelphia Eagles
-LV Raiders,BUF Bills,+8,-8,12%,88%,40%,60%,,,0%,0%,0%,0%,+295,-360,49%,51%,8%,92%,NFL,Las Vegas Raiders,Buffalo Bills,Las Vegas Raiders-Buffalo Bills
+MIA Heat,BOS Celtics,+7.5,-7.5,67%,33%,76%,24%,204.0,204.0,80%,20%,79%,21%,+235,-280,58%,42%,68%,32%,NBA,Miami Heat,Boston Celtics,Miami Heat-Boston Celtics
+DET Lions,KC Chiefs,+6.5,-6.5,57%,43%,51%,49%,53.5,53.5,73%,27%,64%,36%,+220,-260,42%,58%,21%,79%,NFL,Detroit Lions,Kansas City Chiefs,Detroit Lions-Kansas City Chiefs
+HOU Texans,BAL Ravens,+9.5,-9.5,24%,76%,43%,57%,45.5,45.5,23%,77%,39%,61%,+330,-410,5%,95%,8%,92%,NFL,Houston Texans,Baltimore Ravens,Houston Texans-Baltimore Ravens
+CIN Bengals,CLE Browns,-2.5,2.5,76%,24%,81%,19%,47.0,47.0,55%,45%,49%,51%,-130,+110,80%,20%,79%,21%,NFL,Cincinnati Bengals,Cleveland Browns,Cincinnati Bengals-Cleveland Browns
+SF 49ers,PIT Steelers,-3,3.0,37%,63%,61%,39%,42.0,42.0,20%,80%,46%,54%,-145,+125,67%,33%,73%,27%,NFL,San Francisco 49ers,Pittsburgh Steelers,San Francisco 49ers-Pittsburgh Steelers
+JAX Jaguars,IND Colts,-3.5,3.5,77%,23%,75%,25%,43.5,43.5,53%,47%,63%,37%,-175,+150,81%,19%,80%,20%,NFL,Jacksonville Jaguars,Indianapolis Colts,Jacksonville Jaguars-Indianapolis Colts
+ARI Cardinals,WAS Commanders,+6,-6.0,28%,72%,61%,39%,40.5,40.5,52%,48%,62%,38%,+195,-230,12%,88%,32%,68%,NFL,Arizona Cardinals,Washington Commanders,Arizona Cardinals-Washington Commanders
+TB Buccaneers,MIN Vikings,+6.5,-6.5,71%,29%,37%,63%,46.5,46.5,31%,69%,37%,63%,+225,-265,39%,61%,10%,90%,NFL,Tampa Bay Buccaneers,Minnesota Vikings,Tampa Bay Buccaneers-Minnesota Vikings
+CAR Panthers,ATL Falcons,+2.5,-2.5,14%,86%,54%,46%,43.5,43.5,13%,87%,40%,60%,+130,-150,27%,73%,52%,48%,NFL,Carolina Panthers,Atlanta Falcons,Carolina Panthers-Atlanta Falcons
+TEN Titans,NO Saints,+3.5,-3.5,52%,48%,51%,49%,42.0,42.0,48%,52%,53%,47%,+150,-175,35%,65%,35%,65%,NFL,Tennessee Titans,New Orleans Saints,Tennessee Titans-New Orleans Saints
+PHI Eagles,NE Patriots,-4.5,4.5,69%,31%,79%,21%,46.0,46.0,34%,66%,55%,45%,-200,+170,49%,51%,88%,12%,NFL,Philadelphia Eagles,New England Patriots,Philadelphia Eagles-New England Patriots
+LV Raiders,DEN Broncos,+3.5,-3.5,32%,68%,52%,48%,45.0,45.0,18%,82%,31%,69%,+150,-175,35%,65%,35%,65%,NFL,Las Vegas Raiders,Denver Broncos,Las Vegas Raiders-Denver Broncos
+MIA Dolphins,LA Chargers,+2.5,-2.5,48%,52%,59%,41%,49.5,49.5,77%,23%,68%,32%,+115,-135,75%,25%,56%,44%,NFL,Miami Dolphins,Los Angeles Chargers,Miami Dolphins-Los Angeles Chargers
+DAL Cowboys,NY Giants,-3,3.0,72%,28%,63%,37%,47.0,47.0,15%,85%,44%,56%,-150,+130,78%,22%,65%,35%,NFL,Dallas Cowboys,New York Giants,Dallas Cowboys-New York Giants
+GB Packers,CHI Bears,+2.5,-2.5,20%,80%,20%,80%,44.0,44.0,62%,38%,47%,53%,+120,-140,33%,67%,27%,73%,NFL,Green Bay Packers,Chicago Bears,Green Bay Packers-Chicago Bears
+LA Rams,SEA Seahawks,+5.5,-5.5,26%,74%,57%,43%,46.5,46.5,39%,61%,50%,50%,+200,-240,35%,65%,28%,72%,NFL,Los Angeles Rams,Seattle Seahawks,Los Angeles Rams-Seattle Seahawks
+BUF Bills,NY Jets,-1.5,1.5,44%,56%,72%,28%,48.0,48.0,14%,86%,52%,48%,-120,+100,52%,48%,65%,35%,NFL,Buffalo Bills,New York Jets,Buffalo Bills-New York Jets
+MIN Vikings,PHI Eagles,+6,-6.0,2%,98%,24%,76%,,,0%,0%,0%,0%,+210,-250,27%,73%,14%,86%,NFL,Minnesota Vikings,Philadelphia Eagles,Minnesota Vikings-Philadelphia Eagles
+LV Raiders,BUF Bills,+8,-8.0,12%,88%,40%,60%,,,0%,0%,0%,0%,+295,-360,49%,51%,8%,92%,NFL,Las Vegas Raiders,Buffalo Bills,Las Vegas Raiders-Buffalo Bills
 BAL Ravens,CIN Bengals,+3.5,-3.5,97%,3%,65%,35%,,,0%,0%,0%,0%,+155,-180,63%,37%,44%,56%,NFL,Baltimore Ravens,Cincinnati Bengals,Baltimore Ravens-Cincinnati Bengals
 IND Colts,HOU Texans,+1,,100%,0%,100%,0%,,,0%,0%,0%,0%,,,0%,0%,0%,0%,NFL,Indianapolis Colts,Houston Texans,Indianapolis Colts-Houston Texans
-KC Chiefs,JAX Jaguars,-3,+3,82%,18%,83%,17%,,,0%,0%,0%,0%,-150,+130,78%,22%,88%,12%,NFL,Kansas City Chiefs,Jacksonville Jaguars,Kansas City Chiefs-Jacksonville Jaguars
-LA Chargers,TEN Titans,-3.5,+3.5,19%,81%,53%,47%,,,0%,0%,0%,0%,-180,+155,82%,18%,85%,15%,NFL,Los Angeles Chargers,Tennessee Titans,Los Angeles Chargers-Tennessee Titans
-SEA Seahawks,DET Lions,+2,-2,1%,99%,19%,81%,,,0%,0%,0%,0%,+110,-130,20%,80%,47%,53%,NFL,Seattle Seahawks,Detroit Lions,Seattle Seahawks-Detroit Lions
-GB Packers,ATL Falcons,-1,+1,19%,81%,45%,55%,,,0%,0%,0%,0%,-115,-105,6%,94%,58%,42%,NFL,Green Bay Packers,Atlanta Falcons,Green Bay Packers-Atlanta Falcons
-CHI Bears,TB Buccaneers,-1.5,+1.5,99%,1%,94%,6%,,,0%,0%,0%,0%,-120,+100,99%,1%,79%,21%,NFL,Chicago Bears,Tampa Bay Buccaneers,Chicago Bears-Tampa Bay Buccaneers
-NY Giants,ARI Cardinals,-4,+4,99%,1%,76%,24%,,,0%,0%,0%,0%,-195,+165,91%,9%,90%,10%,NFL,New York Giants,Arizona Cardinals,New York Giants-Arizona Cardinals
-SF 49ers,LA Rams,-4.5,+4.5,99%,1%,80%,20%,,,0%,0%,0%,0%,-205,+175,100%,0%,93%,7%,NFL,San Francisco 49ers,Los Angeles Rams,San Francisco 49ers-Los Angeles Rams
+KC Chiefs,JAX Jaguars,-3,3.0,82%,18%,83%,17%,,,0%,0%,0%,0%,-150,+130,78%,22%,88%,12%,NFL,Kansas City Chiefs,Jacksonville Jaguars,Kansas City Chiefs-Jacksonville Jaguars
+LA Chargers,TEN Titans,-3.5,3.5,19%,81%,53%,47%,,,0%,0%,0%,0%,-180,+155,82%,18%,85%,15%,NFL,Los Angeles Chargers,Tennessee Titans,Los Angeles Chargers-Tennessee Titans
+SEA Seahawks,DET Lions,+2,-2.0,1%,99%,19%,81%,,,0%,0%,0%,0%,+110,-130,20%,80%,47%,53%,NFL,Seattle Seahawks,Detroit Lions,Seattle Seahawks-Detroit Lions
+GB Packers,ATL Falcons,-1,1.0,19%,81%,45%,55%,,,0%,0%,0%,0%,-115,-105,6%,94%,58%,42%,NFL,Green Bay Packers,Atlanta Falcons,Green Bay Packers-Atlanta Falcons
+CHI Bears,TB Buccaneers,-1.5,1.5,99%,1%,94%,6%,,,0%,0%,0%,0%,-120,+100,99%,1%,79%,21%,NFL,Chicago Bears,Tampa Bay Buccaneers,Chicago Bears-Tampa Bay Buccaneers
+NY Giants,ARI Cardinals,-4,4.0,99%,1%,76%,24%,,,0%,0%,0%,0%,-195,+165,91%,9%,90%,10%,NFL,New York Giants,Arizona Cardinals,New York Giants-Arizona Cardinals
+SF 49ers,LA Rams,-4.5,4.5,99%,1%,80%,20%,,,0%,0%,0%,0%,-205,+175,100%,0%,93%,7%,NFL,San Francisco 49ers,Los Angeles Rams,San Francisco 49ers-Los Angeles Rams
 WAS Commanders,DEN Broncos,+3.5,-3.5,8%,92%,28%,72%,,,0%,0%,0%,0%,+145,-170,4%,96%,18%,82%,NFL,Washington Commanders,Denver Broncos,Washington Commanders-Denver Broncos
-NY Jets,DAL Cowboys,+2,-2,2%,98%,33%,67%,,,0%,0%,0%,0%,+105,-125,9%,91%,57%,43%,NFL,New York Jets,Dallas Cowboys,New York Jets-Dallas Cowboys
-MIA Dolphins,NE Patriots,-1,+1,73%,27%,75%,25%,,,0%,0%,0%,0%,-115,-105,98%,2%,80%,20%,NFL,Miami Dolphins,New England Patriots,Miami Dolphins-New England Patriots
-NO Saints,CAR Panthers,+1,-1,16%,84%,80%,20%,,,0%,0%,0%,0%,-115,-105,65%,35%,67%,33%,NFL,New Orleans Saints,Carolina Panthers,New Orleans Saints-Carolina Panthers
-CLE Browns,PIT Steelers,+1,-1,10%,90%,29%,71%,,,0%,0%,0%,0%,-105,-115,8%,92%,24%,76%,NFL,Cleveland Browns,Pittsburgh Steelers,Cleveland Browns-Pittsburgh Steelers
+NY Jets,DAL Cowboys,+2,-2.0,2%,98%,33%,67%,,,0%,0%,0%,0%,+105,-125,9%,91%,57%,43%,NFL,New York Jets,Dallas Cowboys,New York Jets-Dallas Cowboys
+MIA Dolphins,NE Patriots,-1,1.0,73%,27%,75%,25%,,,0%,0%,0%,0%,-115,-105,98%,2%,80%,20%,NFL,Miami Dolphins,New England Patriots,Miami Dolphins-New England Patriots
+NO Saints,CAR Panthers,+1,-1.0,16%,84%,80%,20%,,,0%,0%,0%,0%,-115,-105,65%,35%,67%,33%,NFL,New Orleans Saints,Carolina Panthers,New Orleans Saints-Carolina Panthers
+CLE Browns,PIT Steelers,+1,-1.0,10%,90%,29%,71%,,,0%,0%,0%,0%,-105,-115,8%,92%,24%,76%,NFL,Cleveland Browns,Pittsburgh Steelers,Cleveland Browns-Pittsburgh Steelers
 NY Giants,SF 49ers,+4.5,-4.5,0%,100%,14%,86%,,,0%,0%,0%,0%,--200,,0%,100%,0%,100%,NFL,New York Giants,San Francisco 49ers,New York Giants-San Francisco 49ers
 DEN Broncos,MIA Dolphins,+3.5,-3.5,39%,61%,43%,57%,,,0%,0%,0%,0%,+145,-170,0%,100%,10%,90%,NFL,Denver Broncos,Miami Dolphins,Denver Broncos-Miami Dolphins
 NE Patriots,NY Jets,+3.5,-3.5,10%,90%,37%,63%,,,0%,0%,0%,0%,+150,-175,29%,71%,80%,20%,NFL,New England Patriots,New York Jets,New England Patriots-New York Jets
-IND Colts,BAL Ravens,+7,-7,2%,98%,41%,59%,,,0%,0%,0%,0%,+245,-295,5%,95%,25%,75%,NFL,Indianapolis Colts,Baltimore Ravens,Indianapolis Colts-Baltimore Ravens
+IND Colts,BAL Ravens,+7,-7.0,2%,98%,41%,59%,,,0%,0%,0%,0%,+245,-295,5%,95%,25%,75%,NFL,Indianapolis Colts,Baltimore Ravens,Indianapolis Colts-Baltimore Ravens
 TEN Titans,CLE Browns,+4.5,-4.5,86%,14%,57%,43%,,,0%,0%,0%,0%,+165,-195,25%,75%,4%,96%,NFL,Tennessee Titans,Cleveland Browns,Tennessee Titans-Cleveland Browns
-HOU Texans,JAX Jaguars,+7,-7,1%,99%,43%,57%,,,0%,0%,0%,0%,+250,-300,34%,66%,20%,80%,NFL,Houston Texans,Jacksonville Jaguars,Houston Texans-Jacksonville Jaguars
-BUF Bills,WAS Commanders,-4.5,+4.5,99%,1%,90%,10%,,,0%,0%,0%,0%,-195,+165,81%,19%,93%,7%,NFL,Buffalo Bills,Washington Commanders,Buffalo Bills-Washington Commanders
-ATL Falcons,DET Lions,+5,-5,3%,97%,15%,85%,,,0%,0%,0%,0%,+180,-210,12%,88%,12%,88%,NFL,Atlanta Falcons,Detroit Lions,Atlanta Falcons-Detroit Lions
-NO Saints,GB Packers,+1,-1,58%,42%,71%,29%,,,0%,0%,0%,0%,-105,-115,88%,12%,62%,38%,NFL,New Orleans Saints,Green Bay Packers,New Orleans Saints-Green Bay Packers
-LA Chargers,MIN Vikings,-1.5,+1.5,40%,60%,33%,67%,,,0%,0%,0%,0%,-120,+100,79%,21%,67%,33%,NFL,Los Angeles Chargers,Minnesota Vikings,Los Angeles Chargers-Minnesota Vikings
-CAR Panthers,SEA Seahawks,+4,-4,89%,11%,38%,62%,,,0%,0%,0%,0%,--190,,0%,100%,0%,100%,NFL,Carolina Panthers,Seattle Seahawks,Carolina Panthers-Seattle Seahawks
+HOU Texans,JAX Jaguars,+7,-7.0,1%,99%,43%,57%,,,0%,0%,0%,0%,+250,-300,34%,66%,20%,80%,NFL,Houston Texans,Jacksonville Jaguars,Houston Texans-Jacksonville Jaguars
+BUF Bills,WAS Commanders,-4.5,4.5,99%,1%,90%,10%,,,0%,0%,0%,0%,-195,+165,81%,19%,93%,7%,NFL,Buffalo Bills,Washington Commanders,Buffalo Bills-Washington Commanders
+ATL Falcons,DET Lions,+5,-5.0,3%,97%,15%,85%,,,0%,0%,0%,0%,+180,-210,12%,88%,12%,88%,NFL,Atlanta Falcons,Detroit Lions,Atlanta Falcons-Detroit Lions
+NO Saints,GB Packers,+1,-1.0,58%,42%,71%,29%,,,0%,0%,0%,0%,-105,-115,88%,12%,62%,38%,NFL,New Orleans Saints,Green Bay Packers,New Orleans Saints-Green Bay Packers
+LA Chargers,MIN Vikings,-1.5,1.5,40%,60%,33%,67%,,,0%,0%,0%,0%,-120,+100,79%,21%,67%,33%,NFL,Los Angeles Chargers,Minnesota Vikings,Los Angeles Chargers-Minnesota Vikings
+CAR Panthers,SEA Seahawks,+4,-4.0,89%,11%,38%,62%,,,0%,0%,0%,0%,--190,,0%,100%,0%,100%,NFL,Carolina Panthers,Seattle Seahawks,Carolina Panthers-Seattle Seahawks
 CHI Bears,KC Chiefs,+9.5,-9.5,76%,24%,82%,18%,,,0%,0%,0%,0%,+330,-410,64%,36%,29%,71%,NFL,Chicago Bears,Kansas City Chiefs,Chicago Bears-Kansas City Chiefs
-DAL Cowboys,ARI Cardinals,-6.5,+6.5,100%,0%,91%,9%,,,0%,0%,0%,0%,-265,+225,78%,22%,87%,13%,NFL,Dallas Cowboys,Arizona Cardinals,Dallas Cowboys-Arizona Cardinals
+DAL Cowboys,ARI Cardinals,-6.5,6.5,100%,0%,91%,9%,,,0%,0%,0%,0%,-265,+225,78%,22%,87%,13%,NFL,Dallas Cowboys,Arizona Cardinals,Dallas Cowboys-Arizona Cardinals
 PIT Steelers,LV Raiders,+1.5,-1.5,96%,4%,58%,42%,,,0%,0%,0%,0%,+100,-120,98%,2%,76%,24%,NFL,Pittsburgh Steelers,Las Vegas Raiders,Pittsburgh Steelers-Las Vegas Raiders
-PHI Eagles,TB Buccaneers,-6,+6,99%,1%,89%,11%,,,0%,0%,0%,0%,-250,+210,99%,1%,90%,10%,NFL,Philadelphia Eagles,Tampa Bay Buccaneers,Philadelphia Eagles-Tampa Bay Buccaneers
-LA Rams,CIN Bengals,+7,-7,2%,98%,33%,67%,,,0%,0%,0%,0%,+255,-305,18%,82%,9%,91%,NFL,Los Angeles Rams,Cincinnati Bengals,Los Angeles Rams-Cincinnati Bengals
-DET Lions,GB Packers,-1.5,+1.5,94%,6%,93%,7%,,,0%,0%,0%,0%,-120,+100,96%,4%,71%,29%,NFL,Detroit Lions,Green Bay Packers,Detroit Lions-Green Bay Packers
-ATL Falcons,JAX Jaguars,+4,-4,2%,98%,11%,89%,,,0%,0%,0%,0%,+155,-180,64%,36%,12%,88%,NFL,Atlanta Falcons,Jacksonville Jaguars,Atlanta Falcons-Jacksonville Jaguars
+PHI Eagles,TB Buccaneers,-6,6.0,99%,1%,89%,11%,,,0%,0%,0%,0%,-250,+210,99%,1%,90%,10%,NFL,Philadelphia Eagles,Tampa Bay Buccaneers,Philadelphia Eagles-Tampa Bay Buccaneers
+LA Rams,CIN Bengals,+7,-7.0,2%,98%,33%,67%,,,0%,0%,0%,0%,+255,-305,18%,82%,9%,91%,NFL,Los Angeles Rams,Cincinnati Bengals,Los Angeles Rams-Cincinnati Bengals
+DET Lions,GB Packers,-1.5,1.5,94%,6%,93%,7%,,,0%,0%,0%,0%,-120,+100,96%,4%,71%,29%,NFL,Detroit Lions,Green Bay Packers,Detroit Lions-Green Bay Packers
+ATL Falcons,JAX Jaguars,+4,-4.0,2%,98%,11%,89%,,,0%,0%,0%,0%,+155,-180,64%,36%,12%,88%,NFL,Atlanta Falcons,Jacksonville Jaguars,Atlanta Falcons-Jacksonville Jaguars
 MIA Dolphins,BUF Bills,+3.5,-3.5,18%,82%,50%,50%,,,0%,0%,0%,0%,+150,-175,12%,88%,44%,56%,NFL,Miami Dolphins,Buffalo Bills,Miami Dolphins-Buffalo Bills
 BAL Ravens,CLE Browns,+1,,100%,0%,100%,0%,,,0%,0%,0%,0%,-105,-115,65%,35%,60%,40%,NFL,Baltimore Ravens,Cleveland Browns,Baltimore Ravens-Cleveland Browns
-PIT Steelers,HOU Texans,-3.5,+3.5,95%,5%,88%,12%,,,0%,0%,0%,0%,-175,+150,82%,18%,75%,25%,NFL,Pittsburgh Steelers,Houston Texans,Pittsburgh Steelers-Houston Texans
-LA Rams,IND Colts,-1,+1,16%,84%,50%,50%,,,0%,0%,0%,0%,-115,-105,80%,20%,60%,40%,NFL,Los Angeles Rams,Indianapolis Colts,Los Angeles Rams-Indianapolis Colts
-CIN Bengals,TEN Titans,-4.5,+4.5,99%,1%,91%,9%,,,0%,0%,0%,0%,-195,-,100%,0%,100%,0%,NFL,Cincinnati Bengals,Tennessee Titans,Cincinnati Bengals-Tennessee Titans
-WAS Commanders,PHI Eagles,+7,-7,4%,96%,20%,80%,,,0%,0%,0%,0%,+255,-305,79%,21%,21%,79%,NFL,Washington Commanders,Philadelphia Eagles,Washington Commanders-Philadelphia Eagles
+PIT Steelers,HOU Texans,-3.5,3.5,95%,5%,88%,12%,,,0%,0%,0%,0%,-175,+150,82%,18%,75%,25%,NFL,Pittsburgh Steelers,Houston Texans,Pittsburgh Steelers-Houston Texans
+LA Rams,IND Colts,-1,1.0,16%,84%,50%,50%,,,0%,0%,0%,0%,-115,-105,80%,20%,60%,40%,NFL,Los Angeles Rams,Indianapolis Colts,Los Angeles Rams-Indianapolis Colts
+CIN Bengals,TEN Titans,-4.5,4.5,99%,1%,91%,9%,,,0%,0%,0%,0%,-195,-,100%,0%,100%,0%,NFL,Cincinnati Bengals,Tennessee Titans,Cincinnati Bengals-Tennessee Titans
+WAS Commanders,PHI Eagles,+7,-7.0,4%,96%,20%,80%,,,0%,0%,0%,0%,+255,-305,79%,21%,21%,79%,NFL,Washington Commanders,Philadelphia Eagles,Washington Commanders-Philadelphia Eagles
 DEN Broncos,CHI Bears,-+1.5,,0%,100%,0%,100%,,,0%,0%,0%,0%,-120,+100,9%,91%,38%,62%,NFL,Denver Broncos,Chicago Bears,Denver Broncos-Chicago Bears
-MIN Vikings,CAR Panthers,-1.5,+1.5,96%,4%,80%,20%,,,0%,0%,0%,0%,-120,+100,98%,2%,78%,22%,NFL,Minnesota Vikings,Carolina Panthers,Minnesota Vikings-Carolina Panthers
+MIN Vikings,CAR Panthers,-1.5,1.5,96%,4%,80%,20%,,,0%,0%,0%,0%,-120,+100,98%,2%,78%,22%,NFL,Minnesota Vikings,Carolina Panthers,Minnesota Vikings-Carolina Panthers
 TB Buccaneers,NO Saints,+3.5,-3.5,1%,99%,27%,73%,,,0%,0%,0%,0%,--175,,0%,100%,0%,100%,NFL,Tampa Bay Buccaneers,New Orleans Saints,Tampa Bay Buccaneers-New Orleans Saints
 LV Raiders,LA Chargers,+4.5,-4.5,81%,19%,50%,50%,,,0%,0%,0%,0%,--205,,0%,100%,0%,100%,NFL,Las Vegas Raiders,Los Angeles Chargers,Las Vegas Raiders-Los Angeles Chargers
 NE Patriots,DAL Cowboys,+3.5,-3.5,5%,95%,42%,58%,,,0%,0%,0%,0%,+150,-175,0%,100%,7%,93%,NFL,New England Patriots,Dallas Cowboys,New England Patriots-Dallas Cowboys
 ARI Cardinals,SF 49ers,+9.5,-9.5,2%,98%,45%,55%,,,0%,0%,0%,0%,+330,-410,29%,71%,12%,88%,NFL,Arizona Cardinals,San Francisco 49ers,Arizona Cardinals-San Francisco 49ers
-KC Chiefs,NY Jets,-1,+1,99%,1%,93%,7%,,,0%,0%,0%,0%,-115,-105,96%,4%,91%,9%,NFL,Kansas City Chiefs,New York Jets,Kansas City Chiefs-New York Jets
-SEA Seahawks,NY Giants,+1,-1,47%,53%,33%,67%,,,0%,0%,0%,0%,-105,-115,99%,1%,40%,60%,NFL,Seattle Seahawks,New York Giants,Seattle Seahawks-New York Giants
+KC Chiefs,NY Jets,-1,1.0,99%,1%,93%,7%,,,0%,0%,0%,0%,-115,-105,96%,4%,91%,9%,NFL,Kansas City Chiefs,New York Jets,Kansas City Chiefs-New York Jets
+SEA Seahawks,NY Giants,+1,-1.0,47%,53%,33%,67%,,,0%,0%,0%,0%,-105,-115,99%,1%,40%,60%,NFL,Seattle Seahawks,New York Giants,Seattle Seahawks-New York Giants
 CHI Bears,WAS Commanders,+1.5,-1.5,97%,3%,83%,17%,,,0%,0%,0%,0%,+100,-,100%,0%,100%,0%,NFL,Chicago Bears,Washington Commanders,Chicago Bears-Washington Commanders
 JAX Jaguars,BUF Bills,+3.5,-3.5,72%,28%,56%,44%,,,0%,0%,0%,0%,+145,-170,81%,19%,38%,62%,NFL,Jacksonville Jaguars,Buffalo Bills,Jacksonville Jaguars-Buffalo Bills
 NY Giants,MIA Dolphins,--4.5,,0%,100%,0%,100%,,,0%,0%,0%,0%,+170,-200,20%,80%,12%,88%,NFL,New York Giants,Miami Dolphins,New York Giants-Miami Dolphins
-NO Saints,NE Patriots,+3,-3,99%,1%,55%,45%,,,0%,0%,0%,0%,+130,-150,43%,57%,25%,75%,NFL,New Orleans Saints,New England Patriots,New Orleans Saints-New England Patriots
-BAL Ravens,PIT Steelers,-1,+1,89%,11%,83%,17%,,,0%,0%,0%,0%,-115,-105,4%,96%,29%,71%,NFL,Baltimore Ravens,Pittsburgh Steelers,Baltimore Ravens-Pittsburgh Steelers
-TEN Titans,IND Colts,+1,-1,98%,2%,62%,38%,,,0%,0%,0%,0%,-105,-115,74%,26%,57%,43%,NFL,Tennessee Titans,Indianapolis Colts,Tennessee Titans-Indianapolis Colts
-CAR Panthers,DET Lions,+5,-5,14%,86%,14%,86%,,,0%,0%,0%,0%,+180,-210,69%,31%,45%,55%,NFL,Carolina Panthers,Detroit Lions,Carolina Panthers-Detroit Lions
-HOU Texans,ATL Falcons,+3,-3,0%,100%,29%,71%,,,0%,0%,0%,0%,+130,-150,1%,99%,17%,83%,NFL,Houston Texans,Atlanta Falcons,Houston Texans-Atlanta Falcons
-CIN Bengals,ARI Cardinals,-7.5,+7.5,100%,0%,71%,29%,,,0%,0%,0%,0%,-340,+280,46%,54%,62%,38%,NFL,Cincinnati Bengals,Arizona Cardinals,Cincinnati Bengals-Arizona Cardinals
-PHI Eagles,LA Rams,-4.5,+4.5,100%,0%,94%,6%,,,0%,0%,0%,0%,-200,-,100%,0%,100%,0%,NFL,Philadelphia Eagles,Los Angeles Rams,Philadelphia Eagles-Los Angeles Rams
-NY Jets,DEN Broncos,-1,+1,97%,3%,75%,25%,,,0%,0%,0%,0%,-115,-105,62%,38%,80%,20%,NFL,New York Jets,Denver Broncos,New York Jets-Denver Broncos
-KC Chiefs,MIN Vikings,-4,+4,91%,9%,64%,36%,,,0%,0%,0%,0%,-190,-,100%,0%,100%,0%,NFL,Kansas City Chiefs,Minnesota Vikings,Kansas City Chiefs-Minnesota Vikings
-DAL Cowboys,SF 49ers,+2,-2,0%,100%,33%,67%,,,0%,0%,0%,0%,+105,-125,0%,100%,14%,86%,NFL,Dallas Cowboys,San Francisco 49ers,Dallas Cowboys-San Francisco 49ers
+NO Saints,NE Patriots,+3,-3.0,99%,1%,55%,45%,,,0%,0%,0%,0%,+130,-150,43%,57%,25%,75%,NFL,New Orleans Saints,New England Patriots,New Orleans Saints-New England Patriots
+BAL Ravens,PIT Steelers,-1,1.0,89%,11%,83%,17%,,,0%,0%,0%,0%,-115,-105,4%,96%,29%,71%,NFL,Baltimore Ravens,Pittsburgh Steelers,Baltimore Ravens-Pittsburgh Steelers
+TEN Titans,IND Colts,+1,-1.0,98%,2%,62%,38%,,,0%,0%,0%,0%,-105,-115,74%,26%,57%,43%,NFL,Tennessee Titans,Indianapolis Colts,Tennessee Titans-Indianapolis Colts
+CAR Panthers,DET Lions,+5,-5.0,14%,86%,14%,86%,,,0%,0%,0%,0%,+180,-210,69%,31%,45%,55%,NFL,Carolina Panthers,Detroit Lions,Carolina Panthers-Detroit Lions
+HOU Texans,ATL Falcons,+3,-3.0,0%,100%,29%,71%,,,0%,0%,0%,0%,+130,-150,1%,99%,17%,83%,NFL,Houston Texans,Atlanta Falcons,Houston Texans-Atlanta Falcons
+CIN Bengals,ARI Cardinals,-7.5,7.5,100%,0%,71%,29%,,,0%,0%,0%,0%,-340,+280,46%,54%,62%,38%,NFL,Cincinnati Bengals,Arizona Cardinals,Cincinnati Bengals-Arizona Cardinals
+PHI Eagles,LA Rams,-4.5,4.5,100%,0%,94%,6%,,,0%,0%,0%,0%,-200,-,100%,0%,100%,0%,NFL,Philadelphia Eagles,Los Angeles Rams,Philadelphia Eagles-Los Angeles Rams
+NY Jets,DEN Broncos,-1,1.0,97%,3%,75%,25%,,,0%,0%,0%,0%,-115,-105,62%,38%,80%,20%,NFL,New York Jets,Denver Broncos,New York Jets-Denver Broncos
+KC Chiefs,MIN Vikings,-4,4.0,91%,9%,64%,36%,,,0%,0%,0%,0%,-190,-,100%,0%,100%,0%,NFL,Kansas City Chiefs,Minnesota Vikings,Kansas City Chiefs-Minnesota Vikings
+DAL Cowboys,SF 49ers,+2,-2.0,0%,100%,33%,67%,,,0%,0%,0%,0%,+105,-125,0%,100%,14%,86%,NFL,Dallas Cowboys,San Francisco 49ers,Dallas Cowboys-San Francisco 49ers
 GB Packers,LV Raiders,+1.5,-1.5,31%,69%,50%,50%,,,0%,0%,0%,0%,+100,-120,2%,98%,21%,79%,NFL,Green Bay Packers,Las Vegas Raiders,Green Bay Packers-Las Vegas Raiders
-DEN Broncos,KC Chiefs,+7,-7,36%,64%,46%,54%,,,0%,0%,0%,0%,+255,-305,83%,17%,42%,58%,NFL,Denver Broncos,Kansas City Chiefs,Denver Broncos-Kansas City Chiefs
-BAL Ravens,TEN Titans,-5.5,+5.5,79%,21%,81%,19%,,,0%,0%,0%,0%,-215,+185,43%,57%,67%,33%,NFL,Baltimore Ravens,Tennessee Titans,Baltimore Ravens-Tennessee Titans
-TEX Rangers,PIT Pirates,-1.5,+1.5,59%,41%,70%,30%,8,8,94%,6%,70%,30%,-165,+140,83%,17%,76%,24%,MLB,Texas Rangers,Pittsburgh Pirates,Texas Rangers-Pittsburgh Pirates
-ARI DBacks,PHI Phillies,+1.5,-1.5,32%,68%,68%,32%,9.5,9.5,68%,32%,49%,51%,+135,-155,13%,87%,35%,65%,MLB,Arizona Diamondbacks,Philadelphia Phillies,Arizona Diamondbacks-Philadelphia Phillies
-STL Cardinals,CIN Reds,-1.5,+1.5,66%,34%,56%,44%,10.5,10.5,75%,25%,51%,49%,-135,+115,83%,17%,73%,27%,MLB,St. Louis Cardinals,Cincinnati Reds,St. Louis Cardinals-Cincinnati Reds
-LA Dodgers,ATL Braves,+1.5,-1.5,22%,78%,37%,63%,8.5,8.5,79%,21%,70%,30%,+170,-200,30%,70%,25%,75%,MLB,Los Angeles Dodgers,Atlanta Braves,Los Angeles Dodgers-Atlanta Braves
-DET Tigers,KC Royals,-1.5,+1.5,66%,34%,65%,35%,8.5,8.5,16%,84%,52%,48%,-145,+125,90%,10%,79%,21%,MLB,Detroit Tigeres,Kansas City Royals,Detroit Tigeres-Kansas City Royals
-HOU Astros,MIL Brewers,-1.5,+1.5,64%,36%,63%,37%,9.5,9.5,14%,86%,46%,54%,-130,+110,55%,45%,79%,21%,MLB,Houston Astros,Milwaukee Brewers,Houston Astros-Milwaukee Brewers
-OAK Athletics,SEA Mariners,+1.5,-1.5,11%,89%,9%,91%,9,9,69%,31%,64%,36%,+180,-210,7%,93%,9%,91%,MLB,OAK Athletics,Seattle Mariners,OAK Athletics-Seattle Mariners
-TEX Rangers,PIT Pirates,-1.5,+1.5,93%,7%,38%,62%,9,9,81%,19%,59%,41%,-130,+110,79%,21%,54%,46%,MLB,Texas Rangers,Pittsburgh Pirates,Texas Rangers-Pittsburgh Pirates
-ARI DBacks,PHI Phillies,+1.5,-1.5,61%,39%,51%,49%,8,8,87%,13%,75%,25%,-115,-105,93%,7%,79%,21%,MLB,Arizona Diamondbacks,Philadelphia Phillies,Arizona Diamondbacks-Philadelphia Phillies
-HOU Astros,MIL Brewers,-1.5,+1.5,97%,3%,39%,61%,9.5,9.5,11%,89%,23%,77%,-110,-110,99%,1%,78%,22%,MLB,Houston Astros,Milwaukee Brewers,Houston Astros-Milwaukee Brewers
-STL Cardinals,CIN Reds,-1.5,+1.5,82%,18%,52%,48%,10,10,47%,53%,41%,59%,-155,+135,17%,83%,74%,26%,MLB,St. Louis Cardinals,Cincinnati Reds,St. Louis Cardinals-Cincinnati Reds
-LA Dodgers,ATL Braves,-1.5,+1.5,92%,8%,18%,82%,9.5,9.5,1%,99%,25%,75%,-105,-115,19%,81%,46%,54%,MLB,Los Angeles Dodgers,Atlanta Braves,Los Angeles Dodgers-Atlanta Braves
-DET Tigers,KC Royals,+1.5,-1.5,3%,97%,58%,42%,9,9,83%,17%,50%,50%,+100,-120,97%,3%,60%,40%,MLB,Detroit Tigeres,Kansas City Royals,Detroit Tigeres-Kansas City Royals
-OAK Athletics,SEA Mariners,+1.5,-1.5,17%,83%,7%,93%,8,8,99%,1%,91%,9%,+230,-275,12%,88%,5%,95%,MLB,OAK Athletics,Seattle Mariners,OAK Athletics-Seattle Mariners
-VGK Golden Knights,DAL Stars,+1.5,-1.5,57%,43%,61%,39%,5.5,5.5,50%,50%,50%,50%,+125,-145,11%,89%,42%,58%,NHL,Vegas Golden Knights,Dallas Stars,Vegas Golden Knights-Dallas Stars
-CAR Hurricanes,FLA Panthers,+1.5,-1.5,96%,4%,70%,30%,5.5,5.5,7%,93%,20%,80%,+100,-120,46%,54%,36%,64%,NHL,Carolina Hurricanes,Florida Panthers,Carolina Hurricanes-Florida Panthers
-Inter Miami,CF Montreal,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+275,-115,48%,52%,26%,74%,MLS,Inter Miami,CF Montreal,Inter Miami-CF Montreal
-DC Utd,Toronto FC,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+215,+115,58%,42%,50%,50%,MLS,DC Utd,Toronto FC,DC Utd-Toronto FC
-Philadelphia Union,New York City FC,,,0%,0%,0%,0%,2.25,,100%,0%,100%,0%,+240,+110,84%,16%,48%,52%,MLS,Philadelphia Union,New York City FC,Philadelphia Union-New York City FC
-Atlanta Utd,Orlando City,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+200,+125,72%,28%,41%,59%,MLS,Atlanta Utd,Orlando City,Atlanta Utd-Orlando City
-Chicago Fire,New England Revolution,,,0%,0%,0%,0%,,2.75,0%,100%,0%,100%,+295,-125,20%,80%,17%,83%,MLS,Chicago Fire,NE Revolution,Chicago Fire-NE Revolution
-Real Salt Lake,Minnesota Utd,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+235,+100,14%,86%,22%,78%,MLS,Real Salt Lake,Minnesota Utd,Real Salt Lake-Minnesota Utd
-Austin FC,Houston Dynamo,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+225,+110,20%,80%,36%,64%,MLS,Austin FC,Houston Dynamo,Austin FC-Houston Dynamo
-FC Cincinnati,Colorado Rapids,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+170,+145,94%,6%,79%,21%,MLS,FC Cincinnati,Colorado Rapids,FC Cincinnati-Colorado Rapids
-New York Red Bulls,Seattle Sounders,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+260,+100,19%,81%,20%,80%,MLS,New York Red Bulls,Seattle Sounders,New York Red Bulls-Seattle Sounders
-Charlotte FC,LA Galaxy,,,0%,0%,0%,0%,3,,100%,0%,100%,0%,+320,-145,66%,34%,25%,75%,MLS,Charlotte FC,LA Galaxy,Charlotte FC-LA Galaxy
-FC Dallas,San Jose Earthquakes,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+235,+105,31%,69%,42%,58%,MLS,FC Dallas,San Jose Earthquakes,FC Dallas-San Jose Earthquakes
-Man City,Brighton,-1,+1,0%,100%,24%,76%,3,3,82%,18%,60%,40%,-120,+280,96%,4%,85%,15%,EPL,Manchester City,Brighton,Manchester City-Brighton
-Chelsea,Man Utd,+1,-1,95%,5%,47%,53%,3,3,0%,100%,17%,83%,+425,-160,24%,76%,18%,82%,EPL,Chelsea,Manchester United,Chelsea-Manchester United
-Bournemouth,Everton,,,0%,0%,0%,0%,,3,0%,100%,0%,100%,+550,-215,55%,45%,26%,74%,EPL,Bournemouth,Everton,Bournemouth-Everton
-Tottenham,Leeds,,,0%,0%,0%,0%,3,,100%,0%,100%,0%,+140,+175,70%,30%,72%,28%,EPL,Tottenham Hotspur,Leeds United,Tottenham Hotspur-Leeds United
-Liverpool,Southampton,-1.5,,100%,0%,100%,0%,,,0%,0%,0%,0%,-250,+600,89%,11%,95%,5%,EPL,Liverpool,Southampton,Liverpool-Southampton
-Fulham,Man Utd,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+550,-215,25%,75%,11%,89%,EPL,Fulham,Manchester United,Fulham-Manchester United
-West Ham,Leicester,0,,100%,0%,100%,0%,,,0%,0%,0%,0%,+250,+100,54%,46%,55%,45%,EPL,West Ham United,Leicester City,West Ham United-Leicester City
-Newcastle,Chelsea,-+0.5,,0%,100%,0%,100%,2.75,,100%,0%,100%,0%,+140,+185,77%,23%,69%,31%,EPL,Newcastle United,Chelsea,Newcastle United-Chelsea
-Wolves,Arsenal,+1,-1.5,100%,0%,50%,50%,,,0%,0%,0%,0%,+650,-265,26%,74%,8%,92%,EPL,Wolverhampton Wanderers,Arsenal,Wolverhampton Wanderers-Arsenal
-Nottingham Forest,Crystal Palace,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+350,-135,48%,52%,28%,72%,EPL,Nottingham Forest,Crystal Palace,Nottingham Forest-Crystal Palace
-Man City,Brentford,,,0%,0%,0%,0%,,,0%,0%,0%,0%,-145,+360,91%,9%,91%,9%,EPL,Manchester City,Brentford,Manchester City-Brentford
-Brighton,Aston Villa,+0.25,-0.25,28%,72%,33%,67%,,,0%,0%,0%,0%,+200,+120,44%,56%,51%,49%,EPL,Brighton,Aston Villa,Brighton-Aston Villa
-Inter Milan,Man City,+1.5,-1.5,3%,97%,10%,90%,3,,100%,0%,100%,0%,+600,-255,31%,69%,35%,65%,UEFA,Inter Milan,Manchester City,Inter Milan-Manchester City
+DEN Broncos,KC Chiefs,+7,-7.0,36%,64%,46%,54%,,,0%,0%,0%,0%,+255,-305,83%,17%,42%,58%,NFL,Denver Broncos,Kansas City Chiefs,Denver Broncos-Kansas City Chiefs
+BAL Ravens,TEN Titans,-5.5,5.5,79%,21%,81%,19%,,,0%,0%,0%,0%,-215,+185,43%,57%,67%,33%,NFL,Baltimore Ravens,Tennessee Titans,Baltimore Ravens-Tennessee Titans
+TEX Rangers,DET Tigers,-1.5,1.5,85%,15%,85%,15%,8.5,8.5,56%,44%,70%,30%,-175,+150,92%,8%,86%,14%,MLB,Texas Rangers,Detroit Tigeres,Texas Rangers-Detroit Tigeres
+KC Royals,STL Cardinals,+1.5,-1.5,18%,82%,18%,82%,9.5,9.5,82%,18%,57%,43%,+150,-175,11%,89%,13%,87%,MLB,Kansas City Royals,St. Louis Cardinals,Kansas City Royals-St. Louis Cardinals
+ATL Braves,OAK Athletics,-1.5,1.5,92%,8%,92%,8%,9.0,9.0,83%,17%,70%,30%,-245,+205,91%,9%,91%,9%,MLB,Atlanta Braves,OAK Athletics,Atlanta Braves-OAK Athletics
+TEX Rangers,DET Tigers,-1.5,1.5,94%,6%,77%,23%,8.5,8.5,76%,24%,60%,40%,-130,+110,69%,31%,77%,23%,MLB,Texas Rangers,Detroit Tigeres,Texas Rangers-Detroit Tigeres
+MIL Brewers,TOR Blue Jays,+1.5,-1.5,70%,30%,43%,57%,9.5,9.5,15%,85%,37%,63%,+135,-155,48%,52%,24%,76%,MLB,Milwaukee Brewers,Toronto Blue Jays,Milwaukee Brewers-Toronto Blue Jays
+KC Royals,STL Cardinals,+1.5,-1.5,18%,82%,28%,72%,9.0,9.0,66%,34%,49%,51%,+155,-180,15%,85%,20%,80%,MLB,Kansas City Royals,St. Louis Cardinals,Kansas City Royals-St. Louis Cardinals
+ATL Braves,OAK Athletics,-1.5,1.5,99%,1%,93%,7%,8.5,8.5,89%,11%,65%,35%,-245,+205,98%,2%,93%,7%,MLB,Atlanta Braves,OAK Athletics,Atlanta Braves-OAK Athletics
+VGK Golden Knights,DAL Stars,+1.5,-1.5,52%,48%,73%,27%,5.5,5.5,59%,41%,64%,36%,+110,-130,63%,37%,70%,30%,NHL,Vegas Golden Knights,Dallas Stars,Vegas Golden Knights-Dallas Stars
+New England Revolution,Atlanta Utd,,,0%,0%,0%,0%,2.5,,100%,0%,100%,0%,+280,-120,47%,53%,32%,68%,MLS,NE Revolution,Atlanta Utd,NE Revolution-Atlanta Utd
+Chicago Fire,Toronto FC,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+225,+105,66%,34%,43%,57%,MLS,Chicago Fire,Toronto FC,Chicago Fire-Toronto FC
+FC Cincinnati,New York City FC,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+235,+110,95%,5%,62%,38%,MLS,FC Cincinnati,New York City FC,FC Cincinnati-New York City FC
+New York Red Bulls,Inter Miami,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+165,+170,43%,57%,51%,49%,MLS,New York Red Bulls,Inter Miami,New York Red Bulls-Inter Miami
+Charlotte FC,Philadelphia Union,--0.75,,0%,100%,0%,100%,2.5,,100%,0%,100%,0%,+425,-175,55%,45%,17%,83%,MLS,Charlotte FC,Philadelphia Union,Charlotte FC-Philadelphia Union
+CF Montreal,DC Utd,,,0%,0%,0%,0%,2.5,,100%,0%,100%,0%,+350,-140,25%,75%,19%,81%,MLS,CF Montreal,DC Utd,CF Montreal-DC Utd
+FC Dallas,Sporting Kansas City,+0.25,-0.25,48%,52%,33%,67%,2.5,,100%,0%,100%,0%,+240,+110,47%,53%,42%,58%,MLS,FC Dallas,Sporting Kansas City,FC Dallas-Sporting Kansas City
+Minnesota Utd,Austin FC,--0.5,,0%,100%,0%,100%,2.5,,100%,0%,100%,0%,+260,-105,72%,28%,33%,67%,MLS,Minnesota Utd,Austin FC,Minnesota Utd-Austin FC
+LA Galaxy,Real Salt Lake,,,0%,0%,0%,0%,,,0%,0%,0%,0%,+230,+105,48%,52%,43%,57%,MLS,LA Galaxy,Real Salt Lake,LA Galaxy-Real Salt Lake
+San Jose Earthquakes,Seattle Sounders,+1,,100%,0%,100%,0%,,,0%,0%,0%,0%,+370,-155,22%,78%,17%,83%,MLS,San Jose Earthquakes,Seattle Sounders,San Jose Earthquakes-Seattle Sounders
+Inter Milan,Man City,+1.5,-1.75,6%,94%,15%,85%,2.5,,100%,0%,100%,0%,+600,-260,36%,64%,33%,67%,UEFA,Inter Milan,Manchester City,Inter Milan-Manchester City

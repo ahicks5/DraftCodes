@@ -1,11 +1,14 @@
 import pandas as pd
 
+#sport_ref_df = pd.read_csv('Sport_Reference.csv')
+sport_ref_df = pd.read_csv('/var/www/html/Website/Sport_Reference.csv')
 
 class ConnectSources:
-    def __init__(self, bov_df, vsin_df, ref_df):
+    def __init__(self, bov_df, vsin_df, ref_df, sport_ref_df):
         self.bov_df = bov_df
         self.vsin_df = vsin_df
         self.ref_df = ref_df
+        self.sport_ref_df = sport_ref_df
 
     def add_bov_ref_names(self):
         # merge away team
@@ -35,7 +38,7 @@ class ConnectSources:
 
         return df
 
-    def merge_vsin_data(self):
+    def merge_all_sources(self):
         bov_df = self.add_bov_ref_names()
         bov_df['Comp_GameID'] = bov_df['away_team_clean'] + '-' + bov_df['home_team_clean']
         bov_df = bov_df.dropna(subset=['Comp_GameID'])
@@ -55,12 +58,21 @@ class ConnectSources:
         # drop duplicates (when multiple matchups in back to back games like baseball)
         merge_df = merge_df.drop_duplicates(subset='game_id', keep='first')
 
+        merge_df = self.clean_sports(merge_df)
+
         return merge_df
+
+    def clean_sports(self, df):
+        final_df = df.merge(self.sport_ref_df, on='game_sport', how='left')
+
+        return final_df
 
 
 if __name__ == '__main__':
-    con = ConnectSources(pd.read_csv('test_bov.csv'), pd.read_csv('vsin.csv'), pd.read_excel('References.xlsx'))
-    print(con.merge_vsin_data())
-    con.merge_vsin_data().to_csv('merged_connection.csv', index=False)
+    con = ConnectSources(pd.read_csv('test_bov.csv'), pd.read_csv('vsin.csv'), pd.read_csv('Team_Reference.csv'), pd.read_csv('Sport_Reference.csv'))
+    print(con.merge_all_sources())
+    con.merge_all_sources().to_csv('merged_connection.csv', index=False)
+
+    print(sport_ref_df.head())
 
 

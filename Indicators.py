@@ -3,9 +3,11 @@ from bovadaAPI import PullBovada
 from vsinAPI import VsinSharp
 from connectSources import ConnectSources
 
-#ref_df = pd.read_csv('References.csv')
-ref_df = pd.read_csv('/var/www/html/Website/References.csv')
+#ref_df = pd.read_csv('Team_Reference.csv')
+ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv')
 
+#sport_ref_df = pd.read_csv('Sport_Reference.csv')
+sport_ref_df = pd.read_csv('/var/www/html/Website/Sport_Reference.csv')
 
 class Indicators:
     def __init__(self):
@@ -13,8 +15,8 @@ class Indicators:
         vsin = VsinSharp()
         self.bov_df = bov.scrape_main_sports()
         self.vsin_df = vsin.get_data()
-        conn = ConnectSources(self.bov_df, self.vsin_df, ref_df)
-        self.merged_df = conn.merge_vsin_data()
+        conn = ConnectSources(self.bov_df, self.vsin_df, ref_df, sport_ref_df)
+        self.merged_df = conn.merge_all_sources()
 
     def sharp_indicator(self):
         merged_df = self.merged_df

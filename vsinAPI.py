@@ -19,9 +19,12 @@ class VsinSharp:
                 if div['id'] == 'dk-ufc':  # SKIP UFC
                     continue
                 else:
-                    sport_name = div['id'].split('dk-')[1].upper()
-                    sport_df = pd.read_html(str(div))[0]
-                    sport_dict[sport_name] = sport_df
+                    try:
+                        sport_name = div['id'].split('dk-')[1].upper()
+                        sport_df = pd.read_html(str(div))[0]
+                        sport_dict[sport_name] = sport_df
+                    except:
+                        continue
 
         return sport_dict
 
