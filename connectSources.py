@@ -10,20 +10,6 @@ class ConnectSources:
         self.ref_df = ref_df
         self.sport_ref_df = sport_ref_df
 
-    def add_bov_ref_names(self):
-        # merge away team
-        ref_df = self.ref_df[['Bovada Names', 'Final Names']]
-
-        df = self.bov_df.merge(ref_df, left_on='competitor_2', right_on='Bovada Names', how='left')
-        df = df.rename(columns={'Final Names': 'away_team_clean'})
-        df = df.drop(columns=['Bovada Names'])
-
-        df = df.merge(ref_df, left_on='competitor_1', right_on='Bovada Names', how='left')
-        df = df.rename(columns={'Final Names': 'home_team_clean'})
-        df = df.drop(columns=['Bovada Names'])
-
-        return df
-
     def add_vsin_ref_names(self):
         # merge away team
         ref_df = self.ref_df[['VSIN Names', 'Final Names']]

@@ -3,6 +3,8 @@ import requests
 import pytz
 from datetime import datetime, timedelta
 
+team_ref_df = pd.read_csv('Team_Reference.csv')
+#team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv')
 
 class PullBovada:
     # build a dataframe with all upcoming games
@@ -122,6 +124,12 @@ class PullBovada:
 
         return df
 
+    def generate_game_date_ID(self, df):
+        """use MMDDYYYY-Away-Home clean team names as ID"""
+        df['DC_Game_ID'] = df['game_startTime'].dt.strftime('%m%d%Y') + '-' + df['away_team_clean'] + '-' + df['home_team_clean']
+
+        return df
+
     def filter_for_newly_upcoming_games(self, df):
         central = pytz.timezone('US/Central')
         current_time = datetime.now(central)
@@ -129,6 +137,28 @@ class PullBovada:
         filtered_df = df[(df['game_startTime_cst'] >= current_time) & (df['game_startTime_cst'] <= two_days_from_now)]
 
         return filtered_df
+
+    def show_missing_refs(self, df, team_ref_df):
+        team_sport_matchups = set(tuple(x) for x in df[['competitor_1', 'game_sport']].values.tolist() + df[['competitor_2', 'game_sport']].values.tolist())
+        teams_reference = set(team_ref_df['Bovada Names'].unique())
+        missing_teams_sports = [team_sport for team_sport in team_sport_matchups if team_sport[0] not in teams_reference]
+
+        df_missing_teams_sports = pd.DataFrame(missing_teams_sports, columns=['team', 'sport'])
+        df_missing_teams_sports.to_csv('bovada_missing_teams_sports.csv', index=False)
+
+    def add_bov_ref_names(self, df):
+        # merge away team
+        team_ref_df_bov = team_ref_df[['Bovada Names', 'Final Names']]
+
+        df = df.merge(team_ref_df_bov, left_on='competitor_2', right_on='Bovada Names', how='left')
+        df = df.rename(columns={'Final Names': 'away_team_clean'})
+        df = df.drop(columns=['Bovada Names'])
+
+        df = df.merge(team_ref_df_bov, left_on='competitor_1', right_on='Bovada Names', how='left')
+        df = df.rename(columns={'Final Names': 'home_team_clean'})
+        df = df.drop(columns=['Bovada Names'])
+
+        return df
 
     def scrape_main_sports(self):
         league_lists = []
@@ -140,6 +170,15 @@ class PullBovada:
 
         # filter for today
         df = self.filter_for_newly_upcoming_games(df)
+
+        # add clean
+        df = self.add_bov_ref_names(df)
+
+        # add id
+        df = self.generate_game_date_ID(df)
+
+        # check missing refs
+        self.show_missing_refs(df, team_ref_df)
 
         return df
 

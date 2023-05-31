@@ -3,6 +3,9 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import re
 
+team_ref_df = pd.read_csv('Team_Reference.csv')
+#team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv')
+
 class VsinSharp:
 
     def __init__(self):
@@ -53,6 +56,8 @@ class VsinSharp:
         # combine dfs
         df_list = list(df_dict.values())
         main_df = pd.concat(df_list, axis=0)
+
+        self.show_missing_refs(main_df, team_ref_df)
 
         return main_df
 
@@ -121,6 +126,14 @@ class VsinSharp:
         second_percent = per_string.split('%')[1].strip() + '%'
 
         return first_percent, second_percent
+
+    def show_missing_refs(self, df, team_ref_df):
+        teams_matchups = pd.concat([df['away_team'], df['home_team']]).unique()
+        teams_reference = team_ref_df['VSIN Names'].unique()
+        missing_teams = [team for team in teams_matchups if team not in teams_reference]
+
+        df_missing_teams = pd.DataFrame(missing_teams, columns=['team'])
+        df_missing_teams.to_csv('vsin_missing_teams.csv', index=False)
 
     def clean_total(self, total_string):
         if total_string == '--':
