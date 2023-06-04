@@ -51,16 +51,22 @@ class PullESPN:
         """Parse game stats from the given URL"""
         soup = self.get_soup(url)
         if soup:
-            team_names = soup.findAll('h2',
-                                      {'class': 'ScoreCell__TeamName ScoreCell__TeamName--displayName truncate db'})
-            team_1 = team_names[0].text.strip()
-            team_2 = team_names[1].text.strip()
+            try:
+                team_names = soup.findAll('h2', {'class': 'ScoreCell__TeamName ScoreCell__TeamName--displayName truncate db'})
+                team_1 = team_names[0].text.strip()
+                team_2 = team_names[1].text.strip()
+            except:
+                team_1 = soup.findAll('span', {'class': 'long-name'})[0].text.strip()
+                team_2 = soup.findAll('span', {'class': 'long-name'})[1].text.strip()
 
-            matchup_predictor = soup.find('div', {'class': 'matchupPredictor'})
-            predictions = matchup_predictor.select('div.matchupPredictor__teamValue')
+            try:
+                matchup_predictor = soup.find('div', {'class': 'matchupPredictor'})
+                predictions = matchup_predictor.select('div.matchupPredictor__teamValue')
 
-            team_1_prediction = predictions[0].text.strip()
-            team_2_prediction = predictions[1].text.strip()
+                team_1_prediction = predictions[0].text.strip()
+                team_2_prediction = predictions[1].text.strip()
+            except:
+                team_1_prediction = team_2_prediction = None
 
             return {
                 'team1': team_1,
@@ -80,9 +86,9 @@ class PullESPN:
             game_list.append(game_dict)
 
         df = pd.DataFrame(game_list)
-        print(df.head)
+        return df
 
 
 if __name__ == '__main__':
     espn = PullESPN()
-    espn.assemble_espn_data()
+    espn.assemble_espn_data().to_csv('espn_test.csv', index=False)
