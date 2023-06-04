@@ -24,19 +24,60 @@ class VsinSharp:
                 else:
                     try:
                         sport_name = div['id'].split('dk-')[1].upper()
-                        sport_df = pd.read_html(str(div))[0]
+
+                        # Transform th elements into td within each div
+                        for th in div("th"):
+                            th.name = "td"
+
+                        sport_df = pd.read_html(str(div), header=None)[0]
+                        print(sport_df.head())
                         sport_dict[sport_name] = sport_df
                     except:
                         continue
 
         return sport_dict
 
+    def parse_html_table(self, table):
+        rows = []
+        for row in table.find_all("tr"):
+            cells = row.find_all(["th", "td"])
+            cells = [cell.text for cell in cells]
+            rows.append(cells)
+        return pd.DataFrame(rows)
+
+    def get_vsin_sport_tables_v2(self, soup):
+        sport_dict = {}
+        for div in soup.findAll('div', {'id': True}):
+            if 'dk-' in div['id']:
+                if div['id'] == 'dk-ufc':  # SKIP UFC
+                    continue
+                else:
+                    sport_name = div['id'].split('dk-')[1].upper()
+                    tables = div.find_all("table")
+                    if tables:
+                        sport_df = self.parse_html_table(tables[0])
+                        sport_df = sport_df.iloc[:, :10]
+                        sport_dict[sport_name] = sport_df
+                        sport_df.to_csv(f'{sport_name}-vsin.csv', index=False)
+
+        return sport_dict
+
+    def get_data_v2(self):
+        page = requests.get(self.url)
+        soup = BeautifulSoup(page.text, 'html.parser')
+
+        # define tables
+        sport_tables = self.get_vsin_sport_tables_v2(soup)
+
+        print(sport_tables)
+
+
     def get_data(self):
         page = requests.get(self.url)
         soup = BeautifulSoup(page.text, 'html.parser')
 
         # define tables
-        sport_tables = self.get_vsin_sport_tables(soup)
+        sport_tables = self.get_vsin_sport_tables_v2(soup)
 
         df_dict = {}
 
@@ -159,5 +200,5 @@ class VsinSharp:
 
 if __name__ == '__main__':
     vsin_sharp = VsinSharp()
-    data = vsin_sharp.get_data()
-    data.to_csv('vsin.csv', index=False)
+    data = vsin_sharp.get_data_v2()
+    #data.to_csv('vsin.csv', index=False)
