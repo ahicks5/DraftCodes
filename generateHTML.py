@@ -40,7 +40,7 @@ class HtmlTable:
 
         header_row = '<tr><td width="15%">Game Time</td><td width="36%">Team</td><td width="17%">Spread</td><td width="17%">ML</td><td width="17%">O/U</td></tr>'
 
-        sports_dict = {sport: self.df[self.df['game_sport'] == sport] for sport in self.df['game_sport'].unique()}
+        sports_dict = {sport: self.df[self.df['Clean_Sport'] == sport] for sport in self.df['Clean_Sport'].unique()}
         space_row_html = '<tr><td colspan="5" style="border:none;"></td></tr>'
 
         for sport, df in sports_dict.items():
@@ -63,10 +63,10 @@ class HtmlTable:
         over_cell, under_cell = self.total_sharp_tags(row['sharp_total_ind'], row['total_over'],
                                                             row['total_under'])
 
-        row_html = f'<tr><td>{row["game_date"].strftime("%m/%d/%y")}</td><td>{row["competitor_1"]}</td>'
+        row_html = f'<tr><td>{row["game_date"].strftime("%m/%d/%y")}</td><td>{row["competitor_2"]}</td>'
         row_html += away_sp_cell + away_ml_cell + over_cell + '</tr>'
 
-        row_html += f'<tr><td>{row["game_time"]}</td><td>{row["competitor_2"]}</td>'
+        row_html += f'<tr><td>{row["game_time"]}</td><td>{row["competitor_1"]}</td>'
         row_html += home_sp_cell + home_ml_cell + under_cell + '</tr>' + space_row_html
 
         return row_html
@@ -113,9 +113,9 @@ class HtmlTable:
     def replace_production(self):
         table = self.generate_table()
 
-        template_html = '/var/www/html/Templates/subscribetemplate.html'
+        template_html = '/var/www/html/Website/Templates/subscribetemplate.html'
         identifier = '{Upcoming Sports}'
-        final_html = '/var/www/html/subscribe.html'
+        final_html = '/var/www/html/Website/subscribe.html'
 
         with open(template_html, 'r') as f:
             html_content = f.read()

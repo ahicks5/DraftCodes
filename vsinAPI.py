@@ -3,6 +3,9 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import re
 
+team_ref_df = pd.read_csv('Team_Reference.csv')
+#team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv')
+
 class VsinSharp:
 
     def __init__(self):
@@ -19,18 +22,62 @@ class VsinSharp:
                 if div['id'] == 'dk-ufc':  # SKIP UFC
                     continue
                 else:
-                    sport_name = div['id'].split('dk-')[1].upper()
-                    sport_df = pd.read_html(str(div))[0]
-                    sport_dict[sport_name] = sport_df
+                    try:
+                        sport_name = div['id'].split('dk-')[1].upper()
+
+                        # Transform th elements into td within each div
+                        for th in div("th"):
+                            th.name = "td"
+
+                        sport_df = pd.read_html(str(div), header=None)[0]
+                        print(sport_df.head())
+                        sport_dict[sport_name] = sport_df
+                    except:
+                        continue
 
         return sport_dict
+
+    def parse_html_table(self, table):
+        rows = []
+        for row in table.find_all("tr"):
+            cells = row.find_all(["th", "td"])
+            cells = [cell.text for cell in cells]
+            rows.append(cells)
+        return pd.DataFrame(rows)
+
+    def get_vsin_sport_tables_v2(self, soup):
+        sport_dict = {}
+        for div in soup.findAll('div', {'id': True}):
+            if 'dk-' in div['id']:
+                if div['id'] == 'dk-ufc':  # SKIP UFC
+                    continue
+                else:
+                    sport_name = div['id'].split('dk-')[1].upper()
+                    tables = div.find_all("table")
+                    if tables:
+                        sport_df = self.parse_html_table(tables[0])
+                        sport_df = sport_df.iloc[:, :10]
+                        sport_dict[sport_name] = sport_df
+                        sport_df.to_csv(f'{sport_name}-vsin.csv', index=False)
+
+        return sport_dict
+
+    def get_data_v2(self):
+        page = requests.get(self.url)
+        soup = BeautifulSoup(page.text, 'html.parser')
+
+        # define tables
+        sport_tables = self.get_vsin_sport_tables_v2(soup)
+
+        print(sport_tables)
+
 
     def get_data(self):
         page = requests.get(self.url)
         soup = BeautifulSoup(page.text, 'html.parser')
 
         # define tables
-        sport_tables = self.get_vsin_sport_tables(soup)
+        sport_tables = self.get_vsin_sport_tables_v2(soup)
 
         df_dict = {}
 
@@ -50,6 +97,8 @@ class VsinSharp:
         # combine dfs
         df_list = list(df_dict.values())
         main_df = pd.concat(df_list, axis=0)
+
+        self.show_missing_refs(main_df, team_ref_df)
 
         return main_df
 
@@ -119,6 +168,14 @@ class VsinSharp:
 
         return first_percent, second_percent
 
+    def show_missing_refs(self, df, team_ref_df):
+        teams_matchups = pd.concat([df['away_team'], df['home_team']]).unique()
+        teams_reference = team_ref_df['VSIN Names'].unique()
+        missing_teams = [team for team in teams_matchups if team not in teams_reference]
+
+        df_missing_teams = pd.DataFrame(missing_teams, columns=['team'])
+        df_missing_teams.to_csv('vsin_missing_teams.csv', index=False)
+
     def clean_total(self, total_string):
         if total_string == '--':
             over = under = ''
@@ -143,5 +200,5 @@ class VsinSharp:
 
 if __name__ == '__main__':
     vsin_sharp = VsinSharp()
-    data = vsin_sharp.get_data()
-    data.to_csv('vsin.csv', index=False)
+    data = vsin_sharp.get_data_v2()
+    #data.to_csv('vsin.csv', index=False)
