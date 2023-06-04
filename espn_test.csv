@@ -1,0 +1,72 @@
+game_time,team1,team1_pred,team2,team2_pred,away_team_clean,home_team_clean,DC_Game_ID
+2023-05-30 13:45:00,Annagh United,,Dungannon Swifts,,,,
+2023-05-30 12:00:00,Randers FC,,AGF Aarhus,,,,
+2023-05-30 12:00:00,Fenerbahce,,Antalyaspor,,,,
+2023-05-30 12:30:00,United States U20,,New Zealand U20,,,,
+2023-05-30 12:00:00,Istanbulspor,,Adana Demirspor,,,,
+2023-05-30 12:00:00,Istanbul Basaksehir,,Gazisehir Gaziantep,,,,
+2023-05-30 16:00:00,Uzbekistan U20,,Israel U20,,,,
+2023-05-30 12:00:00,Ankaragucu,,Galatasaray,,,,
+2023-05-30 13:30:00,Fénix,,Argentino de Quilmes,,,,
+2023-05-30 12:00:00,Alanyaspor,,Kasimpasa,,,,
+2023-05-30 18:00:00,Remo,,Confiança,,,,
+2023-05-30 12:00:00,Hatayspor,,Umraniyespor,,,,
+2023-05-30 12:00:00,Sivasspor,,Konyaspor,,,,
+2023-05-30 19:05:00,Defensores de Belgrano,,Nueva Chicago,,,,
+2023-05-30 18:00:00,Tacuary,,Sportivo Luqueño,,,,
+2023-05-30 12:00:00,Fatih Karagümrük,,Kayserispor,,,,
+2023-05-30 13:00:00,VVV-Venlo,,Almere City,,,,
+2023-05-30 12:00:00,Giresunspor,,Trabzonspor,,,,
+2023-05-30 18:00:00,Llaneros,,Real Cartagena,,,,
+2023-05-30 13:30:00,Deportivo Laferrere,,Liniers,,,,
+2023-05-30 20:05:00,Deportes Quindío,,Fortaleza CEIF,,,,
+2023-05-30 13:30:00,Cagliari,,Parma,,,,
+2023-05-30 13:30:00,Sacachispas,,Colegiales,,,,
+2023-06-03 15:00:00,Florida Panthers,,Vegas Golden Knights,,Florida Panthers,Vegas Golden Knights,06032023-Florida Panthers-Vegas Golden Knights
+2023-06-05 15:00:00,Florida Panthers,,Vegas Golden Knights,,Florida Panthers,Vegas Golden Knights,06052023-Florida Panthers-Vegas Golden Knights
+2023-06-08 15:00:00,Vegas Golden Knights,,Florida Panthers,,Vegas Golden Knights,Florida Panthers,06082023-Vegas Golden Knights-Florida Panthers
+2023-06-01 15:30:00,Miami Heat,22.0%,Denver Nuggets,78.0%,Miami Heat,Denver Nuggets,06012023-Miami Heat-Denver Nuggets
+2023-06-04 15:00:00,Miami Heat,23.1%,Denver Nuggets,76.9%,Miami Heat,Denver Nuggets,06042023-Miami Heat-Denver Nuggets
+2023-06-07 15:30:00,Denver Nuggets,63.2%,Miami Heat,36.8%,Denver Nuggets,Miami Heat,06072023-Denver Nuggets-Miami Heat
+2023-09-10 08:00:00,Tennessee Titans,43.4%,New Orleans Saints,56.3%,Tennessee Titans,New Orleans Saints,09102023-Tennessee Titans-New Orleans Saints
+2023-09-10 11:25:00,Las Vegas Raiders,44.7%,Denver Broncos,55.0%,Las Vegas Raiders,Denver Broncos,09102023-Las Vegas Raiders-Denver Broncos
+2023-09-10 11:25:00,Miami Dolphins,44.1%,Los Angeles Chargers,55.6%,Miami Dolphins,Los Angeles Chargers,09102023-Miami Dolphins-Los Angeles Chargers
+2023-09-10 15:20:00,Dallas Cowboys,53.0%,New York Giants,46.6%,Dallas Cowboys,New York Giants,09102023-Dallas Cowboys-New York Giants
+2023-09-10 08:00:00,Arizona Cardinals,35.6%,Washington Commanders,64.1%,Arizona Cardinals,Washington Commanders,09102023-Arizona Cardinals-Washington Commanders
+2023-09-10 11:25:00,Philadelphia Eagles,61.7%,New England Patriots,38.0%,Philadelphia Eagles,New England Patriots,09102023-Philadelphia Eagles-New England Patriots
+2023-09-10 08:00:00,Jacksonville Jaguars,65.2%,Indianapolis Colts,34.6%,Jacksonville Jaguars,Indianapolis Colts,09102023-Jacksonville Jaguars-Indianapolis Colts
+2023-09-07 15:20:00,Detroit Lions,33.5%,Kansas City Chiefs,66.2%,Detroit Lions,Kansas City Chiefs,09072023-Detroit Lions-Kansas City Chiefs
+2023-09-10 08:00:00,Tampa Bay Buccaneers,30.3%,Minnesota Vikings,69.5%,Tampa Bay Buccaneers,Minnesota Vikings,09102023-Tampa Bay Buccaneers-Minnesota Vikings
+2023-09-10 08:00:00,Houston Texans,25.3%,Baltimore Ravens,74.5%,Houston Texans,Baltimore Ravens,09102023-Houston Texans-Baltimore Ravens
+2023-09-10 08:00:00,Cincinnati Bengals,61.2%,Cleveland Browns,38.5%,Cincinnati Bengals,Cleveland Browns,09102023-Cincinnati Bengals-Cleveland Browns
+2023-09-10 11:25:00,Los Angeles Rams,40.5%,Seattle Seahawks,59.2%,Los Angeles Rams,Seattle Seahawks,09102023-Los Angeles Rams-Seattle Seahawks
+2023-09-10 11:25:00,Green Bay Packers,47.2%,Chicago Bears,52.4%,Green Bay Packers,Chicago Bears,09102023-Green Bay Packers-Chicago Bears
+2023-09-10 08:00:00,San Francisco 49ers,56.9%,Pittsburgh Steelers,42.8%,San Francisco 49ers,Pittsburgh Steelers,09102023-San Francisco 49ers-Pittsburgh Steelers
+2023-09-10 08:00:00,Carolina Panthers,47.2%,Atlanta Falcons,52.4%,Carolina Panthers,Atlanta Falcons,09102023-Carolina Panthers-Atlanta Falcons
+2023-09-11 15:15:00,Buffalo Bills,55.7%,New York Jets,43.9%,Buffalo Bills,New York Jets,09112023-Buffalo Bills-New York Jets
+2023-05-31 10:05:00,Cleveland Guardians,47.9%,Baltimore Orioles,52.1%,Cleveland Guardians,Baltimore Orioles,05312023-Cleveland Guardians-Baltimore Orioles
+2023-05-31 10:45:00,Pittsburgh Pirates,41.3%,San Francisco Giants,58.7%,Pittsburgh Pirates,San Francisco Giants,05312023-Pittsburgh Pirates-San Francisco Giants
+2023-05-30 16:40:00,Colorado Rockies,,Arizona Diamondbacks,,Colorado Rockies,Arizona Diamondbacks,05302023-Colorado Rockies-Arizona Diamondbacks
+2023-05-31 13:40:00,San Diego Padres,49.8%,Miami Marlins,50.2%,San Diego Padres,Miami Marlins,05312023-San Diego Padres-Miami Marlins
+2023-05-31 09:20:00,Tampa Bay Rays,55.2%,Chicago Cubs,44.8%,Tampa Bay Rays,Chicago Cubs,05312023-Tampa Bay Rays-Chicago Cubs
+2023-06-01 08:07:00,Milwaukee Brewers,32.0%,Toronto Blue Jays,68.0%,Milwaukee Brewers,Toronto Blue Jays,06012023-Milwaukee Brewers-Toronto Blue Jays
+2023-05-31 11:10:00,Washington Nationals,33.6%,Los Angeles Dodgers,66.4%,Washington Nationals,Los Angeles Dodgers,05312023-Washington Nationals-Los Angeles Dodgers
+2023-05-31 10:37:00,Atlanta Braves,67.5%,Oakland Athletics,32.5%,Atlanta Braves,OAK Athletics,05312023-Atlanta Braves-OAK Athletics
+2023-05-30 16:40:00,New York Yankees,,Seattle Mariners,,New York Yankees,Seattle Mariners,05302023-New York Yankees-Seattle Mariners
+2023-05-31 14:10:00,Philadelphia Phillies,50.2%,New York Mets,49.8%,Philadelphia Phillies,New York Mets,05312023-Philadelphia Phillies-New York Mets
+2023-05-31 16:40:00,New York Yankees,37.3%,Seattle Mariners,62.7%,New York Yankees,Seattle Mariners,05312023-New York Yankees-Seattle Mariners
+2023-06-01 08:10:00,San Diego Padres,44.4%,Miami Marlins,55.6%,San Diego Padres,Miami Marlins,06012023-San Diego Padres-Miami Marlins
+2023-05-31 09:10:00,Los Angeles Angels,56.6%,Chicago White Sox,43.4%,Los Angeles Angels,Chicago White Sox,05312023-Los Angeles Angels-Chicago White Sox
+2023-06-01 14:40:00,Cleveland Guardians,37.4%,Minnesota Twins,62.6%,Cleveland Guardians,Minnesota Twins,06012023-Cleveland Guardians-Minnesota Twins
+2023-05-31 14:07:00,Milwaukee Brewers,36.6%,Toronto Blue Jays,63.4%,Milwaukee Brewers,Toronto Blue Jays,05312023-Milwaukee Brewers-Toronto Blue Jays
+2023-05-31 15:10:00,Minnesota Twins,32.5%,Houston Astros,67.5%,Minnesota Twins,Houston Astros,05312023-Minnesota Twins-Houston Astros
+2023-05-31 16:40:00,Colorado Rockies,31.5%,Arizona Diamondbacks,68.5%,Colorado Rockies,Arizona Diamondbacks,05312023-Colorado Rockies-Arizona Diamondbacks
+2023-05-30 17:10:00,Washington Nationals,,Los Angeles Dodgers,,Washington Nationals,Los Angeles Dodgers,05302023-Washington Nationals-Los Angeles Dodgers
+2023-05-31 14:10:00,Cincinnati Reds,41.5%,Boston Red Sox,58.5%,Cincinnati Reds,Boston Red Sox,05312023-Cincinnati Reds-Boston Red Sox
+2023-05-30 16:45:00,Pittsburgh Pirates,,San Francisco Giants,,Pittsburgh Pirates,San Francisco Giants,05302023-Pittsburgh Pirates-San Francisco Giants
+2023-05-30 16:40:00,Atlanta Braves,,Oakland Athletics,,Atlanta Braves,OAK Athletics,05302023-Atlanta Braves-OAK Athletics
+2023-05-31 08:10:00,Texas Rangers,65.9%,Detroit Tigers,34.1%,Texas Rangers,Detroit Tigeres,05312023-Texas Rangers-Detroit Tigeres
+2023-06-01 15:10:00,Los Angeles Angels,32.2%,Houston Astros,67.8%,Los Angeles Angels,Houston Astros,06012023-Los Angeles Angels-Houston Astros
+2023-06-01 14:10:00,Cincinnati Reds,42.2%,Boston Red Sox,57.8%,Cincinnati Reds,Boston Red Sox,06012023-Cincinnati Reds-Boston Red Sox
+2023-06-01 08:10:00,Philadelphia Phillies,33.1%,New York Mets,66.9%,Philadelphia Phillies,New York Mets,06012023-Philadelphia Phillies-New York Mets
+2023-06-01 10:40:00,Colorado Rockies,46.0%,Arizona Diamondbacks,54.0%,Colorado Rockies,Arizona Diamondbacks,06012023-Colorado Rockies-Arizona Diamondbacks
