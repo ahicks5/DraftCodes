@@ -3,7 +3,7 @@ import requests
 import pytz
 from datetime import datetime, timedelta
 
-team_ref_df = pd.read_csv('Team_Reference.csv')
+team_ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
 #team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv')
 
 class PullBovada:
@@ -18,7 +18,8 @@ class PullBovada:
         'nfl': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/football/nfl?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
         'tableTennis': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/table-tennis?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
         'LoL': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/esports/league-of-legends?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'mls': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/north-america/united-states/mls?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en'
+        'mls': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/north-america/united-states/mls?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
+        'cfb': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/football/college-football?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en'
     }
 
     def __init__(self):
@@ -126,7 +127,7 @@ class PullBovada:
 
     def generate_game_date_ID(self, df):
         """use MMDDYYYY-Away-Home clean team names as ID"""
-        df['DC_Game_ID'] = df['game_startTime'].dt.strftime('%m%d%Y') + '-' + df['away_team_clean'] + '-' + df['home_team_clean']
+        df['DC_Game_ID'] = df['game_startTime_cst'].dt.strftime('%m%d%Y') + '-' + df['away_team_clean'] + '-' + df['home_team_clean']
 
         return df
 

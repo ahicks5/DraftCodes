@@ -2,8 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import re
+from dateutil import parser
 
-team_ref_df = pd.read_csv('Team_Reference.csv')
+team_ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
 #team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv')
 
 class VsinSharp:
@@ -15,28 +16,6 @@ class VsinSharp:
     def percentstring_to_percent(percent):
         return float(percent.strip('%')) / 100
 
-    def get_vsin_sport_tables(self, soup):
-        sport_dict = {}
-        for div in soup.findAll('div', {'id': True}):
-            if 'dk-' in div['id']:
-                if div['id'] == 'dk-ufc':  # SKIP UFC
-                    continue
-                else:
-                    try:
-                        sport_name = div['id'].split('dk-')[1].upper()
-
-                        # Transform th elements into td within each div
-                        for th in div("th"):
-                            th.name = "td"
-
-                        sport_df = pd.read_html(str(div), header=None)[0]
-                        print(sport_df.head())
-                        sport_dict[sport_name] = sport_df
-                    except:
-                        continue
-
-        return sport_dict
-
     def parse_html_table(self, table):
         rows = []
         for row in table.find_all("tr"):
@@ -45,7 +24,7 @@ class VsinSharp:
             rows.append(cells)
         return pd.DataFrame(rows)
 
-    def get_vsin_sport_tables_v2(self, soup):
+    def get_vsin_sport_tables(self, soup):
         sport_dict = {}
         for div in soup.findAll('div', {'id': True}):
             if 'dk-' in div['id']:
@@ -58,49 +37,101 @@ class VsinSharp:
                         sport_df = self.parse_html_table(tables[0])
                         sport_df = sport_df.iloc[:, :10]
                         sport_dict[sport_name] = sport_df
-                        sport_df.to_csv(f'{sport_name}-vsin.csv', index=False)
 
         return sport_dict
-
-    def get_data_v2(self):
-        page = requests.get(self.url)
-        soup = BeautifulSoup(page.text, 'html.parser')
-
-        # define tables
-        sport_tables = self.get_vsin_sport_tables_v2(soup)
-
-        print(sport_tables)
-
 
     def get_data(self):
         page = requests.get(self.url)
         soup = BeautifulSoup(page.text, 'html.parser')
 
         # define tables
-        sport_tables = self.get_vsin_sport_tables_v2(soup)
+        sport_tables = self.get_vsin_sport_tables(soup)
 
         df_dict = {}
 
         for sport in sport_tables:
-            df = sport_tables[sport]
-            df.columns = ['Team_names', 'Spread', 'Spread_handle', 'Spread_bets', 'Total', 'Total_handle',
-                          'Total_bets', 'Moneyline', 'Moneyline_handle', 'Moneyline_bets']
-            game_dict_list = df.to_dict('records')
+            clean_df = self.clean_vsin_df(sport_tables[sport])
+
+            clean_df.columns = ['Team_names', 'Spread', 'Spread_handle', 'Spread_bets', 'Total', 'Total_handle',
+                          'Total_bets', 'Moneyline', 'Moneyline_handle', 'Moneyline_bets', 'game_date']
+            game_dict_list = clean_df.to_dict('records')
             clean_list = []
             for game_dict in game_dict_list:
                 clean_list.append(self.clean_data(game_dict))
 
-            df = pd.DataFrame(clean_list)
-            df['Sport'] = sport
-            df_dict[sport] = df
+            clean_df = pd.DataFrame(clean_list)
+            clean_df['Sport'] = sport
+            df_dict[sport] = clean_df
 
         # combine dfs
         df_list = list(df_dict.values())
         main_df = pd.concat(df_list, axis=0)
 
+        # add in clean names
+        main_df = self.add_vsin_ref_names(main_df)
+
+        # clean date and generate id
+        main_df = self.generate_game_date_ID(main_df)
+
         self.show_missing_refs(main_df, team_ref_df)
 
         return main_df
+
+    def add_vsin_ref_names(self, df):
+        # merge away team
+        team_ref_df_espn = team_ref_df[['VSIN Names', 'Final Names']]
+
+        df = df.merge(team_ref_df_espn, left_on='away_team', right_on='VSIN Names', how='left')
+        df = df.rename(columns={'Final Names': 'away_team_clean'})
+        df = df.drop(columns=['VSIN Names'])
+
+        df = df.merge(team_ref_df_espn, left_on='home_team', right_on='VSIN Names', how='left')
+        df = df.rename(columns={'Final Names': 'home_team_clean'})
+        df = df.drop(columns=['VSIN Names'])
+
+        return df
+
+    def generate_game_date_ID(self, df):
+        """use MMDDYYYY-Away-Home clean team names as ID"""
+        current_year = pd.to_datetime('today').year  # get current year
+        df['game_date'] = df['game_date'] + ', ' + str(current_year)  # append current year to each date
+
+        # Convert all values in 'game_time' to datetime objects, setting errors='coerce' to handle unconvertable values
+        df['game_date'] = pd.to_datetime(df['game_date'], format='%A, %B %d, %Y', errors='coerce')
+
+        # Create 'DC_Game_ID' column
+        df['DC_Game_ID'] = df['game_date'].dt.strftime('%m%d%Y') + '-' + df['away_team_clean'] + '-' + df[
+            'home_team_clean']
+
+        return df
+
+    def is_date(self, game_date):
+        try:
+            parser.parse(game_date)
+            return True
+        except ValueError:
+            return False
+
+    def clean_vsin_df(self, df):
+        # Step 1: Identify date rows
+        # This might need to be adjusted based on the actual format of the dates
+        column_a = df.columns[0]
+
+        df['is_date'] = df[column_a].apply(self.is_date)
+
+        # Step 2: Add new column with game date
+        df['game_date'] = df.loc[df['is_date'], column_a]
+
+        # Step 3: Forward fill to replace NaNs with most recent date
+        df['game_date'] = df['game_date'].ffill()
+
+        # Optionally, you might want to drop the original date rows from the dataframe
+        df = df[~df['is_date']]
+
+        # And you can drop 'is_date' column as well
+        df = df.drop(columns=['is_date'])
+
+        return df
 
     def clean_data(self, games_dict):
         clean_dict = {}
@@ -127,9 +158,12 @@ class VsinSharp:
         clean_dict['away_ml_bets'], clean_dict['home_ml_bets'] = self.clean_percents(
             games_dict['Moneyline_bets'])
 
+        clean_dict['game_date'] = games_dict['game_date'].strip('\xa0')
+
         return clean_dict
 
     def clean_teams(self, team_string):
+        team_string = team_string.strip('\xa0')
         away_team, home_team = [team.strip() for team in team_string.split('\xa0')]
 
         return away_team, home_team
@@ -163,8 +197,8 @@ class VsinSharp:
             return s, ""
 
     def clean_percents(self, per_string):
-        first_percent = per_string.split('%')[0].strip() + '%'
-        second_percent = per_string.split('%')[1].strip() + '%'
+        first_percent = float(per_string.split('%')[0].strip()) / 100
+        second_percent = float(per_string.split('%')[1].strip()) / 100
 
         return first_percent, second_percent
 
@@ -200,5 +234,6 @@ class VsinSharp:
 
 if __name__ == '__main__':
     vsin_sharp = VsinSharp()
-    data = vsin_sharp.get_data_v2()
+    data = vsin_sharp.get_data()
+    data.to_csv('vsin.csv', index=False)
     #data.to_csv('vsin.csv', index=False)
