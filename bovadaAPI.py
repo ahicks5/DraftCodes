@@ -2,9 +2,10 @@ import pandas as pd
 import requests
 import pytz
 from datetime import datetime, timedelta
+import json
 
-team_ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
-#team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv')
+#team_ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
+team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv', encoding='ISO-8859-1')
 
 class PullBovada:
     # build a dataframe with all upcoming games
@@ -26,13 +27,16 @@ class PullBovada:
         self.session = requests.Session()
 
     def get_json(self, url):
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+            'Accept': 'application/json'
+        }
+        response = requests.get(url, headers=headers)
         try:
-            response = self.session.get(url)
-            response.raise_for_status()
-        except requests.exceptions.RequestException as e:
-            print(f"Request failed: {e}")
+            return response.json()
+        except json.decoder.JSONDecodeError:
+            print(f"Failed to decode JSON from response. Response text was:\n{response.text}")
             return None
-        return response.json()
 
     def parse_game_data(self, game):
         game_dict = {f'game_{key}': value for key, value in game.items() if not isinstance(value, list)}

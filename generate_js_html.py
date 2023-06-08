@@ -43,16 +43,9 @@ class HtmlTable:
                     font-size: 12px; /* Reduce font size on smaller screens */
                 }
             }
-          input[type="checkbox"]:checked + span {
-            background-color: blue;
-          }
         </style>
-        <label style="position: relative;">
-          <input type="checkbox" id="colorToggle" style="display: none;">
-          <span style="position: absolute; top: 0; left: 0; height: 20px; width: 20px; background-color: white;"></span>
-        </label>
         <div class="table-container">
-            <table id="myTable">
+            <table>
         '''
     header_row = '<tr><td width="15%">Time</td><td width="36%">Team</td><td width="17%">Spread</td><td width="17%">ML</td><td width="17%">O/U</td></tr>'
     space_row_html = '<tr><td colspan="5" style="border:none;"></td></tr>'
@@ -76,40 +69,7 @@ class HtmlTable:
                 row_html = self.generate_row(row)
                 table += row_html
 
-            table += '''
-                </table></div>
-                <script>
-                    const green_shades = {
-                        1: '#33A036',
-                        2: '#147917',
-                        3: '#023020',
-                        4: '#B59410'
-                    }
-                    
-                    window.onload = function() {
-                      const colorToggle = document.querySelector('#colorToggle');
-                      colorToggle.addEventListener('change', function() {
-                        const table = document.querySelector('#myTable');
-                        const cells = table.querySelectorAll('td');
-                    
-                        if (colorToggle.checked) {
-                          // Apply the colors
-                          cells.forEach(cell => {
-                            const index = cell.getAttribute('sharp_ind');
-                            if (index) {
-                              cell.style.backgroundColor = green_shades[index];
-                            }
-                          });
-                        } else {
-                          // Remove the colors
-                          cells.forEach(cell => {
-                            cell.style.backgroundColor = '';
-                          });
-                        }
-                      });
-                    }
-                </script>
-            '''
+            table += '</table></div>'
 
             fin_dict[sport] = table
 
@@ -158,13 +118,13 @@ class HtmlTable:
 
         if indicator > 0:
             green_color = self.green_shades[indicator]
-            away_sp_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}">{value_1}</td>'
+            away_sp_cell = f'<td style="background-color: {green_color}">{value_1}</td>'
             home_sp_cell = f'<td>{value_2}</td>'
         elif indicator < 0:
             indicator = abs(indicator)
             green_color = self.green_shades[indicator]
             away_sp_cell = f'<td>{value_1}</td>'
-            home_sp_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}">{value_2}</td>'
+            home_sp_cell = f'<td style="background-color: {green_color}">{value_2}</td>'
         else:
             away_sp_cell = f'<td>{value_1}</td>'
             home_sp_cell = f'<td>{value_2}</td>'
@@ -178,13 +138,13 @@ class HtmlTable:
 
         if indicator > 0:
             green_color = self.green_shades[indicator]
-            away_ml_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}">{value_1}</td>'
+            away_ml_cell = f'<td style="background-color: {green_color}">{value_1}</td>'
             home_ml_cell = f'<td>{value_2}</td>'
         elif indicator < 0:
             indicator = abs(indicator)
             green_color = self.green_shades[indicator]
             away_ml_cell = f'<td>{value_1}</td>'
-            home_ml_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}">{value_2}</td>'
+            home_ml_cell = f'<td style="background-color: {green_color}">{value_2}</td>'
         else:
             away_ml_cell = f'<td>{value_1}</td>'
             home_ml_cell = f'<td>{value_2}</td>'
@@ -198,13 +158,13 @@ class HtmlTable:
 
         if indicator > 0:
             green_color = self.green_shades[indicator]
-            over_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}">{value_1}</td>'
+            over_cell = f'<td style="background-color: {green_color}">{value_1}</td>'
             under_cell = f'<td>{value_2}</td>'
         elif indicator < 0:
             indicator = abs(indicator)
             green_color = self.green_shades[indicator]
             over_cell = f'<td>{value_1}</td>'
-            under_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}">{value_2}</td>'
+            under_cell = f'<td style="background-color: {green_color}">{value_2}</td>'
         else:
             over_cell = f'<td>{value_1}</td>'
             under_cell = f'<td>{value_2}</td>'
@@ -215,47 +175,26 @@ class HtmlTable:
         fin_dict = self.generate_tables()
         page_dict = dict(zip(sport_ref_df['Clean_Sport'], sport_ref_df['Page_name']))
 
-        for sport in page_dict:
-            if sport not in fin_dict:
-                template_html = self.prod_web_path + 'Templates/' + page_dict[sport]
-                with open(template_html, 'r') as f:
-                    html_content = f.read()
+        for sport, table in fin_dict.items():
+            template_html = self.prod_web_path + 'Templates/' + page_dict[sport]
+            with open(template_html, 'r') as f:
+                html_content = f.read()
 
-                modified_html = html_content.replace('~Place Table Here~', 'No Games Available')
+            modified_html = html_content.replace('~Place Table Here~', table)
 
-                # replace sport header
-                modified_html = modified_html.replace('~Sport~', sport)
+            #replace sport header
+            modified_html = modified_html.replace('~Sport~', sport)
 
-                current_datetime = datetime.datetime.now(pytz.timezone('US/Central'))
-                current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%m/%d/%Y %I:%M %p") + ' CST'
+            current_datetime = datetime.datetime.now(pytz.timezone('US/Central'))
+            current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%m/%d/%Y %I:%M %p") + ' CST'
 
-                modified_html = modified_html.replace('Last Refreshed:', current_datetime_str)
+            modified_html = modified_html.replace('Last Refreshed:', current_datetime_str)
 
-                # add time
+            # add time
 
-                final_html = self.prod_web_path + page_dict[sport]
-                with open(final_html, 'w') as f:
-                    f.write(modified_html)
-            else:
-                template_html = self.prod_web_path + 'Templates/' + page_dict[sport]
-                with open(template_html, 'r') as f:
-                    html_content = f.read()
-
-                modified_html = html_content.replace('~Place Table Here~', fin_dict[sport])
-
-                #replace sport header
-                modified_html = modified_html.replace('~Sport~', sport)
-
-                current_datetime = datetime.datetime.now(pytz.timezone('US/Central'))
-                current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%m/%d/%Y %I:%M %p") + ' CST'
-
-                modified_html = modified_html.replace('Last Refreshed:', current_datetime_str)
-
-                # add time
-
-                final_html = self.prod_web_path + page_dict[sport]
-                with open(final_html, 'w') as f:
-                    f.write(modified_html)
+            final_html = self.prod_web_path + page_dict[sport]
+            with open(final_html, 'w') as f:
+                f.write(modified_html)
 
         print('Python has updated all pages!')
 

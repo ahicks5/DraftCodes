@@ -4,8 +4,8 @@ import pandas as pd
 import re
 from dateutil import parser
 
-team_ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
-#team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv')
+#team_ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
+team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv', encoding='ISO-8859-1')
 
 class VsinSharp:
 

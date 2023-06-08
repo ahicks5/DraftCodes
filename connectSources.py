@@ -1,7 +1,7 @@
 import pandas as pd
 
-sport_ref_df = pd.read_csv('Sport_Reference.csv')
-#sport_ref_df = pd.read_csv('/var/www/html/Website/Sport_Reference.csv')
+#sport_ref_df = pd.read_csv('Sport_Reference.csv')
+sport_ref_df = pd.read_csv('/var/www/html/Website/Sport_Reference.csv')
 
 class ConnectSources:
     def __init__(self, bov_df, vsin_df, espn_df, ref_df, sport_ref_df):
@@ -13,13 +13,15 @@ class ConnectSources:
 
     def merge_all_sources(self):
         # combine vsin and bovada
-        merge_df = self.bov_df.merge(self.vsin_df, on='DC_Game_ID', how='left')
+        vsin_df = self.vsin_df.dropna(subset=['DC_Game_ID'])
+        merge_df = self.bov_df.merge(vsin_df, on='DC_Game_ID', how='left')
 
         # combine espn
-        merge_df = merge_df.merge(self.espn_df, on='DC_Game_ID', how='left')
+        espn_df = self.espn_df.dropna(subset=['DC_Game_ID'])
+        merge_df = merge_df.merge(espn_df, on='DC_Game_ID', how='left')
 
-        #merge_df = merge_df.drop(columns=['away_team_clean_y', 'home_team_clean_y'])
-        #merge_df = merge_df.rename(columns={'away_team_clean_x': 'away_team_clean', 'home_team_clean_x': 'home_team_clean'})
+        merge_df = merge_df.drop(columns=['game_date_y', 'game_time_y'])
+        merge_df = merge_df.rename(columns={'game_date_x': 'game_date', 'game_time_x': 'game_time'})
 
         #merge_df = merge_df.dropna(subset=['Sport'])
 

@@ -3,8 +3,8 @@ import requests
 from bs4 import BeautifulSoup, Comment
 from datetime import datetime, timedelta
 
-team_ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
-#team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv')
+#team_ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
+team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv', encoding='ISO-8859-1')
 
 class PullESPN:
     pregame_sport_links = {
@@ -157,7 +157,7 @@ class PullESPN:
 
         game_list = []
         for link in links:
-            print(link)
+            #print(link)
             game_dict = self.parse_game_stats(link)
             game_list.append(game_dict)
 

@@ -4,11 +4,11 @@ from vsinAPI import VsinSharp
 from connectSources import ConnectSources
 from espnAPI import PullESPN
 
-ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
-#ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv')
+#ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
+ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv', encoding='ISO-8859-1')
 
-sport_ref_df = pd.read_csv('Sport_Reference.csv')
-#sport_ref_df = pd.read_csv('/var/www/html/Website/Sport_Reference.csv')
+#sport_ref_df = pd.read_csv('Sport_Reference.csv')
+sport_ref_df = pd.read_csv('/var/www/html/Website/Sport_Reference.csv')
 
 class Indicators:
     def __init__(self):

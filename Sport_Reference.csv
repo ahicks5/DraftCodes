@@ -1,7 +1,7 @@
-game_sport,Clean_Sport
-BASK,Basketball
-BASE,Baseball
-SOCC,Soccer
-HCKY,Hockey
-TABL,Table Tennis
-ESPT,E-Sports
+game_sport,Clean_Sport,Page_name
+BASK,Basketball,basketball.html
+BASE,Baseball,baseball.html
+SOCC,Soccer,soccer.html
+HCKY,Hockey,hockey.html
+TABL,Table Tennis,tabletennis.html
+ESPT,E-Sports,esports.html
