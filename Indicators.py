@@ -15,7 +15,7 @@ class Indicators:
         self.bov_df = bov.scrape_main_sports()
         self.vsin_df = vsin.get_data()
         self.espn_df = espn.assemble_espn_data()
-        conn = ConnectSources(self.bov_df, self.vsin_df, self.espn_df, ref_df, sport_ref_df)
+        conn = ConnectSources(self.bov_df, self.vsin_df, self.espn_df, team_ref_df, sport_ref_df)
         self.merged_df = conn.merge_all_sources()
 
     def sharp_indicator(self):

@@ -14,11 +14,11 @@ def find_ref_dfs():
 team_ref_df, sport_ref_df = find_ref_dfs()
 
 class ConnectSources:
-    def __init__(self, bov_df, vsin_df, espn_df, ref_df, sport_ref_df):
+    def __init__(self, bov_df, vsin_df, espn_df, team_ref_df, sport_ref_df):
         self.bov_df = bov_df
         self.vsin_df = vsin_df
         self.espn_df = espn_df
-        self.ref_df = ref_df
+        self.team_ref_df = team_ref_df
         self.sport_ref_df = sport_ref_df
 
     def merge_all_sources(self):
