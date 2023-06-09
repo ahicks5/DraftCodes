@@ -21,7 +21,8 @@ class PullBovada:
         'tableTennis': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/table-tennis?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
         'LoL': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/esports/league-of-legends?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
         'mls': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/north-america/united-states/mls?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'cfb': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/football/college-football?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en'
+        'cfb': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/football/college-football?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
+        'wnba': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/basketball/wnba?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en'
     }
 
     def __init__(self):

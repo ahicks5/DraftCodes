@@ -14,6 +14,7 @@ class PullESPN:
         'nba': 'https://www.espn.com/nba/schedule/_/date/',
         'nfl': 'https://www.espn.com/nfl/schedule/_/date/',
         'mlb': 'https://www.espn.com/mlb/schedule/_/date/',
+        'wnba': 'https://www.espn.com/wnba/schedule/_/date/'
     }
 
     def get_soup(self, url):
@@ -63,7 +64,7 @@ class PullESPN:
         links = []
         for day in [today_date, tom_date]:
             for sport, espn_link in self.pregame_sport_links.items():
-                soup = self.get_soup(espn_link)
+                soup = self.get_soup(espn_link + day)
                 if soup:
                     links.extend(self.extract_game_links(soup))
         return links
