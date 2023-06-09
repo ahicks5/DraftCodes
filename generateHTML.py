@@ -79,35 +79,26 @@ class HtmlTable:
             table += '''
                 </table></div>
                 <script>
-                    const green_shades = {
-                        1: '#33A036',
-                        2: '#147917',
-                        3: '#023020',
-                        4: '#B59410'
-                    }
-                    
-                    window.onload = function() {
-                      const colorToggle = document.querySelector('#colorToggle');
-                      colorToggle.addEventListener('change', function() {
-                        const table = document.querySelector('#myTable');
-                        const cells = table.querySelectorAll('td');
-                    
-                        if (colorToggle.checked) {
-                          // Apply the colors
-                          cells.forEach(cell => {
-                            const index = cell.getAttribute('sharp_ind');
-                            if (index) {
-                              cell.style.backgroundColor = green_shades[index];
-                            }
-                          });
-                        } else {
-                          // Remove the colors
-                          cells.forEach(cell => {
-                            cell.style.backgroundColor = '';
-                          });
-                        }
-                      });
-                    }
+                  window.onload = function() {
+                    const colorToggle = document.querySelector('#colorToggle');
+                    const table = document.querySelector('#myTable');
+                    const cells = table.querySelectorAll('td');
+                    const initialColors = Array.from(cells).map(cell => cell.style.backgroundColor);
+                
+                    colorToggle.addEventListener('change', function() {
+                      if (colorToggle.checked) {
+                        // Restore the colors
+                        cells.forEach((cell, i) => {
+                          cell.style.backgroundColor = initialColors[i];
+                        });
+                      } else {
+                        // Remove the colors
+                        cells.forEach(cell => {
+                          cell.style.backgroundColor = '';
+                        });
+                      }
+                    });
+                  }
                 </script>
             '''
 
