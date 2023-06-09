@@ -3,9 +3,9 @@ from Indicators import Indicators
 import datetime
 import pytz
 import pandas as pd
+from connectSources import find_ref_dfs
 
-#sport_ref_df = pd.read_csv('Sport_Reference.csv')
-sport_ref_df = pd.read_csv('/var/www/html/Website/Sport_Reference.csv')
+team_ref_df, sport_ref_df = find_ref_dfs()
 
 class HtmlTable:
     prod_web_path = '/var/www/html/Website/'

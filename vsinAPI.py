@@ -3,9 +3,9 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import re
 from dateutil import parser
+from connectSources import find_ref_dfs
 
-#team_ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
-team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv', encoding='ISO-8859-1')
+team_ref_df, sport_ref_df = find_ref_dfs()
 
 class VsinSharp:
 

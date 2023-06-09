@@ -1,7 +1,17 @@
 import pandas as pd
 
-#sport_ref_df = pd.read_csv('Sport_Reference.csv')
-sport_ref_df = pd.read_csv('/var/www/html/Website/Sport_Reference.csv')
+
+def find_ref_dfs():
+    try:
+        team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv', encoding='ISO-8859-1')
+        sport_ref_df = pd.read_csv('/var/www/html/Website/Sport_Reference.csv')
+    except:
+        team_ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
+        sport_ref_df = pd.read_csv('Sport_Reference.csv')
+    return team_ref_df, sport_ref_df
+
+
+team_ref_df, sport_ref_df = find_ref_dfs()
 
 class ConnectSources:
     def __init__(self, bov_df, vsin_df, espn_df, ref_df, sport_ref_df):

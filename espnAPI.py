@@ -2,9 +2,10 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup, Comment
 from datetime import datetime, timedelta
+from connectSources import find_ref_dfs
 
-#team_ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
-team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv', encoding='ISO-8859-1')
+team_ref_df, sport_ref_df = find_ref_dfs()
+
 
 class PullESPN:
     pregame_sport_links = {

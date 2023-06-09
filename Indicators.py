@@ -3,12 +3,9 @@ from bovadaAPI import PullBovada
 from vsinAPI import VsinSharp
 from connectSources import ConnectSources
 from espnAPI import PullESPN
+from connectSources import find_ref_dfs
 
-#ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
-ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv', encoding='ISO-8859-1')
-
-#sport_ref_df = pd.read_csv('Sport_Reference.csv')
-sport_ref_df = pd.read_csv('/var/www/html/Website/Sport_Reference.csv')
+team_ref_df, sport_ref_df = find_ref_dfs()
 
 class Indicators:
     def __init__(self):
