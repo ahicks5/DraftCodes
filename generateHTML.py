@@ -137,7 +137,7 @@ class HtmlTable:
         row_html = f'<tr><td>{row["game_date"].strftime("%m/%d/%y")}</td><td>{row["competitor_2"]}</td>'
         row_html += away_sp_cell + away_ml_cell + over_cell + '</tr>'
 
-        row_html += f'<tr><td>{row["game_time"].strftime("%I:%M %p %Z")}</td><td>{row["competitor_1"]}</td>'
+        row_html += f'<tr><td>{row["game_startTime_cst"].strftime("%I:%M %p %Z")}</td><td>{row["competitor_1"]}</td>'
         row_html += home_sp_cell + home_ml_cell + under_cell + '</tr>' + space_row_html
 
         return row_html
@@ -218,7 +218,7 @@ class HtmlTable:
                 modified_html = modified_html.replace('~Sport~', sport)
 
                 current_datetime = datetime.datetime.now(pytz.timezone('US/Central'))
-                current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%m/%d/%Y %I:%M %p") + ' CST'
+                current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%m/%d/%Y %I:%M %p") + ' CDT'
 
                 modified_html = modified_html.replace('Last Refreshed:', current_datetime_str)
 
@@ -238,7 +238,7 @@ class HtmlTable:
                 modified_html = modified_html.replace('~Sport~', sport)
 
                 current_datetime = datetime.datetime.now(pytz.timezone('US/Central'))
-                current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%m/%d/%Y %I:%M %p") + ' CST'
+                current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%m/%d/%Y %I:%M %p") + ' CDT'
 
                 modified_html = modified_html.replace('Last Refreshed:', current_datetime_str)
 
