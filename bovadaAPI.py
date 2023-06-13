@@ -22,7 +22,9 @@ class PullBovada:
         'LoL': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/esports/league-of-legends?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
         'mls': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/north-america/united-states/mls?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
         'cfb': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/football/college-football?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'wnba': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/basketball/wnba?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en'
+        'wnba': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/basketball/wnba?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
+        'cfl': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/football/cfl?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
+        'usfl': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/football/usfl?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en'
     }
 
     def __init__(self):
@@ -61,9 +63,14 @@ class PullBovada:
                         'team_2_hcap_odds': 'nan'}
 
         def two_way_12(mkt):
-            price0, price1 = mkt['outcomes'][0]['price'], mkt['outcomes'][1]['price']
-            return {'team_1_ml_odds': price0['american'],
-                    'team_2_ml_odds': price1['american']}
+            try:
+                price0, price1 = mkt['outcomes'][0]['price'], mkt['outcomes'][1]['price']
+                return {'team_1_ml_odds': price0['american'],
+                        'team_2_ml_odds': price1['american']}
+            except Exception as e:
+                print(f"Error in two_way_ml: {e}")
+                return {'team_1_ml_odds': 'nan',
+                        'team_2_ml_odds': 'nan'}
 
         def three_way_1X2(mkt):
             price0, price1, price2 = mkt['outcomes'][0]['price'], mkt['outcomes'][1]['price'], mkt['outcomes'][2][
@@ -140,7 +147,7 @@ class PullBovada:
     def filter_for_newly_upcoming_games(self, df):
         central = pytz.timezone('US/Central')
         current_time = datetime.now(central)
-        two_days_from_now = current_time + timedelta(days=2)
+        two_days_from_now = current_time + timedelta(days=300)
         filtered_df = df[(df['game_startTime_cst'] >= current_time) & (df['game_startTime_cst'] <= two_days_from_now)]
 
         return filtered_df

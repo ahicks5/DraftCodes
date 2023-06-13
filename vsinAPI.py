@@ -50,18 +50,21 @@ class VsinSharp:
         df_dict = {}
 
         for sport in sport_tables:
-            clean_df = self.clean_vsin_df(sport_tables[sport])
+            if sport_tables[sport].empty:
+                continue
+            else:
+                clean_df = self.clean_vsin_df(sport_tables[sport])
 
-            clean_df.columns = ['Team_names', 'Spread', 'Spread_handle', 'Spread_bets', 'Total', 'Total_handle',
-                          'Total_bets', 'Moneyline', 'Moneyline_handle', 'Moneyline_bets', 'game_date']
-            game_dict_list = clean_df.to_dict('records')
-            clean_list = []
-            for game_dict in game_dict_list:
-                clean_list.append(self.clean_data(game_dict))
+                clean_df.columns = ['Team_names', 'Spread', 'Spread_handle', 'Spread_bets', 'Total', 'Total_handle',
+                              'Total_bets', 'Moneyline', 'Moneyline_handle', 'Moneyline_bets', 'game_date']
+                game_dict_list = clean_df.to_dict('records')
+                clean_list = []
+                for game_dict in game_dict_list:
+                    clean_list.append(self.clean_data(game_dict))
 
-            clean_df = pd.DataFrame(clean_list)
-            clean_df['Sport'] = sport
-            df_dict[sport] = clean_df
+                clean_df = pd.DataFrame(clean_list)
+                clean_df['Sport'] = sport
+                df_dict[sport] = clean_df
 
         # combine dfs
         df_list = list(df_dict.values())

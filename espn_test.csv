@@ -1,132 +1,84 @@
 game_time,team1,team1_pred,team2,team2_pred,away_team_clean,home_team_clean,DC_Game_ID
-2023-06-09 19:00:00,Cienciano del Cusco,,Sport Boys,,,,
-2023-06-09 19:30:00,San Martín (San Juan),,Alvarado (Mar del Plata),,,,
-2023-06-09 21:00:00,San Diego Loyal SC,,Sacramento Republic FC,,,,
-2023-06-09 17:00:00,Nueva Chicago,,All Boys,,,,
-2023-06-09 08:00:00,Terengganu,,Johor Darul Ta'zim,,,,
-2023-06-09 18:00:00,Loudoun United FC,,FC Tulsa,,,,
-2023-06-09 06:35:00,Wuhan Three Towns,,Shandong Taishan,,,,
-2023-06-09 12:00:00,Hammarby,,Brommapojkarna,,,,
-2023-06-09 07:00:00,Australia U23,,Mediterranean Nations U21,,,,
-2023-06-09 13:45:00,Shelbourne,,Sligo,,,,
-2023-06-09 09:00:00,India,,Mongolia,,,,
-2023-06-09 16:00:00,Guaireña,,Sportivo Luqueño,,,,
-2023-06-09 07:15:00,Pahang,,Negeri Sembilan,,,,
-2023-06-09 19:30:00,ABC,,Chapecoense,,,,
-2023-06-09 18:30:00,Libertad,,Sportivo Ameliano,,,,
-2023-06-09 12:00:00,Viborg FF,,FC Midtjylland,,,,
-2023-06-09 19:00:00,Universidad Católica (Quito),,Mushuc Runa,,,,
-2023-06-09 06:00:00,Lebanon,,Vanuatu,,,,
-2023-06-09 13:45:00,Derry City,,Bohemians,,,,
-2023-06-09 06:35:00,Meizhou Hakka,,Cangzhou Mighty Lions,,,,
-2023-06-09 10:30:00,Mexico U23,,Qatar U23,,,,
-2023-06-09 19:00:00,Racing Louisville FC,,San Diego Wave FC,,,,
-2023-06-09 06:35:00,Shanghai Port,,Nantong Zhiyun,,,,
-2023-06-09 14:00:00,Shamrock Rovers,,UCD,,,,
-2023-06-09 13:15:00,Luxembourg,,Malta,,,,
-2023-06-09 18:00:00,Independiente,,Sarmiento (Junín),,,,
-2023-06-09 06:35:00,Dalian Professional,,Beijing Guoan,,,,
-2023-06-09 13:00:00,Sunshine Stars,,Enyimba,,,,
-2023-06-09 04:30:00,Henan Songshan Longmen,,Zhejiang Professional FC,,,,
-2023-06-09 18:00:00,El Porvenir,,Cambaceres,,,,
-2023-06-09 13:45:00,Drogheda Utd,,St Patricks Athletic,,,,
-2023-06-09 13:45:00,Cork,,Dundalk,,,,
-2023-06-09 13:30:00,Barracas Central,,Rosario Central,,,,
-2023-06-09 13:30:00,Colegiales,,Argentino (Merlo),,,,
-2023-06-10 21:30:00,Las Vegas Lights FC,,Monterey Bay,,,,
-2023-06-10 20:00:00,Northern Colorado Hailstorm FC,,One Knoxville,,,,
-2023-06-10 18:00:00,Boca Juniors,,Lanús,,,,
-2023-06-10 13:00:00,Guillermo Brown,,Patronato,,,,
-2023-06-10 19:00:00,Chicago Red Stars,,North Carolina Courage,,,,
-2023-06-10 18:30:00,CF Montréal,,Minnesota United FC,,CF Montreal,Minnesota Utd,06102023-CF Montreal-Minnesota Utd
-2023-06-10 08:00:00,Ngezi Platinum,,Hwange,,,,
-2023-06-10 18:00:00,El Nacional,,Deportivo Cuenca,,,,
-2023-06-10 08:00:00,Manica Diamonds F.C.,,Sheasham,,,,
-2023-06-10 13:00:00,Libertad (Ecuador),,Técnico Universitario,,,,
-2023-06-10 20:00:00,Carlos A. Mannucci,,ADT,,,,
-2023-06-10 14:00:00,Manchester City,,Internazionale,,Manchester City,Inter Milan,06102023-Manchester City-Inter Milan
-2023-06-10 16:30:00,Atlético-MG,,Red Bull Bragantino,,,,
-2023-06-10 08:00:00,IFK Värnamo,,Malmo FF,,,,
-2023-06-10 21:30:00,Vancouver Whitecaps,,FC Cincinnati,,Vancouver Whitecaps,FC Cincinnati,06102023-Vancouver Whitecaps-FC Cincinnati
-2023-06-10 15:30:00,Academia Cantolao,,Deportivo Municipal,,,,
-2023-06-10 07:00:00,Japan U19,,Panama U23,,,,
-2023-06-10 05:00:00,Lion City Sailors,,Young Lions,,,,
-2023-06-10 18:30:00,Toronto FC,,Nashville SC,,Toronto FC,Nashville SC,06102023-Toronto FC-Nashville SC
-2023-06-10 18:30:00,Orlando City SC,,Colorado Rapids,,Orlando City,Colorado Rapids,06102023-Orlando City-Colorado Rapids
-2023-06-10 02:00:00,Yokohama F. Marinos,,Kashiwa Reysol,,,,
-2023-06-10 18:30:00,Tampa Bay Rowdies,,New Mexico United,,,,
-2023-06-10 20:00:00,Colorado Springs Switchbacks FC,,Orange County SC,,,,
-2023-06-10 16:30:00,Bahia,,Cruzeiro,,,,
-2023-06-10 08:00:00,Fénix,,Cerro,,,,
-2023-06-10 13:30:00,Peñarol,,River Plate,,,,
-2023-06-10 13:30:00,Real Pilar,,Excursionistas,,,,
-2023-06-10 19:00:00,Panama,,Nicaragua,,,,
-2023-06-10 15:30:00,Liga de Quito,,Cumbayá,,,,
-2023-06-10 18:00:00,Indy Eleven,,Hartford Athletic,,,,
-2023-06-10 05:00:00,Sagan Tosu,,Consadole Sapporo,,,,
-2023-06-10 18:00:00,Pittsburgh Riverhounds,,Charleston Battery,,,,
-2023-06-10 11:00:00,TEC VV,,VV SteDoCo,,,,
-2023-06-10 13:30:00,Defensores Unidos,,Gimnasia (Mendoza),,,,
-2023-06-10 13:30:00,Almagro,,Deportivo Morón,,,,
-2023-06-10 06:30:00,Nizhny Novgorod,,Rodina Moscow,,,,
-2023-06-10 20:30:00,Real Salt Lake,,New York City FC,,Real Salt Lake,New York City FC,06102023-Real Salt Lake-New York City FC
-2023-06-10 20:00:00,San Antonio FC,,El Paso Locomotive FC,,,,
-2023-06-10 19:30:00,Talleres (Córdoba),,Arsenal Sarandi,,,,
-2023-06-10 13:30:00,San Miguel,,Sacachispas,,,,
-2023-06-10 15:00:00,Novorizontino,,Sampaio Corrêa,,,,
-2023-06-10 19:30:00,Chicago Fire FC,,Columbus Crew,,Chicago Fire,Columbus Crew,06102023-Chicago Fire-Columbus Crew
-2023-06-10 08:00:00,Casric Stars,,Maritzburg United,,,,
-2023-06-10 18:30:00,New England Revolution,,Inter Miami CF,,NE Revolution,Inter Miami,06102023-NE Revolution-Inter Miami
-2023-06-10 21:30:00,Phoenix Rising FC,,Oakland Roots,,,,
-2023-06-10 06:30:00,PSM Makassar,,Bali United,,,,
-2023-06-10 13:30:00,Villa San Carlos,,Fénix,,,,
-2023-06-10 13:30:00,Central Córdoba (Rosario),,General Lamadrid,,,,
-2023-06-10 18:30:00,Charlotte FC,,Seattle Sounders FC,,Charlotte FC,Seattle Sounders,06102023-Charlotte FC-Seattle Sounders
-2023-06-10 13:00:00,Unión Comercio,,Atlético Grau,,,,
-2023-06-10 21:00:00,Central Valley Fuego FC,,Richmond Kickers,,,,
-2023-06-10 19:30:00,Deportivo Pasto,,Rionegro Águilas,,,,
-2023-06-10 19:30:00,Sporting Kansas City,,Austin FC,,Sporting Kansas City,Austin FC,06102023-Sporting Kansas City-Austin FC
-2023-06-10 19:00:00,Louisville City FC,,Memphis 901 FC,,,,
-2023-06-10 16:00:00,Defensor Sporting,,Wanderers,,,,
-2023-06-10 17:00:00,Volta Redonda,,Botafogo PB,,,,
-2023-06-10 14:35:00,Temperley,,Defensores de Belgrano,,,,
-2023-06-10 13:30:00,Deportivo Armenio,,Dock Sud,,,,
-2023-06-10 18:00:00,Melgar,,Deportivo Binacional,,,,
-2023-06-10 13:30:00,Argentino (Rosario),,Central Ballester,,,,
-2023-06-10 15:00:00,Ituano,,Atlético-GO,,,,
-2023-06-10 12:35:00,San Telmo,,Almirante Brown,,,,
-2023-06-10 21:00:00,Mexico,,Cameroon,,,,
-2023-06-10 09:30:00,Fakel Voronezh,,Yenisey Krasnoyarsk,,,,
-2023-06-10 13:30:00,Sportivo Italiano,,Leandro N. Alem,,,,
-2023-06-10 16:00:00,Ituzaingó,,Cañuelas,,,,
-2023-06-10 13:30:00,Agropecuario,,Güemes,,,,
-2023-06-10 16:00:00,Cúcuta Deportivo,,Cortuluá,,,,
-2023-06-10 17:00:00,Platense,,Tigre,,,,
-2023-06-10 10:30:00,Varbergs BoIS FC,,Halmstads BK,,,,
-2023-06-10 19:00:00,Rio Grande Valley FC Toros,,Miami FC,,,,
-2023-06-10 08:00:00,Bulawayo Chiefs,,Green Fuel,,,,
-2023-06-10 17:30:00,Trinidense,,Nacional,,,,
-2023-06-10 05:00:00,Cerezo Osaka,,Vissel Kobe,,,,
-2023-06-10 18:00:00,Greenville Triumph,,Union Omaha,,,,
-2023-06-10 19:00:00,Botafogo,,Fortaleza,,,,
-2023-06-10 08:00:00,Kalmar FF,,Degerfors IF,,,,
-2023-06-10 18:30:00,Atlanta United FC,,D.C. United,,Atlanta Utd,DC Utd,06102023-Atlanta Utd-DC Utd
-2023-06-10 18:30:00,South Georgia Tormenta FC,,Lexington,,,,
-2023-06-10 14:00:00,Vila Nova-GO,,Guarani,,,,
-2023-06-10 10:30:00,Ivory Coast U23,,Morocco U23,,,,
-2023-06-10 18:00:00,Washington Spirit,,Angel City FC,,,,
-2023-06-10 16:00:00,Patriotas,,Valledupar FC,,,,
-2023-06-10 13:30:00,Argentino de Quilmes,,Acassuso,,,,
-2023-06-10 14:00:00,Coritiba,,Santos,,,,
-2023-06-10 11:00:00,USV Hercules,,GVVV Veenendaal,,,,
-2023-06-10 16:30:00,Corinthians,,Cuiabá,,,,
-2023-06-10 21:00:00,OL Reign,,Kansas City Current,,,,
-2023-06-10 19:30:00,Houston Dynamo FC,,LAFC,,Houston Dynamo,LAFC,06102023-Houston Dynamo-LAFC
-2023-06-10 20:30:00,Alianza Lima,,Deportivo Garcilaso,,,,
-2023-06-10 05:00:00,Tampines Rovers,,Hougang United,,,,
-2023-06-10 08:00:00,Black Rhinos,,Dynamos,,,,
-2023-06-10 19:00:00,Forward Madison FC,,North Carolina FC,,,,
-2023-06-10 21:30:00,San Jose Earthquakes,,Philadelphia Union,,San Jose Earthquakes,Philadelphia Union,06102023-San Jose Earthquakes-Philadelphia Union
-2023-06-10 08:00:00,Platinum,,Chicken Inn,,,,
-2023-06-10 17:30:00,Ceará,,CRB,,,,
-2023-06-10 15:00:00,General Caballero JLM,,Guarani,,,,
+2023-06-13 14:00:00,Los Andes,,Talleres,,,,
+2023-06-13 10:30:00,Panama U23,,Morocco U23,,,,
+2023-06-13 18:30:00,Gimnasia La Plata,,Huracán,,,,
+2023-06-13 16:00:00,Colón (Santa Fe),,Estudiantes de La Plata,,,,
+2023-06-13 16:00:00,Defensa y Justicia,,Belgrano (Córdoba),,,,
+2023-06-13 13:30:00,Deportivo Español,,Atlas,,,,
+2023-06-13 07:00:00,Japan U19,,Ivory Coast U23,,,,
+2023-06-13 18:30:00,Atlético Tucumán,,Godoy Cruz Antonio Tomba,,,,
+2023-06-13 17:00:00,Midland,,Puerto Nuevo,,,,
+2023-06-16 15:00:00,Vegas Golden Knights,,Florida Panthers,,Vegas Golden Knights,Florida Panthers,06162023-Vegas Golden Knights-Florida Panthers
+2023-06-13 15:00:00,Florida Panthers,,Vegas Golden Knights,,Florida Panthers,Vegas Golden Knights,06132023-Florida Panthers-Vegas Golden Knights
+2023-06-19 15:00:00,Florida Panthers,,Vegas Golden Knights,,Florida Panthers,Vegas Golden Knights,06192023-Florida Panthers-Vegas Golden Knights
+2023-09-10 11:25:00,Las Vegas Raiders,44.7%,Denver Broncos,55.0%,Las Vegas Raiders,Denver Broncos,09102023-Las Vegas Raiders-Denver Broncos
+2023-09-10 08:00:00,Carolina Panthers,47.2%,Atlanta Falcons,52.4%,Carolina Panthers,Atlanta Falcons,09102023-Carolina Panthers-Atlanta Falcons
+2023-09-10 08:00:00,Arizona Cardinals,35.6%,Washington Commanders,64.1%,Arizona Cardinals,Washington Commanders,09102023-Arizona Cardinals-Washington Commanders
+2023-09-10 08:00:00,San Francisco 49ers,56.9%,Pittsburgh Steelers,42.8%,San Francisco 49ers,Pittsburgh Steelers,09102023-San Francisco 49ers-Pittsburgh Steelers
+2023-09-10 11:25:00,Green Bay Packers,47.2%,Chicago Bears,52.4%,Green Bay Packers,Chicago Bears,09102023-Green Bay Packers-Chicago Bears
+2023-09-10 08:00:00,Tampa Bay Buccaneers,30.3%,Minnesota Vikings,69.5%,Tampa Bay Buccaneers,Minnesota Vikings,09102023-Tampa Bay Buccaneers-Minnesota Vikings
+2023-09-10 08:00:00,Tennessee Titans,43.4%,New Orleans Saints,56.3%,Tennessee Titans,New Orleans Saints,09102023-Tennessee Titans-New Orleans Saints
+2023-09-10 11:25:00,Philadelphia Eagles,61.7%,New England Patriots,38.0%,Philadelphia Eagles,New England Patriots,09102023-Philadelphia Eagles-New England Patriots
+2023-09-10 11:25:00,Los Angeles Rams,40.5%,Seattle Seahawks,59.2%,Los Angeles Rams,Seattle Seahawks,09102023-Los Angeles Rams-Seattle Seahawks
+2023-09-10 08:00:00,Cincinnati Bengals,61.2%,Cleveland Browns,38.5%,Cincinnati Bengals,Cleveland Browns,09102023-Cincinnati Bengals-Cleveland Browns
+2023-09-10 08:00:00,Jacksonville Jaguars,65.2%,Indianapolis Colts,34.6%,Jacksonville Jaguars,Indianapolis Colts,09102023-Jacksonville Jaguars-Indianapolis Colts
+2023-09-10 11:25:00,Miami Dolphins,44.1%,Los Angeles Chargers,55.6%,Miami Dolphins,Los Angeles Chargers,09102023-Miami Dolphins-Los Angeles Chargers
+2023-09-10 08:00:00,Houston Texans,25.3%,Baltimore Ravens,74.5%,Houston Texans,Baltimore Ravens,09102023-Houston Texans-Baltimore Ravens
+2023-09-11 15:15:00,Buffalo Bills,55.7%,New York Jets,43.9%,Buffalo Bills,New York Jets,09112023-Buffalo Bills-New York Jets
+2023-09-07 15:20:00,Detroit Lions,33.5%,Kansas City Chiefs,66.2%,Detroit Lions,Kansas City Chiefs,09072023-Detroit Lions-Kansas City Chiefs
+2023-09-10 15:20:00,Dallas Cowboys,53.0%,New York Giants,46.6%,Dallas Cowboys,New York Giants,09102023-Dallas Cowboys-New York Giants
+2023-06-13 14:45:00,San Francisco Giants,55.2%,St. Louis Cardinals,44.8%,San Francisco Giants,St. Louis Cardinals,06132023-San Francisco Giants-St. Louis Cardinals
+2023-06-13 14:10:00,Colorado Rockies,39.8%,Boston Red Sox,60.2%,Colorado Rockies,Boston Red Sox,06132023-Colorado Rockies-Boston Red Sox
+2023-06-13 15:10:00,Washington Nationals,28.0%,Houston Astros,72.0%,Washington Nationals,Houston Astros,06132023-Washington Nationals-Houston Astros
+2023-06-14 15:10:00,Washington Nationals,38.2%,Houston Astros,61.8%,Washington Nationals,Houston Astros,06142023-Washington Nationals-Houston Astros
+2023-06-15 10:40:00,Philadelphia Phillies,43.8%,Arizona Diamondbacks,56.2%,Philadelphia Phillies,Arizona Diamondbacks,06152023-Philadelphia Phillies-Arizona Diamondbacks
+2023-06-14 14:10:00,Colorado Rockies,27.6%,Boston Red Sox,72.4%,Colorado Rockies,Boston Red Sox,06142023-Colorado Rockies-Boston Red Sox
+2023-06-13 16:40:00,Miami Marlins,34.8%,Seattle Mariners,65.2%,Miami Marlins,Seattle Mariners,06132023-Miami Marlins-Seattle Mariners
+2023-06-15 15:05:00,Pittsburgh Pirates,39.8%,Chicago Cubs,60.2%,Pittsburgh Pirates,Chicago Cubs,06152023-Pittsburgh Pirates-Chicago Cubs
+2023-06-13 15:10:00,Cincinnati Reds,59.4%,Kansas City Royals,40.6%,Cincinnati Reds,Kansas City Royals,06132023-Cincinnati Reds-Kansas City Royals
+2023-06-13 16:40:00,Tampa Bay Rays,75.4%,Oakland Athletics,24.6%,Tampa Bay Rays,OAK Athletics,06132023-Tampa Bay Rays-OAK Athletics
+2023-06-13 16:40:00,Cleveland Guardians,38.3%,San Diego Padres,61.7%,Cleveland Guardians,San Diego Padres,06132023-Cleveland Guardians-San Diego Padres
+2023-06-15 10:37:00,Tampa Bay Rays,64.9%,Oakland Athletics,35.1%,Tampa Bay Rays,OAK Athletics,06152023-Tampa Bay Rays-OAK Athletics
+2023-06-15 14:20:00,Colorado Rockies,33.1%,Atlanta Braves,66.9%,Colorado Rockies,Atlanta Braves,06152023-Colorado Rockies-Atlanta Braves
+2023-06-13 17:10:00,Chicago White Sox,22.0%,Los Angeles Dodgers,78.0%,Chicago White Sox,Los Angeles Dodgers,06132023-Chicago White Sox-Los Angeles Dodgers
+2023-06-13 15:05:00,Los Angeles Angels,35.2%,Texas Rangers,64.8%,Los Angeles Angels,Texas Rangers,06132023-Los Angeles Angels-Texas Rangers
+2023-06-14 15:05:00,Pittsburgh Pirates,42.4%,Chicago Cubs,57.6%,Pittsburgh Pirates,Chicago Cubs,06142023-Pittsburgh Pirates-Chicago Cubs
+2023-06-14 14:00:00,New York Yankees,51.2%,New York Mets,48.8%,New York Yankees,New York Mets,06142023-New York Yankees-New York Mets
+2023-06-15 15:10:00,Washington Nationals,27.9%,Houston Astros,72.1%,Washington Nationals,Houston Astros,06152023-Washington Nationals-Houston Astros
+2023-06-14 16:40:00,Cleveland Guardians,39.1%,San Diego Padres,60.9%,Cleveland Guardians,San Diego Padres,06142023-Cleveland Guardians-San Diego Padres
+2023-06-14 16:40:00,Philadelphia Phillies,35.3%,Arizona Diamondbacks,64.7%,Philadelphia Phillies,Arizona Diamondbacks,06142023-Philadelphia Phillies-Arizona Diamondbacks
+2023-06-15 14:10:00,Detroit Tigers,28.4%,Minnesota Twins,71.6%,Detroit Tigers,Minnesota Twins,06152023-Detroit Tigers-Minnesota Twins
+2023-06-14 15:05:00,Los Angeles Angels,33.1%,Texas Rangers,66.9%,Los Angeles Angels,Texas Rangers,06142023-Los Angeles Angels-Texas Rangers
+2023-06-13 15:05:00,Pittsburgh Pirates,51.3%,Chicago Cubs,48.7%,Pittsburgh Pirates,Chicago Cubs,06132023-Pittsburgh Pirates-Chicago Cubs
+2023-06-15 08:05:00,Toronto Blue Jays,40.0%,Baltimore Orioles,60.0%,Toronto Blue Jays,Baltimore Orioles,06152023-Toronto Blue Jays-Baltimore Orioles
+2023-06-14 17:00:00,Chicago White Sox,22.4%,Los Angeles Dodgers,77.6%,Chicago White Sox,Los Angeles Dodgers,06142023-Chicago White Sox-Los Angeles Dodgers
+2023-06-14 14:05:00,Toronto Blue Jays,46.3%,Baltimore Orioles,53.7%,Toronto Blue Jays,Baltimore Orioles,06142023-Toronto Blue Jays-Baltimore Orioles
+2023-06-13 14:10:00,New York Yankees,41.9%,New York Mets,58.1%,New York Yankees,New York Mets,06132023-New York Yankees-New York Mets
+2023-06-13 14:40:00,Milwaukee Brewers,47.9%,Minnesota Twins,52.1%,Milwaukee Brewers,Minnesota Twins,06132023-Milwaukee Brewers-Minnesota Twins
+2023-06-14 08:10:00,Milwaukee Brewers,32.7%,Minnesota Twins,67.3%,Milwaukee Brewers,Minnesota Twins,06142023-Milwaukee Brewers-Minnesota Twins
+2023-06-13 16:40:00,Philadelphia Phillies,50.9%,Arizona Diamondbacks,49.1%,Philadelphia Phillies,Arizona Diamondbacks,06132023-Philadelphia Phillies-Arizona Diamondbacks
+2023-06-13 14:05:00,Toronto Blue Jays,50.4%,Baltimore Orioles,49.6%,Toronto Blue Jays,Baltimore Orioles,06132023-Toronto Blue Jays-Baltimore Orioles
+2023-06-15 15:05:00,Los Angeles Angels,40.6%,Texas Rangers,59.4%,Los Angeles Angels,Texas Rangers,06152023-Los Angeles Angels-Texas Rangers
+2023-06-14 15:10:00,Cincinnati Reds,56.4%,Kansas City Royals,43.6%,Cincinnati Reds,Kansas City Royals,06142023-Cincinnati Reds-Kansas City Royals
+2023-06-14 08:10:00,Atlanta Braves,58.1%,Detroit Tigers,41.9%,Atlanta Braves,Detroit Tigers,06142023-Atlanta Braves-Detroit Tigers
+2023-06-14 08:15:00,San Francisco Giants,41.5%,St. Louis Cardinals,58.5%,San Francisco Giants,St. Louis Cardinals,06142023-San Francisco Giants-St. Louis Cardinals
+2023-06-15 15:40:00,Cleveland Guardians,38.8%,San Diego Padres,61.2%,Cleveland Guardians,San Diego Padres,06152023-Cleveland Guardians-San Diego Padres
+2023-06-14 16:40:00,Tampa Bay Rays,79.7%,Oakland Athletics,20.3%,Tampa Bay Rays,OAK Athletics,06142023-Tampa Bay Rays-OAK Athletics
+2023-06-13 13:40:00,Atlanta Braves,69.2%,Detroit Tigers,30.8%,Atlanta Braves,Detroit Tigers,06132023-Atlanta Braves-Detroit Tigers
+2023-06-15 17:10:00,Chicago White Sox,46.7%,Los Angeles Dodgers,53.3%,Chicago White Sox,Los Angeles Dodgers,06152023-Chicago White Sox-Los Angeles Dodgers
+2023-06-14 16:40:00,Miami Marlins,32.0%,Seattle Mariners,68.0%,Miami Marlins,Seattle Mariners,06142023-Miami Marlins-Seattle Mariners
+2023-06-16 15:00:00,Phoenix Mercury,,Washington Mystics,,Phoenix Mercury,Washington Mystics,06162023-Phoenix Mercury-Washington Mystics
+2023-06-13 17:00:00,Seattle Storm,,Phoenix Mercury,,Seattle Storm,Phoenix Mercury,06132023-Seattle Storm-Phoenix Mercury
+2023-06-18 10:00:00,Chicago Sky,,Washington Mystics,,Chicago Sky,Washington Mystics,06182023-Chicago Sky-Washington Mystics
+2023-06-18 11:00:00,Atlanta Dream,,Indiana Fever,,Atlanta Dream,Indiana Fever,06182023-Atlanta Dream-Indiana Fever
+2023-06-13 15:00:00,Atlanta Dream,,New York Liberty,,Atlanta Dream,New York Liberty,06132023-Atlanta Dream-New York Liberty
+2023-06-15 15:00:00,Indiana Fever,,Chicago Sky,,Indiana Fever,Chicago Sky,06152023-Indiana Fever-Chicago Sky
+2023-06-16 17:00:00,Minnesota Lynx,,Los Angeles Sparks,,Minnesota Lynx,Los Angeles Sparks,06162023-Minnesota Lynx-Los Angeles Sparks
+2023-06-13 14:00:00,Washington Mystics,,Indiana Fever,,Washington Mystics,Indiana Fever,06132023-Washington Mystics-Indiana Fever
+2023-06-15 17:00:00,Seattle Storm,,Las Vegas Aces,,Seattle Storm,,
+2023-06-17 09:00:00,Seattle Storm,,Dallas Wings,,Seattle Storm,Dallas Wings,06172023-Seattle Storm-Dallas Wings
+2023-06-18 14:30:00,Connecticut Sun,,Los Angeles Sparks,,,Los Angeles Sparks,
+2023-06-14 08:00:00,Los Angeles Sparks,,Dallas Wings,,Los Angeles Sparks,Dallas Wings,06142023-Los Angeles Sparks-Dallas Wings
+2023-06-15 14:00:00,Atlanta Dream,,Connecticut Sun,,Atlanta Dream,,
+2023-06-18 16:00:00,Minnesota Lynx,,Las Vegas Aces,,Minnesota Lynx,,
+2023-06-18 07:00:00,Phoenix Mercury,,New York Liberty,,Phoenix Mercury,New York Liberty,06182023-Phoenix Mercury-New York Liberty
