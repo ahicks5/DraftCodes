@@ -129,7 +129,7 @@ class HtmlTable:
         space_row_html = '<tr><td colspan="5" style="border:none;"></td></tr>'
 
         away_sp_cell, home_sp_cell = self.spread_sharp_tags(row['sharp_spread_ind'], row['team_1_hcap'], row['team_2_hcap'])
-        away_ml_cell, home_ml_cell = self.ml_sharp_tags(row['sharp_moneyline_ind'], row['team_1_ml_odds'],
+        away_ml_cell, home_ml_cell = self.ml_sharp_tags(row['sharp_moneyline_ind'], row['espn_moneyline_ind'], row['team_1_ml_odds'],
                                                             row['team_2_ml_odds'])
         over_cell, under_cell = self.total_sharp_tags(row['sharp_total_ind'], row['total_over'],
                                                             row['total_under'])
@@ -162,20 +162,20 @@ class HtmlTable:
 
         return away_sp_cell, home_sp_cell
 
-    def ml_sharp_tags(self, indicator, value_1, value_2):
+    def ml_sharp_tags(self, sharp_indicator, espn_indicator, value_1, value_2):
         if (pd.isna(value_1)) or (pd.isna(value_2)):
-            indicator = 0
+            sharp_indicator = 0
             value_1 = value_2 = '-'
 
-        if indicator > 0:
-            green_color = self.green_shades[indicator]
-            away_ml_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}">{value_1}</td>'
+        if sharp_indicator > 0:
+            green_color = self.green_shades[sharp_indicator]
+            away_ml_cell = f'<td style="background-color: {green_color}" sharp_ind="{sharp_indicator}" espn_ind="{espn_indicator}">{value_1}</td>'
             home_ml_cell = f'<td>{value_2}</td>'
-        elif indicator < 0:
-            indicator = abs(indicator)
-            green_color = self.green_shades[indicator]
+        elif sharp_indicator < 0:
+            sharp_indicator = abs(sharp_indicator)
+            green_color = self.green_shades[sharp_indicator]
             away_ml_cell = f'<td>{value_1}</td>'
-            home_ml_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}">{value_2}</td>'
+            home_ml_cell = f'<td style="background-color: {green_color}" sharp_ind="{sharp_indicator}" espn_ind="{espn_indicator}">{value_2}</td>'
         else:
             away_ml_cell = f'<td>{value_1}</td>'
             home_ml_cell = f'<td>{value_2}</td>'

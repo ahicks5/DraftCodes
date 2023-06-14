@@ -5,8 +5,8 @@ TABL,Adam Strelec,,,Adam Strelec
 TABL,Adam Vitasek,,,Adam Vitasek
 TABL,Adolf Sejstal,,,Adolf Sejstal
 FOOT,AFC Conference,-,-,AFC Conference
-FOOT,Akron,,,Akron
-FOOT,Alabama,Alabama,,Alabama
+FOOT,Akron,,Akron Zips,Akron
+FOOT,Alabama,Alabama,Alabama Crimson Tide,Alabama
 TABL,Ales Berbr,,,Ales Berbr
 TABL,Ales Hlawatschke,,,Ales Hlawatschke
 TABL,Ales Krejci,,,Ales Krejci
@@ -17,9 +17,9 @@ TABL,Alois Kanak,,,Alois Kanak
 TABL,Antonin Kosprd,,,Antonin Kosprd
 FOOT,Arizona Cardinals,ARI Cardinals,Arizona Cardinals,Arizona Cardinals
 BASE,Arizona Diamondbacks,ARI DBacks,Arizona Diamondbacks,Arizona Diamondbacks
-FOOT,Arkansas,,,Arkansas
-FOOT,Arkansas State,Arkansas ST,,Arkansas State
-FOOT,Army,Army West Point,,Army
+FOOT,Arkansas,,Arkansas Razorbacks,Arkansas
+FOOT,Arkansas State,Arkansas ST,Arkansas State Red Wolves,Arkansas State
+FOOT,Army,Army West Point,Army Black Knights,Army
 SOCC,Arsenal,Arsenal,Arsenal,Arsenal
 SOCC,AS Roma,AS Roma,AS Roma,AS Roma
 SOCC,Aston Villa,Aston Villa,Aston Villa,Aston Villa
@@ -30,43 +30,43 @@ BASK,Atlanta Dream,ATL Dream,Atlanta Dream,Atlanta Dream
 FOOT,Atlanta Falcons,ATL Falcons,Atlanta Falcons,Atlanta Falcons
 SOCC,Atlanta United,Atlanta Utd,Atlanta United FC,Atlanta Utd
 SOCC,AtlÃ©tico Madrid,Atletico Madrid,Atletico Madrid,Atletico Madrid
-FOOT,Auburn,Auburn,,Auburn
+FOOT,Auburn,Auburn,Auburn Tigers,Auburn
 SOCC,Austin FC,Austin FC,Austin FC,Austin FC
 BASE,Away Total Runs,-,-,Away Total Runs
-FOOT,Ball State,Ball ST,,Ball State
+FOOT,Ball State,Ball ST,Ball State Cardinals,Ball State
 BASE,Baltimore Orioles,BAL Orioles,Baltimore Orioles,Baltimore Orioles
 FOOT,Baltimore Ravens,BAL Ravens,Baltimore Ravens,Baltimore Ravens
 SOCC,FC Barcelona,Barcelona,Barcelona,Barcelona
-FOOT,Baylor,Baylor,,Baylor
+FOOT,Baylor,Baylor,Baylor Bears,Baylor
 ESPT,Bilibili Gaming Junior,,,Bilibili Gaming Junior
 FOOT,Birmingham Stallions,BIR Stallions,,Birmingham Stallions
 ESPT,BLG,,,BLG
 TABL,Bohumil Duben,,,Bohumil Duben
 TABL,Bohumil Vozicky,,,Bohumil Vozicky
 TABL,Bohuslav Kaloc,,,Bohuslav Kaloc
-FOOT,Boise State,Boise ST,,Boise State
+FOOT,Boise State,Boise ST,Boise State Broncos,Boise State
 SOCC,Bologna,Bologna,Bologna,Bologna
 TABL,Borek Moravec,,,Borek Moravec
 BASK,Boston Celtics,BOS Celtics,Boston Celtics,Boston Celtics
-FOOT,Boston College,Boston College,,Boston College
+FOOT,Boston College,Boston College,Boston College Eagles,Boston College
 BASE,Boston Red Sox,BOS Red Sox,Boston Red Sox,Boston Red Sox
 SOCC,Bournemouth,Bournemouth,AFC Bournemouth,Bournemouth
-FOOT,Bowling Green,Bowling Green,,Bowling Green
+FOOT,Bowling Green,Bowling Green,Bowling Green Falcons,Bowling Green
 SOCC,Brentford,Brentford,Brentford,Brentford
 SOCC,Brighton & Hove Albion,Brighton,Brighton & Hove Albion,Brighton
 FOOT,British Columbia Lions,BC Lions,,British Columbia Lions
 TABL,Bronislav Roubal,,,Bronislav Roubal
-FOOT,Buffalo,Buffalo,,Buffalo
+FOOT,Buffalo,Buffalo,Buffalo Bulls,Buffalo
 FOOT,Buffalo Bills,BUF Bills,Buffalo Bills,Buffalo Bills
-FOOT,BYU,BYU,,BYU
+FOOT,BYU,BYU,BYU Cougars,BYU
 SOCC,CÃ¡diz,Cadiz,Cadiz,Cadiz
 FOOT,Calgary Stampeders,CGY Stampeders,,Calgary Stampeders
-FOOT,California,California,,California
+FOOT,California,California,California Golden Bears,California
 HCKY,Carolina Hurricanes,CAR Hurricanes,Carolina Hurricanes,Carolina Hurricanes
 FOOT,Carolina Panthers,CAR Panthers,Carolina Panthers,Carolina Panthers
 SOCC,Celta de Vigo,Celta Vigo,Celta Vigo,Celta Vigo
 FOOT,Central Florida,UCF,,Central Florida
-FOOT,Central Michigan,,,Central Michigan
+FOOT,Central Michigan,,Central Michigan Chippewas,Central Michigan
 TABL,Cesta Havrda,,,Cesta Havrda
 SOCC,CF Montréal,CF Montreal,CF Montréal,CF Montreal
 SOCC,Charlotte FC,Charlotte FC,Charlotte FC,Charlotte FC
@@ -78,14 +78,14 @@ BASK,Chicago Sky,CHI Sky,Chicago Sky,Chicago Sky
 BASE,Chicago White Sox,CHI White Sox,Chicago White Sox,Chicago White Sox
 FOOT,Cincinnati Bengals,CIN Bengals,Cincinnati Bengals,Cincinnati Bengals
 BASE,Cincinnati Reds,CIN Reds,Cincinnati Reds,Cincinnati Reds
-FOOT,Clemson,Clemson,,Clemson
+FOOT,Clemson,Clemson,Clemson Tigers,Clemson
 FOOT,Cleveland Browns,CLE Browns,Cleveland Browns,Cleveland Browns
 BASE,Cleveland Guardians,CLE Guardians,Cleveland Guardians,Cleveland Guardians
-FOOT,Coastal Carolina,Coastal Carolina,,Coastal Carolina
-FOOT,Colorado,Colorado,,Colorado
+FOOT,Coastal Carolina,Coastal Carolina,Coastal Carolina Chanticleers,Coastal Carolina
+FOOT,Colorado,Colorado,Colorado Buffaloes,Colorado
 SOCC,Colorado Rapids,Colorado Rapids,Colorado Rapids,Colorado Rapids
 BASE,Colorado Rockies,COL Rockies,Colorado Rockies,Colorado Rockies
-FOOT,Colorado State,Colorado ST,,Colorado State
+FOOT,Colorado State,Colorado ST,Colorado State Rams,Colorado State
 SOCC,Columbus Crew,Columbus Crew,Columbus Crew,Columbus Crew
 FOOT,Connecticut,,,Connecticut
 SOCC,Cremonese,Cremonese,Cremonese,Cremonese
@@ -111,9 +111,9 @@ TABL,Dominik Kuzma,,,Dominik Kuzma
 TABL,Dominik Lengal,,,Dominik Lengal
 ESPT,Dplus KIA,,,Dplus KIA
 ESPT,DRX,,,DRX
-FOOT,Duke,Duke,,Duke
+FOOT,Duke,Duke,Duke Blue Devils,Duke
 TABL,Dusan Stusek,,,Dusan Stusek
-FOOT,East Carolina,East Carolina,,East Carolina
+FOOT,East Carolina,East Carolina,East Carolina Pirates,East Carolina
 FOOT,Edmonton Elks,EDM Elks,,Edmonton Elks
 TABL,Eduard Sionkala,,,Eduard Sionkala
 SOCC,Elche,Elche,Elche,Elche
@@ -129,42 +129,42 @@ TABL,Filip Sikora,,,Filip Sikora
 TABL,Filip Theodor,,,Filip Theodor
 TABL,Filip Vondracek,,,Filip Vondracek
 SOCC,Fiorentina,Fiorentina,Fiorentina,Fiorentina
-FOOT,Florida ,Florida,,Florida 
-FOOT,Florida International,FIU,,Florida International
+FOOT,Florida ,Florida,Florida Gators,Florida 
+FOOT,Florida International,FIU,Florida International Panthers,Florida International
 HCKY,Florida Panthers,FLA Panthers,Florida Panthers,Florida Panthers
-FOOT,Florida State,Florida ST,,Florida State
+FOOT,Florida State,Florida ST,Florida State Seminoles,Florida State
 TABL,Frantisek Briza,,,Frantisek Briza
 TABL,Frantisek Just,,,Frantisek Just
 TABL,Frantisek Kanta,,,Frantisek Kanta
 TABL,Frantisek Trojan,,,Frantisek Trojan
-FOOT,Fresno State,Fresno ST,,Fresno State
+FOOT,Fresno State,Fresno ST,Fresno State Bulldogs,Fresno State
 SOCC,Fulham,Fulham,Fulham,Fulham
 ESPT,Gen.G,,,Gen.G
-FOOT,Georgia,Georgia Bulldogs,,Georgia
-FOOT,Georgia Tech,Georgia Tech,,Georgia Tech
+FOOT,Georgia,Georgia Bulldogs,Georgia Bulldogs,Georgia
+FOOT,Georgia Tech,Georgia Tech,Georgia Tech Yellow Jackets,Georgia Tech
 SOCC,Getafe,Getafe,Getafe,Getafe
 SOCC,Girona,Girona,Girona,Girona
 FOOT,Green Bay Packers,GB Packers,Green Bay Packers,Green Bay Packers
 FOOT,Hamilton Tiger-Cats,HAM Tiger-Cats,,Hamilton Tiger-Cats
 ESPT,Hanwha Life Esports,,,Hanwha Life Esports
-FOOT,Hawaii,Hawaii,,Hawaii
+FOOT,Hawaii,Hawaii,Hawai'i Rainbow Warriors,Hawaii
 BASE,Home Total Runs,-,-,Home Total Runs
-FOOT,Houston,Houston,,Houston
+FOOT,Houston,Houston,Houston Cougars,Houston
 BASE,Houston Astros,HOU Astros,Houston Astros,Houston Astros
 SOCC,Houston Dynamo,Houston Dynamo,Houston Dynamo FC,Houston Dynamo
 FOOT,Houston Gamblers,HOU Gamblers,,Houston Gamblers
 FOOT,Houston Texans,HOU Texans,Houston Texans,Houston Texans
-FOOT,Illinois,Illinois,,Illinois
-FOOT,Indiana,Indiana,,Indiana
+FOOT,Illinois,Illinois,Illinois Fighting Illini,Illinois
+FOOT,Indiana,Indiana,Indiana Hoosiers,Indiana
 BASK,Indiana Fever,IND Fever,Indiana Fever,Indiana Fever
 FOOT,Indianapolis Colts,IND Colts,Indianapolis Colts,Indianapolis Colts
 SOCC,Inter Miami,Inter Miami,Inter Miami CF,Inter Miami
 SOCC,Inter Milan,Inter Milan,Internazionale,Inter Milan
 ESPT,Invictus Gaming Young,,,Invictus Gaming Young
-FOOT,Iowa,Iowa,,Iowa
+FOOT,Iowa,Iowa,Iowa Hawkeyes,Iowa
 TABL,Ivo Palmi,,,Ivo Palmi
 FOOT,Jacksonville Jaguars,JAX Jaguars,Jacksonville Jaguars,Jacksonville Jaguars
-FOOT,Jacksonville State,Jacksonville ST,,Jacksonville State
+FOOT,Jacksonville State,Jacksonville ST,Jacksonville State Gamecocks,Jacksonville State
 TABL,Jan Benes Jnr,,,Jan Benes Jnr
 TABL,Jan Briska,,,Jan Briska
 TABL,Jan Cernoch,,,Jan Cernoch
@@ -217,15 +217,15 @@ TABL,Jozef Denez,,,Jozef Denez
 SOCC,Juventus,Juventus,Juventus,Juventus
 TABL,Kamil Kleprlik,,,Kamil Kleprlik
 TABL,Kamil Novak,,,Kamil Novak
-FOOT,Kansas,,,Kansas
+FOOT,Kansas,,Kansas Jayhawks,Kansas
 FOOT,Kansas City Chiefs,KC Chiefs,Kansas City Chiefs,Kansas City Chiefs
 BASE,Kansas City Royals,KC Royals,Kansas City Royals,Kansas City Royals
-FOOT,Kansas State,,,Kansas State
+FOOT,Kansas State,,Kansas State Wildcats,Kansas State
 TABL,Karel Baros,,,Karel Baros
 TABL,Karel Brozik,,,Karel Brozik
 TABL,Karel Hons,,,Karel Hons
-FOOT,Kent State,Kent ST,,Kent State
-FOOT,Kentucky,Kentucky,,Kentucky
+FOOT,Kent State,Kent ST,Kent State Golden Flashes,Kent State
+FOOT,Kentucky,Kentucky,Kentucky Wildcats,Kentucky
 ESPT,KT Rolster,,,KT Rolster
 ESPT,Kwangdong Freecs,,,Kwangdong Freecs
 TABL,Kyryl Darin,,,Kyryl Darin
@@ -241,7 +241,7 @@ SOCC,Lazio,Lazio,Lazio,Lazio
 SOCC,Lecce,Lecce,Lecce,Lecce
 SOCC,Leeds United,Leeds,Leeds United,Leeds United
 SOCC,Leicester City,Leicester,Leicester City,Leicester City
-FOOT,Liberty,Liberty,,Liberty
+FOOT,Liberty,Liberty,Liberty Flames,Liberty
 ESPT,Liiv  Sandbox ,,,Liiv  Sandbox 
 SOCC,Liverpool,Liverpool,Liverpool,Liverpool
 ESPT,LNG Esports,,,LNG Esports
@@ -251,9 +251,9 @@ BASE,Los Angeles Dodgers,LA Dodgers,Los Angeles Dodgers,Los Angeles Dodgers
 BASK,Los Angeles Lakers,LA Lakers,Los Angeles Lakers,Los Angeles Lakers
 FOOT,Los Angeles Rams,LA Rams,Los Angeles Rams,Los Angeles Rams
 BASK,Los Angeles Sparks,LA Sparks,Los Angeles Sparks,Los Angeles Sparks
-FOOT,Louisiana Tech,Louisiana Tech,,Louisiana Tech
-FOOT,Louisville,Louisville,,Louisville
-FOOT,LSU,LSU,,LSU
+FOOT,Louisiana Tech,Louisiana Tech,Louisiana Tech Bulldogs,Louisiana Tech
+FOOT,Louisville,Louisville,Louisville Cardinals,Louisville
+FOOT,LSU,LSU,LSU Tigers,LSU
 TABL,Lubor Sulava,,,Lubor Sulava
 TABL,Ludek Madle,,,Ludek Madle
 TABL,Ludek Pelikan,,,Ludek Pelikan
@@ -282,16 +282,16 @@ TABL,Martin Sobisek,,,Martin Sobisek
 TABL,Martin Sochor,,,Martin Sochor
 TABL,Martin Stefek,,,Martin Stefek
 TABL,Martin Tacinec,,,Martin Tacinec
-FOOT,Massachusetts,Massachusetts,,Massachusetts
+FOOT,Massachusetts,Massachusetts,UMass Minutemen,Massachusetts
 TABL,Matej Mazurek,,,Matej Mazurek
 TABL,Matej Pycha,,,Matej Pycha
 TABL,Matyas Rojka,,,Matyas Rojka
 FOOT,Memphis Showboats,Memphis Showboats,,Memphis Showboats
 FOOT,Miami Dolphins,MIA Dolphins,Miami Dolphins,Miami Dolphins
-FOOT,Miami Florida ,Miami FL,,Miami Florida 
+FOOT,Miami Florida ,Miami FL,Miami Hurricanes,Miami Florida 
 BASK,Miami Heat,MIA Heat,Miami Heat,Miami Heat
 BASE,Miami Marlins,MIA Marlins,Miami Marlins,Miami Marlins
-FOOT,Miami Ohio,Miami OH,,Miami Ohio
+FOOT,Miami Ohio,Miami OH,Miami (OH) RedHawks,Miami Ohio
 ESPT,Miao Jing,,,Miao Jing
 TABL,Michael Sedlacek,,,Michael Sedlacek
 TABL,Michal Janik,,,Michal Janik
@@ -302,10 +302,10 @@ TABL,Michal Sklenar,,,Michal Sklenar
 TABL,Michal Vavrecka,,,Michal Vavrecka
 TABL,Michal Zahradka,,,Michal Zahradka
 TABL,Michal Zobac,,,Michal Zobac
-FOOT,Michigan,Michigan,,Michigan
+FOOT,Michigan,Michigan,Michigan Wolverines,Michigan
 FOOT,Michigan Panthers,MI Panthers,,Michigan Panthers
-FOOT,Michigan State,Michigan ST,,Michigan State
-FOOT,Middle Tennessee State,Middle Tennessee,,Middle Tennessee State
+FOOT,Michigan State,Michigan ST,Michigan State Spartans,Michigan State
+FOOT,Middle Tennessee State,Middle Tennessee,Middle Tennessee Blue Raiders,Middle Tennessee State
 TABL,Mihail Trinta,,,Mihail Trinta
 TABL,Mikulas Leopold,,,Mikulas Leopold
 TABL,Milan Bezdicek,,,Milan Bezdicek
@@ -326,7 +326,7 @@ TABL,Milan Vrabec,,,Milan Vrabec
 TABL,Miloslav Dvorak,,,Miloslav Dvorak
 TABL,Miloslav Kotil,,,Miloslav Kotil
 BASE,Milwaukee Brewers,MIL Brewers,Milwaukee Brewers,Milwaukee Brewers
-FOOT,Minnesota ,Minnesota,,Minnesota 
+FOOT,Minnesota ,Minnesota,Minnesota Golden Gophers,Minnesota 
 BASK,Minnesota Lynx,MIN Lynx,Minnesota Lynx,Minnesota Lynx
 BASE,Minnesota Twins,MIN Twins,Minnesota Twins,Minnesota Twins
 SOCC,Minnesota United,Minnesota Utd,Minnesota United FC,Minnesota Utd
@@ -338,20 +338,20 @@ TABL,Miroslav Cyrus,,,Miroslav Cyrus
 TABL,Miroslav Necas,,,Miroslav Necas
 TABL,Miroslav Nejedly,,,Miroslav Nejedly
 FOOT,Mississippi,,,Mississippi
-FOOT,Mississippi State,Mississippi ST,,Mississippi State
+FOOT,Mississippi State,Mississippi ST,Mississippi State Bulldogs,Mississippi State
 SOCC,Monza,Monza Brianza,Monza,Monza Brianza
 SOCC,Napoli,Napoli,Napoli,Napoli
 SOCC,Nashville SC,Nashville SC,Nashville SC,Nashville SC
-FOOT,Navy,Navy,,Navy
+FOOT,Navy,Navy,Navy Midshipmen,Navy
 FOOT,NC Central,,,NC Central
-FOOT,NC State,,,NC State
+FOOT,NC State,,NC State Wolfpack,NC State
 SOCC,New England Revolution,New England Revolution,New England Revolution,NE Revolution
-FOOT,Nebraska,Nebraska,,Nebraska
-FOOT,Nevada,,,Nevada
+FOOT,Nebraska,Nebraska,Nebraska Cornhuskers,Nebraska
+FOOT,Nevada,,Nevada Wolf Pack,Nevada
 FOOT,New England Patriots,NE Patriots,New England Patriots,New England Patriots
 FOOT,New Jersey Generals,NJ Generals,,New Jersey Generals
-FOOT,New Mexico,New Mexico,,New Mexico
-FOOT,New Mexico State,New Mexico ST,,New Mexico State
+FOOT,New Mexico,New Mexico,New Mexico Lobos,New Mexico
+FOOT,New Mexico State,New Mexico ST,New Mexico State Aggies,New Mexico State
 FOOT,New Orleans Breakers,NO Breakers,,New Orleans Breakers
 FOOT,New Orleans Saints,NO Saints,New Orleans Saints,New Orleans Saints
 SOCC,New York City FC,New York City FC,New York City FC,New York City FC
@@ -363,19 +363,19 @@ SOCC,New York Red Bulls,New York Red Bulls,New York Red Bulls,New York Red Bulls
 BASE,New York Yankees,NY Yankees,New York Yankees,New York Yankees
 SOCC,Newcastle United,Newcastle,Newcastle United,Newcastle United
 FOOT,NFC Conference,-,-,NFC Conference
-FOOT,North Carolina,North Carolina,,North Carolina
-FOOT,North Texas,North Texas,,North Texas
-FOOT,Northern Illinois,Northern Illinois,,Northern Illinois
-FOOT,Northwestern,,,Northwestern
-FOOT,Notre Dame,Notre Dame,,Notre Dame
+FOOT,North Carolina,North Carolina,North Carolina Tar Heels,North Carolina
+FOOT,North Texas,North Texas,North Texas Mean Green,North Texas
+FOOT,Northern Illinois,Northern Illinois,Northern Illinois Huskies,Northern Illinois
+FOOT,Northwestern,,Northwestern Wildcats,Northwestern
+FOOT,Notre Dame,Notre Dame,Notre Dame Fighting Irish,Notre Dame
 SOCC,Nottingham Forest,Nottingham Forest,Nottingham Forest,Nottingham Forest
 ESPT,NS RedForce,,,NS RedForce
 BASE,Oakland Athletics,OAK Athletics,Oakland Athletics,OAK Athletics
-FOOT,Ohio,Ohio,,Ohio
-FOOT,Ohio State,Ohio ST,,Ohio State
-FOOT,Oklahoma ,Oklahoma,,Oklahoma 
+FOOT,Ohio,Ohio,Ohio Bobcats,Ohio
+FOOT,Ohio State,Ohio ST,Ohio State Buckeyes,Ohio State
+FOOT,Oklahoma ,Oklahoma,Oklahoma Sooners,Oklahoma 
 ESPT,Oksavingsbank Brion,,,Oksavingsbank Brion
-FOOT,Old Dominion,Old Dominion,,Old Dominion
+FOOT,Old Dominion,Old Dominion,Old Dominion Monarchs,Old Dominion
 TABL,Oldrich Lzicar,,,Oldrich Lzicar
 TABL,Oldrich Vrtal,,,Oldrich Vrtal
 ESPT,OMG,,,OMG
@@ -384,8 +384,8 @@ TABL,Ondrej Mista,,,Ondrej Mista
 TABL,Ondrej Paril,,,Ondrej Paril
 TABL,Ondrej Pros,,,Ondrej Pros
 TABL,Ondrej Svacha,,,Ondrej Svacha
-FOOT,Oregon,,,Oregon
-FOOT,Oregon State,Oregon ST,,Oregon State
+FOOT,Oregon,,Oregon Ducks,Oregon
+FOOT,Oregon State,Oregon ST,Oregon State Beavers,Oregon State
 SOCC,Orlando City,Orlando City,Orlando City SC,Orlando City
 SOCC,Osasuna,Osasuna,Osasuna,Osasuna
 TABL,Oskar Spacek,,,Oskar Spacek
@@ -396,7 +396,7 @@ TABL,Pavel Chvatal,,,Pavel Chvatal
 TABL,Pavel Gireth,,,Pavel Gireth
 TABL,Pavel Mozol,,,Pavel Mozol
 TABL,Pavel Wawrosz,,,Pavel Wawrosz
-FOOT,Penn State,Penn ST,,Penn State
+FOOT,Penn State,Penn ST,Penn State Nittany Lions,Penn State
 TABL,Petr Anton,,,Petr Anton
 TABL,Petr Bradac,,,Petr Bradac
 TABL,Petr Jochym,,,Petr Jochym
@@ -419,7 +419,7 @@ FOOT,Pittsburgh Maulers,PIT Maulers,,Pittsburgh Maulers
 BASE,Pittsburgh Pirates,PIT Pirates,Pittsburgh Pirates,Pittsburgh Pirates
 FOOT,Pittsburgh Steelers,PIT Steelers,Pittsburgh Steelers,Pittsburgh Steelers
 SOCC,Portland Timbers,Portland Timbers,Portland Timbers,Portland Timbers
-FOOT,Purdue,Purdue,,Purdue
+FOOT,Purdue,Purdue,Purdue Boilermakers,Purdue
 TABL,Radek Benes,,,Radek Benes
 TABL,Radek Fnukal,,,Radek Fnukal
 TABL,Radek Krcal,,,Radek Krcal
@@ -436,7 +436,7 @@ SOCC,Real Madrid,Real Madrid,Real Madrid,Real Madrid
 SOCC,Real Salt Lake,Real Salt Lake,Real Salt Lake,Real Salt Lake
 SOCC,Real Sociedad,Real Sociedad,Real Sociedad,Real Sociedad
 TABL,Rene Kowal,,,Rene Kowal
-FOOT,Rice,Rice,,Rice
+FOOT,Rice,Rice,Rice Owls,Rice
 TABL,Richard Macura,,,Richard Macura
 TABL,Robin Pacha,,,Robin Pacha
 TABL,Roman Barta,,,Roman Barta
@@ -447,17 +447,17 @@ TABL,Rostislav Hasmanda,,,Rostislav Hasmanda
 TABL,Rostislav Niezgoda,,,Rostislav Niezgoda
 TABL,Rostyslav Kliuchuk,,,Rostyslav Kliuchuk
 ESPT,Royal Never Give Up,,,Royal Never Give Up
-FOOT,Rutgers,,,Rutgers
+FOOT,Rutgers,,Rutgers Scarlet Knights,Rutgers
 SOCC,Saint Louis City SC,St Louis City SC,St Louis City SC,Saint Louis City SC
 SOCC,Salernitana,Salernitana,Salernitana,Salernitana
-FOOT,Sam Houston State,Sam Houston,,Sam Houston State
+FOOT,Sam Houston State,Sam Houston,Sam Houston Bearkats,Sam Houston State
 SOCC,Sampdoria,Sampdoria,Sampdoria,Sampdoria
 BASE,San Diego Padres,SD Padres,San Diego Padres,San Diego Padres
-FOOT,San Diego State,San Diego ST,,San Diego State
+FOOT,San Diego State,San Diego ST,San Diego State Aztecs,San Diego State
 FOOT,San Francisco 49ers,SF 49ers,San Francisco 49ers,San Francisco 49ers
 BASE,San Francisco Giants,SF Giants,San Francisco Giants,San Francisco Giants
 SOCC,San Jose Earthquakes,San Jose Earthquakes,San Jose Earthquakes,San Jose Earthquakes
-FOOT,San Jose State,San Jose ST,,San Jose State
+FOOT,San Jose State,San Jose ST,San José State Spartans,San Jose State
 FOOT,Saskatchewan Roughriders,SSK Roughriders,,Saskatchewan Roughriders
 SOCC,Sassuolo,Sassuolo,Sassuolo,Sassuolo
 BASE,Seattle Mariners,SEA Mariners,Seattle Mariners,Seattle Mariners
@@ -466,15 +466,15 @@ SOCC,Seattle Sounders,Seattle Sounders,Seattle Sounders FC,Seattle Sounders
 BASK,Seattle Storm,SEA Storm,Seattle Storm,Seattle Storm
 SOCC,Sevilla,Sevilla,Sevilla,Sevilla
 TABL,Simon Kadavy,,,Simon Kadavy
-FOOT,SMU,SMU,,SMU
-FOOT,South Alabama,South Alabama,,South Alabama
-FOOT,South Carolina,South Carolina,,South Carolina
-FOOT,South Florida,South Florida,,South Florida
+FOOT,SMU,SMU,SMU Mustangs,SMU
+FOOT,South Alabama,South Alabama,South Alabama Jaguars,South Alabama
+FOOT,South Carolina,South Carolina,South Carolina Gamecocks,South Carolina
+FOOT,South Florida,South Florida,South Florida Bulls,South Florida
 SOCC,Southampton,Southampton,Southampton,Southampton
 SOCC,Spezia,Spezia,Spezia,Spezia
 SOCC,Sporting Kansas City,Sporting Kansas City,Sporting Kansas City,Sporting Kansas City
 BASE,St. Louis Cardinals,STL Cardinals,St. Louis Cardinals,St. Louis Cardinals
-FOOT,Stanford,Stanford,,Stanford
+FOOT,Stanford,Stanford,Stanford Cardinal,Stanford
 TABL,Stanislav Hudec,,,Stanislav Hudec
 TABL,Stanislav Mazanek,,,Stanislav Mazanek
 TABL,Stanislav Pinc,,,Stanislav Pinc
@@ -483,20 +483,20 @@ ESPT,T1,,,T1
 TABL,Tadeas Zika,,,Tadeas Zika
 FOOT,Tampa Bay Buccaneers,TB Buccaneers,Tampa Bay Buccaneers,Tampa Bay Buccaneers
 BASE,Tampa Bay Rays,TB Rays,Tampa Bay Rays,Tampa Bay Rays
-FOOT,TCU,TCU,,TCU
+FOOT,TCU,TCU,TCU Horned Frogs,TCU
 ESPT,Team WE Academy,,,Team WE Academy
-FOOT,Temple,,,Temple
-FOOT,Tennessee,Tennessee,,Tennessee
+FOOT,Temple,,Temple Owls,Temple
+FOOT,Tennessee,Tennessee,Tennessee Volunteers,Tennessee
 FOOT,Tennessee Titans,TEN Titans,Tennessee Titans,Tennessee Titans
-FOOT,Texas,Texas,,Texas
-FOOT,Texas A&M ,Texas A&M,,Texas A&M 
+FOOT,Texas,Texas,Texas Longhorns,Texas
+FOOT,Texas A&M ,Texas A&M,Texas A&M Aggies,Texas A&M 
 BASE,Texas Rangers,TEX Rangers,Texas Rangers,Texas Rangers
-FOOT,Texas State,Texas ST,,Texas State
-FOOT,Texas Tech,Texas Tech,,Texas Tech
+FOOT,Texas State,Texas ST,Texas State Bobcats,Texas State
+FOOT,Texas Tech,Texas Tech,Texas Tech Red Raiders,Texas Tech
 ESPT,ThunderTalk Young,,,ThunderTalk Young
 TABL,Tibor Kolenic,,,Tibor Kolenic
 TABL,Tiep Vu Duy,,,Tiep Vu Duy
-FOOT,Toledo,Toledo,,Toledo
+FOOT,Toledo,Toledo,Toledo Rockets,Toledo
 TABL,Tomas Andrle,,,Tomas Andrle
 TABL,Tomas Bartik,,,Tomas Bartik
 TABL,Tomas Demek,,,Tomas Demek
@@ -514,16 +514,16 @@ FOOT,Toronto Argonauts,TOR Argonauts,,Toronto Argonauts
 BASE,Toronto Blue Jays,TOR Blue Jays,Toronto Blue Jays,Toronto Blue Jays
 SOCC,Toronto FC,Toronto FC,Toronto FC,Toronto FC
 SOCC,Tottenham Hotspur,Tottenham,Tottenham Hotspur,Tottenham Hotspur
-FOOT,Tulane,Tulane,,Tulane
-FOOT,UCLA,UCLA,,UCLA
+FOOT,Tulane,Tulane,Tulane Green Wave,Tulane
+FOOT,UCLA,UCLA,UCLA Bruins,UCLA
 SOCC,Udinese,Udinese,Udinese,Udinese
-FOOT,UL Monroe,ULM,,UL Monroe
+FOOT,UL Monroe,ULM,UL Monroe Warhawks,UL Monroe
 ESPT,UP Academy,,,UP Academy
-FOOT,USC,USC,,USC
-FOOT,Utah,Utah,,Utah
-FOOT,Utah State,Utah ST,,Utah State
-FOOT,UTEP,UTEP,,UTEP
-FOOT,UTSA,UTSA,,UTSA
+FOOT,USC,USC,USC Trojans,USC
+FOOT,Utah,Utah,Utah Utes,Utah
+FOOT,Utah State,Utah ST,Utah State Aggies,Utah State
+FOOT,UTEP,UTEP,UTEP Miners,UTEP
+FOOT,UTSA,UTSA,UTSA Roadrunners,UTSA
 TABL,Vaclav Hruska Snr,,,Vaclav Hruska Snr
 TABL,Vaclav Pech,,,Vaclav Pech
 TABL,Vaclav Pulkrabek,,,Vaclav Pulkrabek
@@ -532,13 +532,13 @@ SOCC,Valencia,Valencia,Valencia,Valencia
 SOCC,Real Valladolid,Valladolid,Real Valladolid,Valladolid
 SOCC,Rayo Vallecano,Vallecano,Rayo Vallecano,Vallecano
 SOCC,Vancouver Whitecaps,Vancouver Whitecaps,Vancouver Whitecaps,Vancouver Whitecaps
-FOOT,Vanderbilt,Vanderbilt,,Vanderbilt
+FOOT,Vanderbilt,Vanderbilt,Vanderbilt Commodores,Vanderbilt
 TABL,Vasil Stempak,,,Vasil Stempak
 HCKY,Vegas Golden Knights,VGK Golden Knights,Vegas Golden Knights,Vegas Golden Knights
 SOCC,Hellas Verona,Verona,Hellas Verona,Verona
 SOCC,Villarreal,Villarreal,Villarreal,Villarreal
-FOOT,Virginia,Virginia,,Virginia
-FOOT,Virginia Tech ,Virginia Tech,,Virginia Tech 
+FOOT,Virginia,Virginia,Virginia Cavaliers,Virginia
+FOOT,Virginia Tech ,Virginia Tech,Virginia Tech Hokies,Virginia Tech 
 TABL,Vit Salanda,,,Vit Salanda
 TABL,Vladimir Cermak,,,Vladimir Cermak
 TABL,Vladimir Havlicek,,,Vladimir Havlicek
@@ -546,21 +546,44 @@ TABL,Vladimir Kubat,,,Vladimir Kubat
 TABL,Vladimir Milata Jnr,,,Vladimir Milata Jnr
 TABL,Vladimir Postelt,,,Vladimir Postelt
 TABL,Vlastimil Svatos,,,Vlastimil Svatos
-FOOT,Washington,Washington,,Washington
+FOOT,Washington,Washington,Washington Huskies,Washington
 FOOT,Washington Commanders,WAS Commanders,Washington Commanders,Washington Commanders
 BASK,Washington Mystics,WAS Mystics,Washington Mystics,Washington Mystics
 BASE,Washington Nationals,WAS Nationals,Washington Nationals,Washington Nationals
-FOOT,Washington State,Washington ST,,Washington State
+FOOT,Washington State,Washington ST,Washington State Cougars,Washington State
 ESPT,Weibo Gaming,,,Weibo Gaming
 SOCC,West Ham United,West Ham,West Ham United,West Ham United
-FOOT,West Virginia,West Virginia,,West Virginia
-FOOT,Western Kentucky,Western Kentucky,,Western Kentucky
+FOOT,West Virginia,West Virginia,West Virginia Mountaineers,West Virginia
+FOOT,Western Kentucky,Western Kentucky,Western Kentucky Hilltoppers,Western Kentucky
 FOOT,Winnipeg Blue Bombers,WPG Blue Bombers,,Winnipeg Blue Bombers
-FOOT,Wisconsin ,Wisconsin,,Wisconsin 
+FOOT,Wisconsin ,Wisconsin,Wisconsin Badgers,Wisconsin 
 SOCC,Wolverhampton Wanderers,Wolves,Wolverhampton Wanderers,Wolverhampton Wanderers
-FOOT,Wyoming,Wyoming,,Wyoming
+FOOT,Wyoming,Wyoming,Wyoming Cowboys,Wyoming
 TABL,Zbynek Pagac,,,Zbynek Pagac
 TABL,Zbynek Zientek,,,Zbynek Zientek
 TABL,Zdenek Kasinski,,,Zdenek Kasinski
 TABL,Zdenek Nevrtal,,,Zdenek Nevrtal
 TABL,Zdenek Zikmunda,,,Zdenek Zikmunda
+TABL,Petr Zivny,,,Petr Zivny
+TABL,Radim Jaros,,,Radim Jaros
+TABL,Michal Henzel,,,Michal Henzel
+TABL,Petr Kalias,,,Petr Kalias
+TABL,Stepan Waldhauser,,,Stepan Waldhauser
+TABL,Josef Fuchs,,,Josef Fuchs
+TABL,Matej Varcl,,,Matej Varcl
+TABL,Tomas Beran,,,Tomas Beran
+TABL,Martin Mastera,,,Martin Mastera
+TABL,Josef Toth,,,Josef Toth
+TABL,Tomas Jurdin,,,Tomas Jurdin
+TABL,Jan Manhal Snr,,,Jan Manhal Snr
+TABL,Tomas Brezna,,,Tomas Brezna
+TABL,Jaroslav Kasan,,,Jaroslav Kasan
+TABL,Pavel Fojt,,,Pavel Fojt
+TABL,Jakub Vrabec,,,Jakub Vrabec
+TABL,Jindrich Vrba,,,Jindrich Vrba
+TABL,Vojtech Molin,,,Vojtech Molin
+ESPT,BRION,,,BRION
+TABL,Tomas Vrastil,,,Tomas Vrastil
+TABL,Tomas Suta,,,Tomas Suta
+TABL,Jaroslav Kepka,,,Jaroslav Kepka
+TABL,Miloslav Lubas,,,Miloslav Lubas

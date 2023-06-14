@@ -14,7 +14,8 @@ class PullESPN:
         'nba': 'https://www.espn.com/nba/schedule/_/date/',
         'nfl': 'https://www.espn.com/nfl/schedule/_/date/',
         'mlb': 'https://www.espn.com/mlb/schedule/_/date/',
-        'wnba': 'https://www.espn.com/wnba/schedule/_/date/'
+        'wnba': 'https://www.espn.com/wnba/schedule/_/date/',
+        'cfb': 'https://www.espn.com/college-football/schedule/_/date'
     }
 
     def get_soup(self, url):
@@ -79,6 +80,9 @@ class PullESPN:
                                              "GameInfo__Meta" in tag.get('class')).text.strip()
             if 'Coverage' in game_time:
                 game_time = game_time.split('Coverage')[0]
+
+            if 'TBD, ' == game_time[:5]:
+                game_time = game_time.split('TBD, ')[1]
 
             game_time = pd.to_datetime(game_time)
 

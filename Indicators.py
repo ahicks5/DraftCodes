@@ -18,14 +18,61 @@ class Indicators:
         conn = ConnectSources(self.bov_df, self.vsin_df, self.espn_df, team_ref_df, sport_ref_df)
         self.merged_df = conn.merge_all_sources()
 
+    @staticmethod
+    def probability_to_moneyline(probability):
+        if pd.isna(probability) or probability <= 0 or probability > 1:
+            return None
+
+        if probability <= 0.5:
+            return int((100 / probability) - 100)
+        else:
+            return int((100 / (probability - 1)))
+
     def sharp_indicator(self):
         merged_df = self.merged_df
 
+        # sharps
         merged_df['sharp_spread_ind'] = merged_df.apply(self.sharp_spread, axis=1)
         merged_df['sharp_moneyline_ind'] = merged_df.apply(self.sharp_moneyline, axis=1)
         merged_df['sharp_total_ind'] = merged_df.apply(self.sharp_overunder, axis=1)
 
+        # espn
+        merged_df = self.add_espn_ml_spread(merged_df)
+
+        merged_df['espn_moneyline_ind'] = merged_df.apply(self.espn_ml_ind, axis=1)
+
         return merged_df
+
+    def add_espn_ml_spread(self, df):
+        # Convert percentages to float probabilities
+        df['team1_pred'] = df['team1_pred'].str.rstrip('%').astype('float') / 100.0
+        df['team2_pred'] = df['team2_pred'].str.rstrip('%').astype('float') / 100.0
+
+        df['espn_team1_ml'] = df['team1_pred'].apply(self.probability_to_moneyline)
+        df['espn_team2_ml'] = df['team2_pred'].apply(self.probability_to_moneyline)
+
+        return df
+
+    def espn_ml_ind(self, row):
+        if pd.isna(row['espn_team1_ml']) or pd.isna(row['espn_team1_ml']) or pd.isna(row['team_1_ml_odds']) or pd.isna(row['team_2_ml_odds']):
+            return 0
+
+        if row['team_1_ml_odds'] == 'EVEN':
+            row['team_1_ml_odds'] = 100
+
+        if row['team_2_ml_odds'] == 'EVEN':
+            row['team_2_ml_odds'] = 100
+
+        final_score = 0
+
+        if float(row['espn_team1_ml']) < float(row['team_1_ml_odds']):
+            final_score += 1
+
+        if float(row['espn_team2_ml']) < float(row['team_2_ml_odds']):
+            final_score += -1
+
+        return final_score
+
 
     def sharp_spread(self, row):
         try:
