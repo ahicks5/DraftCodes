@@ -47,8 +47,10 @@ class HtmlTable:
             background-color: blue;
           }
         </style>
-        <input type="checkbox" id="sharp_checkbox"><label for="sharp_checkbox"> Sharps</label>
-        <input type="checkbox" id="espn_checkbox"><label for="espn_checkbox"> ESPN</label>
+        <label style="position: relative;">
+          <input type="checkbox" id="colorToggle" style="display: none;">
+          <span style="position: absolute; top: 0; left: 0; height: 20px; width: 20px; background-color: white;"></span>
+        </label>
         <div class="table-container">
             <table id="myTable">
         '''
@@ -76,46 +78,28 @@ class HtmlTable:
 
             table += '''
                 </table></div>
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            const greenShades = {
-                                1: '#33A036',
-                                2: '#147917',
-                                3: '#023020',
-                                4: '#B59410'
-                            };
-                            
-                            const sharpCheckbox = document.getElementById("sharp_checkbox");
-                            const espnCheckbox = document.getElementById("espn_checkbox");
-                            
-                            function updateCellColors() {
-                                const table = document.getElementById("myTable");
-                                const cells = table.getElementsByTagName("td");
-                            
-                                for (let cell of cells) {
-                                    let sharpInd = parseInt(cell.getAttribute("sharp_ind"));
-                                    let espnInd = parseInt(cell.getAttribute("espn_ind"));
-                                    let sum = 0;
-                            
-                                    if (sharpCheckbox.checked) {
-                                        sum += sharpInd;
-                                    }
-                                    if (espnCheckbox.checked) {
-                                        sum += espnInd;
-                                    }
-                            
-                                    if (sum > 0 && greenShades[sum]) {
-                                        cell.style.backgroundColor = greenShades[sum];
-                                    } else {
-                                        cell.style.backgroundColor = '';
-                                    }
-                                }
-                            }
-                            
-                            sharpCheckbox.addEventListener("change", updateCellColors);
-                            espnCheckbox.addEventListener("change", updateCellColors);
+                <script>
+                  window.onload = function() {
+                    const colorToggle = document.querySelector('#colorToggle');
+                    const table = document.querySelector('#myTable');
+                    const cells = table.querySelectorAll('td');
+                    const initialColors = Array.from(cells).map(cell => cell.style.backgroundColor);
+                
+                    colorToggle.addEventListener('change', function() {
+                      if (colorToggle.checked) {
+                        // Restore the colors
+                        cells.forEach((cell, i) => {
+                          cell.style.backgroundColor = initialColors[i];
                         });
-                    </script>
+                      } else {
+                        // Remove the colors
+                        cells.forEach(cell => {
+                          cell.style.backgroundColor = '';
+                        });
+                      }
+                    });
+                  }
+                </script>
             '''
 
             fin_dict[sport] = table
@@ -165,13 +149,13 @@ class HtmlTable:
 
         if indicator > 0:
             green_color = self.green_shades[indicator]
-            away_sp_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}" espn_ind="0">{value_1}</td>'
+            away_sp_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}">{value_1}</td>'
             home_sp_cell = f'<td>{value_2}</td>'
         elif indicator < 0:
             indicator = abs(indicator)
             green_color = self.green_shades[indicator]
             away_sp_cell = f'<td>{value_1}</td>'
-            home_sp_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}" espn_ind="0">{value_2}</td>'
+            home_sp_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}">{value_2}</td>'
         else:
             away_sp_cell = f'<td>{value_1}</td>'
             home_sp_cell = f'<td>{value_2}</td>'
@@ -205,13 +189,13 @@ class HtmlTable:
 
         if indicator > 0:
             green_color = self.green_shades[indicator]
-            over_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}" espn_ind="0">{value_1}</td>'
+            over_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}">{value_1}</td>'
             under_cell = f'<td>{value_2}</td>'
         elif indicator < 0:
             indicator = abs(indicator)
             green_color = self.green_shades[indicator]
             over_cell = f'<td>{value_1}</td>'
-            under_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}" espn_ind="0">{value_2}</td>'
+            under_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}">{value_2}</td>'
         else:
             over_cell = f'<td>{value_1}</td>'
             under_cell = f'<td>{value_2}</td>'

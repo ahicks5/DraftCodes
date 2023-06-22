@@ -5,7 +5,7 @@ TABL,Adam Strelec,,,Adam Strelec
 TABL,Adam Vitasek,,,Adam Vitasek
 TABL,Adolf Sejstal,,,Adolf Sejstal
 FOOT,AFC Conference,-,-,AFC Conference
-FOOT,Akron,,Akron Zips,Akron
+FOOT,Akron,Akron,Akron Zips,Akron
 FOOT,Alabama,Alabama,Alabama Crimson Tide,Alabama
 TABL,Ales Berbr,,,Ales Berbr
 TABL,Ales Hlawatschke,,,Ales Hlawatschke
@@ -347,7 +347,7 @@ FOOT,NC Central,,,NC Central
 FOOT,NC State,,NC State Wolfpack,NC State
 SOCC,New England Revolution,New England Revolution,New England Revolution,NE Revolution
 FOOT,Nebraska,Nebraska,Nebraska Cornhuskers,Nebraska
-FOOT,Nevada,,Nevada Wolf Pack,Nevada
+FOOT,Nevada,Nevada,Nevada Wolf Pack,Nevada
 FOOT,New England Patriots,NE Patriots,New England Patriots,New England Patriots
 FOOT,New Jersey Generals,NJ Generals,,New Jersey Generals
 FOOT,New Mexico,New Mexico,New Mexico Lobos,New Mexico
@@ -485,7 +485,7 @@ FOOT,Tampa Bay Buccaneers,TB Buccaneers,Tampa Bay Buccaneers,Tampa Bay Buccaneer
 BASE,Tampa Bay Rays,TB Rays,Tampa Bay Rays,Tampa Bay Rays
 FOOT,TCU,TCU,TCU Horned Frogs,TCU
 ESPT,Team WE Academy,,,Team WE Academy
-FOOT,Temple,,Temple Owls,Temple
+FOOT,Temple,Temple,Temple Owls,Temple
 FOOT,Tennessee,Tennessee,Tennessee Volunteers,Tennessee
 FOOT,Tennessee Titans,TEN Titans,Tennessee Titans,Tennessee Titans
 FOOT,Texas,Texas,Texas Longhorns,Texas
@@ -587,3 +587,18 @@ TABL,Tomas Vrastil,,,Tomas Vrastil
 TABL,Tomas Suta,,,Tomas Suta
 TABL,Jaroslav Kepka,,,Jaroslav Kepka
 TABL,Miloslav Lubas,,,Miloslav Lubas
+SOCC,Luton Town,,,Luton Town
+TABL,Pavel Kulhanek,,,Pavel Kulhanek
+TABL,Daniel Vrbecky,,,Daniel Vrbecky
+TABL,Julius Lazar,,,Julius Lazar
+SOCC,Burnley,,,Burnley
+TABL,Josef Musil,,,Josef Musil
+TABL,Radim Sindelar,,,Radim Sindelar
+TABL,Patrik Sturma,,,Patrik Sturma
+SOCC,Sheffield United,,,Sheffield United
+TABL,Jan Kabelka,,,Jan Kabelka
+FOOT,Montreal Alouettes,MTL Alouettes,,Montreal Alouettes
+TABL,Michal Vedmoch,,,Michal Vedmoch
+TABL,Matous Klimenta,,,Matous Klimenta
+TABL,Milan Bela,,,Milan Bela
+TABL,Radim Pokorny,,,Radim Pokorny
