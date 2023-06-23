@@ -65,7 +65,7 @@ FOOT,California,California,California Golden Bears,California
 HCKY,Carolina Hurricanes,CAR Hurricanes,Carolina Hurricanes,Carolina Hurricanes
 FOOT,Carolina Panthers,CAR Panthers,Carolina Panthers,Carolina Panthers
 SOCC,Celta de Vigo,Celta Vigo,Celta Vigo,Celta Vigo
-FOOT,Central Florida,UCF,,Central Florida
+FOOT,Central Florida,UCF,UCF Knights,Central Florida
 FOOT,Central Michigan,,Central Michigan Chippewas,Central Michigan
 TABL,Cesta Havrda,,,Cesta Havrda
 SOCC,CF Montréal,CF Montreal,CF Montréal,CF Montreal
@@ -87,7 +87,7 @@ SOCC,Colorado Rapids,Colorado Rapids,Colorado Rapids,Colorado Rapids
 BASE,Colorado Rockies,COL Rockies,Colorado Rockies,Colorado Rockies
 FOOT,Colorado State,Colorado ST,Colorado State Rams,Colorado State
 SOCC,Columbus Crew,Columbus Crew,Columbus Crew,Columbus Crew
-FOOT,Connecticut,,,Connecticut
+FOOT,Connecticut,,UConn Huskies,Connecticut
 SOCC,Cremonese,Cremonese,Cremonese,Cremonese
 SOCC,Crystal Palace,Crystal Palace,Crystal Palace,Crystal Palace
 TABL,Dalibor Kolek,,,Dalibor Kolek
@@ -337,7 +337,7 @@ TABL,Miroslav Cinibulk,,,Miroslav Cinibulk
 TABL,Miroslav Cyrus,,,Miroslav Cyrus
 TABL,Miroslav Necas,,,Miroslav Necas
 TABL,Miroslav Nejedly,,,Miroslav Nejedly
-FOOT,Mississippi,,,Mississippi
+FOOT,Mississippi,,Ole Miss Rebels,Ole Miss
 FOOT,Mississippi State,Mississippi ST,Mississippi State Bulldogs,Mississippi State
 SOCC,Monza,Monza Brianza,Monza,Monza Brianza
 SOCC,Napoli,Napoli,Napoli,Napoli
@@ -345,7 +345,7 @@ SOCC,Nashville SC,Nashville SC,Nashville SC,Nashville SC
 FOOT,Navy,Navy,Navy Midshipmen,Navy
 FOOT,NC Central,,,NC Central
 FOOT,NC State,,NC State Wolfpack,NC State
-SOCC,New England Revolution,New England Revolution,New England Revolution,NE Revolution
+SOCC,New England Revolution,NE Revolution,New England Revolution,NE Revolution
 FOOT,Nebraska,Nebraska,Nebraska Cornhuskers,Nebraska
 FOOT,Nevada,Nevada,Nevada Wolf Pack,Nevada
 FOOT,New England Patriots,NE Patriots,New England Patriots,New England Patriots
@@ -413,12 +413,12 @@ TABL,Petr Vicherek,,,Petr Vicherek
 FOOT,Philadelphia Eagles,PHI Eagles,Philadelphia Eagles,Philadelphia Eagles
 BASE,Philadelphia Phillies,PHI Phillies,Philadelphia Phillies,Philadelphia Phillies
 FOOT,Philadelphia Stars,PHI Stars,,Philadelphia Stars
-SOCC,Philadelphia Union,Philadelphia Union,Philadelphia Union,Philadelphia Union
+SOCC,Philadelphia Union,PHI Union,Philadelphia Union,Philadelphia Union
 BASK,Phoenix Mercury,PHO Mercury,Phoenix Mercury,Phoenix Mercury
 FOOT,Pittsburgh Maulers,PIT Maulers,,Pittsburgh Maulers
 BASE,Pittsburgh Pirates,PIT Pirates,Pittsburgh Pirates,Pittsburgh Pirates
 FOOT,Pittsburgh Steelers,PIT Steelers,Pittsburgh Steelers,Pittsburgh Steelers
-SOCC,Portland Timbers,Portland Timbers,Portland Timbers,Portland Timbers
+SOCC,Portland Timbers,POR Timbers,Portland Timbers,Portland Timbers
 FOOT,Purdue,Purdue,Purdue Boilermakers,Purdue
 TABL,Radek Benes,,,Radek Benes
 TABL,Radek Fnukal,,,Radek Fnukal
@@ -456,7 +456,7 @@ BASE,San Diego Padres,SD Padres,San Diego Padres,San Diego Padres
 FOOT,San Diego State,San Diego ST,San Diego State Aztecs,San Diego State
 FOOT,San Francisco 49ers,SF 49ers,San Francisco 49ers,San Francisco 49ers
 BASE,San Francisco Giants,SF Giants,San Francisco Giants,San Francisco Giants
-SOCC,San Jose Earthquakes,San Jose Earthquakes,San Jose Earthquakes,San Jose Earthquakes
+SOCC,San Jose Earthquakes,SJ Earthquakes,San Jose Earthquakes,San Jose Earthquakes
 FOOT,San Jose State,San Jose ST,San José State Spartans,San Jose State
 FOOT,Saskatchewan Roughriders,SSK Roughriders,,Saskatchewan Roughriders
 SOCC,Sassuolo,Sassuolo,Sassuolo,Sassuolo
@@ -472,7 +472,7 @@ FOOT,South Carolina,South Carolina,South Carolina Gamecocks,South Carolina
 FOOT,South Florida,South Florida,South Florida Bulls,South Florida
 SOCC,Southampton,Southampton,Southampton,Southampton
 SOCC,Spezia,Spezia,Spezia,Spezia
-SOCC,Sporting Kansas City,Sporting Kansas City,Sporting Kansas City,Sporting Kansas City
+SOCC,Sporting Kansas City,Sporting KC,Sporting Kansas City,Sporting Kansas City
 BASE,St. Louis Cardinals,STL Cardinals,St. Louis Cardinals,St. Louis Cardinals
 FOOT,Stanford,Stanford,Stanford Cardinal,Stanford
 TABL,Stanislav Hudec,,,Stanislav Hudec
@@ -602,3 +602,81 @@ TABL,Michal Vedmoch,,,Michal Vedmoch
 TABL,Matous Klimenta,,,Matous Klimenta
 TABL,Milan Bela,,,Milan Bela
 TABL,Radim Pokorny,,,Radim Pokorny
+TABL,Radim Bako,,,Radim Bako
+TABL,Romualdo Manna,,,Romualdo Manna
+TABL,Giacomo Allegranza,,,Giacomo Allegranza
+TABL,Oleksandr Tymofieiev,,,Oleksandr Tymofieiev
+TABL,Alexandru Petrescu,,,Alexandru Petrescu
+TABL,Frantisek Onderka,,,Frantisek Onderka
+TABL,Miguel Nunez,,,Miguel Nunez
+TABL,Martin Pytlik,,,Martin Pytlik
+BASK,,CON Sun,Connecticut Sun,Connecticut Sun
+BASK,,,Las Vegas Aces,Las Vegas Aces
+FOOT,,,Alabama A&M Bulldogs,Alabama A&M Bulldogs
+FOOT,,,Western Carolina Catamounts,Western Carolina Catamounts
+FOOT,,,Idaho State Bengals,Idaho State Bengals
+FOOT,,,Incarnate Word Cardinals,Incarnate Word Cardinals
+FOOT,,,Maine Black Bears,Maine Black Bears
+FOOT,,,UT Martin Skyhawks,UT Martin Skyhawks
+FOOT,,,Western Illinois Leathernecks,Western Illinois Leathernecks
+FOOT,,,Tennessee State Tigers,Tennessee State Tigers
+FOOT,,,Southeast Missouri State Redhawks,Southeast Missouri State Redhawks
+FOOT,,,Portland State Vikings,Portland State Vikings
+FOOT,,,Long Island University Sharks,Long Island University Sharks
+FOOT,,,SE Louisiana Lions,SE Louisiana Lions
+FOOT,,,Missouri State Bears,Missouri State Bears
+FOOT,,,Northwestern State Demons,Northwestern State Demons
+FOOT,,,Alcorn State Braves,Alcorn State Braves
+FOOT,,,Robert Morris Colonials,Robert Morris Colonials
+FOOT,,,North Carolina A&T Aggies,North Carolina A&T Aggies
+FOOT,,,Mercer Bears,Mercer Bears
+FOOT,,,Towson Tigers,Towson Tigers
+FOOT,,,Albany Great Danes,Albany Great Danes
+FOOT,,,Monmouth Hawks,Monmouth Hawks
+FOOT,,,Bethune-Cookman Wildcats,Bethune-Cookman Wildcats
+FOOT,,,Wofford Terriers,Wofford Terriers
+FOOT,,,Gardner-Webb Runnin' Bulldogs,Gardner-Webb Runnin' Bulldogs
+FOOT,,,Bucknell Bison,Bucknell Bison
+FOOT,,,The Citadel Bulldogs,The Citadel Bulldogs
+FOOT,,,Elon Phoenix,Elon Phoenix
+FOOT,,,South Dakota Coyotes,South Dakota Coyotes
+FOOT,,,Southern Utah Thunderbirds,Southern Utah Thunderbirds
+FOOT,,,Bryant Bulldogs,Bryant Bulldogs
+FOOT,,,Colgate Raiders,Colgate Raiders
+FOOT,,,Rhode Island Rams,Rhode Island Rams
+FOOT,,,Central Arkansas Bears,Central Arkansas Bears
+FOOT,,,Arkansas-Pine Bluff Golden Lions,Arkansas-Pine Bluff Golden Lions
+FOOT,,,St. Francis (PA) Red Flash,St. Francis (PA) Red Flash
+FOOT,,,Northern Arizona Lumberjacks,Northern Arizona Lumberjacks
+FOOT,,,Howard Bison,Howard Bison
+FOOT,,,Northern Iowa Panthers,Northern Iowa Panthers
+FOOT,,,Stephen F. Austin Lumberjacks,Stephen F. Austin Lumberjacks
+FOOT,,,South Carolina State Bulldogs,South Carolina State Bulldogs
+FOOT,,,Eastern Kentucky Colonels,Eastern Kentucky Colonels
+FOOT,,,Louisiana Ragin' Cajuns,Louisiana Ragin' Cajuns
+FOOT,,,Southern Miss Golden Eagles,Southern Miss Golden Eagles
+FOOT,,,Air Force Falcons,Air Force Falcons
+FOOT,,,UAB Blazers,UAB Blazers
+FOOT,,,Maryland Terrapins,Maryland Terrapins
+FOOT,,,Marshall Thundering Herd,Marshall Thundering Herd
+FOOT,,,Florida Atlantic Owls,Florida Atlantic Owls
+FOOT,,,Memphis Tigers,Memphis Tigers
+FOOT,,,Pittsburgh Panthers,Pittsburgh Panthers
+FOOT,,,Appalachian State Mountaineers,Appalachian State Mountaineers
+FOOT,,,James Madison Dukes,James Madison Dukes
+FOOT,,,Georgia Southern Eagles,Georgia Southern Eagles
+FOOT,,Wake Forest,Wake Forest Demon Deacons,Wake Forest Demon Deacons
+FOOT,,,Missouri Tigers,Missouri Tigers
+FOOT,,,Arizona State Sun Devils,Arizona State Sun Devils
+FOOT,,,UNLV Rebels,UNLV Rebels
+FOOT,,,Syracuse Orange,Syracuse Orange
+FOOT,,,Georgia State Panthers,Georgia State Panthers
+FOOT,,,Oklahoma State Cowboys,Oklahoma State Cowboys
+FOOT,,,Tulsa Golden Hurricane,Tulsa Golden Hurricane
+FOOT,,,Western Michigan Broncos,Western Michigan Broncos
+FOOT,,,Arizona Wildcats,Arizona Wildcats
+FOOT,,,Eastern Michigan Eagles,Eastern Michigan Eagles
+FOOT,,,Iowa State Cyclones,Iowa State Cyclones
+FOOT,,,Troy Trojans,Troy Trojans
+FOOT,,,Charlotte 49ers,Charlotte 49ers
+FOOT,,,Cincinnati Bearcats,Cincinnati Bearcats

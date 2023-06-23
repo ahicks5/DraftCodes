@@ -10,8 +10,8 @@ team_ref_df, sport_ref_df = find_ref_dfs()
 class PullESPN:
     pregame_sport_links = {
         'soccer': 'https://www.espn.com/soccer/schedule/_/date/',
-        'nhl': 'https://www.espn.com/nhl/schedule/_/date/',
-        'nba': 'https://www.espn.com/nba/schedule/_/date/',
+        #'nhl': 'https://www.espn.com/nhl/schedule/_/date/',
+        #'nba': 'https://www.espn.com/nba/schedule/_/date/',
         'nfl': 'https://www.espn.com/nfl/schedule/_/date/',
         'mlb': 'https://www.espn.com/mlb/schedule/_/date/',
         'wnba': 'https://www.espn.com/wnba/schedule/_/date/',
@@ -163,9 +163,10 @@ class PullESPN:
 
         game_list = []
         for link in links:
-            #print(link)
             game_dict = self.parse_game_stats(link)
-            game_list.append(game_dict)
+            a_sch_dict, h_sch_dict = self.get_schedule_info(link)
+            full_game_dict = {**game_dict, **a_sch_dict, **h_sch_dict}
+            game_list.append(full_game_dict)
 
         df = pd.DataFrame(game_list)
         df = df.drop_duplicates()
@@ -185,14 +186,157 @@ class PullESPN:
         df_missing_teams = pd.DataFrame(missing_teams, columns=['team'])
         df_missing_teams.to_csv('espn_missing_teams.csv', index=False)
 
+    def get_schedule_links(self, game_link):
+        espn_start = 'https://www.espn.com'
+        soup = self.get_soup(game_link)
+        team_names = soup.findAll('h2',
+                                  {'class': 'ScoreCell__TeamName ScoreCell__TeamName--displayName truncate db'})
+        away_schedule_link = espn_start + team_names[0].parent['href'].replace('team/', 'team/schedule/')
+        home_schedule_link = espn_start + team_names[1].parent['href'].replace('team/', 'team/schedule/')
+
+        return away_schedule_link, home_schedule_link
+
+    def parse_schedule_stats(self, schedule_link):
+        soup = self.get_soup(schedule_link)
+
+        tables = pd.read_html(soup.prettify(), header=0)
+        df = tables[0]
+        if df.columns.tolist()[0] != 'Date':
+            tables = pd.read_html(soup.prettify(), header=1)
+            df = tables[0]
+
+        # clean rows - delete postponed and other header
+        df = df[df['RESULT'] != 'Postponed']
+        df = df[df['RESULT'] != 'TIME']
+        mask = ~df['RESULT'].str.contains('AM|PM|Season|Preseason|RESULT')
+        df = df[mask]
+
+        # convert column to date
+        current_year = pd.Timestamp.now().year
+        df['DATE'] = df['DATE'] + f', {current_year}'
+        df['DATE'] = pd.to_datetime(df['DATE'], format='%a, %b %d, %Y')
+
+        # add new columns
+        df['Clean_Result'] = df.apply(self.determine_result, axis=1)
+        df['Away_Home'] = df.apply(self.determine_away_home, axis=1)
+        df['Final_Score'] = df['RESULT'].str.split('F/').str.get(0)
+        df['Final_Score'] = df['RESULT'].str.split(' OT').str.get(0)
+        df[['Points_For', 'Points_Against']] = df.apply(self.extract_points, axis=1)
+
+        if (len(df[df['Away_Home'] == 'Home']) > 2) and (len(df[df['Away_Home'] == 'Away']) > 2):
+            # generate streaks
+            current_streak, home_streak, away_streak = self.calculate_streaks(df)
+            avg_pt_for = df['Points_For'].mean()
+            avg_pt_ag = df['Points_Against'].mean()
+
+            schedule_dict = {
+                'espn_current_streak': current_streak,
+                'espn_home_streak': home_streak,
+                'espn_away_streak': away_streak,
+                'espn_avg_pt_for': avg_pt_for,
+                'espn_avg_pt_ag': avg_pt_ag
+            }
+        else:
+            schedule_dict = {}
+
+        return schedule_dict
+
+    @staticmethod
+    def determine_result(row):
+        if 'W' in row['RESULT']:
+            return 'W'
+        elif 'L' in row['RESULT']:
+            return 'L'
+        else:
+            return ''
+
+    @staticmethod
+    def determine_away_home(row):
+        if '@' in row['OPPONENT']:
+            return 'Away'
+        elif 'vs' in row['OPPONENT']:
+            return 'Home'
+        else:
+            return ''
+
+    @staticmethod
+    def extract_points(row):
+        win_loss, scores = row['Final_Score'].split()
+        points_for, points_against = map(int, scores.split('-'))
+
+        if win_loss == 'L':
+            points_for, points_against = points_against, points_for
+
+        return pd.Series({'Points For': points_for, 'Points Against': points_against})
+
+    @staticmethod
+    def calculate_streaks(df):
+        # Initialize the streak counts
+        streak_count = 1
+        home_streak_count = 1
+        away_streak_count = 1
+
+        # Initialize the previous results
+        previous_result = df['Clean_Result'].iloc[0]
+        previous_home_result = None
+        previous_away_result = None
+
+        # Iterate through the DataFrame
+        for index, row in df.iterrows():
+            # Current streak
+            current_result = row['Clean_Result']
+            if current_result == previous_result:
+                streak_count += 1
+            else:
+                streak_count = 1
+                previous_result = current_result
+
+            # Home streak
+            if row['Away_Home'] == 'Home':
+                if previous_home_result is None:
+                    previous_home_result = current_result
+                elif current_result == previous_home_result:
+                    home_streak_count += 1
+                else:
+                    home_streak_count = 1
+                    previous_home_result = current_result
+
+            # Away streak
+            if row['Away_Home'] == 'Away':
+                if previous_away_result is None:
+                    previous_away_result = current_result
+                elif current_result == previous_away_result:
+                    away_streak_count += 1
+                else:
+                    away_streak_count = 1
+                    previous_away_result = current_result
+
+        # Final streaks
+        current_streak = f'{previous_result}{streak_count}'
+        home_streak = f'{previous_home_result}{home_streak_count}' if previous_home_result is not None else 'N/A'
+        away_streak = f'{previous_away_result}{away_streak_count}' if previous_away_result is not None else 'N/A'
+
+        return current_streak, home_streak, away_streak
+
+    def get_schedule_info(self, link):
+        try:
+            away_link, home_link = self.get_schedule_links(link)
+            away_dict, home_dict = self.parse_schedule_stats(away_link), self.parse_schedule_stats(home_link)
+
+            new_away_dict = new_home_dict = {}
+
+            for key in away_dict:
+                new_away_dict['A_' + key] = away_dict[key]
+
+            for key in home_dict:
+                new_home_dict['H_' + key] = home_dict[key]
+
+            return new_away_dict, new_home_dict
+        except:
+            return {}, {}
 
 
 if __name__ == '__main__':
     espn = PullESPN()
-    #soup = espn.get_soup('https://www.espn.com/nhl/game?gameId=401550957')
-    #espn.get_game_time_date(soup)
-    print(espn.assemble_espn_data().to_csv('espn_test.csv', index=False))
-    #espn_df = pd.read_csv('espn_test.csv')
-    #espn = PullESPN()
-    #df = espn.generate_game_date_ID(espn_df)
-    #df.to_csv('espn_test_withID.csv', index=False)
+    espn.assemble_espn_data().to_csv("espn.csv", index=False)
+    #print(espn.get_schedule_info('https://www.espn.com/wnba/game?gameId=401507204'))
