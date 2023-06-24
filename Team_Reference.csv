@@ -83,7 +83,7 @@ FOOT,Cleveland Browns,CLE Browns,Cleveland Browns,Cleveland Browns
 BASE,Cleveland Guardians,CLE Guardians,Cleveland Guardians,Cleveland Guardians
 FOOT,Coastal Carolina,Coastal Carolina,Coastal Carolina Chanticleers,Coastal Carolina
 FOOT,Colorado,Colorado,Colorado Buffaloes,Colorado
-SOCC,Colorado Rapids,Colorado Rapids,Colorado Rapids,Colorado Rapids
+SOCC,Colorado Rapids,COL Rapids,Colorado Rapids,Colorado Rapids
 BASE,Colorado Rockies,COL Rockies,Colorado Rockies,Colorado Rockies
 FOOT,Colorado State,Colorado ST,Colorado State Rams,Colorado State
 SOCC,Columbus Crew,Columbus Crew,Columbus Crew,Columbus Crew
@@ -151,7 +151,7 @@ FOOT,Hawaii,Hawaii,Hawai'i Rainbow Warriors,Hawaii
 BASE,Home Total Runs,-,-,Home Total Runs
 FOOT,Houston,Houston,Houston Cougars,Houston
 BASE,Houston Astros,HOU Astros,Houston Astros,Houston Astros
-SOCC,Houston Dynamo,Houston Dynamo,Houston Dynamo FC,Houston Dynamo
+SOCC,Houston Dynamo,HOU Dynamo,Houston Dynamo FC,Houston Dynamo
 FOOT,Houston Gamblers,HOU Gamblers,,Houston Gamblers
 FOOT,Houston Texans,HOU Texans,Houston Texans,Houston Texans
 FOOT,Illinois,Illinois,Illinois Fighting Illini,Illinois
@@ -611,7 +611,7 @@ TABL,Frantisek Onderka,,,Frantisek Onderka
 TABL,Miguel Nunez,,,Miguel Nunez
 TABL,Martin Pytlik,,,Martin Pytlik
 BASK,,CON Sun,Connecticut Sun,Connecticut Sun
-BASK,,,Las Vegas Aces,Las Vegas Aces
+BASK,Las Vegas Aces,LV Aces,Las Vegas Aces,Las Vegas Aces
 FOOT,,,Alabama A&M Bulldogs,Alabama A&M Bulldogs
 FOOT,,,Western Carolina Catamounts,Western Carolina Catamounts
 FOOT,,,Idaho State Bengals,Idaho State Bengals
@@ -680,3 +680,20 @@ FOOT,,,Iowa State Cyclones,Iowa State Cyclones
 FOOT,,,Troy Trojans,Troy Trojans
 FOOT,,,Charlotte 49ers,Charlotte 49ers
 FOOT,,,Cincinnati Bearcats,Cincinnati Bearcats
+TABL,Jiri Babinek,,,Jiri Babinek
+TABL,Miroslav Klimenta,,,Miroslav Klimenta
+TABL,Richard Bonsch,,,Richard Bonsch
+TABL,Jakub Levicky,,,Jakub Levicky
+TABL,Michal Syroha,,,Michal Syroha
+TABL,Vladislav Hampejs,,,Vladislav Hampejs
+TABL,Tomas Palan,,,Tomas Palan
+TABL,Ondrej Homola,,,Ondrej Homola
+TABL,Miroslav Barta,,,Miroslav Barta
+TABL,Lukas Krok,,,Lukas Krok
+TABL,Martin Kacerovsky,,,Martin Kacerovsky
+TABL,Tomas Trnka,,,Tomas Trnka
+TABL,Lubos Krticka,,,Lubos Krticka
+TABL,Ladislav Havel,,,Ladislav Havel
+TABL,Radek Sedlacek,,,Radek Sedlacek
+TABL,Jakub Joksch,,,Jakub Joksch
+TABL,Lubomir Jonas,,,Lubomir Jonas

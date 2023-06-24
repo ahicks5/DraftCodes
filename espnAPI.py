@@ -201,7 +201,9 @@ class PullESPN:
 
         tables = pd.read_html(soup.prettify(), header=0)
         df = tables[0]
-        if df.columns.tolist()[0] != 'Date':
+        if 'DATE' in df.columns.tolist() or 'DATE' in df.columns.tolist():
+            pass
+        else:
             tables = pd.read_html(soup.prettify(), header=1)
             df = tables[0]
 
@@ -219,8 +221,8 @@ class PullESPN:
         # add new columns
         df['Clean_Result'] = df.apply(self.determine_result, axis=1)
         df['Away_Home'] = df.apply(self.determine_away_home, axis=1)
-        df['Final_Score'] = df['RESULT'].str.split('F/').str.get(0)
-        df['Final_Score'] = df['RESULT'].str.split(' OT').str.get(0)
+        df['Final_Score'] = df['RESULT'].str.split(' F/').str.get(0).str.strip()
+        df['Final_Score'] = df['Final_Score'].str.strip().str.split(' OT').str.get(0)
         df[['Points_For', 'Points_Against']] = df.apply(self.extract_points, axis=1)
 
         if (len(df[df['Away_Home'] == 'Home']) > 2) and (len(df[df['Away_Home'] == 'Away']) > 2):
@@ -319,6 +321,7 @@ class PullESPN:
         return current_streak, home_streak, away_streak
 
     def get_schedule_info(self, link):
+        print(link)
         try:
             away_link, home_link = self.get_schedule_links(link)
             away_dict, home_dict = self.parse_schedule_stats(away_link), self.parse_schedule_stats(home_link)
@@ -332,11 +335,12 @@ class PullESPN:
                 new_home_dict['H_' + key] = home_dict[key]
 
             return new_away_dict, new_home_dict
-        except:
+        except Exception as e:
+            print(f'Error pulling ESPN Schedule: {e}')
             return {}, {}
 
 
 if __name__ == '__main__':
     espn = PullESPN()
-    espn.assemble_espn_data().to_csv("espn.csv", index=False)
-    #print(espn.get_schedule_info('https://www.espn.com/wnba/game?gameId=401507204'))
+    #espn.assemble_espn_data().to_csv("espn.csv", index=False)
+    print(espn.get_schedule_info('https://www.espn.com/mlb/game?gameId=401472160'))
