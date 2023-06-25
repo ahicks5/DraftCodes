@@ -4,6 +4,7 @@ from vsinAPI import VsinSharp
 from connectSources import ConnectSources
 from espnAPI import PullESPN
 from connectSources import find_ref_dfs
+import time
 
 team_ref_df, sport_ref_df = find_ref_dfs()
 
@@ -38,8 +39,10 @@ class Indicators:
 
         # espn
         merged_df = self.add_espn_ml_spread(merged_df)
-
         merged_df['espn_moneyline_ind'] = merged_df.apply(self.espn_ml_ind, axis=1)
+
+        # streaks
+        merged_df['espn_streak_ind'] = merged_df.apply(self.espn_streaks, axis=1)
 
         return merged_df
 
@@ -138,7 +141,43 @@ class Indicators:
         except:
             return None
 
+    def espn_streaks(self, row):
+        try:
+            final_score = 0
+
+            # overall streaks
+            if row['A_espn_current_streak'][0] == 'W' and int(row['A_espn_current_streak'][1:]) >= 3:
+                final_score += 1
+            elif row['A_espn_current_streak'][0] == 'L' and int(row['A_espn_current_streak'][1:]) >= 3:
+                final_score += -1
+
+            if row['H_espn_current_streak'][0] == 'W' and int(row['H_espn_current_streak'][1:]) >= 3:
+                final_score += -1
+            elif row['H_espn_current_streak'][0] == 'L' and int(row['H_espn_current_streak'][1:]) >= 3:
+                final_score += 1
+
+            # away/home streaks
+            if row['A_espn_away_streak'][0] == 'W' and int(row['A_espn_away_streak'][1:]) >= 3:
+                final_score += 1
+            elif row['A_espn_away_streak'][0] == 'L' and int(row['A_espn_away_streak'][1:]) >= 3:
+                final_score += -1
+
+            if row['H_espn_home_streak'][0] == 'W' and int(row['H_espn_home_streak'][1:]) >= 3:
+                final_score += -1
+            elif row['H_espn_home_streak'][0] == 'L' and int(row['H_espn_home_streak'][1:]) >= 3:
+                final_score += 1
+
+            return final_score
+
+        except:
+            return None
+
 
 if __name__ == '__main__':
+    start_time = time.time()
+
     ind = Indicators()
     ind.sharp_indicator().to_csv("indicators.csv")
+
+    end_time = time.time()
+    print(f'Script took {end_time - start_time}')

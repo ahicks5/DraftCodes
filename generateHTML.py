@@ -48,7 +48,8 @@ class HtmlTable:
           }
         </style>
         <input type="checkbox" id="sharp_checkbox"><label for="sharp_checkbox"> Sharps</label>
-        <input type="checkbox" id="espn_checkbox"><label for="espn_checkbox"> ESPN</label>
+        <input type="checkbox" id="espn_pred_checkbox"><label for="espn_pred_checkbox"> ESPN</label>
+        <input type="checkbox" id="espn_streak_checkbox"><label for="espn_streak_checkbox"> Streaks</label>
         <div class="table-container">
             <table id="myTable">
         '''
@@ -86,7 +87,8 @@ class HtmlTable:
                             };
                             
                             const sharpCheckbox = document.getElementById("sharp_checkbox");
-                            const espnCheckbox = document.getElementById("espn_checkbox");
+                            const espnPredCheckbox = document.getElementById("espn_pred_checkbox");
+                            cons espnStreakCheckbox = document.getElementById("espn_streak_checkbox");
                             
                             function updateCellColors() {
                                 const table = document.getElementById("myTable");
@@ -94,14 +96,18 @@ class HtmlTable:
                             
                                 for (let cell of cells) {
                                     let sharpInd = parseInt(cell.getAttribute("sharp_ind"));
-                                    let espnInd = parseInt(cell.getAttribute("espn_ind"));
+                                    let espnPredInd = parseInt(cell.getAttribute("espn_pred_ind"));
+                                    let espnStreakInd = parseInt(cell.getAttribute("espn_stk_ind"));
                                     let sum = 0;
                             
                                     if (sharpCheckbox.checked) {
                                         sum += sharpInd;
                                     }
-                                    if (espnCheckbox.checked) {
-                                        sum += espnInd;
+                                    if (espnPredCheckbox.checked) {
+                                        sum += espnPredInd;
+                                    }
+                                    if (espnStreakCheckbox.checked) {
+                                        sum += espnStreakInd;
                                     }
                             
                                     if (sum > 0 && greenShades[sum]) {
@@ -113,7 +119,8 @@ class HtmlTable:
                             }
                             
                             sharpCheckbox.addEventListener("change", updateCellColors);
-                            espnCheckbox.addEventListener("change", updateCellColors);
+                            espnPredCheckbox.addEventListener("change", updateCellColors);
+                            espnStreakIndCheckbox.addEventListener("change", updateCellColors);
                         });
                     </script>
             '''
@@ -158,40 +165,36 @@ class HtmlTable:
 
         return row_html
 
-    def spread_sharp_tags(self, indicator, value_1, value_2):
+    def spread_sharp_tags(self, indicator, espn_streak, value_1, value_2):
         if (pd.isna(value_1)) or (pd.isna(value_2)):
             indicator = 0
             value_1 = value_2 = '-'
 
         if indicator > 0:
-            green_color = self.green_shades[indicator]
-            away_sp_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}" espn_ind="0">{value_1}</td>'
+            away_sp_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="{espn_streak}">{value_1}</td>'
             home_sp_cell = f'<td>{value_2}</td>'
         elif indicator < 0:
             indicator = abs(indicator)
-            green_color = self.green_shades[indicator]
             away_sp_cell = f'<td>{value_1}</td>'
-            home_sp_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}" espn_ind="0">{value_2}</td>'
+            home_sp_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="{espn_streak}">{value_2}</td>'
         else:
             away_sp_cell = f'<td>{value_1}</td>'
             home_sp_cell = f'<td>{value_2}</td>'
 
         return away_sp_cell, home_sp_cell
 
-    def ml_sharp_tags(self, sharp_indicator, espn_indicator, value_1, value_2):
+    def ml_sharp_tags(self, sharp_indicator, espn_pred, espn_streak, value_1, value_2):
         if (pd.isna(value_1)) or (pd.isna(value_2)):
             sharp_indicator = 0
             value_1 = value_2 = '-'
 
         if sharp_indicator > 0:
-            green_color = self.green_shades[sharp_indicator]
-            away_ml_cell = f'<td style="background-color: {green_color}" sharp_ind="{sharp_indicator}" espn_ind="{espn_indicator}">{value_1}</td>'
+            away_ml_cell = f'<td sharp_ind="{sharp_indicator}" espn_pred_ind="{espn_pred}" espn_stk_ind="{espn_streak}">{value_1}</td>'
             home_ml_cell = f'<td>{value_2}</td>'
         elif sharp_indicator < 0:
             sharp_indicator = abs(sharp_indicator)
-            green_color = self.green_shades[sharp_indicator]
             away_ml_cell = f'<td>{value_1}</td>'
-            home_ml_cell = f'<td style="background-color: {green_color}" sharp_ind="{sharp_indicator}" espn_ind="{espn_indicator}">{value_2}</td>'
+            home_ml_cell = f'<td sharp_ind="{sharp_indicator}" espn_pred_ind="{espn_pred}" espn_stk_ind="{espn_streak}">{value_2}</td>'
         else:
             away_ml_cell = f'<td>{value_1}</td>'
             home_ml_cell = f'<td>{value_2}</td>'
@@ -204,14 +207,12 @@ class HtmlTable:
             value_1 = value_2 = '-'
 
         if indicator > 0:
-            green_color = self.green_shades[indicator]
-            over_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}" espn_ind="0">{value_1}</td>'
+            over_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="0">{value_1}</td>'
             under_cell = f'<td>{value_2}</td>'
         elif indicator < 0:
             indicator = abs(indicator)
-            green_color = self.green_shades[indicator]
             over_cell = f'<td>{value_1}</td>'
-            under_cell = f'<td style="background-color: {green_color}" sharp_ind="{indicator}" espn_ind="0">{value_2}</td>'
+            under_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="0">{value_2}</td>'
         else:
             over_cell = f'<td>{value_1}</td>'
             under_cell = f'<td>{value_2}</td>'

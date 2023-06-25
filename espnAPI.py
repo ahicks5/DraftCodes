@@ -210,6 +210,7 @@ class PullESPN:
         # clean rows - delete postponed and other header
         df = df[df['RESULT'] != 'Postponed']
         df = df[df['RESULT'] != 'TIME']
+        df = df[df['RESULT'] != 'LIVE']
         mask = ~df['RESULT'].str.contains('AM|PM|Season|Preseason|RESULT')
         df = df[mask]
 
@@ -321,7 +322,6 @@ class PullESPN:
         return current_streak, home_streak, away_streak
 
     def get_schedule_info(self, link):
-        print(link)
         try:
             away_link, home_link = self.get_schedule_links(link)
             away_dict, home_dict = self.parse_schedule_stats(away_link), self.parse_schedule_stats(home_link)
@@ -336,11 +336,10 @@ class PullESPN:
 
             return new_away_dict, new_home_dict
         except Exception as e:
-            print(f'Error pulling ESPN Schedule: {e}')
             return {}, {}
 
 
 if __name__ == '__main__':
     espn = PullESPN()
     #espn.assemble_espn_data().to_csv("espn.csv", index=False)
-    print(espn.get_schedule_info('https://www.espn.com/mlb/game?gameId=401472160'))
+    print(espn.get_schedule_info('https://www.espn.com/mlb/game/_/gameId/401472182'))
