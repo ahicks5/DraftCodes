@@ -79,49 +79,49 @@ class HtmlTable:
                 </table></div>
                     <script>
                         document.addEventListener("DOMContentLoaded", function () {
-                            const greenShades = {
-                                1: '#33A036',
-                                2: '#147917',
-                                3: '#023020',
-                                4: '#B59410'
-                            };
-                            
-                            const sharpCheckbox = document.getElementById("sharp_checkbox");
-                            const espnPredCheckbox = document.getElementById("espn_pred_checkbox");
-                            cons espnStreakCheckbox = document.getElementById("espn_streak_checkbox");
-                            
-                            function updateCellColors() {
-                                const table = document.getElementById("myTable");
-                                const cells = table.getElementsByTagName("td");
-                            
-                                for (let cell of cells) {
-                                    let sharpInd = parseInt(cell.getAttribute("sharp_ind"));
-                                    let espnPredInd = parseInt(cell.getAttribute("espn_pred_ind"));
-                                    let espnStreakInd = parseInt(cell.getAttribute("espn_stk_ind"));
-                                    let sum = 0;
-                            
-                                    if (sharpCheckbox.checked) {
-                                        sum += sharpInd;
-                                    }
-                                    if (espnPredCheckbox.checked) {
-                                        sum += espnPredInd;
-                                    }
-                                    if (espnStreakCheckbox.checked) {
-                                        sum += espnStreakInd;
-                                    }
-                            
-                                    if (sum > 0 && greenShades[sum]) {
-                                        cell.style.backgroundColor = greenShades[sum];
-                                    } else {
-                                        cell.style.backgroundColor = '';
-                                    }
+                        const greenShades = {
+                            1: '#33A036',
+                            2: '#147917',
+                            3: '#023020',
+                            4: '#B59410'
+                        };
+                    
+                        const sharpCheckbox = document.getElementById("sharp_checkbox");
+                        const espnPredCheckbox = document.getElementById("espn_pred_checkbox");
+                        const espnStreakIndCheckbox = document.getElementById("espn_streak_checkbox");
+                    
+                        function updateCellColors() {
+                            const table = document.getElementById("myTable");
+                            const cells = table.getElementsByTagName("td");
+                    
+                            for (let cell of cells) {
+                                let sharpInd = parseInt(cell.getAttribute("sharp_ind"));
+                                let espnPredInd = parseInt(cell.getAttribute("espn_pred_ind"));
+                                let espnStreakInd = parseInt(cell.getAttribute("espn_stk_ind"));
+                                let sum = 0;
+                    
+                                if (sharpCheckbox.checked) {
+                                    sum += sharpInd;
+                                }
+                                if (espnPredCheckbox.checked) {
+                                    sum += espnPredInd;
+                                }
+                                if (espnStreakIndCheckbox.checked) {
+                                    sum += espnStreakInd;
+                                }
+                    
+                                if (sum > 0 && greenShades[sum]) {
+                                    cell.style.backgroundColor = greenShades[sum];
+                                } else {
+                                    cell.style.backgroundColor = '';
                                 }
                             }
-                            
-                            sharpCheckbox.addEventListener("change", updateCellColors);
-                            espnPredCheckbox.addEventListener("change", updateCellColors);
-                            espnStreakIndCheckbox.addEventListener("change", updateCellColors);
-                        });
+                        }
+                    
+                        sharpCheckbox.addEventListener("change", updateCellColors);
+                        espnPredCheckbox.addEventListener("change", updateCellColors);
+                        espnStreakIndCheckbox.addEventListener("change", updateCellColors);
+                    });
                     </script>
             '''
 
@@ -151,8 +151,8 @@ class HtmlTable:
     def generate_row(self, row):
         space_row_html = '<tr><td colspan="5" style="border:none;"></td></tr>'
 
-        away_sp_cell, home_sp_cell = self.spread_sharp_tags(row['sharp_spread_ind'], row['team_1_hcap'], row['team_2_hcap'])
-        away_ml_cell, home_ml_cell = self.ml_sharp_tags(row['sharp_moneyline_ind'], row['espn_moneyline_ind'], row['team_1_ml_odds'],
+        away_sp_cell, home_sp_cell = self.spread_sharp_tags(row['sharp_spread_ind'], row['espn_streak_ind'], row['team_1_hcap'], row['team_2_hcap'])
+        away_ml_cell, home_ml_cell = self.ml_sharp_tags(row['sharp_moneyline_ind'], row['espn_moneyline_ind'],  row['espn_streak_ind'], row['team_1_ml_odds'],
                                                             row['team_2_ml_odds'])
         over_cell, under_cell = self.total_sharp_tags(row['sharp_total_ind'], row['total_over'],
                                                             row['total_under'])
@@ -172,10 +172,10 @@ class HtmlTable:
 
         if indicator > 0:
             away_sp_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="{espn_streak}">{value_1}</td>'
-            home_sp_cell = f'<td>{value_2}</td>'
+            home_sp_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="{-espn_streak}">{value_2}</td>'
         elif indicator < 0:
             indicator = abs(indicator)
-            away_sp_cell = f'<td>{value_1}</td>'
+            away_sp_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="{-espn_streak}">{value_1}</td>'
             home_sp_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="{espn_streak}">{value_2}</td>'
         else:
             away_sp_cell = f'<td>{value_1}</td>'
@@ -190,10 +190,10 @@ class HtmlTable:
 
         if sharp_indicator > 0:
             away_ml_cell = f'<td sharp_ind="{sharp_indicator}" espn_pred_ind="{espn_pred}" espn_stk_ind="{espn_streak}">{value_1}</td>'
-            home_ml_cell = f'<td>{value_2}</td>'
+            home_ml_cell = f'<td sharp_ind="{-sharp_indicator}" espn_pred_ind="{-espn_pred}" espn_stk_ind="{-espn_streak}">{value_2}</td>'
         elif sharp_indicator < 0:
             sharp_indicator = abs(sharp_indicator)
-            away_ml_cell = f'<td>{value_1}</td>'
+            away_ml_cell = f'<td sharp_ind="{-sharp_indicator}" espn_pred_ind="{-espn_pred}" espn_stk_ind="{-espn_streak}">{value_1}</td>'
             home_ml_cell = f'<td sharp_ind="{sharp_indicator}" espn_pred_ind="{espn_pred}" espn_stk_ind="{espn_streak}">{value_2}</td>'
         else:
             away_ml_cell = f'<td>{value_1}</td>'
@@ -208,10 +208,10 @@ class HtmlTable:
 
         if indicator > 0:
             over_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="0">{value_1}</td>'
-            under_cell = f'<td>{value_2}</td>'
+            under_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="0">{value_2}</td>'
         elif indicator < 0:
             indicator = abs(indicator)
-            over_cell = f'<td>{value_1}</td>'
+            over_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="0">{value_1}</td>'
             under_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="0">{value_2}</td>'
         else:
             over_cell = f'<td>{value_1}</td>'

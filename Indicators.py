@@ -170,7 +170,7 @@ class Indicators:
             return final_score
 
         except:
-            return None
+            return 0
 
 
 if __name__ == '__main__':

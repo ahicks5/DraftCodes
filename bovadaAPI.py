@@ -11,12 +11,12 @@ team_ref_df, sport_ref_df = find_ref_dfs()
 class PullBovada:
     # build a dataframe with all upcoming games
     pregame_sport_links = {
-        'nba': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/basketball/nba?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
+        #'nba': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/basketball/nba?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
         'mlb': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/baseball/mlb?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'epl': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/europe/england/premier-league?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'spainLaLiga': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/europe/spain/la-liga?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'italySerieA': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/europe/italy/serie-a?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'nhl': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/hockey/nhl?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
+        #'epl': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/europe/england/premier-league?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
+        #'spainLaLiga': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/europe/spain/la-liga?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
+        #'italySerieA': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/europe/italy/serie-a?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
+        #'nhl': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/hockey/nhl?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
         'nfl': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/football/nfl?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
         'tableTennis': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/table-tennis?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
         'LoL': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/esports/league-of-legends?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
