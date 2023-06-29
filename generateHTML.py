@@ -5,7 +5,7 @@ import pytz
 import pandas as pd
 from connectSources import find_ref_dfs
 
-team_ref_df, sport_ref_df = find_ref_dfs()
+team_ref_df, sport_ref_df, espn_df = find_ref_dfs()
 
 class HtmlTable:
     prod_web_path = '/var/www/html/Website/'

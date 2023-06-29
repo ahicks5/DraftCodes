@@ -6,7 +6,7 @@ from espnAPI import PullESPN
 from connectSources import find_ref_dfs
 import time
 
-team_ref_df, sport_ref_df = find_ref_dfs()
+team_ref_df, sport_ref_df, espn_df = find_ref_dfs()
 
 class Indicators:
     def __init__(self):

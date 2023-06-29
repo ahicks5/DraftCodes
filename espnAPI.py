@@ -1,10 +1,11 @@
 import pandas as pd
 import requests
-from bs4 import BeautifulSoup, Comment
+from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from connectSources import find_ref_dfs
+import numpy as np
 
-team_ref_df, sport_ref_df = find_ref_dfs()
+team_ref_df, sport_ref_df, espn_df = find_ref_dfs()
 
 
 class PullESPN:
@@ -131,11 +132,21 @@ class PullESPN:
     def parse_game_stats(self, url):
         """Parse game stats from the given URL"""
         soup = self.get_soup(url)
+        gameID = int(url.split('gameId=')[1].strip())
+        if 'match' in url:
+            sport = url.split('espn.com/')[1].split('/match')[0].strip()
+        elif 'game' in url:
+            sport = url.split('espn.com/')[1].split('/game')[0].strip()
+        else:
+            sport = 'n/a'
+
         if soup:
             game_time = self.get_game_time_date(soup)
             team_1, team_2, team_1_prediction, team_2_prediction = self.get_teams_and_predictions(soup)
 
             return {
+                'gameID': gameID,
+                'sport': sport,
                 'game_time': game_time,
                 'team1': team_1,
                 'team1_pred': team_1_prediction,
@@ -155,26 +166,6 @@ class PullESPN:
         df = df.merge(team_ref_df_espn, left_on='team2', right_on='ESPN Names', how='left')
         df = df.rename(columns={'Final Names': 'home_team_clean'})
         df = df.drop(columns=['ESPN Names'])
-
-        return df
-
-    def assemble_espn_data(self):
-        links = self.get_game_links()
-
-        game_list = []
-        for link in links:
-            game_dict = self.parse_game_stats(link)
-            a_sch_dict, h_sch_dict = self.get_schedule_info(link)
-            full_game_dict = {**game_dict, **a_sch_dict, **h_sch_dict}
-            game_list.append(full_game_dict)
-
-        df = pd.DataFrame(game_list)
-        df = df.drop_duplicates()
-
-        df = self.add_espn_ref_names(df)
-        df = self.generate_game_date_ID(df)
-
-        self.show_missing_refs(df, team_ref_df)
 
         return df
 
@@ -338,8 +329,103 @@ class PullESPN:
         except Exception as e:
             return {}, {}
 
+    # FINAL PROCESS
+    def assemble_espn_data(self):
+        cur_df = espn_df
+        links = self.get_game_links()
+
+        # assemble game and predictions
+        game_list = []
+        for link in links:
+            gameId = int(link.split('gameId=')[1].strip())
+            if gameId in cur_df['gameID'].unique().tolist():
+                row = cur_df[cur_df['gameID'] == gameId]
+                team1_pred = row['team1_pred'].iloc[0]
+                game_time = pd.to_datetime(row['game_time'].iloc[0])
+                lastMod = pd.to_datetime(row['lastMod_ESPNpred'].iloc[0])
+                current_time = datetime.now()
+                one_week_ahead = current_time + timedelta(weeks=2)
+                next_refresh = lastMod + timedelta(hours=2)
+                if pd.isna(team1_pred):
+                    continue
+                elif (game_time > one_week_ahead) and not pd.isna(team1_pred):
+                    continue
+                elif current_time < next_refresh:
+                    continue
+
+            game_dict = self.parse_game_stats(link)
+            game_dict['lastMod_ESPNpred'] = datetime.now().strftime("%m/%d/%Y %I:%M:%S %p")
+            game_list.append(game_dict)
+
+        pred_df = pd.DataFrame(game_list)
+        pred_df = pred_df.drop_duplicates()
+
+        # assemble schedule data
+
+        game_list = []
+        for link in links:
+            gameId = int(link.split('gameId=')[1].strip())
+            if gameId in cur_df['gameID'].unique().tolist():
+                row = cur_df[cur_df['gameID'] == gameId]
+                lastMod = pd.to_datetime(row['lastMod_ESPNsch'].iloc[0])
+                current_time = datetime.now()
+                if (lastMod + timedelta(hours=12)) < current_time:
+                    a_sch_dict, h_sch_dict = self.get_schedule_info(link)
+                    full_game_dict = {**a_sch_dict, **h_sch_dict}
+                    full_game_dict['gameID'] = gameId
+                    full_game_dict['lastMod_ESPNsch'] = datetime.now().strftime("%m/%d/%Y %I:%M:%S %p")
+                    game_list.append(full_game_dict)
+                else:
+                    continue
+            else:
+                a_sch_dict, h_sch_dict = self.get_schedule_info(link)
+                full_game_dict = {**a_sch_dict, **h_sch_dict}
+                full_game_dict['gameID'] = gameId
+                full_game_dict['lastMod_ESPNsch'] = datetime.now().strftime("%m/%d/%Y %I:%M:%S %p")
+                game_list.append(full_game_dict)
+
+        sch_df = pd.DataFrame(game_list)
+        sch_df = sch_df.drop_duplicates()
+
+        # combine pred and sch
+        if len(sch_df) == 0 and len(pred_df) == 0:
+            return cur_df
+        elif len(sch_df) > 0 and len(pred_df) > 0:
+            df = pd.merge(pred_df, sch_df, on='gameID', how='left')
+        else:
+            df = pred_df
+
+        df = df.drop_duplicates(subset='gameID')
+
+        # add names, add id, check missing
+        df = self.add_espn_ref_names(df)
+        df = self.generate_game_date_ID(df)
+        self.show_missing_refs(df, team_ref_df)
+
+        # combine old and new
+        merged_df = cur_df.merge(df, on='gameID', suffixes=('', '_new'), how='outer')
+
+        # Update values from df2 into the merged dataframe
+        for column in df.columns:
+            if column != 'gameID':
+                original_column = column
+                new_column = f'{column}_new'
+                # Update the values with non-NA data from df2
+                mask = merged_df[new_column].notna()
+                merged_df.loc[mask, original_column] = merged_df.loc[mask, new_column]
+
+        # Keep only the columns that were originally in df1
+        final_df = merged_df[cur_df.columns]
+        final_df = final_df[final_df['gameID'] != '']
+
+        try:
+            final_df.to_csv('/var/www/html/Website/ESPN_Data.csv')
+        except:
+            final_df.to_csv('ESPN_Data.csv', index=False)
+
+        return final_df
+
 
 if __name__ == '__main__':
     espn = PullESPN()
-    #espn.assemble_espn_data().to_csv("espn.csv", index=False)
-    print(espn.get_schedule_info('https://www.espn.com/mlb/game/_/gameId/401472182'))
+    espn.assemble_espn_data()
