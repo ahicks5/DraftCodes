@@ -4,6 +4,7 @@ import datetime
 import pytz
 import pandas as pd
 from connectSources import find_ref_dfs
+from clean_files import cleanFiles
 
 team_ref_df, sport_ref_df, espn_schedule_df, bovada_df = find_ref_dfs()
 
@@ -59,6 +60,8 @@ class HtmlTable:
     def __init__(self):
         ind = Indicators()
         self.df = ind.sharp_indicator()
+        self.df['game_date'] = pd.to_datetime(self.df['game_date'])
+        self.clean = cleanFiles()
         try:
             self.df.to_csv('/var/www/html/Website/Indicator_Data.csv', index=False)
         except:
@@ -269,6 +272,7 @@ class HtmlTable:
                 with open(final_html, 'w') as f:
                     f.write(modified_html)
 
+        self.clean.clean_all()
         print('Python has updated all pages!')
 
     def replace_production(self):
