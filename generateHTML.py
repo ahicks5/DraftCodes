@@ -273,7 +273,7 @@ class HtmlTable:
                 with open(final_html, 'w') as f:
                     f.write(modified_html)
 
-        self.clean.clean_all()
+        #self.clean.clean_all()
         print('Python has updated all pages!')
 
     def replace_production(self):
