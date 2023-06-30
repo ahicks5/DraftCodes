@@ -18,7 +18,7 @@ class cleanFiles:
 
     def clean_all(self):
         # Convert the strings in 'game_time' to datetime objects
-        self.espn_df['game_time'] = pd.to_datetime(self.espn_df['game_time'], format="%Y-%m-%d %H:%M:%S")
+        self.espn_df['game_time'] = pd.to_datetime(self.espn_df['game_time'], infer_datetime_format=True)
         today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
         new_espn = self.espn_df[self.espn_df['game_time'] >= today]
 
@@ -29,7 +29,7 @@ class cleanFiles:
 
         # Convert the strings in 'game_startTime_cst' to datetime objects
         self.bovada_df['game_startTime_cst'] = pd.to_datetime(self.bovada_df['game_startTime_cst'],
-                                                              format="%Y-%m-%d %H:%M:%S%z")
+                                                              infer_datetime_format=True)
         # Get today's date in timezone-aware format (and time set to midnight)
         cdt = pytz.timezone('America/Chicago')
         today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
