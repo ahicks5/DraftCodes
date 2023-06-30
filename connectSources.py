@@ -6,14 +6,16 @@ def find_ref_dfs():
         team_ref_df = pd.read_csv('/var/www/html/Website/Team_Reference.csv', encoding='ISO-8859-1')
         sport_ref_df = pd.read_csv('/var/www/html/Website/Sport_Reference.csv')
         espn_schedule_df = pd.read_csv('/var/www/html/Website/ESPN_Data.csv')
+        bovada_df = pd.read_csv('/var/www/html/Website/Bovada_Data.csv')
     except:
         team_ref_df = pd.read_csv('Team_Reference.csv', encoding='ISO-8859-1')
         sport_ref_df = pd.read_csv('Sport_Reference.csv')
         espn_schedule_df = pd.read_csv('ESPN_Data.csv')
-    return team_ref_df, sport_ref_df, espn_schedule_df
+        bovada_df = pd.read_csv('Bovada_Data.csv')
+    return team_ref_df, sport_ref_df, espn_schedule_df, bovada_df
 
 
-team_ref_df, sport_ref_df, espn_schedule_df = find_ref_dfs()
+team_ref_df, sport_ref_df, espn_schedule_df, bovada_df = find_ref_dfs()
 
 class ConnectSources:
     def __init__(self, bov_df, vsin_df, espn_df, team_ref_df, sport_ref_df):

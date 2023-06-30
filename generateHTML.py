@@ -5,7 +5,7 @@ import pytz
 import pandas as pd
 from connectSources import find_ref_dfs
 
-team_ref_df, sport_ref_df, espn_df = find_ref_dfs()
+team_ref_df, sport_ref_df, espn_schedule_df, bovada_df = find_ref_dfs()
 
 class HtmlTable:
     prod_web_path = '/var/www/html/Website/'
@@ -59,6 +59,10 @@ class HtmlTable:
     def __init__(self):
         ind = Indicators()
         self.df = ind.sharp_indicator()
+        try:
+            self.df.to_csv('/var/www/html/Website/Indicator_Data.csv', index=False)
+        except:
+            self.df.to_csv('ESPN_Data.csv', index=False)
 
     def generate_tables(self):
         fin_dict = {}

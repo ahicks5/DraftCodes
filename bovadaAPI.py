@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 import json
 from connectSources import find_ref_dfs
 
-team_ref_df, sport_ref_df, espn_df = find_ref_dfs()
+team_ref_df, sport_ref_df, espn_schedule_df, bovada_df = find_ref_dfs()
 
 
 class PullBovada:
@@ -29,6 +29,7 @@ class PullBovada:
 
     def __init__(self):
         self.session = requests.Session()
+        self.bovada_df = bovada_df
 
     def get_json(self, url):
         headers = {
@@ -194,7 +195,30 @@ class PullBovada:
         # check missing refs
         self.show_missing_refs(df, team_ref_df)
 
-        return df
+        # Set 'game_id' as the index
+        bovada_df = self.bovada_df
+        bovada_df = bovada_df.drop_duplicates(subset='game_id')
+        bovada_df = bovada_df.copy()
+        df = df.copy()
+        bovada_df['game_id'] = bovada_df['game_id'].astype(int)
+        df['game_id'] = df['game_id'].astype(int)
+        bovada_df.set_index('game_id', inplace=True)
+        df.set_index('game_id', inplace=True)
+
+        # Remove the rows in bovada_df that are in df
+        bovada_df = bovada_df.loc[~bovada_df.index.isin(df.index)]
+
+        # Append df to bovada_df
+        final_df = pd.concat([bovada_df, df]).reset_index()
+
+        # Save to csv
+        try:
+            final_df.to_csv('/var/www/html/Website/Bovada_Data.csv', index=False)
+        except:
+            final_df.to_csv('Bovada_Data.csv', index=False)
+
+        # Return the final DataFrame
+        return final_df
 
 
 if __name__ == '__main__':

@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 from connectSources import find_ref_dfs
 import numpy as np
 
-team_ref_df, sport_ref_df, espn_df = find_ref_dfs()
+team_ref_df, sport_ref_df, espn_df, bovada_df = find_ref_dfs()
 
 
 class PullESPN:
@@ -388,12 +388,12 @@ class PullESPN:
         sch_df = sch_df.drop_duplicates()
 
         # combine pred and sch
-        if len(sch_df) == 0 and len(pred_df) == 0:
+        if len(pred_df) == 0:
             return cur_df
-        elif len(sch_df) > 0 and len(pred_df) > 0:
-            df = pd.merge(pred_df, sch_df, on='gameID', how='left')
-        else:
+        elif len(sch_df) == 0 and len(pred_df) > 0:
             df = pred_df
+        else:
+            df = pd.merge(pred_df, sch_df, on='gameID', how='left')
 
         df = df.drop_duplicates(subset='gameID')
 
@@ -419,7 +419,7 @@ class PullESPN:
         final_df = final_df[final_df['gameID'] != '']
 
         try:
-            final_df.to_csv('/var/www/html/Website/ESPN_Data.csv')
+            final_df.to_csv('/var/www/html/Website/ESPN_Data.csv', index=False)
         except:
             final_df.to_csv('ESPN_Data.csv', index=False)
 
