@@ -61,6 +61,7 @@ class HtmlTable:
         ind = Indicators()
         self.df = ind.sharp_indicator()
         self.df['game_date'] = pd.to_datetime(self.df['game_date'])
+        self.df['game_startTime_cst'] = pd.to_datetime(self.df['game_startTime_cst'])
         self.clean = cleanFiles()
         try:
             self.df.to_csv('/var/www/html/Website/Indicator_Data.csv', index=False)
