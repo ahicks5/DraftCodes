@@ -63,7 +63,7 @@ class Indicators:
         return df
 
     def espn_ml_ind(self, row):
-        if pd.isna(row['espn_team1_ml']) or pd.isna(row['espn_team1_ml']) or pd.isna(row['team_1_ml_odds']) or pd.isna(row['team_2_ml_odds']):
+        if pd.isna(row['espn_team1_ml']) or pd.isna(row['espn_team2_ml']) or pd.isna(row['team_1_ml_odds']) or pd.isna(row['team_2_ml_odds']):
             return 0
 
         if row['team_1_ml_odds'] == 'EVEN':
