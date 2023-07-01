@@ -2,11 +2,15 @@ import tweepy
 import pandas as pd
 from datetime import datetime, timedelta
 import pytz
+import json
+import random
 
 try:
     ind_df = pd.read_csv('/var/www/html/Website/Indicator_Data.csv')
+    track_path = '/var/www/html/Website/Tweet_Records.csv'
 except:
     ind_df = pd.read_csv('Indicator_Data.csv')
+    track_path = 'Tweet_Records.csv'
 
 
 class sendTweet:
@@ -26,36 +30,58 @@ class sendTweet:
                                     access_token_secret=self.access_token_secret)
 
     def find_tweets(self):
+        track_df = pd.read_csv(track_path)
+        track_df['gameID'] = track_df['gameID'].astype('int64')
+
         ind_df['game_startTime_cst'] = pd.to_datetime(ind_df['game_startTime_cst'])
 
         # Current time in CDT
         now = datetime.now(pytz.timezone('America/Chicago'))
 
         # Time 20 minutes from now
-        time_threshold = now + timedelta(minutes=60)
+        time_threshold = now + timedelta(hours=1)
 
-        filtered_df = ind_df[(ind_df['game_startTime_cst'] > now) & (ind_df['game_startTime_cst'] <= time_threshold)]
+        filtered_df = ind_df[(ind_df['game_startTime_cst'] <= time_threshold) & (ind_df['game_startTime_cst'] > now)]
+        filtered_df.to_csv("test_filter.csv", index=False)
+
+        # only certain sports
+        filtered_df = filtered_df[(filtered_df['Clean_Sport'] == 'Baseball') | (filtered_df['Clean_Sport'] == 'Basketball')]
 
         if len(filtered_df) == 0:
-            print('No tweets sent, no games')
-            return
+             print('No tweets sent, no games')
+             return
         else:
             for index, row in filtered_df.iterrows():
+                if row['game_id'] in track_df['gameID'].unique().tolist():
+                    continue
+
                 away_team = row['away_team_clean']
                 home_team = row['home_team_clean']
-                tweet = (
-                    f"""🔥 Upcoming Clash! 🚨\n 
-                    🔵{away_team} vs {home_team}🔴\n
-                    Who's taking home the glory? 🏆\n
-                    Level up your game at DraftCodes.io! 📈🎲\n
-                    #MakeYourPicks #DraftCodesAdvantage #SportsBetting 🚀"""
-                )
+
+                if away_team == 'nan' or home_team == 'nan':
+                    continue
+
+                tweet = self.generate_tweets(away_team=away_team, home_team=home_team)
                 self.send_tweet(tweet)
-                print('Tweet sent!')
+
+                track_df = track_df.append({'gameID': row['game_id'], 'tweet_status': 'Complete'}, ignore_index=True)
+                track_df.to_csv(track_path, index=False)
 
     def send_tweet(self, text):
         self.client.create_tweet(text=text)
-        print('tweet sent!')
+        print('Tweet sent!')
+
+    def generate_tweets(self, away_team, home_team):
+        try:
+            with open('/var/www/html/Website/tweet_bank.json', 'r', encoding='utf-8') as file:
+                tweet_bank = json.load(file)
+                tweet = random.choice(tweet_bank['tweet_templates']).format(away_team=away_team, home_team=home_team)
+                return tweet
+        except:
+            with open('tweet_bank.json', 'r', encoding='utf-8') as file:
+                tweet_bank = json.load(file)
+                tweet = random.choice(tweet_bank['tweet_templates']).format(away_team=away_team, home_team=home_team)
+                return tweet
 
 
 if __name__ == '__main__':
