@@ -130,7 +130,16 @@ class PullBovada:
         filtered_old_df = self.bovada_df.loc[~self.bovada_df['game_id'].isin(new_df['game_id'])]
 
         # Concatenate the new DataFrame with the filtered old DataFrame
-        final_df = pd.concat([new_df, filtered_old_df]).reset_index(drop=True)
+        final_df = pd.concat([new_df, filtered_old_df])
+
+        # Convert game_startTime_cst column to datetime, handling timezone-aware datetime objects
+        final_df['game_startTime_cst'] = pd.to_datetime(final_df['game_startTime_cst'], utc=True)
+
+        # Convert the timezone back to CDT
+        final_df['game_startTime_cst'] = final_df['game_startTime_cst'].dt.tz_convert('America/Chicago')
+
+        # resort
+        final_df = final_df.sort_values(by='game_startTime_cst', ascending=True).reset_index(drop=True)
 
         return final_df
 

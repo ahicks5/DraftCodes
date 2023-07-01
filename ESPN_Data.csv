@@ -1,273 +1,273 @@
 gameID,sport,game_time,team1,team1_pred,team2,team2_pred,lastMod_ESPNpred,lastMod_ESPNsch,A_espn_current_streak,A_espn_home_streak,A_espn_away_streak,A_espn_avg_pt_for,A_espn_avg_pt_ag,H_espn_current_streak,H_espn_home_streak,H_espn_away_streak,H_espn_avg_pt_for,H_espn_avg_pt_ag,away_team_clean,home_team_clean,DC_Game_ID
-401547407,nfl,2023-09-10 11:25:00,Green Bay Packers,47.20%,Chicago Bears,52.40%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Green Bay Packers,Chicago Bears,09102023-Green Bay Packers-Chicago Bears
-401547401,nfl,2023-09-10 11:25:00,Miami Dolphins,44.10%,Los Angeles Chargers,55.60%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Miami Dolphins,Los Angeles Chargers,09102023-Miami Dolphins-Los Angeles Chargers
-401547400,nfl,2023-09-10 11:25:00,Las Vegas Raiders,44.70%,Denver Broncos,55.00%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Las Vegas Raiders,Denver Broncos,09102023-Las Vegas Raiders-Denver Broncos
-401547409,nfl,2023-09-10 15:20:00,Dallas Cowboys,53.00%,New York Giants,46.60%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Dallas Cowboys,New York Giants,09102023-Dallas Cowboys-New York Giants
-401547353,nfl,2023-09-07 15:20:00,Detroit Lions,33.50%,Kansas City Chiefs,66.20%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Detroit Lions,Kansas City Chiefs,09072023-Detroit Lions-Kansas City Chiefs
-401547404,nfl,2023-09-10 08:00:00,Jacksonville Jaguars,65.20%,Indianapolis Colts,34.60%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Jacksonville Jaguars,Indianapolis Colts,09102023-Jacksonville Jaguars-Indianapolis Colts
-401547397,nfl,2023-09-10 08:00:00,Cincinnati Bengals,61.20%,Cleveland Browns,38.50%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Cincinnati Bengals,Cleveland Browns,09102023-Cincinnati Bengals-Cleveland Browns
-401547405,nfl,2023-09-10 08:00:00,San Francisco 49ers,56.90%,Pittsburgh Steelers,42.80%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,San Francisco 49ers,Pittsburgh Steelers,09102023-San Francisco 49ers-Pittsburgh Steelers
-401547406,nfl,2023-09-10 08:00:00,Arizona Cardinals,35.60%,Washington Commanders,64.10%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Arizona Cardinals,Washington Commanders,09102023-Arizona Cardinals-Washington Commanders
-401547399,nfl,2023-09-10 08:00:00,Tennessee Titans,43.40%,New Orleans Saints,56.30%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Tennessee Titans,New Orleans Saints,09102023-Tennessee Titans-New Orleans Saints
-401547408,nfl,2023-09-10 11:25:00,Los Angeles Rams,40.50%,Seattle Seahawks,59.20%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Los Angeles Rams,Seattle Seahawks,09102023-Los Angeles Rams-Seattle Seahawks
-401547402,nfl,2023-09-10 11:25:00,Philadelphia Eagles,61.70%,New England Patriots,38.00%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Philadelphia Eagles,New England Patriots,09102023-Philadelphia Eagles-New England Patriots
-401547352,nfl,2023-09-11 15:15:00,Buffalo Bills,55.70%,New York Jets,43.90%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Buffalo Bills,New York Jets,09112023-Buffalo Bills-New York Jets
-401547403,nfl,2023-09-10 08:00:00,Carolina Panthers,47.20%,Atlanta Falcons,52.40%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Carolina Panthers,Atlanta Falcons,09102023-Carolina Panthers-Atlanta Falcons
-401547396,nfl,2023-09-10 08:00:00,Houston Texans,25.30%,Baltimore Ravens,74.50%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Houston Texans,Baltimore Ravens,09102023-Houston Texans-Baltimore Ravens
-401547398,nfl,2023-09-10 08:00:00,Tampa Bay Buccaneers,30.30%,Minnesota Vikings,69.50%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Tampa Bay Buccaneers,Minnesota Vikings,09102023-Tampa Bay Buccaneers-Minnesota Vikings
-401472262,mlb,2023-07-01 09:15:00,New York Yankees,60.2%,St. Louis Cardinals,39.8%,06/30/2023 11:41:41 PM,06/30/2023 11:43:05 PM,W2,W2,W2,4.45679012345679,3.975308641975309,L2,L2,L1,4.5625,4.95,New York Yankees,St. Louis Cardinals,07012023-New York Yankees-St. Louis Cardinals
-401472264,mlb,2023-07-01 11:10:00,San Francisco Giants,39.5%,New York Mets,60.5%,06/30/2023 11:41:43 PM,06/30/2023 11:43:10 PM,W1,L1,W1,4.829268292682927,4.304878048780488,L3,L3,L1,4.439024390243903,4.670731707317073,San Francisco Giants,New York Mets,07012023-San Francisco Giants-New York Mets
-401472259,mlb,2023-07-01 14:15:00,Los Angeles Dodgers,66.6%,Kansas City Royals,33.4%,06/30/2023 11:41:33 PM,06/30/2023 11:42:31 PM,W2,L1,W2,5.493827160493828,4.654320987654321,L1,L1,L1,3.707317073170732,5.426829268292683,Los Angeles Dodgers,Kansas City Royals,07012023-Los Angeles Dodgers-Kansas City Royals
-401472254,mlb,2023-07-01 10:07:00,Boston Red Sox,45.2%,Toronto Blue Jays,54.5%,06/30/2023 11:41:43 PM,06/30/2023 11:43:12 PM,W1,L3,W1,4.843373493975903,4.710843373493976,L1,L1,W2,4.445783132530121,4.192771084337349,Boston Red Sox,Toronto Blue Jays,07012023-Boston Red Sox-Toronto Blue Jays
-401472257,mlb,2023-07-01 16:10:00,Detroit Tigers,53.6%,Colorado Rockies,46.4%,06/30/2023 11:41:39 PM,06/30/2023 11:42:55 PM,L1,L1,L1,3.814814814814815,4.839506172839506,W1,W1,L8,4.392857142857143,6.0,Detroit Tigers,Colorado Rockies,07012023-Detroit Tigers-Colorado Rockies
-401472253,mlb,2023-07-01 17:07:00,Arizona Diamondbacks,45.1%,Los Angeles Angels,54.9%,06/30/2023 11:41:41 PM,06/30/2023 11:43:03 PM,W1,L2,W2,5.132530120481928,4.674698795180723,L3,L3,L1,4.964285714285714,4.583333333333333,Arizona Diamondbacks,Los Angeles Angels,07012023-Arizona Diamondbacks-Los Angeles Angels
-401472260,mlb,2023-07-01 11:10:00,Miami Marlins,34.3%,Atlanta Braves,65.7%,06/30/2023 11:41:40 PM,06/30/2023 11:42:59 PM,L1,W2,L1,4.072289156626506,4.216867469879518,W6,W8,W2,5.641975308641976,4.049382716049383,Miami Marlins,Atlanta Braves,07012023-Miami Marlins-Atlanta Braves
-401472258,mlb,2023-07-01 11:05:00,Houston Astros,40.2%,Texas Rangers,59.8%,06/30/2023 11:41:38 PM,06/30/2023 11:42:53 PM,W3,W2,W3,4.658536585365853,3.951219512195122,L2,L2,L2,5.926829268292683,4.036585365853658,Houston Astros,Texas Rangers,07012023-Houston Astros-Texas Rangers
-401472256,mlb,2023-07-01 14:15:00,Cleveland Guardians,34.3%,Chicago Cubs,65.7%,06/30/2023 11:41:42 PM,06/30/2023 11:43:06 PM,L2,L1,L2,3.975308641975309,4.172839506172839,W1,W1,W3,4.6125,4.2125,Cleveland Guardians,Chicago Cubs,07012023-Cleveland Guardians-Chicago Cubs
-401472263,mlb,2023-07-01 08:40:00,San Diego Padres,47.5%,Cincinnati Reds,52.5%,06/30/2023 11:41:35 PM,06/30/2023 11:42:39 PM,L6,L2,L4,4.2560975609756095,4.048780487804878,W3,W1,W2,4.987804878048781,5.158536585365853,San Diego Padres,Cincinnati Reds,07012023-San Diego Padres-Cincinnati Reds
-401472255,mlb,2023-07-01 11:07:00,Chicago White Sox,67.0%,Oakland Athletics,33.0%,06/30/2023 11:41:36 PM,06/30/2023 11:42:43 PM,L1,W2,L1,4.142857142857143,4.833333333333333,W1,W1,L2,3.488095238095238,6.309523809523809,Chicago White Sox,OAK Athletics,07012023-Chicago White Sox-OAK Athletics
-401472267,mlb,2023-07-01 11:05:00,Milwaukee Brewers,49.3%,Pittsburgh Pirates,50.7%,06/30/2023 11:41:42 PM,06/30/2023 11:43:09 PM,L1,L1,L1,4.036585365853658,4.304878048780488,W4,W4,L2,4.222222222222222,4.604938271604938,Milwaukee Brewers,Pittsburgh Pirates,07012023-Milwaukee Brewers-Pittsburgh Pirates
-401472266,mlb,2023-07-01 11:05:00,Washington Nationals,35.9%,Philadelphia Phillies,64.1%,06/30/2023 11:41:38 PM,06/30/2023 11:42:50 PM,W3,L1,W3,4.135802469135802,4.888888888888889,L1,L1,W9,4.37037037037037,4.469135802469136,Washington Nationals,Philadelphia Phillies,07012023-Washington Nationals-Philadelphia Phillies
-401472261,mlb,2023-07-01 11:05:00,Minnesota Twins,47.2%,Baltimore Orioles,52.8%,06/30/2023 11:41:35 PM,06/30/2023 11:42:40 PM,W1,W2,W1,4.228915662650603,3.855421686746988,L3,L3,L1,4.8625,4.6125,Minnesota Twins,Baltimore Orioles,07012023-Minnesota Twins-Baltimore Orioles
-401472265,mlb,2023-07-01 14:15:00,Tampa Bay Rays,55.3%,Seattle Mariners,44.7%,06/30/2023 11:41:40 PM,06/30/2023 11:42:58 PM,W2,W1,W2,5.523809523809524,3.7142857142857135,L2,L2,L2,4.468354430379747,4.189873417721519,Tampa Bay Rays,Seattle Mariners,07012023-Tampa Bay Rays-Seattle Mariners
-401507230,wnba,2023-07-05 17:00:00,Atlanta Dream,49.9%,Los Angeles Sparks,50.1%,06/30/2023 11:41:46 PM,06/30/2023 11:43:23 PM,L2,L1,L3,83.3125,89.4375,W1,W2,W1,79.23529411764706,78.6470588235294,Atlanta Dream,Los Angeles Sparks,07052023-Atlanta Dream-Los Angeles Sparks
-401507222,wnba,2023-07-01 17:00:00,Minnesota Lynx,46.9%,Phoenix Mercury,53.1%,06/30/2023 11:41:48 PM,06/30/2023 11:43:29 PM,L1,L1,W2,78.41176470588235,83.41176470588235,L1,L1,W1,76.3125,85.125,Minnesota Lynx,Phoenix Mercury,07012023-Minnesota Lynx-Phoenix Mercury
-401507223,wnba,2023-07-02 10:00:00,Los Angeles Sparks,33.9%,Atlanta Dream,66.1%,06/30/2023 11:41:46 PM,06/30/2023 11:43:22 PM,W1,W2,W1,79.23529411764706,78.6470588235294,L2,L1,L3,83.3125,89.4375,Los Angeles Sparks,Atlanta Dream,07022023-Los Angeles Sparks-Atlanta Dream
-401507226,wnba,2023-07-02 13:00:00,New York Liberty,75.6%,Seattle Storm,24.4%,06/30/2023 11:41:46 PM,06/30/2023 11:43:21 PM,L3,W2,L3,84.9375,80.3125,L3,L2,L1,79.6875,85.75,New York Liberty,Seattle Storm,07022023-New York Liberty-Seattle Storm
-401507225,wnba,2023-07-02 10:00:00,Washington Mystics,60.2%,Dallas Wings,39.9%,06/30/2023 11:41:45 PM,06/30/2023 11:43:19 PM,W1,W4,L3,79.82352941176471,75.70588235294117,L1,W2,L1,83.41176470588235,83.3529411764706,Washington Mystics,Dallas Wings,07022023-Washington Mystics-Dallas Wings
-401507224,wnba,2023-07-02 11:00:00,Chicago Sky,52.8%,Indiana Fever,47.2%,06/30/2023 11:41:44 PM,06/30/2023 11:43:15 PM,W2,W4,L5,77.94736842105263,78.94736842105263,W1,W1,L4,80.47058823529412,84.47058823529412,Chicago Sky,Indiana Fever,07022023-Chicago Sky-Indiana Fever
-401507221,wnba,2023-07-01 10:00:00,Connecticut Sun,29.6%,Las Vegas Aces,70.4%,06/30/2023 11:41:48 PM,06/30/2023 11:43:30 PM,W2,W1,W6,82.77777777777777,76.44444444444444,W8,W9,W1,92.5625,77.625,Connecticut Sun,Las Vegas Aces,07012023-Connecticut Sun-Las Vegas Aces
-401507228,wnba,2023-07-05 15:00:00,Indiana Fever,33.9%,Minnesota Lynx,66.1%,06/30/2023 11:41:45 PM,06/30/2023 11:43:16 PM,W1,W1,L4,80.47058823529412,84.47058823529412,L1,L1,W2,78.41176470588235,83.41176470588235,Indiana Fever,Minnesota Lynx,07052023-Indiana Fever-Minnesota Lynx
-401507229,wnba,2023-07-05 17:00:00,Dallas Wings,13.4%,Las Vegas Aces,86.6%,06/30/2023 11:41:47 PM,06/30/2023 11:43:27 PM,L1,W2,L1,83.41176470588235,83.3529411764706,W8,W9,W1,92.5625,77.625,Dallas Wings,Las Vegas Aces,07052023-Dallas Wings-Las Vegas Aces
-401507227,wnba,2023-07-05 14:00:00,Phoenix Mercury,12.7%,New York Liberty,87.3%,06/30/2023 11:41:47 PM,06/30/2023 11:43:24 PM,L1,L1,W1,76.3125,85.125,L3,W2,L3,84.9375,80.3125,Phoenix Mercury,New York Liberty,07052023-Phoenix Mercury-New York Liberty
-401525462,college-football,2023-09-01 14:30:00,Louisville Cardinals,65.80%,Georgia Tech Yellow Jackets,34.20%,6/29/2023 1:01,6/29/2023 1:05,,,,,,,,,,,Louisville,Georgia Tech,09012023-Louisville-Georgia Tech
-401525463,college-football,2023-09-01 14:00:00,Miami (OH) RedHawks,9.10%,Miami Hurricanes,90.90%,6/29/2023 1:01,6/29/2023 1:05,,,,,,,,,,,Miami Ohio,Miami Florida ,09012023-Miami Ohio-Miami Florida 
-401525822,college-football,2023-09-02 07:00:00,Arkansas State Red Wolves,3.30%,Oklahoma Sooners,96.70%,6/29/2023 1:01,6/29/2023 1:05,,,,,,,,,,,Arkansas State,Oklahoma ,09022023-Arkansas State-Oklahoma 
-401520179,college-football,2023-09-02 07:00:00,Virginia Cavaliers,9.60%,Tennessee Volunteers,90.40%,6/29/2023 1:01,6/29/2023 1:05,,,,,,,,,,,Virginia,Tennessee,09022023-Virginia-Tennessee
-401520149,college-football,2023-09-02 14:30:00,Middle Tennessee Blue Raiders,1.00%,Alabama Crimson Tide,99.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Middle Tennessee State,Alabama,09022023-Middle Tennessee State-Alabama
-401531402,college-football,2023-09-02 13:00:00,South Carolina State Bulldogs,8.20%,Charlotte 49ers,91.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,South Carolina State Bulldogs,Charlotte 49ers,09022023-South Carolina State Bulldogs-Charlotte 49ers
-401531835,college-football,2023-09-02 10:30:00,Gardner-Webb Runnin' Bulldogs,1.20%,Appalachian State Mountaineers,98.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Gardner-Webb Runnin' Bulldogs,Appalachian State Mountaineers,09022023-Gardner-Webb Runnin' Bulldogs-Appalachian State Mountaineers
-401520169,college-football,2023-09-02 14:30:00,West Virginia Mountaineers,9.00%,Penn State Nittany Lions,91.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,West Virginia,Penn State,09022023-West Virginia-Penn State
-401525450,college-football,2023-08-26 14:00:00,UMass Minutemen,33.70%,New Mexico State Aggies,66.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Massachusetts,New Mexico State,08262023-Massachusetts-New Mexico State
-401520178,college-football,2023-09-02 14:00:00,Alabama A&M Bulldogs,1.10%,Vanderbilt Commodores,98.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Alabama A&M Bulldogs,Vanderbilt,09022023-Alabama A&M Bulldogs-Vanderbilt
-401520163,college-football,2023-09-01 14:00:00,Central Michigan Chippewas,7.70%,Michigan State Spartans,92.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Central Michigan,Michigan State,09012023-Central Michigan-Michigan State
-401523990,college-football,2023-09-02 14:00:00,Washington State Cougars,73.80%,Colorado State Rams,26.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Washington State,Colorado State,09022023-Washington State-Colorado State
-401523989,college-football,2023-09-02 17:00:00,Northern Arizona Lumberjacks,3.70%,Arizona Wildcats,96.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Northern Arizona Lumberjacks,Arizona Wildcats,09022023-Northern Arizona Lumberjacks-Arizona Wildcats
-401525820,college-football,2023-09-02 09:00:00,Northern Iowa Panthers,7.80%,Iowa State Cyclones,92.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Northern Iowa Panthers,Iowa State Cyclones,09022023-Northern Iowa Panthers-Iowa State Cyclones
-401525821,college-football,2023-09-02 14:00:00,Southeast Missouri State Redhawks,1.50%,Kansas State Wildcats,98.50%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Southeast Missouri State Redhawks,Kansas State,09022023-Southeast Missouri State Redhawks-Kansas State
-401531347,college-football,2023-09-02 15:00:00,South Alabama Jaguars,22.40%,Tulane Green Wave,77.60%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,South Alabama,Tulane,09022023-South Alabama-Tulane
-401532572,college-football,2023-09-02 11:00:00,Bryant Bulldogs,1.70%,UNLV Rebels,98.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Bryant Bulldogs,UNLV Rebels,09022023-Bryant Bulldogs-UNLV Rebels
-401520168,college-football,2023-09-02 09:00:00,Mercer Bears,1.00%,Ole Miss Rebels,99.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Mercer Bears,Ole Miss,09022023-Mercer Bears-Ole Miss
-401520146,college-football,2023-08-26 16:00:00,Florida International Panthers,20.10%,Louisiana Tech Bulldogs,79.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Florida International,Louisiana Tech,08262023-Florida International-Louisiana Tech
-401520176,college-football,2023-08-31 15:00:00,Florida Gators,29.70%,Utah Utes,70.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Florida ,Utah,08312023-Florida -Utah
-401520170,college-football,2023-09-02 07:00:00,Fresno State Bulldogs,21.50%,Purdue Boilermakers,78.50%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Fresno State,Purdue,09022023-Fresno State-Purdue
-401525824,college-football,2023-09-02 10:30:00,Rice Owls,1.70%,Texas Longhorns,98.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Rice,Texas,09022023-Rice-Texas
-401531426,college-football,2023-09-02 14:00:00,Bethune-Cookman Wildcats,1.10%,Memphis Tigers,98.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Bethune-Cookman Wildcats,Memphis Tigers,09022023-Bethune-Cookman Wildcats-Memphis Tigers
-401520156,college-football,2023-09-02 10:30:00,Ohio State Buckeyes,98.00%,Indiana Hoosiers,2.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Ohio State,Indiana,09022023-Ohio State-Indiana
-401531337,college-football,2023-08-31 15:00:00,Arkansas-Pine Bluff Golden Lions,1.40%,Tulsa Golden Hurricane,98.60%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Arkansas-Pine Bluff Golden Lions,Tulsa Golden Hurricane,08312023-Arkansas-Pine Bluff Golden Lions-Tulsa Golden Hurricane
-401525823,college-football,2023-09-02 14:00:00,Central Arkansas Bears,3.00%,Oklahoma State Cowboys,97.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Central Arkansas Bears,Oklahoma State Cowboys,09022023-Central Arkansas Bears-Oklahoma State Cowboys
-401520145,college-football,2023-08-26 12:30:00,UTEP Miners,52.20%,Jacksonville State Gamecocks,47.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,UTEP,Jacksonville State,08262023-UTEP-Jacksonville State
-401520177,college-football,2023-09-02 16:00:00,Incarnate Word Cardinals,5.90%,UTEP Miners,94.10%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Incarnate Word Cardinals,UTEP,09022023-Incarnate Word Cardinals-UTEP
-401520174,college-football,2023-08-31 14:30:00,NC State Wolfpack,87.30%,UConn Huskies,12.70%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,NC State,Connecticut,08312023-NC State-Connecticut
-401531840,college-football,2023-09-02 14:00:00,Alcorn State Braves,6.10%,Southern Miss Golden Eagles,93.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Alcorn State Braves,Southern Miss Golden Eagles,09022023-Alcorn State Braves-Southern Miss Golden Eagles
-401532570,college-football,2023-09-02 09:00:00,Robert Morris Colonials,1.10%,Air Force Falcons,98.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Robert Morris Colonials,Air Force Falcons,09022023-Robert Morris Colonials-Air Force Falcons
-401523988,college-football,2023-09-01 18:00:00,Stanford Cardinal,62.80%,Hawai'i Rainbow Warriors,37.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Stanford,Hawaii,09012023-Stanford-Hawaii
-401520150,college-football,2023-09-02 11:00:00,Western Carolina Catamounts,1.00%,Arkansas Razorbacks,99.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Western Carolina Catamounts,Arkansas,09022023-Western Carolina Catamounts-Arkansas
-401520164,college-football,2023-09-02 11:00:00,SE Louisiana Lions,2.80%,Mississippi State Bulldogs,97.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,SE Louisiana Lions,Mississippi State,09022023-SE Louisiana Lions-Mississippi State
-401531839,college-football,2023-09-02 14:30:00,Northwestern State Demons,2.50%,Louisiana Ragin' Cajuns,97.50%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Northwestern State Demons,Louisiana Ragin' Cajuns,09022023-Northwestern State Demons-Louisiana Ragin' Cajuns
-401520166,college-football,2023-09-02 16:00:00,Western Illinois Leathernecks,14.80%,New Mexico State Aggies,85.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Western Illinois Leathernecks,New Mexico State,09022023-Western Illinois Leathernecks-New Mexico State
-401525468,college-football,2023-09-04 15:00:00,Clemson Tigers,85.20%,Duke Blue Devils,14.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Clemson,Duke,09042023-Clemson-Duke
-401531837,college-football,2023-09-02 13:00:00,Bucknell Bison,1.90%,James Madison Dukes,98.10%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Bucknell Bison,James Madison Dukes,09022023-Bucknell Bison-James Madison Dukes
-401520172,college-football,2023-09-02 07:00:00,Louisiana Tech Bulldogs,10.80%,SMU Mustangs,89.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Louisiana Tech,SMU,09022023-Louisiana Tech-SMU
-401520162,college-football,2023-09-02 07:00:00,East Carolina Pirates,3.30%,Michigan Wolverines,96.70%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,East Carolina,Michigan,09022023-East Carolina-Michigan
-401523997,college-football,2023-09-02 10:30:00,Boise State Broncos,17.90%,Washington Huskies,82.10%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Boise State,Washington,09022023-Boise State-Washington
-401520175,college-football,2023-09-02 14:00:00,Army Black Knights,60.90%,UL Monroe Warhawks,39.10%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Army,UL Monroe,09022023-Army-UL Monroe
-401520165,college-football,2023-08-31 15:00:00,South Dakota Coyotes,4.00%,Missouri Tigers,96.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,South Dakota Coyotes,Missouri Tigers,08312023-South Dakota Coyotes-Missouri Tigers
-401520148,college-football,2023-08-31 15:00:00,Nebraska Cornhuskers,26.60%,Minnesota Golden Gophers,73.40%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Nebraska,Minnesota ,08312023-Nebraska-Minnesota 
-401520171,college-football,2023-09-03 07:00:00,Northwestern Wildcats,47.30%,Rutgers Scarlet Knights,52.70%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Northwestern,Rutgers,09032023-Northwestern-Rutgers
-401520153,college-football,2023-09-02 13:30:00,Maine Black Bears,28.40%,Florida International Panthers,71.60%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Maine Black Bears,Florida International,09022023-Maine Black Bears-Florida International
-401520161,college-football,2023-09-02 10:30:00,Towson Tigers,4.80%,Maryland Terrapins,95.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Towson Tigers,Maryland Terrapins,09022023-Towson Tigers-Maryland Terrapins
-401520160,college-football,2023-09-02 07:00:00,Bowling Green Falcons,25.10%,Liberty Flames,74.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Bowling Green,Liberty,09022023-Bowling Green-Liberty
-401532393,college-football,2023-08-31 14:00:00,St. Francis (PA) Red Flash,8.20%,Western Michigan Broncos,91.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,St. Francis (PA) Red Flash,Western Michigan Broncos,08312023-St. Francis (PA) Red Flash-Western Michigan Broncos
-401520147,college-football,2023-08-26 14:30:00,Hawai'i Rainbow Warriors,15.00%,Vanderbilt Commodores,85.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Hawaii,Vanderbilt,08262023-Hawaii-Vanderbilt
-401523996,college-football,2023-09-02 13:30:00,Nevada Wolf Pack,2.20%,USC Trojans,97.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Nevada,USC,09022023-Nevada-USC
-401525819,college-football,2023-09-02 14:00:00,UTSA Roadrunners,35.60%,Houston Cougars,64.40%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,UTSA,Houston,09022023-UTSA-Houston
-401525461,college-football,2023-08-31 14:00:00,Elon Phoenix,3.10%,Wake Forest Demon Deacons,96.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Elon Phoenix,Wake Forest Demon Deacons,08312023-Elon Phoenix-Wake Forest Demon Deacons
-401525817,college-football,2023-09-02 14:00:00,Texas State Bobcats,4.40%,Baylor Bears,95.60%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Texas State,Baylor,09022023-Texas State-Baylor
-401525467,college-football,2023-09-02 15:00:00,Old Dominion Monarchs,18.70%,Virginia Tech Hokies,81.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Old Dominion,Virginia Tech ,09022023-Old Dominion-Virginia Tech 
-401523995,college-football,2023-09-02 17:30:00,Coastal Carolina Chanticleers,12.20%,UCLA Bruins,87.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Coastal Carolina,UCLA,09022023-Coastal Carolina-UCLA
-401520155,college-football,2023-09-02 14:30:00,Toledo Rockets,18.80%,Illinois Fighting Illini,81.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Toledo,Illinois,09022023-Toledo-Illinois
-401525465,college-football,2023-09-02 10:30:00,Wofford Terriers,3.60%,Pittsburgh Panthers,96.40%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Wofford Terriers,Pittsburgh Panthers,09022023-Wofford Terriers-Pittsburgh Panthers
-401523987,college-football,2023-08-31 17:00:00,Southern Utah Thunderbirds,3.10%,Arizona State Sun Devils,96.90%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Southern Utah Thunderbirds,Arizona State Sun Devils,08312023-Southern Utah Thunderbirds-Arizona State Sun Devils
-401525825,college-football,2023-09-02 14:30:00,Texas Tech Red Raiders,82.20%,Wyoming Cowboys,17.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Texas Tech,Wyoming,09022023-Texas Tech-Wyoming
-401525818,college-football,2023-09-02 10:30:00,Eastern Kentucky Colonels,2.00%,Cincinnati Bearcats,98.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Eastern Kentucky Colonels,Cincinnati Bearcats,09022023-Eastern Kentucky Colonels-Cincinnati Bearcats
-401532395,college-football,2023-09-02 09:00:00,Long Island University Sharks,1.30%,Ohio Bobcats,98.70%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Long Island University Sharks,Ohio,09022023-Long Island University Sharks-Ohio
-401532573,college-football,2023-09-03 10:30:00,Oregon State Beavers,89.20%,San José State Spartans,10.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Oregon State,San Jose State,09032023-Oregon State-San Jose State
-401520181,college-football,2023-09-02 10:30:00,South Florida Bulls,30.20%,Western Kentucky Hilltoppers,69.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,South Florida,Western Kentucky,09022023-South Florida-Western Kentucky
-401520159,college-football,2023-09-02 07:00:00,Ball State Cardinals,6.60%,Kentucky Wildcats,93.40%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Ball State,Kentucky,09022023-Ball State-Kentucky
-401525464,college-football,2023-09-02 07:00:00,Northern Illinois Huskies,22.30%,Boston College Eagles,77.70%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Northern Illinois,Boston College,09022023-Northern Illinois-Boston College
-401532394,college-football,2023-09-01 13:30:00,Howard Bison,1.00%,Eastern Michigan Eagles,99.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Howard Bison,Eastern Michigan Eagles,09012023-Howard Bison-Eastern Michigan Eagles
-401525816,college-football,2023-08-31 14:00:00,Kent State Golden Flashes,4.30%,UCF Knights,95.70%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Kent State,Central Florida,08312023-Kent State-Central Florida
-401525466,college-football,2023-09-02 11:00:00,Colgate Raiders,1.30%,Syracuse Orange,98.70%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Colgate Raiders,Syracuse Orange,09022023-Colgate Raiders-Syracuse Orange
-401525815,college-football,2023-09-01 15:00:00,Missouri State Bears,2.50%,Kansas Jayhawks,97.50%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Missouri State Bears,Kansas,09012023-Missouri State Bears-Kansas
-401531387,college-football,2023-09-02 09:00:00,Akron Zips,24.50%,Temple Owls,75.50%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Akron,Temple,09022023-Akron-Temple
-401520167,college-football,2023-09-02 14:30:00,North Carolina Tar Heels,64.40%,South Carolina Gamecocks,35.60%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,North Carolina,South Carolina,09022023-North Carolina-South Carolina
-401531834,college-football,2023-08-31 14:00:00,Rhode Island Rams,5.10%,Georgia State Panthers,94.90%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Rhode Island Rams,Georgia State Panthers,08312023-Rhode Island Rams-Georgia State Panthers
-401520180,college-football,2023-09-02 10:30:00,Buffalo Bulls,5.50%,Wisconsin Badgers,94.50%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Buffalo,Wisconsin ,09022023-Buffalo-Wisconsin 
-401520157,college-football,2023-09-02 07:00:00,Utah State Aggies,7.20%,Iowa Hawkeyes,92.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Utah State,Iowa,09022023-Utah State-Iowa
-401531377,college-football,2023-08-31 15:00:00,North Carolina A&T Aggies,10.20%,UAB Blazers,89.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,North Carolina A&T Aggies,UAB Blazers,08312023-North Carolina A&T Aggies-UAB Blazers
-401520154,college-football,2023-09-02 13:00:00,UT Martin Skyhawks,1.00%,Georgia Bulldogs,99.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,UT Martin Skyhawks,Georgia,09022023-UT Martin Skyhawks-Georgia
-401531838,college-football,2023-09-02 13:00:00,Albany Great Danes,7.00%,Marshall Thundering Herd,93.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Albany Great Danes,Marshall Thundering Herd,09022023-Albany Great Danes-Marshall Thundering Herd
-401523991,college-football,2023-09-02 11:00:00,California Golden Bears,64.00%,North Texas Mean Green,36.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,California,North Texas,09022023-California-North Texas
-401525434,college-football,2023-08-26 09:30:00,Navy Midshipmen,3.30%,Notre Dame Fighting Irish,96.70%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Navy,Notre Dame,08262023-Navy-Notre Dame
-401520182,college-football,2023-09-03 14:30:00,LSU Tigers,68.20%,Florida State Seminoles,31.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,LSU,Florida State,09032023-LSU-Florida State
-401531418,college-football,2023-09-02 13:00:00,Monmouth Hawks,6.40%,Florida Atlantic Owls,93.60%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Monmouth Hawks,Florida Atlantic Owls,09022023-Monmouth Hawks-Florida Atlantic Owls
-401531836,college-football,2023-09-02 13:00:00,The Citadel Bulldogs,6.90%,Georgia Southern Eagles,93.10%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,The Citadel Bulldogs,Georgia Southern Eagles,09022023-The Citadel Bulldogs-Georgia Southern Eagles
-401525435,college-football,2023-09-02 10:30:00,Tennessee State Tigers,1.00%,Notre Dame Fighting Irish,99.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Tennessee State Tigers,Notre Dame,09022023-Tennessee State Tigers-Notre Dame
-401523986,college-football,2023-08-26 15:00:00,San José State Spartans,2.60%,USC Trojans,97.40%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,San Jose State,USC,08262023-San Jose State-USC
-401520151,college-football,2023-09-02 10:30:00,UMass Minutemen,2.80%,Auburn Tigers,97.20%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Massachusetts,Auburn,09022023-Massachusetts-Auburn
-401532392,college-football,2023-08-26 14:00:00,Ohio Bobcats,32.20%,San Diego State Aztecs,67.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Ohio,San Diego State,08262023-Ohio-San Diego State
-401520152,college-football,2023-09-02 17:15:00,Sam Houston Bearkats,5.80%,BYU Cougars,94.20%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Sam Houston State,BYU,09022023-Sam Houston State-BYU
-401520173,college-football,2023-09-02 14:00:00,New Mexico Lobos,2.40%,Texas A&M Aggies,97.60%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,New Mexico,Texas A&M ,09022023-New Mexico-Texas A&M 
-401531841,college-football,2023-09-02 14:00:00,Stephen F. Austin Lumberjacks,1.80%,Troy Trojans,98.20%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Stephen F. Austin Lumberjacks,Troy Trojans,09022023-Stephen F. Austin Lumberjacks-Troy Trojans
-401523992,college-football,2023-09-02 10:00:00,Portland State Vikings,1.00%,Oregon Ducks,99.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Portland State Vikings,Oregon,09022023-Portland State Vikings-Oregon
-401532571,college-football,2023-09-02 17:30:00,Idaho State Bengals,4.10%,San Diego State Aztecs,95.90%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Idaho State Bengals,San Diego State,09022023-Idaho State Bengals-San Diego State
-401523994,college-football,2023-09-02 07:00:00,Colorado Buffaloes,5.40%,TCU Horned Frogs,94.60%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Colorado,TCU,09022023-Colorado-TCU
-401472276,mlb,2023-07-02 09:15:00,New York Yankees,43.1%,St. Louis Cardinals,56.9%,06/30/2023 11:41:32 PM,06/30/2023 11:42:26 PM,W2,W2,W2,4.45679012345679,3.975308641975309,L2,L2,L1,4.5625,4.95,New York Yankees,St. Louis Cardinals,07022023-New York Yankees-St. Louis Cardinals
-401472280,mlb,2023-07-02 08:35:00,Washington Nationals,39.2%,Philadelphia Phillies,60.8%,06/30/2023 11:41:33 PM,06/30/2023 11:42:28 PM,W3,L1,W3,4.135802469135802,4.888888888888889,L1,L1,W9,4.37037037037037,4.469135802469136,Washington Nationals,Philadelphia Phillies,07022023-Washington Nationals-Philadelphia Phillies
-401472278,mlb,2023-07-02 14:00:00,San Francisco Giants,55.3%,New York Mets,44.7%,06/30/2023 11:41:33 PM,06/30/2023 11:42:30 PM,W1,L1,W1,4.829268292682927,4.304878048780488,L3,L3,L1,4.439024390243903,4.670731707317073,San Francisco Giants,New York Mets,07022023-San Francisco Giants-New York Mets
-401472271,mlb,2023-07-02 09:20:00,Cleveland Guardians,51.9%,Chicago Cubs,48.1%,06/30/2023 11:41:34 PM,06/30/2023 11:42:33 PM,L2,L1,L2,3.975308641975309,4.172839506172839,W1,W1,W3,4.6125,4.2125,Cleveland Guardians,Chicago Cubs,07022023-Cleveland Guardians-Chicago Cubs
-401472275,mlb,2023-07-02 07:05:00,Minnesota Twins,54.3%,Baltimore Orioles,45.7%,06/30/2023 11:41:34 PM,06/30/2023 11:42:35 PM,W1,W2,W1,4.228915662650603,3.855421686746988,L3,L3,L1,4.8625,4.6125,Minnesota Twins,Baltimore Orioles,07022023-Minnesota Twins-Baltimore Orioles
-401472268,mlb,2023-07-02 11:07:00,Arizona Diamondbacks,49.9%,Los Angeles Angels,50.1%,06/30/2023 11:41:35 PM,06/30/2023 11:42:36 PM,W1,L2,W2,5.132530120481928,4.674698795180723,L3,L3,L1,4.964285714285714,4.583333333333333,Arizona Diamondbacks,Los Angeles Angels,07022023-Arizona Diamondbacks-Los Angeles Angels
-401472282,mlb,2023-07-02 10:10:00,Detroit Tigers,57.8%,Colorado Rockies,42.2%,06/30/2023 11:41:36 PM,06/30/2023 11:42:42 PM,L1,L1,L1,3.814814814814815,4.839506172839506,W1,W1,L8,4.392857142857143,6.0,Detroit Tigers,Colorado Rockies,07022023-Detroit Tigers-Colorado Rockies
-401472279,mlb,2023-07-02 11:10:00,Tampa Bay Rays,43.6%,Seattle Mariners,56.4%,06/30/2023 11:41:36 PM,06/30/2023 11:42:45 PM,W2,W1,W2,5.523809523809524,3.7142857142857135,L2,L2,L2,4.468354430379747,4.189873417721519,Tampa Bay Rays,Seattle Mariners,07022023-Tampa Bay Rays-Seattle Mariners
-401472281,mlb,2023-07-02 08:35:00,Milwaukee Brewers,44.7%,Pittsburgh Pirates,55.3%,06/30/2023 11:41:37 PM,06/30/2023 11:42:47 PM,L1,L1,L1,4.036585365853658,4.304878048780488,W4,W4,L2,4.222222222222222,4.604938271604938,Milwaukee Brewers,Pittsburgh Pirates,07022023-Milwaukee Brewers-Pittsburgh Pirates
-401472277,mlb,2023-07-02 08:40:00,San Diego Padres,39.3%,Cincinnati Reds,60.7%,06/30/2023 11:41:37 PM,06/30/2023 11:42:48 PM,L6,L2,L4,4.2560975609756095,4.048780487804878,W3,W1,W2,4.987804878048781,5.158536585365853,San Diego Padres,Cincinnati Reds,07022023-San Diego Padres-Cincinnati Reds
-401472270,mlb,2023-07-02 11:07:00,Chicago White Sox,53.5%,Oakland Athletics,46.5%,06/30/2023 11:41:37 PM,06/30/2023 11:42:49 PM,L1,W2,L1,4.142857142857143,4.833333333333333,W1,W1,L2,3.488095238095238,6.309523809523809,Chicago White Sox,OAK Athletics,07022023-Chicago White Sox-OAK Athletics
-401564629,mlb,2023-07-01 14:15:00,New York Yankees,,St. Louis Cardinals,,06/30/2023 11:41:39 PM,06/30/2023 11:42:54 PM,W2,W2,W2,4.45679012345679,3.975308641975309,L2,L2,L1,4.5625,4.95,New York Yankees,St. Louis Cardinals,07012023-New York Yankees-St. Louis Cardinals
-401472272,mlb,2023-07-02 09:35:00,Houston Astros,45.6%,Texas Rangers,54.4%,06/30/2023 11:41:39 PM,06/30/2023 11:42:57 PM,W3,W2,W3,4.658536585365853,3.951219512195122,L2,L2,L2,5.926829268292683,4.036585365853658,Houston Astros,Texas Rangers,07022023-Houston Astros-Texas Rangers
-401472274,mlb,2023-07-02 08:35:00,Miami Marlins,25.2%,Atlanta Braves,74.8%,06/30/2023 11:41:40 PM,06/30/2023 11:43:01 PM,L1,W2,L1,4.072289156626506,4.216867469879518,W6,W8,W2,5.641975308641976,4.049382716049383,Miami Marlins,Atlanta Braves,07022023-Miami Marlins-Atlanta Braves
-401472273,mlb,2023-07-02 09:10:00,Los Angeles Dodgers,69.6%,Kansas City Royals,30.4%,06/30/2023 11:41:41 PM,06/30/2023 11:43:02 PM,W2,L1,W2,5.493827160493828,4.654320987654321,L1,L1,L1,3.707317073170732,5.426829268292683,Los Angeles Dodgers,Kansas City Royals,07022023-Los Angeles Dodgers-Kansas City Royals
-401472269,mlb,2023-07-02 08:37:00,Boston Red Sox,37.4%,Toronto Blue Jays,62.6%,06/30/2023 11:41:42 PM,06/30/2023 11:43:08 PM,W1,L3,W1,4.843373493975903,4.710843373493976,L1,L1,W2,4.445783132530121,4.192771084337349,Boston Red Sox,Toronto Blue Jays,07022023-Boston Red Sox-Toronto Blue Jays
-401507231,wnba,2023-07-06 14:00:00,Seattle Storm,17.8%,Connecticut Sun,82.2%,06/30/2023 11:41:47 PM,06/30/2023 11:43:26 PM,L3,L2,L1,79.6875,85.75,W2,W1,W6,82.77777777777777,76.44444444444444,Seattle Storm,Connecticut Sun,07062023-Seattle Storm-Connecticut Sun
-667011,soccer,2023-07-01 10:00:00,São Bernardo,,Botafogo PB,,07/01/2023 01:04:41 AM,07/01/2023 01:05:29 AM,,,,,,,,,,,,,
-664528,soccer,2023-07-01 01:00:00,Young Lions,,Albirex Niigata,,07/01/2023 01:04:42 AM,07/01/2023 01:05:30 AM,,,,,,,,,,,,,
-670498,soccer,2023-07-01 14:00:00,Atlético San Luis,,Monterrey,,07/01/2023 01:04:42 AM,07/01/2023 01:05:32 AM,,,,,,,,,,,,,
-659871,soccer,2023-07-01 17:30:00,Seattle Sounders FC,,Houston Dynamo FC,,07/01/2023 01:04:42 AM,07/01/2023 01:05:33 AM,,,,,,,,,,,Seattle Sounders,Houston Dynamo,07012023-Seattle Sounders-Houston Dynamo
-659861,soccer,2023-07-01 14:30:00,Toronto FC,,Real Salt Lake,,07/01/2023 01:04:43 AM,07/01/2023 01:05:33 AM,,,,,,,,,,,Toronto FC,Real Salt Lake,07012023-Toronto FC-Real Salt Lake
-665513,soccer,2023-07-01 17:00:00,Portland Thorns FC,,Kansas City Current,,07/01/2023 01:04:43 AM,07/01/2023 01:05:34 AM,,,,,,,,,,,,,
-669479,soccer,2023-07-01 09:30:00,Dock Sud,,Colegiales,,07/01/2023 01:04:43 AM,07/01/2023 01:05:36 AM,,,,,,,,,,,,,
-659867,soccer,2023-07-01 15:30:00,Sporting Kansas City,,Vancouver Whitecaps,,07/01/2023 01:04:44 AM,07/01/2023 01:05:36 AM,,,,,,,,,,,Sporting Kansas City,Vancouver Whitecaps,07012023-Sporting Kansas City-Vancouver Whitecaps
-664527,soccer,2023-07-01 01:00:00,Tanjong Pagar United,,Lion City Sailors,,07/01/2023 01:04:44 AM,07/01/2023 01:05:37 AM,,,,,,,,,,,,,
-659863,soccer,2023-07-01 14:30:00,CF Montréal,,New York City FC,,07/01/2023 01:04:44 AM,07/01/2023 01:05:38 AM,,,,,,,,,,,CF Montreal,New York City FC,07012023-CF Montreal-New York City FC
-665512,soccer,2023-07-01 15:00:00,Chicago Red Stars,,San Diego Wave FC,,07/01/2023 01:04:45 AM,07/01/2023 01:05:39 AM,,,,,,,,,,,,,
-665947,soccer,2023-07-01 12:30:00,Bahia,,Grêmio,,07/01/2023 01:04:45 AM,07/01/2023 01:05:40 AM,,,,,,,,,,,,,
-670221,soccer,2023-07-01 14:00:00,Deportivo Morón,,Defensores Unidos,,07/01/2023 01:04:46 AM,07/01/2023 01:05:41 AM,,,,,,,,,,,,,
-669484,soccer,2023-07-01 09:30:00,Cañuelas,,Los Andes,,07/01/2023 01:04:47 AM,07/01/2023 01:05:43 AM,,,,,,,,,,,,,
-669480,soccer,2023-07-01 13:10:00,Ituzaingó,,Deportivo Merlo,,07/01/2023 01:04:47 AM,07/01/2023 01:05:44 AM,,,,,,,,,,,,,
-663695,soccer,2023-07-01 00:00:00,Nagoya Grampus,,Kawasaki Frontale,,07/01/2023 01:04:48 AM,07/01/2023 01:05:45 AM,,,,,,,,,,,,,
-663699,soccer,2023-07-01 01:00:00,Vissel Kobe,,Consadole Sapporo,,07/01/2023 01:04:48 AM,07/01/2023 01:05:46 AM,,,,,,,,,,,,,
-669619,soccer,2023-07-01 09:30:00,Victoriano Arenas,,Claypole,,07/01/2023 01:04:49 AM,07/01/2023 01:05:47 AM,,,,,,,,,,,,,
-661764,soccer,2023-07-01 16:30:00,El Paso Locomotive FC,,New Mexico United,,07/01/2023 01:04:49 AM,07/01/2023 01:05:48 AM,,,,,,,,,,,,,
-661763,soccer,2023-07-01 16:00:00,Colorado Springs Switchbacks FC,,Miami FC,,07/01/2023 01:04:50 AM,07/01/2023 01:05:48 AM,,,,,,,,,,,,,
-669481,soccer,2023-07-01 09:30:00,Talleres,,Villa San Carlos,,07/01/2023 01:04:50 AM,07/01/2023 01:05:49 AM,,,,,,,,,,,,,
-656523,soccer,2023-07-01 15:30:00,Talleres (Córdoba),,Godoy Cruz Antonio Tomba,,07/01/2023 01:04:50 AM,07/01/2023 01:05:50 AM,,,,,,,,,,,,,
-665939,soccer,2023-07-01 10:00:00,São Paulo,,Fluminense,,07/01/2023 01:04:51 AM,07/01/2023 01:05:51 AM,,,,,,,,,,,,,
-663697,soccer,2023-07-01 01:00:00,FC Tokyo,,Kashiwa Reysol,,07/01/2023 01:04:51 AM,07/01/2023 01:05:52 AM,,,,,,,,,,,,,
-658487,soccer,2023-07-01 06:30:00,Malmo FF,,Sirius,,07/01/2023 01:04:51 AM,07/01/2023 01:05:53 AM,,,,,,,,,,,,,
-666347,soccer,2023-07-01 11:00:00,Avaí,,ABC,,07/01/2023 01:04:52 AM,07/01/2023 01:05:54 AM,,,,,,,,,,,,,
-659869,soccer,2023-07-01 15:30:00,St. Louis CITY SC,,Colorado Rapids,,07/01/2023 01:04:52 AM,07/01/2023 01:05:55 AM,,,,,,,,,,,,Colorado Rapids,
-670228,soccer,2023-07-01 12:00:00,Nueva Chicago,,Temperley,,07/01/2023 01:04:52 AM,07/01/2023 01:05:55 AM,,,,,,,,,,,,,
-670480,soccer,2023-07-01 04:00:00,Bulawayo Chiefs,,Green Fuel,,07/01/2023 01:04:53 AM,07/01/2023 01:05:56 AM,,,,,,,,,,,,,
-658928,soccer,2023-07-01 07:00:00,Valerenga,,Viking FK,,07/01/2023 01:04:53 AM,07/01/2023 01:05:57 AM,,,,,,,,,,,,,
-666346,soccer,2023-07-01 11:00:00,Sampaio Corrêa,,Criciúma,,07/01/2023 01:04:53 AM,07/01/2023 01:05:58 AM,,,,,,,,,,,,,
-655575,soccer,2023-07-01 07:00:00,Georgia U21,,Israel U21,,07/01/2023 01:04:54 AM,07/01/2023 01:05:59 AM,,,,,,,,,,,,,
-664752,soccer,2023-07-01 13:15:00,Academia Puerto Cabello,,Zamora,,07/01/2023 01:04:54 AM,07/01/2023 01:06:00 AM,,,,,,,,,,,,,
-665938,soccer,2023-07-01 15:00:00,Internacional,,Cruzeiro,,07/01/2023 01:04:55 AM,07/01/2023 01:06:00 AM,,,,,,,,,,,,,
-669482,soccer,2023-07-01 09:30:00,UAI Urquiza,,Argentino de Quilmes,,07/01/2023 01:04:55 AM,07/01/2023 01:06:01 AM,,,,,,,,,,,,,
-665511,soccer,2023-07-01 14:30:00,North Carolina Courage,,Houston Dash,,07/01/2023 01:04:55 AM,07/01/2023 01:06:02 AM,,,,,,,,,,,,,
-669485,soccer,2023-07-01 09:30:00,Acassuso,,San Miguel,,07/01/2023 01:04:56 AM,07/01/2023 01:06:03 AM,,,,,,,,,,,,,
-670481,soccer,2023-07-01 04:00:00,Platinum,,Chicken Inn,,07/01/2023 01:04:56 AM,07/01/2023 01:06:04 AM,,,,,,,,,,,,,
-665944,soccer,2023-07-01 12:30:00,Flamengo,,Fortaleza,,07/01/2023 01:04:57 AM,07/01/2023 01:06:05 AM,,,,,,,,,,,,,
-666345,soccer,2023-07-01 12:15:00,CRB,,Londrina,,07/01/2023 01:04:57 AM,07/01/2023 01:06:06 AM,,,,,,,,,,,,,
-665343,soccer,2023-07-01 09:30:00,El Porvenir,,Deportivo Paraguayo,,07/01/2023 01:04:57 AM,07/01/2023 01:06:07 AM,,,,,,,,,,,,,
-664750,soccer,2023-07-01 15:30:00,Mineros de Guayana,,Estudiantes de Mérida,,07/01/2023 01:04:58 AM,07/01/2023 01:06:08 AM,,,,,,,,,,,,,
-661769,soccer,2023-07-01 14:00:00,Pittsburgh Riverhounds,,Louisville City FC,,07/01/2023 01:04:58 AM,07/01/2023 01:06:09 AM,,,,,,,,,,,,,
-659859,soccer,2023-07-01 14:30:00,Inter Miami CF,,Austin FC,,07/01/2023 01:04:59 AM,07/01/2023 01:06:10 AM,,,,,,,,,,,Inter Miami,Austin FC,07012023-Inter Miami-Austin FC
-669782,soccer,2023-07-01 03:00:00,Persis Solo,,Persebaya Surabaya,,07/01/2023 01:04:59 AM,07/01/2023 01:06:10 AM,,,,,,,,,,,,,
-663696,soccer,2023-07-01 00:30:00,Yokohama FC,,Gamba Osaka,,07/01/2023 01:04:59 AM,07/01/2023 01:06:12 AM,,,,,,,,,,,,,
-656521,soccer,2023-07-01 11:30:00,San Lorenzo,,Rosario Central,,07/01/2023 01:05:00 AM,07/01/2023 01:06:13 AM,,,,,,,,,,,,,
-663698,soccer,2023-07-01 01:00:00,Sagan Tosu,,Urawa Red Diamonds,,07/01/2023 01:05:00 AM,07/01/2023 01:06:14 AM,,,,,,,,,,,,,
-663694,soccer,2023-07-01 00:00:00,Kashima Antlers,,Kyoto Sanga,,07/01/2023 01:05:00 AM,07/01/2023 01:06:15 AM,,,,,,,,,,,,,
-661771,soccer,2023-07-01 16:00:00,San Antonio FC,,Birmingham Legion FC,,07/01/2023 01:05:01 AM,07/01/2023 01:06:15 AM,,,,,,,,,,,,,
-670495,soccer,2023-07-01 07:15:00,Italy,,Morocco,,07/01/2023 01:05:01 AM,07/01/2023 01:06:16 AM,,,,,,,,,,,,,
-669062,soccer,2023-07-01 11:00:00,Defensor Sporting,,La Luz,,07/01/2023 01:05:01 AM,07/01/2023 01:06:17 AM,,,,,,,,,,,,,
-669621,soccer,2023-07-01 09:30:00,Central Córdoba (Rosario),,Liniers,,07/01/2023 01:05:02 AM,07/01/2023 01:06:18 AM,,,,,,,,,,,,,
-661765,soccer,2023-07-01 14:30:00,Indy Eleven,,San Diego Loyal SC,,07/01/2023 01:05:02 AM,07/01/2023 01:06:19 AM,,,,,,,,,,,,,
-666342,soccer,2023-07-01 10:00:00,Atlético-GO,,Vila Nova-GO,,07/01/2023 01:05:03 AM,07/01/2023 01:06:20 AM,,,,,,,,,,,,,
-659870,soccer,2023-07-01 17:30:00,San Jose Earthquakes,,LA Galaxy,,07/01/2023 01:05:03 AM,07/01/2023 01:06:21 AM,,,,,,,,,,,San Jose Earthquakes,LA Galaxy,07012023-San Jose Earthquakes-LA Galaxy
-670169,soccer,2023-07-01 10:00:00,Racing (Córdoba),,Atletico Rafaela,,07/01/2023 01:05:03 AM,07/01/2023 01:06:22 AM,,,,,,,,,,,,,
-671023,soccer,2023-07-01 11:30:00,ADT,,Deportivo Binacional,,07/01/2023 01:05:04 AM,07/01/2023 01:06:22 AM,,,,,,,,,,,,,
-668491,soccer,2023-07-01 14:30:00,Cuba,,Guadeloupe,,07/01/2023 01:05:04 AM,07/01/2023 01:06:23 AM,,,,,,,,,,,,,
-659862,soccer,2023-07-01 14:30:00,Orlando City SC,,Chicago Fire FC,,07/01/2023 01:05:05 AM,07/01/2023 01:06:24 AM,,,,,,,,,,,Orlando City,Chicago Fire,07012023-Orlando City-Chicago Fire
-661770,soccer,2023-07-01 18:00:00,Sacramento Republic FC,,Rio Grande Valley FC Toros,,07/01/2023 01:05:05 AM,07/01/2023 01:06:25 AM,,,,,,,,,,,,,
-667016,soccer,2023-07-01 10:00:00,Confiança,,Ypiranga,,07/01/2023 01:05:06 AM,07/01/2023 01:06:26 AM,,,,,,,,,,,,,
-658484,soccer,2023-07-01 04:00:00,Degerfors IF,,IFK Värnamo,,07/01/2023 01:05:06 AM,07/01/2023 01:06:27 AM,,,,,,,,,,,,,
-670215,soccer,2023-07-01 11:05:00,Almirante Brown,,Guillermo Brown,,07/01/2023 01:05:06 AM,07/01/2023 01:06:28 AM,,,,,,,,,,,,,
-670657,soccer,2023-07-01 05:15:00,England,,Portugal,,07/01/2023 01:05:07 AM,07/01/2023 01:06:29 AM,,,,,,,,,,,,,
-669068,soccer,2023-07-01 13:30:00,Wanderers,,River Plate,,07/01/2023 01:05:07 AM,07/01/2023 01:06:30 AM,,,,,,,,,,,,,
-661768,soccer,2023-07-01 18:00:00,Phoenix Rising FC,,Memphis 901 FC,,07/01/2023 01:05:07 AM,07/01/2023 01:06:30 AM,,,,,,,,,,,,,
-676875,soccer,2023-07-01 10:30:00,Cobreloa,,San Marcos de Arica,,07/01/2023 01:05:08 AM,07/01/2023 01:06:31 AM,,,,,,,,,,,,,
-659864,soccer,2023-07-01 14:30:00,Columbus Crew,,New York Red Bulls,,07/01/2023 01:05:08 AM,07/01/2023 01:06:32 AM,,,,,,,,,,,Columbus Crew,New York Red Bulls,07012023-Columbus Crew-New York Red Bulls
-669368,soccer,2023-07-01 13:00:00,Everton CD,,Unión San Felipe,,07/01/2023 01:05:08 AM,07/01/2023 01:06:33 AM,,,,,,,,,,,,,
-676874,soccer,2023-07-01 05:00:00,Lebanon,,India,,07/01/2023 01:05:09 AM,07/01/2023 01:06:34 AM,,,,,,,,,,,,,
-661767,soccer,2023-07-01 17:00:00,Orange County SC,,Monterey Bay,,07/01/2023 01:05:09 AM,07/01/2023 01:06:35 AM,,,,,,,,,,,,,
-670172,soccer,2023-07-01 09:00:00,Tristán Suárez,,Villa Dálmine,,07/01/2023 01:05:10 AM,07/01/2023 01:06:35 AM,,,,,,,,,,,,,
-662058,soccer,2023-07-01 14:00:00,Richmond Kickers,,Chattanooga Red Wolves,,07/01/2023 01:05:10 AM,07/01/2023 01:06:36 AM,,,,,,,,,,,,,
-670476,soccer,2023-07-01 04:00:00,Manica Diamonds F.C.,,Sheasham,,07/01/2023 01:05:10 AM,07/01/2023 01:06:37 AM,,,,,,,,,,,,,
-659868,soccer,2023-07-01 15:30:00,Nashville SC,,D.C. United,,07/01/2023 01:05:11 AM,07/01/2023 01:06:38 AM,,,,,,,,,,,Nashville SC,DC Utd,07012023-Nashville SC-DC Utd
-671024,soccer,2023-07-01 14:00:00,Deportivo Garcilaso,,Melgar,,07/01/2023 01:05:11 AM,07/01/2023 01:06:39 AM,,,,,,,,,,,,,
-668492,soccer,2023-07-01 16:30:00,Guatemala,,Canada,,07/01/2023 01:05:11 AM,07/01/2023 01:06:40 AM,,,,,,,,,,,,,
-655576,soccer,2023-07-01 10:00:00,Spain U21,,Switzerland U21,,07/01/2023 01:05:12 AM,07/01/2023 01:06:41 AM,,,,,,,,,,,,,
-661766,soccer,2023-07-01 17:30:00,Las Vegas Lights FC,,Tampa Bay Rowdies,,07/01/2023 01:05:12 AM,07/01/2023 01:06:42 AM,,,,,,,,,,,,,
-669617,soccer,2023-07-01 09:30:00,San Martín (Burzaco),,Berazategui,,07/01/2023 01:05:13 AM,07/01/2023 01:06:42 AM,,,,,,,,,,,,,
-670499,soccer,2023-07-01 16:00:00,Tigres UANL,,Puebla,,07/01/2023 01:05:13 AM,07/01/2023 01:06:43 AM,,,,,,,,,,,,,
-662057,soccer,2023-07-01 14:00:00,Greenville Triumph,,Forward Madison FC,,07/01/2023 01:05:13 AM,07/01/2023 01:06:44 AM,,,,,,,,,,,,,
-667010,soccer,2023-07-01 13:00:00,Paysandu,,Brusque,,07/01/2023 01:05:14 AM,07/01/2023 01:06:45 AM,,,,,,,,,,,,,
-676873,soccer,2023-07-01 00:30:00,Kuwait,,Bangladesh,,07/01/2023 01:05:14 AM,07/01/2023 01:06:46 AM,,,,,,,,,,,,,
-659866,soccer,2023-07-01 15:30:00,FC Dallas,,LAFC,,07/01/2023 01:05:14 AM,07/01/2023 01:06:47 AM,,,,,,,,,,,FC Dallas,LAFC,07012023-FC Dallas-LAFC
-665509,soccer,2023-07-01 10:30:00,OL Reign,,Racing Louisville FC,,07/01/2023 01:05:15 AM,07/01/2023 01:06:47 AM,,,,,,,,,,,,,
-658490,soccer,2023-07-01 04:00:00,Brommapojkarna,,AIK,,07/01/2023 01:05:15 AM,07/01/2023 01:06:48 AM,,,,,,,,,,,,,
-659860,soccer,2023-07-01 14:30:00,FC Cincinnati,,New England Revolution,,07/01/2023 01:05:15 AM,07/01/2023 01:06:49 AM,,,,,,,,,,,FC Cincinnati,New England Revolution,07012023-FC Cincinnati-New England Revolution
-663693,soccer,2023-07-01 00:00:00,Albirex Niigata,,Sanfrecce Hiroshima,,07/01/2023 01:05:16 AM,07/01/2023 01:06:50 AM,,,,,,,,,,,,,
-665510,soccer,2023-07-01 14:00:00,Washington Spirit,,Orlando Pride,,07/01/2023 01:05:16 AM,07/01/2023 01:06:51 AM,,,,,,,,,,,,,
-671025,soccer,2023-07-01 16:30:00,Deportivo Municipal,,Alianza Lima,,07/01/2023 01:05:16 AM,07/01/2023 01:06:52 AM,,,,,,,,,,,,,
-656513,soccer,2023-07-01 09:00:00,Barracas Central,,River Plate,,07/01/2023 01:05:17 AM,07/01/2023 01:06:52 AM,,,,,,,,,,,,,
-670482,soccer,2023-07-01 04:00:00,Kariba,,Yadah,,07/01/2023 01:05:17 AM,07/01/2023 01:06:53 AM,,,,,,,,,,,,,
-656524,soccer,2023-07-01 13:00:00,Estudiantes de La Plata,,Central Córdoba (Santiago del Estero),,07/01/2023 01:05:17 AM,07/01/2023 01:06:54 AM,,,,,,,,,,,,,
-670475,soccer,2023-07-01 04:00:00,Ngezi Platinum,,Hwange,,07/01/2023 01:05:18 AM,07/01/2023 01:06:55 AM,,,,,,,,,,,,,
-659865,soccer,2023-07-01 15:30:00,Minnesota United FC,,Portland Timbers,,07/01/2023 01:05:18 AM,07/01/2023 01:06:56 AM,,,,,,,,,,,Minnesota Utd,Portland Timbers,07012023-Minnesota Utd-Portland Timbers
-667013,soccer,2023-07-01 13:00:00,Aparecidense,,Manaus,,07/01/2023 01:05:19 AM,07/01/2023 01:06:57 AM,,,,,,,,,,,,,
-670500,soccer,2023-07-01 18:10:00,Atlas,,Cruz Azul,,07/01/2023 01:05:19 AM,07/01/2023 01:06:58 AM,,,,,,,,,,,,,
-662056,soccer,2023-07-01 17:00:00,Central Valley Fuego FC,,Union Omaha,,07/01/2023 01:05:19 AM,07/01/2023 01:06:59 AM,,,,,,,,,,,,,
-401472288,mlb,2023-07-03 15:10:00,Kansas City Royals,27.7%,Minnesota Twins,72.3%,07/01/2023 01:05:20 AM,07/01/2023 01:07:15 AM,L1,L1,L1,3.707317073170732,5.426829268292683,W1,W2,W1,4.228915662650603,3.855421686746988,Kansas City Royals,Minnesota Twins,07032023-Kansas City Royals-Minnesota Twins
-401472284,mlb,2023-07-03 14:05:00,Baltimore Orioles,48.3%,New York Yankees,51.7%,07/01/2023 01:05:20 AM,07/01/2023 01:07:17 AM,L3,L3,L1,4.8625,4.6125,W2,W2,W2,4.45679012345679,3.975308641975309,Baltimore Orioles,New York Yankees,07032023-Baltimore Orioles-New York Yankees
-401472289,mlb,2023-07-03 17:10:00,Pittsburgh Pirates,24.1%,Los Angeles Dodgers,75.9%,07/01/2023 01:05:21 AM,07/01/2023 01:07:18 AM,W4,W4,L2,4.222222222222222,4.604938271604938,W2,L1,W2,5.493827160493828,4.654320987654321,Pittsburgh Pirates,Los Angeles Dodgers,07032023-Pittsburgh Pirates-Los Angeles Dodgers
-401472285,mlb,2023-07-03 09:10:00,Chicago Cubs,47.9%,Milwaukee Brewers,52.1%,07/01/2023 01:05:21 AM,07/01/2023 01:07:20 AM,W1,W1,W3,4.6125,4.2125,L1,L1,L1,4.036585365853658,4.304878048780488,Chicago Cubs,Milwaukee Brewers,07032023-Chicago Cubs-Milwaukee Brewers
-401472283,mlb,2023-07-03 14:10:00,Atlanta Braves,65.4%,Cleveland Guardians,34.6%,07/01/2023 01:05:22 AM,07/01/2023 01:07:22 AM,W6,W8,W2,5.641975308641976,4.049382716049383,L2,L1,L2,3.975308641975309,4.172839506172839,Atlanta Braves,Cleveland Guardians,07032023-Atlanta Braves-Cleveland Guardians
-401472286,mlb,2023-07-03 13:05:00,Cincinnati Reds,46.6%,Washington Nationals,53.4%,07/01/2023 01:05:22 AM,07/01/2023 01:07:24 AM,W3,W1,W2,4.987804878048781,5.158536585365853,W3,L1,W3,4.135802469135802,4.888888888888889,Cincinnati Reds,Washington Nationals,07032023-Cincinnati Reds-Washington Nationals
-401472291,mlb,2023-07-03 13:40:00,St. Louis Cardinals,43.6%,Miami Marlins,56.4%,07/01/2023 01:05:23 AM,07/01/2023 01:07:26 AM,L2,L2,L1,4.5625,4.95,L1,W2,L1,4.072289156626506,4.216867469879518,St. Louis Cardinals,Miami Marlins,07032023-St. Louis Cardinals-Miami Marlins
-401472290,mlb,2023-07-03 16:45:00,Seattle Mariners,32.7%,San Francisco Giants,67.3%,07/01/2023 01:05:23 AM,07/01/2023 01:07:28 AM,L3,L3,L2,4.4625,4.325,W1,L1,W1,4.829268292682927,4.304878048780488,Seattle Mariners,San Francisco Giants,07032023-Seattle Mariners-San Francisco Giants
-401472287,mlb,2023-07-03 09:05:00,Houston Astros,43.7%,Texas Rangers,56.3%,07/01/2023 01:05:24 AM,07/01/2023 01:07:29 AM,W3,W2,W3,4.658536585365853,3.951219512195122,L2,L2,L2,5.926829268292683,4.036585365853658,Houston Astros,Texas Rangers,07032023-Houston Astros-Texas Rangers
-401472292,mlb,2023-07-03 16:40:00,Los Angeles Angels,52.8%,San Diego Padres,47.2%,07/01/2023 01:05:24 AM,07/01/2023 01:07:31 AM,L3,L3,L1,4.964285714285714,4.583333333333333,L6,L2,L4,4.2560975609756095,4.048780487804878,Los Angeles Angels,San Diego Padres,07032023-Los Angeles Angels-San Diego Padres
-401507232,wnba,2023-07-07 14:00:00,Indiana Fever,18.0%,Washington Mystics,82.0%,07/01/2023 01:05:24 AM,07/01/2023 01:07:33 AM,W1,W1,L4,80.47058823529412,84.47058823529412,W1,W4,L3,79.82352941176471,75.70588235294117,Indiana Fever,Washington Mystics,07072023-Indiana Fever-Washington Mystics
-401507235,wnba,2023-07-07 15:00:00,Phoenix Mercury,36.6%,Minnesota Lynx,63.4%,07/01/2023 01:05:25 AM,07/01/2023 01:07:35 AM,L1,L1,W1,76.3125,85.125,L1,L1,W2,78.41176470588235,83.41176470588235,Phoenix Mercury,Minnesota Lynx,07072023-Phoenix Mercury-Minnesota Lynx
-401507234,wnba,2023-07-07 15:00:00,Las Vegas Aces,76.7%,Dallas Wings,23.3%,07/01/2023 01:05:25 AM,07/01/2023 01:07:36 AM,W8,W9,W1,92.5625,77.625,L1,W2,L1,83.41176470588235,83.3529411764706,Las Vegas Aces,Dallas Wings,07072023-Las Vegas Aces-Dallas Wings
-401507233,wnba,2023-07-07 15:00:00,Atlanta Dream,47.5%,Chicago Sky,52.5%,07/01/2023 01:05:26 AM,07/01/2023 01:07:38 AM,L2,L1,L3,83.3125,89.4375,W2,W4,L5,77.94736842105263,78.94736842105263,Atlanta Dream,Chicago Sky,07072023-Atlanta Dream-Chicago Sky
-675947,soccer,2024-04-26 09:00:00,VVV-Venlo,,FC Den Bosch,,07/01/2023 01:05:26 AM,07/01/2023 01:08:53 AM,,,,,,,,,,,,,
-675949,soccer,2024-04-26 09:00:00,SC Cambuur,,FC Dordrecht,,07/01/2023 01:05:26 AM,07/01/2023 01:08:54 AM,,,,,,,,,,,,,
-675952,soccer,2024-04-26 09:00:00,Willem II,,FC Groningen,,07/01/2023 01:05:27 AM,07/01/2023 01:08:55 AM,,,,,,,,,,,,,
-675948,soccer,2024-04-26 09:00:00,TOP Oss,,Jong AZ,,07/01/2023 01:05:27 AM,07/01/2023 01:08:56 AM,,,,,,,,,,,,,
-675951,soccer,2024-04-26 09:00:00,Jong Ajax,,Roda JC Kerkrade,,07/01/2023 01:05:28 AM,07/01/2023 01:08:57 AM,,,,,,,,,,,,,
-675950,soccer,2024-04-26 09:00:00,De Graafschap,,MVV Maastricht,,07/01/2023 01:05:28 AM,07/01/2023 01:08:58 AM,,,,,,,,,,,,,
-675953,soccer,2024-04-26 09:00:00,FC Emmen,,Helmond Sport,,07/01/2023 01:05:28 AM,07/01/2023 01:08:59 AM,,,,,,,,,,,,,
+401547407,nfl,2023-09-10 11:25:00-05:00,Green Bay Packers,47.20%,Chicago Bears,52.40%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Green Bay Packers,Chicago Bears,09102023-Green Bay Packers-Chicago Bears
+401547401,nfl,2023-09-10 11:25:00-05:00,Miami Dolphins,44.10%,Los Angeles Chargers,55.60%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Miami Dolphins,Los Angeles Chargers,09102023-Miami Dolphins-Los Angeles Chargers
+401547400,nfl,2023-09-10 11:25:00-05:00,Las Vegas Raiders,44.70%,Denver Broncos,55.00%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Las Vegas Raiders,Denver Broncos,09102023-Las Vegas Raiders-Denver Broncos
+401547409,nfl,2023-09-10 15:20:00-05:00,Dallas Cowboys,53.00%,New York Giants,46.60%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Dallas Cowboys,New York Giants,09102023-Dallas Cowboys-New York Giants
+401547353,nfl,2023-09-07 15:20:00-05:00,Detroit Lions,33.50%,Kansas City Chiefs,66.20%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Detroit Lions,Kansas City Chiefs,09072023-Detroit Lions-Kansas City Chiefs
+401547404,nfl,2023-09-10 08:00:00-05:00,Jacksonville Jaguars,65.20%,Indianapolis Colts,34.60%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Jacksonville Jaguars,Indianapolis Colts,09102023-Jacksonville Jaguars-Indianapolis Colts
+401547397,nfl,2023-09-10 08:00:00-05:00,Cincinnati Bengals,61.20%,Cleveland Browns,38.50%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Cincinnati Bengals,Cleveland Browns,09102023-Cincinnati Bengals-Cleveland Browns
+401547405,nfl,2023-09-10 08:00:00-05:00,San Francisco 49ers,56.90%,Pittsburgh Steelers,42.80%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,San Francisco 49ers,Pittsburgh Steelers,09102023-San Francisco 49ers-Pittsburgh Steelers
+401547406,nfl,2023-09-10 08:00:00-05:00,Arizona Cardinals,35.60%,Washington Commanders,64.10%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Arizona Cardinals,Washington Commanders,09102023-Arizona Cardinals-Washington Commanders
+401547399,nfl,2023-09-10 08:00:00-05:00,Tennessee Titans,43.40%,New Orleans Saints,56.30%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Tennessee Titans,New Orleans Saints,09102023-Tennessee Titans-New Orleans Saints
+401547408,nfl,2023-09-10 11:25:00-05:00,Los Angeles Rams,40.50%,Seattle Seahawks,59.20%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Los Angeles Rams,Seattle Seahawks,09102023-Los Angeles Rams-Seattle Seahawks
+401547402,nfl,2023-09-10 11:25:00-05:00,Philadelphia Eagles,61.70%,New England Patriots,38.00%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Philadelphia Eagles,New England Patriots,09102023-Philadelphia Eagles-New England Patriots
+401547352,nfl,2023-09-11 15:15:00-05:00,Buffalo Bills,55.70%,New York Jets,43.90%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Buffalo Bills,New York Jets,09112023-Buffalo Bills-New York Jets
+401547403,nfl,2023-09-10 08:00:00-05:00,Carolina Panthers,47.20%,Atlanta Falcons,52.40%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Carolina Panthers,Atlanta Falcons,09102023-Carolina Panthers-Atlanta Falcons
+401547396,nfl,2023-09-10 08:00:00-05:00,Houston Texans,25.30%,Baltimore Ravens,74.50%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Houston Texans,Baltimore Ravens,09102023-Houston Texans-Baltimore Ravens
+401547398,nfl,2023-09-10 08:00:00-05:00,Tampa Bay Buccaneers,30.30%,Minnesota Vikings,69.50%,6/29/2023 1:01,6/29/2023 1:03,,,,,,,,,,,Tampa Bay Buccaneers,Minnesota Vikings,09102023-Tampa Bay Buccaneers-Minnesota Vikings
+401472262,mlb,2023-07-01 09:15:00-05:00,New York Yankees,60.2%,St. Louis Cardinals,39.8%,06/30/2023 11:41:41 PM,06/30/2023 11:43:05 PM,W2,W2,W2,4.45679012345679,3.975308641975309,L2,L2,L1,4.5625,4.95,New York Yankees,St. Louis Cardinals,07012023-New York Yankees-St. Louis Cardinals
+401472264,mlb,2023-07-01 11:10:00-05:00,San Francisco Giants,39.5%,New York Mets,60.5%,06/30/2023 11:41:43 PM,06/30/2023 11:43:10 PM,W1,L1,W1,4.829268292682927,4.304878048780488,L3,L3,L1,4.439024390243903,4.670731707317073,San Francisco Giants,New York Mets,07012023-San Francisco Giants-New York Mets
+401472259,mlb,2023-07-01 14:15:00-05:00,Los Angeles Dodgers,66.6%,Kansas City Royals,33.4%,06/30/2023 11:41:33 PM,06/30/2023 11:42:31 PM,W2,L1,W2,5.493827160493828,4.654320987654321,L1,L1,L1,3.707317073170732,5.426829268292683,Los Angeles Dodgers,Kansas City Royals,07012023-Los Angeles Dodgers-Kansas City Royals
+401472254,mlb,2023-07-01 10:07:00-05:00,Boston Red Sox,45.2%,Toronto Blue Jays,54.5%,06/30/2023 11:41:43 PM,06/30/2023 11:43:12 PM,W1,L3,W1,4.843373493975903,4.710843373493976,L1,L1,W2,4.445783132530121,4.192771084337349,Boston Red Sox,Toronto Blue Jays,07012023-Boston Red Sox-Toronto Blue Jays
+401472257,mlb,2023-07-01 16:10:00-05:00,Detroit Tigers,53.6%,Colorado Rockies,46.4%,06/30/2023 11:41:39 PM,06/30/2023 11:42:55 PM,L1,L1,L1,3.814814814814815,4.839506172839506,W1,W1,L8,4.392857142857143,6.0,Detroit Tigers,Colorado Rockies,07012023-Detroit Tigers-Colorado Rockies
+401472253,mlb,2023-07-01 17:07:00-05:00,Arizona Diamondbacks,45.1%,Los Angeles Angels,54.9%,06/30/2023 11:41:41 PM,06/30/2023 11:43:03 PM,W1,L2,W2,5.132530120481928,4.674698795180723,L3,L3,L1,4.964285714285714,4.583333333333333,Arizona Diamondbacks,Los Angeles Angels,07012023-Arizona Diamondbacks-Los Angeles Angels
+401472260,mlb,2023-07-01 11:10:00-05:00,Miami Marlins,34.3%,Atlanta Braves,65.7%,06/30/2023 11:41:40 PM,06/30/2023 11:42:59 PM,L1,W2,L1,4.072289156626506,4.216867469879518,W6,W8,W2,5.641975308641976,4.049382716049383,Miami Marlins,Atlanta Braves,07012023-Miami Marlins-Atlanta Braves
+401472258,mlb,2023-07-01 11:05:00-05:00,Houston Astros,40.2%,Texas Rangers,59.8%,06/30/2023 11:41:38 PM,06/30/2023 11:42:53 PM,W3,W2,W3,4.658536585365853,3.951219512195122,L2,L2,L2,5.926829268292683,4.036585365853658,Houston Astros,Texas Rangers,07012023-Houston Astros-Texas Rangers
+401472256,mlb,2023-07-01 14:15:00-05:00,Cleveland Guardians,34.3%,Chicago Cubs,65.7%,06/30/2023 11:41:42 PM,06/30/2023 11:43:06 PM,L2,L1,L2,3.975308641975309,4.172839506172839,W1,W1,W3,4.6125,4.2125,Cleveland Guardians,Chicago Cubs,07012023-Cleveland Guardians-Chicago Cubs
+401472263,mlb,2023-07-01 08:40:00-05:00,San Diego Padres,47.5%,Cincinnati Reds,52.5%,06/30/2023 11:41:35 PM,06/30/2023 11:42:39 PM,L6,L2,L4,4.2560975609756095,4.048780487804878,W3,W1,W2,4.987804878048781,5.158536585365853,San Diego Padres,Cincinnati Reds,07012023-San Diego Padres-Cincinnati Reds
+401472255,mlb,2023-07-01 11:07:00-05:00,Chicago White Sox,67.0%,Oakland Athletics,33.0%,06/30/2023 11:41:36 PM,06/30/2023 11:42:43 PM,L1,W2,L1,4.142857142857143,4.833333333333333,W1,W1,L2,3.488095238095238,6.309523809523809,Chicago White Sox,OAK Athletics,07012023-Chicago White Sox-OAK Athletics
+401472267,mlb,2023-07-01 11:05:00-05:00,Milwaukee Brewers,49.3%,Pittsburgh Pirates,50.7%,06/30/2023 11:41:42 PM,06/30/2023 11:43:09 PM,L1,L1,L1,4.036585365853658,4.304878048780488,W4,W4,L2,4.222222222222222,4.604938271604938,Milwaukee Brewers,Pittsburgh Pirates,07012023-Milwaukee Brewers-Pittsburgh Pirates
+401472266,mlb,2023-07-01 11:05:00-05:00,Washington Nationals,35.9%,Philadelphia Phillies,64.1%,06/30/2023 11:41:38 PM,06/30/2023 11:42:50 PM,W3,L1,W3,4.135802469135802,4.888888888888889,L1,L1,W9,4.37037037037037,4.469135802469136,Washington Nationals,Philadelphia Phillies,07012023-Washington Nationals-Philadelphia Phillies
+401472261,mlb,2023-07-01 11:05:00-05:00,Minnesota Twins,47.2%,Baltimore Orioles,52.8%,06/30/2023 11:41:35 PM,06/30/2023 11:42:40 PM,W1,W2,W1,4.228915662650603,3.855421686746988,L3,L3,L1,4.8625,4.6125,Minnesota Twins,Baltimore Orioles,07012023-Minnesota Twins-Baltimore Orioles
+401472265,mlb,2023-07-01 14:15:00-05:00,Tampa Bay Rays,55.3%,Seattle Mariners,44.7%,06/30/2023 11:41:40 PM,06/30/2023 11:42:58 PM,W2,W1,W2,5.523809523809524,3.7142857142857135,L2,L2,L2,4.468354430379747,4.189873417721519,Tampa Bay Rays,Seattle Mariners,07012023-Tampa Bay Rays-Seattle Mariners
+401507230,wnba,2023-07-05 17:00:00-05:00,Atlanta Dream,49.9%,Los Angeles Sparks,50.1%,06/30/2023 11:41:46 PM,06/30/2023 11:43:23 PM,L2,L1,L3,83.3125,89.4375,W1,W2,W1,79.23529411764706,78.6470588235294,Atlanta Dream,Los Angeles Sparks,07052023-Atlanta Dream-Los Angeles Sparks
+401507222,wnba,2023-07-01 17:00:00-05:00,Minnesota Lynx,46.9%,Phoenix Mercury,53.1%,06/30/2023 11:41:48 PM,06/30/2023 11:43:29 PM,L1,L1,W2,78.41176470588235,83.41176470588235,L1,L1,W1,76.3125,85.125,Minnesota Lynx,Phoenix Mercury,07012023-Minnesota Lynx-Phoenix Mercury
+401507223,wnba,2023-07-02 10:00:00-05:00,Los Angeles Sparks,33.9%,Atlanta Dream,66.1%,06/30/2023 11:41:46 PM,06/30/2023 11:43:22 PM,W1,W2,W1,79.23529411764706,78.6470588235294,L2,L1,L3,83.3125,89.4375,Los Angeles Sparks,Atlanta Dream,07022023-Los Angeles Sparks-Atlanta Dream
+401507226,wnba,2023-07-02 13:00:00-05:00,New York Liberty,75.6%,Seattle Storm,24.4%,06/30/2023 11:41:46 PM,06/30/2023 11:43:21 PM,L3,W2,L3,84.9375,80.3125,L3,L2,L1,79.6875,85.75,New York Liberty,Seattle Storm,07022023-New York Liberty-Seattle Storm
+401507225,wnba,2023-07-02 10:00:00-05:00,Washington Mystics,60.2%,Dallas Wings,39.9%,06/30/2023 11:41:45 PM,06/30/2023 11:43:19 PM,W1,W4,L3,79.82352941176471,75.70588235294117,L1,W2,L1,83.41176470588235,83.3529411764706,Washington Mystics,Dallas Wings,07022023-Washington Mystics-Dallas Wings
+401507224,wnba,2023-07-02 11:00:00-05:00,Chicago Sky,52.8%,Indiana Fever,47.2%,06/30/2023 11:41:44 PM,06/30/2023 11:43:15 PM,W2,W4,L5,77.94736842105263,78.94736842105263,W1,W1,L4,80.47058823529412,84.47058823529412,Chicago Sky,Indiana Fever,07022023-Chicago Sky-Indiana Fever
+401507221,wnba,2023-07-01 10:00:00-05:00,Connecticut Sun,29.6%,Las Vegas Aces,70.4%,06/30/2023 11:41:48 PM,06/30/2023 11:43:30 PM,W2,W1,W6,82.77777777777777,76.44444444444444,W8,W9,W1,92.5625,77.625,Connecticut Sun,Las Vegas Aces,07012023-Connecticut Sun-Las Vegas Aces
+401507228,wnba,2023-07-05 15:00:00-05:00,Indiana Fever,33.9%,Minnesota Lynx,66.1%,06/30/2023 11:41:45 PM,06/30/2023 11:43:16 PM,W1,W1,L4,80.47058823529412,84.47058823529412,L1,L1,W2,78.41176470588235,83.41176470588235,Indiana Fever,Minnesota Lynx,07052023-Indiana Fever-Minnesota Lynx
+401507229,wnba,2023-07-05 17:00:00-05:00,Dallas Wings,13.4%,Las Vegas Aces,86.6%,06/30/2023 11:41:47 PM,06/30/2023 11:43:27 PM,L1,W2,L1,83.41176470588235,83.3529411764706,W8,W9,W1,92.5625,77.625,Dallas Wings,Las Vegas Aces,07052023-Dallas Wings-Las Vegas Aces
+401507227,wnba,2023-07-05 14:00:00-05:00,Phoenix Mercury,12.7%,New York Liberty,87.3%,06/30/2023 11:41:47 PM,06/30/2023 11:43:24 PM,L1,L1,W1,76.3125,85.125,L3,W2,L3,84.9375,80.3125,Phoenix Mercury,New York Liberty,07052023-Phoenix Mercury-New York Liberty
+401525462,college-football,2023-09-01 14:30:00-05:00,Louisville Cardinals,65.80%,Georgia Tech Yellow Jackets,34.20%,6/29/2023 1:01,6/29/2023 1:05,,,,,,,,,,,Louisville,Georgia Tech,09012023-Louisville-Georgia Tech
+401525463,college-football,2023-09-01 14:00:00-05:00,Miami (OH) RedHawks,9.10%,Miami Hurricanes,90.90%,6/29/2023 1:01,6/29/2023 1:05,,,,,,,,,,,Miami Ohio,Miami Florida ,09012023-Miami Ohio-Miami Florida 
+401525822,college-football,2023-09-02 07:00:00-05:00,Arkansas State Red Wolves,3.30%,Oklahoma Sooners,96.70%,6/29/2023 1:01,6/29/2023 1:05,,,,,,,,,,,Arkansas State,Oklahoma ,09022023-Arkansas State-Oklahoma 
+401520179,college-football,2023-09-02 07:00:00-05:00,Virginia Cavaliers,9.60%,Tennessee Volunteers,90.40%,6/29/2023 1:01,6/29/2023 1:05,,,,,,,,,,,Virginia,Tennessee,09022023-Virginia-Tennessee
+401520149,college-football,2023-09-02 14:30:00-05:00,Middle Tennessee Blue Raiders,1.00%,Alabama Crimson Tide,99.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Middle Tennessee State,Alabama,09022023-Middle Tennessee State-Alabama
+401531402,college-football,2023-09-02 13:00:00-05:00,South Carolina State Bulldogs,8.20%,Charlotte 49ers,91.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,South Carolina State Bulldogs,Charlotte 49ers,09022023-South Carolina State Bulldogs-Charlotte 49ers
+401531835,college-football,2023-09-02 10:30:00-05:00,Gardner-Webb Runnin' Bulldogs,1.20%,Appalachian State Mountaineers,98.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Gardner-Webb Runnin' Bulldogs,Appalachian State Mountaineers,09022023-Gardner-Webb Runnin' Bulldogs-Appalachian State Mountaineers
+401520169,college-football,2023-09-02 14:30:00-05:00,West Virginia Mountaineers,9.00%,Penn State Nittany Lions,91.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,West Virginia,Penn State,09022023-West Virginia-Penn State
+401525450,college-football,2023-08-26 14:00:00-05:00,UMass Minutemen,33.70%,New Mexico State Aggies,66.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Massachusetts,New Mexico State,08262023-Massachusetts-New Mexico State
+401520178,college-football,2023-09-02 14:00:00-05:00,Alabama A&M Bulldogs,1.10%,Vanderbilt Commodores,98.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Alabama A&M Bulldogs,Vanderbilt,09022023-Alabama A&M Bulldogs-Vanderbilt
+401520163,college-football,2023-09-01 14:00:00-05:00,Central Michigan Chippewas,7.70%,Michigan State Spartans,92.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Central Michigan,Michigan State,09012023-Central Michigan-Michigan State
+401523990,college-football,2023-09-02 14:00:00-05:00,Washington State Cougars,73.80%,Colorado State Rams,26.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Washington State,Colorado State,09022023-Washington State-Colorado State
+401523989,college-football,2023-09-02 17:00:00-05:00,Northern Arizona Lumberjacks,3.70%,Arizona Wildcats,96.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Northern Arizona Lumberjacks,Arizona Wildcats,09022023-Northern Arizona Lumberjacks-Arizona Wildcats
+401525820,college-football,2023-09-02 09:00:00-05:00,Northern Iowa Panthers,7.80%,Iowa State Cyclones,92.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Northern Iowa Panthers,Iowa State Cyclones,09022023-Northern Iowa Panthers-Iowa State Cyclones
+401525821,college-football,2023-09-02 14:00:00-05:00,Southeast Missouri State Redhawks,1.50%,Kansas State Wildcats,98.50%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Southeast Missouri State Redhawks,Kansas State,09022023-Southeast Missouri State Redhawks-Kansas State
+401531347,college-football,2023-09-02 15:00:00-05:00,South Alabama Jaguars,22.40%,Tulane Green Wave,77.60%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,South Alabama,Tulane,09022023-South Alabama-Tulane
+401532572,college-football,2023-09-02 11:00:00-05:00,Bryant Bulldogs,1.70%,UNLV Rebels,98.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Bryant Bulldogs,UNLV Rebels,09022023-Bryant Bulldogs-UNLV Rebels
+401520168,college-football,2023-09-02 09:00:00-05:00,Mercer Bears,1.00%,Ole Miss Rebels,99.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Mercer Bears,Ole Miss,09022023-Mercer Bears-Ole Miss
+401520146,college-football,2023-08-26 16:00:00-05:00,Florida International Panthers,20.10%,Louisiana Tech Bulldogs,79.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Florida International,Louisiana Tech,08262023-Florida International-Louisiana Tech
+401520176,college-football,2023-08-31 15:00:00-05:00,Florida Gators,29.70%,Utah Utes,70.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Florida ,Utah,08312023-Florida -Utah
+401520170,college-football,2023-09-02 07:00:00-05:00,Fresno State Bulldogs,21.50%,Purdue Boilermakers,78.50%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Fresno State,Purdue,09022023-Fresno State-Purdue
+401525824,college-football,2023-09-02 10:30:00-05:00,Rice Owls,1.70%,Texas Longhorns,98.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Rice,Texas,09022023-Rice-Texas
+401531426,college-football,2023-09-02 14:00:00-05:00,Bethune-Cookman Wildcats,1.10%,Memphis Tigers,98.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Bethune-Cookman Wildcats,Memphis Tigers,09022023-Bethune-Cookman Wildcats-Memphis Tigers
+401520156,college-football,2023-09-02 10:30:00-05:00,Ohio State Buckeyes,98.00%,Indiana Hoosiers,2.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Ohio State,Indiana,09022023-Ohio State-Indiana
+401531337,college-football,2023-08-31 15:00:00-05:00,Arkansas-Pine Bluff Golden Lions,1.40%,Tulsa Golden Hurricane,98.60%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Arkansas-Pine Bluff Golden Lions,Tulsa Golden Hurricane,08312023-Arkansas-Pine Bluff Golden Lions-Tulsa Golden Hurricane
+401525823,college-football,2023-09-02 14:00:00-05:00,Central Arkansas Bears,3.00%,Oklahoma State Cowboys,97.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Central Arkansas Bears,Oklahoma State Cowboys,09022023-Central Arkansas Bears-Oklahoma State Cowboys
+401520145,college-football,2023-08-26 12:30:00-05:00,UTEP Miners,52.20%,Jacksonville State Gamecocks,47.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,UTEP,Jacksonville State,08262023-UTEP-Jacksonville State
+401520177,college-football,2023-09-02 16:00:00-05:00,Incarnate Word Cardinals,5.90%,UTEP Miners,94.10%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Incarnate Word Cardinals,UTEP,09022023-Incarnate Word Cardinals-UTEP
+401520174,college-football,2023-08-31 14:30:00-05:00,NC State Wolfpack,87.30%,UConn Huskies,12.70%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,NC State,Connecticut,08312023-NC State-Connecticut
+401531840,college-football,2023-09-02 14:00:00-05:00,Alcorn State Braves,6.10%,Southern Miss Golden Eagles,93.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Alcorn State Braves,Southern Miss Golden Eagles,09022023-Alcorn State Braves-Southern Miss Golden Eagles
+401532570,college-football,2023-09-02 09:00:00-05:00,Robert Morris Colonials,1.10%,Air Force Falcons,98.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Robert Morris Colonials,Air Force Falcons,09022023-Robert Morris Colonials-Air Force Falcons
+401523988,college-football,2023-09-01 18:00:00-05:00,Stanford Cardinal,62.80%,Hawai'i Rainbow Warriors,37.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Stanford,Hawaii,09012023-Stanford-Hawaii
+401520150,college-football,2023-09-02 11:00:00-05:00,Western Carolina Catamounts,1.00%,Arkansas Razorbacks,99.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Western Carolina Catamounts,Arkansas,09022023-Western Carolina Catamounts-Arkansas
+401520164,college-football,2023-09-02 11:00:00-05:00,SE Louisiana Lions,2.80%,Mississippi State Bulldogs,97.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,SE Louisiana Lions,Mississippi State,09022023-SE Louisiana Lions-Mississippi State
+401531839,college-football,2023-09-02 14:30:00-05:00,Northwestern State Demons,2.50%,Louisiana Ragin' Cajuns,97.50%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Northwestern State Demons,Louisiana Ragin' Cajuns,09022023-Northwestern State Demons-Louisiana Ragin' Cajuns
+401520166,college-football,2023-09-02 16:00:00-05:00,Western Illinois Leathernecks,14.80%,New Mexico State Aggies,85.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Western Illinois Leathernecks,New Mexico State,09022023-Western Illinois Leathernecks-New Mexico State
+401525468,college-football,2023-09-04 15:00:00-05:00,Clemson Tigers,85.20%,Duke Blue Devils,14.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Clemson,Duke,09042023-Clemson-Duke
+401531837,college-football,2023-09-02 13:00:00-05:00,Bucknell Bison,1.90%,James Madison Dukes,98.10%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Bucknell Bison,James Madison Dukes,09022023-Bucknell Bison-James Madison Dukes
+401520172,college-football,2023-09-02 07:00:00-05:00,Louisiana Tech Bulldogs,10.80%,SMU Mustangs,89.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Louisiana Tech,SMU,09022023-Louisiana Tech-SMU
+401520162,college-football,2023-09-02 07:00:00-05:00,East Carolina Pirates,3.30%,Michigan Wolverines,96.70%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,East Carolina,Michigan,09022023-East Carolina-Michigan
+401523997,college-football,2023-09-02 10:30:00-05:00,Boise State Broncos,17.90%,Washington Huskies,82.10%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Boise State,Washington,09022023-Boise State-Washington
+401520175,college-football,2023-09-02 14:00:00-05:00,Army Black Knights,60.90%,UL Monroe Warhawks,39.10%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Army,UL Monroe,09022023-Army-UL Monroe
+401520165,college-football,2023-08-31 15:00:00-05:00,South Dakota Coyotes,4.00%,Missouri Tigers,96.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,South Dakota Coyotes,Missouri Tigers,08312023-South Dakota Coyotes-Missouri Tigers
+401520148,college-football,2023-08-31 15:00:00-05:00,Nebraska Cornhuskers,26.60%,Minnesota Golden Gophers,73.40%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Nebraska,Minnesota ,08312023-Nebraska-Minnesota 
+401520171,college-football,2023-09-03 07:00:00-05:00,Northwestern Wildcats,47.30%,Rutgers Scarlet Knights,52.70%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Northwestern,Rutgers,09032023-Northwestern-Rutgers
+401520153,college-football,2023-09-02 13:30:00-05:00,Maine Black Bears,28.40%,Florida International Panthers,71.60%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Maine Black Bears,Florida International,09022023-Maine Black Bears-Florida International
+401520161,college-football,2023-09-02 10:30:00-05:00,Towson Tigers,4.80%,Maryland Terrapins,95.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Towson Tigers,Maryland Terrapins,09022023-Towson Tigers-Maryland Terrapins
+401520160,college-football,2023-09-02 07:00:00-05:00,Bowling Green Falcons,25.10%,Liberty Flames,74.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Bowling Green,Liberty,09022023-Bowling Green-Liberty
+401532393,college-football,2023-08-31 14:00:00-05:00,St. Francis (PA) Red Flash,8.20%,Western Michigan Broncos,91.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,St. Francis (PA) Red Flash,Western Michigan Broncos,08312023-St. Francis (PA) Red Flash-Western Michigan Broncos
+401520147,college-football,2023-08-26 14:30:00-05:00,Hawai'i Rainbow Warriors,15.00%,Vanderbilt Commodores,85.00%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Hawaii,Vanderbilt,08262023-Hawaii-Vanderbilt
+401523996,college-football,2023-09-02 13:30:00-05:00,Nevada Wolf Pack,2.20%,USC Trojans,97.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Nevada,USC,09022023-Nevada-USC
+401525819,college-football,2023-09-02 14:00:00-05:00,UTSA Roadrunners,35.60%,Houston Cougars,64.40%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,UTSA,Houston,09022023-UTSA-Houston
+401525461,college-football,2023-08-31 14:00:00-05:00,Elon Phoenix,3.10%,Wake Forest Demon Deacons,96.90%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Elon Phoenix,Wake Forest Demon Deacons,08312023-Elon Phoenix-Wake Forest Demon Deacons
+401525817,college-football,2023-09-02 14:00:00-05:00,Texas State Bobcats,4.40%,Baylor Bears,95.60%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Texas State,Baylor,09022023-Texas State-Baylor
+401525467,college-football,2023-09-02 15:00:00-05:00,Old Dominion Monarchs,18.70%,Virginia Tech Hokies,81.30%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Old Dominion,Virginia Tech ,09022023-Old Dominion-Virginia Tech 
+401523995,college-football,2023-09-02 17:30:00-05:00,Coastal Carolina Chanticleers,12.20%,UCLA Bruins,87.80%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Coastal Carolina,UCLA,09022023-Coastal Carolina-UCLA
+401520155,college-football,2023-09-02 14:30:00-05:00,Toledo Rockets,18.80%,Illinois Fighting Illini,81.20%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Toledo,Illinois,09022023-Toledo-Illinois
+401525465,college-football,2023-09-02 10:30:00-05:00,Wofford Terriers,3.60%,Pittsburgh Panthers,96.40%,6/29/2023 1:02,6/29/2023 1:05,,,,,,,,,,,Wofford Terriers,Pittsburgh Panthers,09022023-Wofford Terriers-Pittsburgh Panthers
+401523987,college-football,2023-08-31 17:00:00-05:00,Southern Utah Thunderbirds,3.10%,Arizona State Sun Devils,96.90%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Southern Utah Thunderbirds,Arizona State Sun Devils,08312023-Southern Utah Thunderbirds-Arizona State Sun Devils
+401525825,college-football,2023-09-02 14:30:00-05:00,Texas Tech Red Raiders,82.20%,Wyoming Cowboys,17.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Texas Tech,Wyoming,09022023-Texas Tech-Wyoming
+401525818,college-football,2023-09-02 10:30:00-05:00,Eastern Kentucky Colonels,2.00%,Cincinnati Bearcats,98.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Eastern Kentucky Colonels,Cincinnati Bearcats,09022023-Eastern Kentucky Colonels-Cincinnati Bearcats
+401532395,college-football,2023-09-02 09:00:00-05:00,Long Island University Sharks,1.30%,Ohio Bobcats,98.70%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Long Island University Sharks,Ohio,09022023-Long Island University Sharks-Ohio
+401532573,college-football,2023-09-03 10:30:00-05:00,Oregon State Beavers,89.20%,San José State Spartans,10.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Oregon State,San Jose State,09032023-Oregon State-San Jose State
+401520181,college-football,2023-09-02 10:30:00-05:00,South Florida Bulls,30.20%,Western Kentucky Hilltoppers,69.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,South Florida,Western Kentucky,09022023-South Florida-Western Kentucky
+401520159,college-football,2023-09-02 07:00:00-05:00,Ball State Cardinals,6.60%,Kentucky Wildcats,93.40%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Ball State,Kentucky,09022023-Ball State-Kentucky
+401525464,college-football,2023-09-02 07:00:00-05:00,Northern Illinois Huskies,22.30%,Boston College Eagles,77.70%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Northern Illinois,Boston College,09022023-Northern Illinois-Boston College
+401532394,college-football,2023-09-01 13:30:00-05:00,Howard Bison,1.00%,Eastern Michigan Eagles,99.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Howard Bison,Eastern Michigan Eagles,09012023-Howard Bison-Eastern Michigan Eagles
+401525816,college-football,2023-08-31 14:00:00-05:00,Kent State Golden Flashes,4.30%,UCF Knights,95.70%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Kent State,Central Florida,08312023-Kent State-Central Florida
+401525466,college-football,2023-09-02 11:00:00-05:00,Colgate Raiders,1.30%,Syracuse Orange,98.70%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Colgate Raiders,Syracuse Orange,09022023-Colgate Raiders-Syracuse Orange
+401525815,college-football,2023-09-01 15:00:00-05:00,Missouri State Bears,2.50%,Kansas Jayhawks,97.50%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Missouri State Bears,Kansas,09012023-Missouri State Bears-Kansas
+401531387,college-football,2023-09-02 09:00:00-05:00,Akron Zips,24.50%,Temple Owls,75.50%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Akron,Temple,09022023-Akron-Temple
+401520167,college-football,2023-09-02 14:30:00-05:00,North Carolina Tar Heels,64.40%,South Carolina Gamecocks,35.60%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,North Carolina,South Carolina,09022023-North Carolina-South Carolina
+401531834,college-football,2023-08-31 14:00:00-05:00,Rhode Island Rams,5.10%,Georgia State Panthers,94.90%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Rhode Island Rams,Georgia State Panthers,08312023-Rhode Island Rams-Georgia State Panthers
+401520180,college-football,2023-09-02 10:30:00-05:00,Buffalo Bulls,5.50%,Wisconsin Badgers,94.50%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Buffalo,Wisconsin ,09022023-Buffalo-Wisconsin 
+401520157,college-football,2023-09-02 07:00:00-05:00,Utah State Aggies,7.20%,Iowa Hawkeyes,92.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Utah State,Iowa,09022023-Utah State-Iowa
+401531377,college-football,2023-08-31 15:00:00-05:00,North Carolina A&T Aggies,10.20%,UAB Blazers,89.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,North Carolina A&T Aggies,UAB Blazers,08312023-North Carolina A&T Aggies-UAB Blazers
+401520154,college-football,2023-09-02 13:00:00-05:00,UT Martin Skyhawks,1.00%,Georgia Bulldogs,99.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,UT Martin Skyhawks,Georgia,09022023-UT Martin Skyhawks-Georgia
+401531838,college-football,2023-09-02 13:00:00-05:00,Albany Great Danes,7.00%,Marshall Thundering Herd,93.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Albany Great Danes,Marshall Thundering Herd,09022023-Albany Great Danes-Marshall Thundering Herd
+401523991,college-football,2023-09-02 11:00:00-05:00,California Golden Bears,64.00%,North Texas Mean Green,36.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,California,North Texas,09022023-California-North Texas
+401525434,college-football,2023-08-26 09:30:00-05:00,Navy Midshipmen,3.30%,Notre Dame Fighting Irish,96.70%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Navy,Notre Dame,08262023-Navy-Notre Dame
+401520182,college-football,2023-09-03 14:30:00-05:00,LSU Tigers,68.20%,Florida State Seminoles,31.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,LSU,Florida State,09032023-LSU-Florida State
+401531418,college-football,2023-09-02 13:00:00-05:00,Monmouth Hawks,6.40%,Florida Atlantic Owls,93.60%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Monmouth Hawks,Florida Atlantic Owls,09022023-Monmouth Hawks-Florida Atlantic Owls
+401531836,college-football,2023-09-02 13:00:00-05:00,The Citadel Bulldogs,6.90%,Georgia Southern Eagles,93.10%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,The Citadel Bulldogs,Georgia Southern Eagles,09022023-The Citadel Bulldogs-Georgia Southern Eagles
+401525435,college-football,2023-09-02 10:30:00-05:00,Tennessee State Tigers,1.00%,Notre Dame Fighting Irish,99.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Tennessee State Tigers,Notre Dame,09022023-Tennessee State Tigers-Notre Dame
+401523986,college-football,2023-08-26 15:00:00-05:00,San José State Spartans,2.60%,USC Trojans,97.40%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,San Jose State,USC,08262023-San Jose State-USC
+401520151,college-football,2023-09-02 10:30:00-05:00,UMass Minutemen,2.80%,Auburn Tigers,97.20%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Massachusetts,Auburn,09022023-Massachusetts-Auburn
+401532392,college-football,2023-08-26 14:00:00-05:00,Ohio Bobcats,32.20%,San Diego State Aztecs,67.80%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Ohio,San Diego State,08262023-Ohio-San Diego State
+401520152,college-football,2023-09-02 17:15:00-05:00,Sam Houston Bearkats,5.80%,BYU Cougars,94.20%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Sam Houston State,BYU,09022023-Sam Houston State-BYU
+401520173,college-football,2023-09-02 14:00:00-05:00,New Mexico Lobos,2.40%,Texas A&M Aggies,97.60%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,New Mexico,Texas A&M ,09022023-New Mexico-Texas A&M 
+401531841,college-football,2023-09-02 14:00:00-05:00,Stephen F. Austin Lumberjacks,1.80%,Troy Trojans,98.20%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Stephen F. Austin Lumberjacks,Troy Trojans,09022023-Stephen F. Austin Lumberjacks-Troy Trojans
+401523992,college-football,2023-09-02 10:00:00-05:00,Portland State Vikings,1.00%,Oregon Ducks,99.00%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Portland State Vikings,Oregon,09022023-Portland State Vikings-Oregon
+401532571,college-football,2023-09-02 17:30:00-05:00,Idaho State Bengals,4.10%,San Diego State Aztecs,95.90%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Idaho State Bengals,San Diego State,09022023-Idaho State Bengals-San Diego State
+401523994,college-football,2023-09-02 07:00:00-05:00,Colorado Buffaloes,5.40%,TCU Horned Frogs,94.60%,6/29/2023 1:02,6/29/2023 1:06,,,,,,,,,,,Colorado,TCU,09022023-Colorado-TCU
+401472276,mlb,2023-07-02 09:15:00-05:00,New York Yankees,43.1%,St. Louis Cardinals,56.9%,06/30/2023 11:41:32 PM,06/30/2023 11:42:26 PM,W2,W2,W2,4.45679012345679,3.975308641975309,L2,L2,L1,4.5625,4.95,New York Yankees,St. Louis Cardinals,07022023-New York Yankees-St. Louis Cardinals
+401472280,mlb,2023-07-02 08:35:00-05:00,Washington Nationals,39.2%,Philadelphia Phillies,60.8%,06/30/2023 11:41:33 PM,06/30/2023 11:42:28 PM,W3,L1,W3,4.135802469135802,4.888888888888889,L1,L1,W9,4.37037037037037,4.469135802469136,Washington Nationals,Philadelphia Phillies,07022023-Washington Nationals-Philadelphia Phillies
+401472278,mlb,2023-07-02 14:00:00-05:00,San Francisco Giants,55.3%,New York Mets,44.7%,06/30/2023 11:41:33 PM,06/30/2023 11:42:30 PM,W1,L1,W1,4.829268292682927,4.304878048780488,L3,L3,L1,4.439024390243903,4.670731707317073,San Francisco Giants,New York Mets,07022023-San Francisco Giants-New York Mets
+401472271,mlb,2023-07-02 09:20:00-05:00,Cleveland Guardians,51.9%,Chicago Cubs,48.1%,06/30/2023 11:41:34 PM,06/30/2023 11:42:33 PM,L2,L1,L2,3.975308641975309,4.172839506172839,W1,W1,W3,4.6125,4.2125,Cleveland Guardians,Chicago Cubs,07022023-Cleveland Guardians-Chicago Cubs
+401472275,mlb,2023-07-02 07:05:00-05:00,Minnesota Twins,54.3%,Baltimore Orioles,45.7%,06/30/2023 11:41:34 PM,06/30/2023 11:42:35 PM,W1,W2,W1,4.228915662650603,3.855421686746988,L3,L3,L1,4.8625,4.6125,Minnesota Twins,Baltimore Orioles,07022023-Minnesota Twins-Baltimore Orioles
+401472268,mlb,2023-07-02 11:07:00-05:00,Arizona Diamondbacks,49.9%,Los Angeles Angels,50.1%,06/30/2023 11:41:35 PM,06/30/2023 11:42:36 PM,W1,L2,W2,5.132530120481928,4.674698795180723,L3,L3,L1,4.964285714285714,4.583333333333333,Arizona Diamondbacks,Los Angeles Angels,07022023-Arizona Diamondbacks-Los Angeles Angels
+401472282,mlb,2023-07-02 10:10:00-05:00,Detroit Tigers,57.8%,Colorado Rockies,42.2%,06/30/2023 11:41:36 PM,06/30/2023 11:42:42 PM,L1,L1,L1,3.814814814814815,4.839506172839506,W1,W1,L8,4.392857142857143,6.0,Detroit Tigers,Colorado Rockies,07022023-Detroit Tigers-Colorado Rockies
+401472279,mlb,2023-07-02 11:10:00-05:00,Tampa Bay Rays,43.6%,Seattle Mariners,56.4%,06/30/2023 11:41:36 PM,06/30/2023 11:42:45 PM,W2,W1,W2,5.523809523809524,3.7142857142857135,L2,L2,L2,4.468354430379747,4.189873417721519,Tampa Bay Rays,Seattle Mariners,07022023-Tampa Bay Rays-Seattle Mariners
+401472281,mlb,2023-07-02 08:35:00-05:00,Milwaukee Brewers,44.7%,Pittsburgh Pirates,55.3%,06/30/2023 11:41:37 PM,06/30/2023 11:42:47 PM,L1,L1,L1,4.036585365853658,4.304878048780488,W4,W4,L2,4.222222222222222,4.604938271604938,Milwaukee Brewers,Pittsburgh Pirates,07022023-Milwaukee Brewers-Pittsburgh Pirates
+401472277,mlb,2023-07-02 08:40:00-05:00,San Diego Padres,39.3%,Cincinnati Reds,60.7%,06/30/2023 11:41:37 PM,06/30/2023 11:42:48 PM,L6,L2,L4,4.2560975609756095,4.048780487804878,W3,W1,W2,4.987804878048781,5.158536585365853,San Diego Padres,Cincinnati Reds,07022023-San Diego Padres-Cincinnati Reds
+401472270,mlb,2023-07-02 11:07:00-05:00,Chicago White Sox,53.5%,Oakland Athletics,46.5%,06/30/2023 11:41:37 PM,06/30/2023 11:42:49 PM,L1,W2,L1,4.142857142857143,4.833333333333333,W1,W1,L2,3.488095238095238,6.309523809523809,Chicago White Sox,OAK Athletics,07022023-Chicago White Sox-OAK Athletics
+401564629,mlb,2023-07-01 14:15:00-05:00,New York Yankees,,St. Louis Cardinals,,06/30/2023 11:41:39 PM,06/30/2023 11:42:54 PM,W2,W2,W2,4.45679012345679,3.975308641975309,L2,L2,L1,4.5625,4.95,New York Yankees,St. Louis Cardinals,07012023-New York Yankees-St. Louis Cardinals
+401472272,mlb,2023-07-02 09:35:00-05:00,Houston Astros,45.6%,Texas Rangers,54.4%,06/30/2023 11:41:39 PM,06/30/2023 11:42:57 PM,W3,W2,W3,4.658536585365853,3.951219512195122,L2,L2,L2,5.926829268292683,4.036585365853658,Houston Astros,Texas Rangers,07022023-Houston Astros-Texas Rangers
+401472274,mlb,2023-07-02 08:35:00-05:00,Miami Marlins,25.2%,Atlanta Braves,74.8%,06/30/2023 11:41:40 PM,06/30/2023 11:43:01 PM,L1,W2,L1,4.072289156626506,4.216867469879518,W6,W8,W2,5.641975308641976,4.049382716049383,Miami Marlins,Atlanta Braves,07022023-Miami Marlins-Atlanta Braves
+401472273,mlb,2023-07-02 09:10:00-05:00,Los Angeles Dodgers,69.6%,Kansas City Royals,30.4%,06/30/2023 11:41:41 PM,06/30/2023 11:43:02 PM,W2,L1,W2,5.493827160493828,4.654320987654321,L1,L1,L1,3.707317073170732,5.426829268292683,Los Angeles Dodgers,Kansas City Royals,07022023-Los Angeles Dodgers-Kansas City Royals
+401472269,mlb,2023-07-02 08:37:00-05:00,Boston Red Sox,37.4%,Toronto Blue Jays,62.6%,06/30/2023 11:41:42 PM,06/30/2023 11:43:08 PM,W1,L3,W1,4.843373493975903,4.710843373493976,L1,L1,W2,4.445783132530121,4.192771084337349,Boston Red Sox,Toronto Blue Jays,07022023-Boston Red Sox-Toronto Blue Jays
+401507231,wnba,2023-07-06 14:00:00-05:00,Seattle Storm,17.8%,Connecticut Sun,82.2%,06/30/2023 11:41:47 PM,06/30/2023 11:43:26 PM,L3,L2,L1,79.6875,85.75,W2,W1,W6,82.77777777777777,76.44444444444444,Seattle Storm,Connecticut Sun,07062023-Seattle Storm-Connecticut Sun
+667011,soccer,2023-07-01 10:00:00-05:00,São Bernardo,,Botafogo PB,,07/01/2023 01:04:41 AM,07/01/2023 01:05:29 AM,,,,,,,,,,,,,
+664528,soccer,2023-07-01 01:00:00-05:00,Young Lions,,Albirex Niigata,,07/01/2023 01:04:42 AM,07/01/2023 01:05:30 AM,,,,,,,,,,,,,
+670498,soccer,2023-07-01 14:00:00-05:00,Atlético San Luis,,Monterrey,,07/01/2023 01:04:42 AM,07/01/2023 01:05:32 AM,,,,,,,,,,,,,
+659871,soccer,2023-07-01 17:30:00-05:00,Seattle Sounders FC,,Houston Dynamo FC,,07/01/2023 01:04:42 AM,07/01/2023 01:05:33 AM,,,,,,,,,,,Seattle Sounders,Houston Dynamo,07012023-Seattle Sounders-Houston Dynamo
+659861,soccer,2023-07-01 14:30:00-05:00,Toronto FC,,Real Salt Lake,,07/01/2023 01:04:43 AM,07/01/2023 01:05:33 AM,,,,,,,,,,,Toronto FC,Real Salt Lake,07012023-Toronto FC-Real Salt Lake
+665513,soccer,2023-07-01 17:00:00-05:00,Portland Thorns FC,,Kansas City Current,,07/01/2023 01:04:43 AM,07/01/2023 01:05:34 AM,,,,,,,,,,,,,
+669479,soccer,2023-07-01 09:30:00-05:00,Dock Sud,,Colegiales,,07/01/2023 01:04:43 AM,07/01/2023 01:05:36 AM,,,,,,,,,,,,,
+659867,soccer,2023-07-01 15:30:00-05:00,Sporting Kansas City,,Vancouver Whitecaps,,07/01/2023 01:04:44 AM,07/01/2023 01:05:36 AM,,,,,,,,,,,Sporting Kansas City,Vancouver Whitecaps,07012023-Sporting Kansas City-Vancouver Whitecaps
+664527,soccer,2023-07-01 01:00:00-05:00,Tanjong Pagar United,,Lion City Sailors,,07/01/2023 01:04:44 AM,07/01/2023 01:05:37 AM,,,,,,,,,,,,,
+659863,soccer,2023-07-01 14:30:00-05:00,CF Montréal,,New York City FC,,07/01/2023 01:04:44 AM,07/01/2023 01:05:38 AM,,,,,,,,,,,CF Montreal,New York City FC,07012023-CF Montreal-New York City FC
+665512,soccer,2023-07-01 15:00:00-05:00,Chicago Red Stars,,San Diego Wave FC,,07/01/2023 01:04:45 AM,07/01/2023 01:05:39 AM,,,,,,,,,,,,,
+665947,soccer,2023-07-01 12:30:00-05:00,Bahia,,Grêmio,,07/01/2023 01:04:45 AM,07/01/2023 01:05:40 AM,,,,,,,,,,,,,
+670221,soccer,2023-07-01 14:00:00-05:00,Deportivo Morón,,Defensores Unidos,,07/01/2023 01:04:46 AM,07/01/2023 01:05:41 AM,,,,,,,,,,,,,
+669484,soccer,2023-07-01 09:30:00-05:00,Cañuelas,,Los Andes,,07/01/2023 01:04:47 AM,07/01/2023 01:05:43 AM,,,,,,,,,,,,,
+669480,soccer,2023-07-01 13:10:00-05:00,Ituzaingó,,Deportivo Merlo,,07/01/2023 01:04:47 AM,07/01/2023 01:05:44 AM,,,,,,,,,,,,,
+663695,soccer,2023-07-01 00:00:00-05:00,Nagoya Grampus,,Kawasaki Frontale,,07/01/2023 01:04:48 AM,07/01/2023 01:05:45 AM,,,,,,,,,,,,,
+663699,soccer,2023-07-01 01:00:00-05:00,Vissel Kobe,,Consadole Sapporo,,07/01/2023 01:04:48 AM,07/01/2023 01:05:46 AM,,,,,,,,,,,,,
+669619,soccer,2023-07-01 09:30:00-05:00,Victoriano Arenas,,Claypole,,07/01/2023 01:04:49 AM,07/01/2023 01:05:47 AM,,,,,,,,,,,,,
+661764,soccer,2023-07-01 16:30:00-05:00,El Paso Locomotive FC,,New Mexico United,,07/01/2023 01:04:49 AM,07/01/2023 01:05:48 AM,,,,,,,,,,,,,
+661763,soccer,2023-07-01 16:00:00-05:00,Colorado Springs Switchbacks FC,,Miami FC,,07/01/2023 01:04:50 AM,07/01/2023 01:05:48 AM,,,,,,,,,,,,,
+669481,soccer,2023-07-01 09:30:00-05:00,Talleres,,Villa San Carlos,,07/01/2023 01:04:50 AM,07/01/2023 01:05:49 AM,,,,,,,,,,,,,
+656523,soccer,2023-07-01 15:30:00-05:00,Talleres (Córdoba),,Godoy Cruz Antonio Tomba,,07/01/2023 01:04:50 AM,07/01/2023 01:05:50 AM,,,,,,,,,,,,,
+665939,soccer,2023-07-01 10:00:00-05:00,São Paulo,,Fluminense,,07/01/2023 01:04:51 AM,07/01/2023 01:05:51 AM,,,,,,,,,,,,,
+663697,soccer,2023-07-01 01:00:00-05:00,FC Tokyo,,Kashiwa Reysol,,07/01/2023 01:04:51 AM,07/01/2023 01:05:52 AM,,,,,,,,,,,,,
+658487,soccer,2023-07-01 06:30:00-05:00,Malmo FF,,Sirius,,07/01/2023 01:04:51 AM,07/01/2023 01:05:53 AM,,,,,,,,,,,,,
+666347,soccer,2023-07-01 11:00:00-05:00,Avaí,,ABC,,07/01/2023 01:04:52 AM,07/01/2023 01:05:54 AM,,,,,,,,,,,,,
+659869,soccer,2023-07-01 15:30:00-05:00,St. Louis CITY SC,,Colorado Rapids,,07/01/2023 01:04:52 AM,07/01/2023 01:05:55 AM,,,,,,,,,,,,Colorado Rapids,
+670228,soccer,2023-07-01 12:00:00-05:00,Nueva Chicago,,Temperley,,07/01/2023 01:04:52 AM,07/01/2023 01:05:55 AM,,,,,,,,,,,,,
+670480,soccer,2023-07-01 04:00:00-05:00,Bulawayo Chiefs,,Green Fuel,,07/01/2023 01:04:53 AM,07/01/2023 01:05:56 AM,,,,,,,,,,,,,
+658928,soccer,2023-07-01 07:00:00-05:00,Valerenga,,Viking FK,,07/01/2023 01:04:53 AM,07/01/2023 01:05:57 AM,,,,,,,,,,,,,
+666346,soccer,2023-07-01 11:00:00-05:00,Sampaio Corrêa,,Criciúma,,07/01/2023 01:04:53 AM,07/01/2023 01:05:58 AM,,,,,,,,,,,,,
+655575,soccer,2023-07-01 07:00:00-05:00,Georgia U21,,Israel U21,,07/01/2023 01:04:54 AM,07/01/2023 01:05:59 AM,,,,,,,,,,,,,
+664752,soccer,2023-07-01 13:15:00-05:00,Academia Puerto Cabello,,Zamora,,07/01/2023 01:04:54 AM,07/01/2023 01:06:00 AM,,,,,,,,,,,,,
+665938,soccer,2023-07-01 15:00:00-05:00,Internacional,,Cruzeiro,,07/01/2023 01:04:55 AM,07/01/2023 01:06:00 AM,,,,,,,,,,,,,
+669482,soccer,2023-07-01 09:30:00-05:00,UAI Urquiza,,Argentino de Quilmes,,07/01/2023 01:04:55 AM,07/01/2023 01:06:01 AM,,,,,,,,,,,,,
+665511,soccer,2023-07-01 14:30:00-05:00,North Carolina Courage,,Houston Dash,,07/01/2023 01:04:55 AM,07/01/2023 01:06:02 AM,,,,,,,,,,,,,
+669485,soccer,2023-07-01 09:30:00-05:00,Acassuso,,San Miguel,,07/01/2023 01:04:56 AM,07/01/2023 01:06:03 AM,,,,,,,,,,,,,
+670481,soccer,2023-07-01 04:00:00-05:00,Platinum,,Chicken Inn,,07/01/2023 01:04:56 AM,07/01/2023 01:06:04 AM,,,,,,,,,,,,,
+665944,soccer,2023-07-01 12:30:00-05:00,Flamengo,,Fortaleza,,07/01/2023 01:04:57 AM,07/01/2023 01:06:05 AM,,,,,,,,,,,,,
+666345,soccer,2023-07-01 12:15:00-05:00,CRB,,Londrina,,07/01/2023 01:04:57 AM,07/01/2023 01:06:06 AM,,,,,,,,,,,,,
+665343,soccer,2023-07-01 09:30:00-05:00,El Porvenir,,Deportivo Paraguayo,,07/01/2023 01:04:57 AM,07/01/2023 01:06:07 AM,,,,,,,,,,,,,
+664750,soccer,2023-07-01 15:30:00-05:00,Mineros de Guayana,,Estudiantes de Mérida,,07/01/2023 01:04:58 AM,07/01/2023 01:06:08 AM,,,,,,,,,,,,,
+661769,soccer,2023-07-01 14:00:00-05:00,Pittsburgh Riverhounds,,Louisville City FC,,07/01/2023 01:04:58 AM,07/01/2023 01:06:09 AM,,,,,,,,,,,,,
+659859,soccer,2023-07-01 14:30:00-05:00,Inter Miami CF,,Austin FC,,07/01/2023 01:04:59 AM,07/01/2023 01:06:10 AM,,,,,,,,,,,Inter Miami,Austin FC,07012023-Inter Miami-Austin FC
+669782,soccer,2023-07-01 03:00:00-05:00,Persis Solo,,Persebaya Surabaya,,07/01/2023 01:04:59 AM,07/01/2023 01:06:10 AM,,,,,,,,,,,,,
+663696,soccer,2023-07-01 00:30:00-05:00,Yokohama FC,,Gamba Osaka,,07/01/2023 01:04:59 AM,07/01/2023 01:06:12 AM,,,,,,,,,,,,,
+656521,soccer,2023-07-01 11:30:00-05:00,San Lorenzo,,Rosario Central,,07/01/2023 01:05:00 AM,07/01/2023 01:06:13 AM,,,,,,,,,,,,,
+663698,soccer,2023-07-01 01:00:00-05:00,Sagan Tosu,,Urawa Red Diamonds,,07/01/2023 01:05:00 AM,07/01/2023 01:06:14 AM,,,,,,,,,,,,,
+663694,soccer,2023-07-01 00:00:00-05:00,Kashima Antlers,,Kyoto Sanga,,07/01/2023 01:05:00 AM,07/01/2023 01:06:15 AM,,,,,,,,,,,,,
+661771,soccer,2023-07-01 16:00:00-05:00,San Antonio FC,,Birmingham Legion FC,,07/01/2023 01:05:01 AM,07/01/2023 01:06:15 AM,,,,,,,,,,,,,
+670495,soccer,2023-07-01 07:15:00-05:00,Italy,,Morocco,,07/01/2023 01:05:01 AM,07/01/2023 01:06:16 AM,,,,,,,,,,,,,
+669062,soccer,2023-07-01 11:00:00-05:00,Defensor Sporting,,La Luz,,07/01/2023 01:05:01 AM,07/01/2023 01:06:17 AM,,,,,,,,,,,,,
+669621,soccer,2023-07-01 09:30:00-05:00,Central Córdoba (Rosario),,Liniers,,07/01/2023 01:05:02 AM,07/01/2023 01:06:18 AM,,,,,,,,,,,,,
+661765,soccer,2023-07-01 14:30:00-05:00,Indy Eleven,,San Diego Loyal SC,,07/01/2023 01:05:02 AM,07/01/2023 01:06:19 AM,,,,,,,,,,,,,
+666342,soccer,2023-07-01 10:00:00-05:00,Atlético-GO,,Vila Nova-GO,,07/01/2023 01:05:03 AM,07/01/2023 01:06:20 AM,,,,,,,,,,,,,
+659870,soccer,2023-07-01 17:30:00-05:00,San Jose Earthquakes,,LA Galaxy,,07/01/2023 01:05:03 AM,07/01/2023 01:06:21 AM,,,,,,,,,,,San Jose Earthquakes,LA Galaxy,07012023-San Jose Earthquakes-LA Galaxy
+670169,soccer,2023-07-01 10:00:00-05:00,Racing (Córdoba),,Atletico Rafaela,,07/01/2023 01:05:03 AM,07/01/2023 01:06:22 AM,,,,,,,,,,,,,
+671023,soccer,2023-07-01 11:30:00-05:00,ADT,,Deportivo Binacional,,07/01/2023 01:05:04 AM,07/01/2023 01:06:22 AM,,,,,,,,,,,,,
+668491,soccer,2023-07-01 14:30:00-05:00,Cuba,,Guadeloupe,,07/01/2023 01:05:04 AM,07/01/2023 01:06:23 AM,,,,,,,,,,,,,
+659862,soccer,2023-07-01 14:30:00-05:00,Orlando City SC,,Chicago Fire FC,,07/01/2023 01:05:05 AM,07/01/2023 01:06:24 AM,,,,,,,,,,,Orlando City,Chicago Fire,07012023-Orlando City-Chicago Fire
+661770,soccer,2023-07-01 18:00:00-05:00,Sacramento Republic FC,,Rio Grande Valley FC Toros,,07/01/2023 01:05:05 AM,07/01/2023 01:06:25 AM,,,,,,,,,,,,,
+667016,soccer,2023-07-01 10:00:00-05:00,Confiança,,Ypiranga,,07/01/2023 01:05:06 AM,07/01/2023 01:06:26 AM,,,,,,,,,,,,,
+658484,soccer,2023-07-01 04:00:00-05:00,Degerfors IF,,IFK Värnamo,,07/01/2023 01:05:06 AM,07/01/2023 01:06:27 AM,,,,,,,,,,,,,
+670215,soccer,2023-07-01 11:05:00-05:00,Almirante Brown,,Guillermo Brown,,07/01/2023 01:05:06 AM,07/01/2023 01:06:28 AM,,,,,,,,,,,,,
+670657,soccer,2023-07-01 05:15:00-05:00,England,,Portugal,,07/01/2023 01:05:07 AM,07/01/2023 01:06:29 AM,,,,,,,,,,,,,
+669068,soccer,2023-07-01 13:30:00-05:00,Wanderers,,River Plate,,07/01/2023 01:05:07 AM,07/01/2023 01:06:30 AM,,,,,,,,,,,,,
+661768,soccer,2023-07-01 18:00:00-05:00,Phoenix Rising FC,,Memphis 901 FC,,07/01/2023 01:05:07 AM,07/01/2023 01:06:30 AM,,,,,,,,,,,,,
+676875,soccer,2023-07-01 10:30:00-05:00,Cobreloa,,San Marcos de Arica,,07/01/2023 01:05:08 AM,07/01/2023 01:06:31 AM,,,,,,,,,,,,,
+659864,soccer,2023-07-01 14:30:00-05:00,Columbus Crew,,New York Red Bulls,,07/01/2023 01:05:08 AM,07/01/2023 01:06:32 AM,,,,,,,,,,,Columbus Crew,New York Red Bulls,07012023-Columbus Crew-New York Red Bulls
+669368,soccer,2023-07-01 13:00:00-05:00,Everton CD,,Unión San Felipe,,07/01/2023 01:05:08 AM,07/01/2023 01:06:33 AM,,,,,,,,,,,,,
+676874,soccer,2023-07-01 05:00:00-05:00,Lebanon,,India,,07/01/2023 01:05:09 AM,07/01/2023 01:06:34 AM,,,,,,,,,,,,,
+661767,soccer,2023-07-01 17:00:00-05:00,Orange County SC,,Monterey Bay,,07/01/2023 01:05:09 AM,07/01/2023 01:06:35 AM,,,,,,,,,,,,,
+670172,soccer,2023-07-01 09:00:00-05:00,Tristán Suárez,,Villa Dálmine,,07/01/2023 01:05:10 AM,07/01/2023 01:06:35 AM,,,,,,,,,,,,,
+662058,soccer,2023-07-01 14:00:00-05:00,Richmond Kickers,,Chattanooga Red Wolves,,07/01/2023 01:05:10 AM,07/01/2023 01:06:36 AM,,,,,,,,,,,,,
+670476,soccer,2023-07-01 04:00:00-05:00,Manica Diamonds F.C.,,Sheasham,,07/01/2023 01:05:10 AM,07/01/2023 01:06:37 AM,,,,,,,,,,,,,
+659868,soccer,2023-07-01 15:30:00-05:00,Nashville SC,,D.C. United,,07/01/2023 01:05:11 AM,07/01/2023 01:06:38 AM,,,,,,,,,,,Nashville SC,DC Utd,07012023-Nashville SC-DC Utd
+671024,soccer,2023-07-01 14:00:00-05:00,Deportivo Garcilaso,,Melgar,,07/01/2023 01:05:11 AM,07/01/2023 01:06:39 AM,,,,,,,,,,,,,
+668492,soccer,2023-07-01 16:30:00-05:00,Guatemala,,Canada,,07/01/2023 01:05:11 AM,07/01/2023 01:06:40 AM,,,,,,,,,,,,,
+655576,soccer,2023-07-01 10:00:00-05:00,Spain U21,,Switzerland U21,,07/01/2023 01:05:12 AM,07/01/2023 01:06:41 AM,,,,,,,,,,,,,
+661766,soccer,2023-07-01 17:30:00-05:00,Las Vegas Lights FC,,Tampa Bay Rowdies,,07/01/2023 01:05:12 AM,07/01/2023 01:06:42 AM,,,,,,,,,,,,,
+669617,soccer,2023-07-01 09:30:00-05:00,San Martín (Burzaco),,Berazategui,,07/01/2023 01:05:13 AM,07/01/2023 01:06:42 AM,,,,,,,,,,,,,
+670499,soccer,2023-07-01 16:00:00-05:00,Tigres UANL,,Puebla,,07/01/2023 01:05:13 AM,07/01/2023 01:06:43 AM,,,,,,,,,,,,,
+662057,soccer,2023-07-01 14:00:00-05:00,Greenville Triumph,,Forward Madison FC,,07/01/2023 01:05:13 AM,07/01/2023 01:06:44 AM,,,,,,,,,,,,,
+667010,soccer,2023-07-01 13:00:00-05:00,Paysandu,,Brusque,,07/01/2023 01:05:14 AM,07/01/2023 01:06:45 AM,,,,,,,,,,,,,
+676873,soccer,2023-07-01 00:30:00-05:00,Kuwait,,Bangladesh,,07/01/2023 01:05:14 AM,07/01/2023 01:06:46 AM,,,,,,,,,,,,,
+659866,soccer,2023-07-01 15:30:00-05:00,FC Dallas,,LAFC,,07/01/2023 01:05:14 AM,07/01/2023 01:06:47 AM,,,,,,,,,,,FC Dallas,LAFC,07012023-FC Dallas-LAFC
+665509,soccer,2023-07-01 10:30:00-05:00,OL Reign,,Racing Louisville FC,,07/01/2023 01:05:15 AM,07/01/2023 01:06:47 AM,,,,,,,,,,,,,
+658490,soccer,2023-07-01 04:00:00-05:00,Brommapojkarna,,AIK,,07/01/2023 01:05:15 AM,07/01/2023 01:06:48 AM,,,,,,,,,,,,,
+659860,soccer,2023-07-01 14:30:00-05:00,FC Cincinnati,,New England Revolution,,07/01/2023 01:05:15 AM,07/01/2023 01:06:49 AM,,,,,,,,,,,FC Cincinnati,New England Revolution,07012023-FC Cincinnati-New England Revolution
+663693,soccer,2023-07-01 00:00:00-05:00,Albirex Niigata,,Sanfrecce Hiroshima,,07/01/2023 01:05:16 AM,07/01/2023 01:06:50 AM,,,,,,,,,,,,,
+665510,soccer,2023-07-01 14:00:00-05:00,Washington Spirit,,Orlando Pride,,07/01/2023 01:05:16 AM,07/01/2023 01:06:51 AM,,,,,,,,,,,,,
+671025,soccer,2023-07-01 16:30:00-05:00,Deportivo Municipal,,Alianza Lima,,07/01/2023 01:05:16 AM,07/01/2023 01:06:52 AM,,,,,,,,,,,,,
+656513,soccer,2023-07-01 09:00:00-05:00,Barracas Central,,River Plate,,07/01/2023 01:05:17 AM,07/01/2023 01:06:52 AM,,,,,,,,,,,,,
+670482,soccer,2023-07-01 04:00:00-05:00,Kariba,,Yadah,,07/01/2023 01:05:17 AM,07/01/2023 01:06:53 AM,,,,,,,,,,,,,
+656524,soccer,2023-07-01 13:00:00-05:00,Estudiantes de La Plata,,Central Córdoba (Santiago del Estero),,07/01/2023 01:05:17 AM,07/01/2023 01:06:54 AM,,,,,,,,,,,,,
+670475,soccer,2023-07-01 04:00:00-05:00,Ngezi Platinum,,Hwange,,07/01/2023 01:05:18 AM,07/01/2023 01:06:55 AM,,,,,,,,,,,,,
+659865,soccer,2023-07-01 15:30:00-05:00,Minnesota United FC,,Portland Timbers,,07/01/2023 01:05:18 AM,07/01/2023 01:06:56 AM,,,,,,,,,,,Minnesota Utd,Portland Timbers,07012023-Minnesota Utd-Portland Timbers
+667013,soccer,2023-07-01 13:00:00-05:00,Aparecidense,,Manaus,,07/01/2023 01:05:19 AM,07/01/2023 01:06:57 AM,,,,,,,,,,,,,
+670500,soccer,2023-07-01 18:10:00-05:00,Atlas,,Cruz Azul,,07/01/2023 01:05:19 AM,07/01/2023 01:06:58 AM,,,,,,,,,,,,,
+662056,soccer,2023-07-01 17:00:00-05:00,Central Valley Fuego FC,,Union Omaha,,07/01/2023 01:05:19 AM,07/01/2023 01:06:59 AM,,,,,,,,,,,,,
+401472288,mlb,2023-07-03 15:10:00-05:00,Kansas City Royals,27.7%,Minnesota Twins,72.3%,07/01/2023 01:05:20 AM,07/01/2023 01:07:15 AM,L1,L1,L1,3.707317073170732,5.426829268292683,W1,W2,W1,4.228915662650603,3.855421686746988,Kansas City Royals,Minnesota Twins,07032023-Kansas City Royals-Minnesota Twins
+401472284,mlb,2023-07-03 14:05:00-05:00,Baltimore Orioles,48.3%,New York Yankees,51.7%,07/01/2023 01:05:20 AM,07/01/2023 01:07:17 AM,L3,L3,L1,4.8625,4.6125,W2,W2,W2,4.45679012345679,3.975308641975309,Baltimore Orioles,New York Yankees,07032023-Baltimore Orioles-New York Yankees
+401472289,mlb,2023-07-03 17:10:00-05:00,Pittsburgh Pirates,24.1%,Los Angeles Dodgers,75.9%,07/01/2023 01:05:21 AM,07/01/2023 01:07:18 AM,W4,W4,L2,4.222222222222222,4.604938271604938,W2,L1,W2,5.493827160493828,4.654320987654321,Pittsburgh Pirates,Los Angeles Dodgers,07032023-Pittsburgh Pirates-Los Angeles Dodgers
+401472285,mlb,2023-07-03 09:10:00-05:00,Chicago Cubs,47.9%,Milwaukee Brewers,52.1%,07/01/2023 01:05:21 AM,07/01/2023 01:07:20 AM,W1,W1,W3,4.6125,4.2125,L1,L1,L1,4.036585365853658,4.304878048780488,Chicago Cubs,Milwaukee Brewers,07032023-Chicago Cubs-Milwaukee Brewers
+401472283,mlb,2023-07-03 14:10:00-05:00,Atlanta Braves,65.4%,Cleveland Guardians,34.6%,07/01/2023 01:05:22 AM,07/01/2023 01:07:22 AM,W6,W8,W2,5.641975308641976,4.049382716049383,L2,L1,L2,3.975308641975309,4.172839506172839,Atlanta Braves,Cleveland Guardians,07032023-Atlanta Braves-Cleveland Guardians
+401472286,mlb,2023-07-03 13:05:00-05:00,Cincinnati Reds,46.6%,Washington Nationals,53.4%,07/01/2023 01:05:22 AM,07/01/2023 01:07:24 AM,W3,W1,W2,4.987804878048781,5.158536585365853,W3,L1,W3,4.135802469135802,4.888888888888889,Cincinnati Reds,Washington Nationals,07032023-Cincinnati Reds-Washington Nationals
+401472291,mlb,2023-07-03 13:40:00-05:00,St. Louis Cardinals,43.6%,Miami Marlins,56.4%,07/01/2023 01:05:23 AM,07/01/2023 01:07:26 AM,L2,L2,L1,4.5625,4.95,L1,W2,L1,4.072289156626506,4.216867469879518,St. Louis Cardinals,Miami Marlins,07032023-St. Louis Cardinals-Miami Marlins
+401472290,mlb,2023-07-03 16:45:00-05:00,Seattle Mariners,32.7%,San Francisco Giants,67.3%,07/01/2023 01:05:23 AM,07/01/2023 01:07:28 AM,L3,L3,L2,4.4625,4.325,W1,L1,W1,4.829268292682927,4.304878048780488,Seattle Mariners,San Francisco Giants,07032023-Seattle Mariners-San Francisco Giants
+401472287,mlb,2023-07-03 09:05:00-05:00,Houston Astros,43.7%,Texas Rangers,56.3%,07/01/2023 01:05:24 AM,07/01/2023 01:07:29 AM,W3,W2,W3,4.658536585365853,3.951219512195122,L2,L2,L2,5.926829268292683,4.036585365853658,Houston Astros,Texas Rangers,07032023-Houston Astros-Texas Rangers
+401472292,mlb,2023-07-03 16:40:00-05:00,Los Angeles Angels,52.8%,San Diego Padres,47.2%,07/01/2023 01:05:24 AM,07/01/2023 01:07:31 AM,L3,L3,L1,4.964285714285714,4.583333333333333,L6,L2,L4,4.2560975609756095,4.048780487804878,Los Angeles Angels,San Diego Padres,07032023-Los Angeles Angels-San Diego Padres
+401507232,wnba,2023-07-07 14:00:00-05:00,Indiana Fever,18.0%,Washington Mystics,82.0%,07/01/2023 01:05:24 AM,07/01/2023 01:07:33 AM,W1,W1,L4,80.47058823529412,84.47058823529412,W1,W4,L3,79.82352941176471,75.70588235294117,Indiana Fever,Washington Mystics,07072023-Indiana Fever-Washington Mystics
+401507235,wnba,2023-07-07 15:00:00-05:00,Phoenix Mercury,36.6%,Minnesota Lynx,63.4%,07/01/2023 01:05:25 AM,07/01/2023 01:07:35 AM,L1,L1,W1,76.3125,85.125,L1,L1,W2,78.41176470588235,83.41176470588235,Phoenix Mercury,Minnesota Lynx,07072023-Phoenix Mercury-Minnesota Lynx
+401507234,wnba,2023-07-07 15:00:00-05:00,Las Vegas Aces,76.7%,Dallas Wings,23.3%,07/01/2023 01:05:25 AM,07/01/2023 01:07:36 AM,W8,W9,W1,92.5625,77.625,L1,W2,L1,83.41176470588235,83.3529411764706,Las Vegas Aces,Dallas Wings,07072023-Las Vegas Aces-Dallas Wings
+401507233,wnba,2023-07-07 15:00:00-05:00,Atlanta Dream,47.5%,Chicago Sky,52.5%,07/01/2023 01:05:26 AM,07/01/2023 01:07:38 AM,L2,L1,L3,83.3125,89.4375,W2,W4,L5,77.94736842105263,78.94736842105263,Atlanta Dream,Chicago Sky,07072023-Atlanta Dream-Chicago Sky
+675947,soccer,2024-04-26 09:00:00-05:00,VVV-Venlo,,FC Den Bosch,,07/01/2023 01:05:26 AM,07/01/2023 01:08:53 AM,,,,,,,,,,,,,
+675949,soccer,2024-04-26 09:00:00-05:00,SC Cambuur,,FC Dordrecht,,07/01/2023 01:05:26 AM,07/01/2023 01:08:54 AM,,,,,,,,,,,,,
+675952,soccer,2024-04-26 09:00:00-05:00,Willem II,,FC Groningen,,07/01/2023 01:05:27 AM,07/01/2023 01:08:55 AM,,,,,,,,,,,,,
+675948,soccer,2024-04-26 09:00:00-05:00,TOP Oss,,Jong AZ,,07/01/2023 01:05:27 AM,07/01/2023 01:08:56 AM,,,,,,,,,,,,,
+675951,soccer,2024-04-26 09:00:00-05:00,Jong Ajax,,Roda JC Kerkrade,,07/01/2023 01:05:28 AM,07/01/2023 01:08:57 AM,,,,,,,,,,,,,
+675950,soccer,2024-04-26 09:00:00-05:00,De Graafschap,,MVV Maastricht,,07/01/2023 01:05:28 AM,07/01/2023 01:08:58 AM,,,,,,,,,,,,,
+675953,soccer,2024-04-26 09:00:00-05:00,FC Emmen,,Helmond Sport,,07/01/2023 01:05:28 AM,07/01/2023 01:08:59 AM,,,,,,,,,,,,,
