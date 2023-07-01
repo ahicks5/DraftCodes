@@ -62,10 +62,16 @@ class sendTweet:
                     continue
 
                 tweet = self.generate_tweets(away_team=away_team, home_team=home_team)
-                self.send_tweet(tweet)
+                #self.send_tweet(tweet)
 
-                track_df = track_df.append({'gameID': row['game_id'], 'tweet_status': 'Complete'}, ignore_index=True)
-                track_df.to_csv(track_path, index=False)
+                new_row = pd.DataFrame({'gameID': [row['game_id']], 'tweet_status': ['Complete']})
+                track_df = pd.concat([track_df, new_row], ignore_index=True)
+
+                try:
+                    track_df.to_csv('/var/www/html/Website/Tweet_Records.csv', index=False)
+                except:
+                    track_df.to_csv('Tweet_Records.csv', index=False)
+
 
     def send_tweet(self, text):
         self.client.create_tweet(text=text)
