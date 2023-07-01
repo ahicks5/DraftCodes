@@ -89,10 +89,12 @@ class HtmlTable:
                     <script>
                         document.addEventListener("DOMContentLoaded", function () {
                         const greenShades = {
-                            1: '#33A036',
-                            2: '#147917',
-                            3: '#023020',
-                            4: '#B59410'
+                            1: '#008000',
+                            2: '#32CD32',
+                            3: '#ADFF2F',
+                            4: '#FFD700',
+                            5: '#FFA500',
+                            6: '#FF0000',                            
                         };
                     
                         const sharpCheckbox = document.getElementById("sharp_checkbox");
