@@ -23,8 +23,12 @@ class PullBovada:
         self.team_ref = load_previous_data()['team_ref']
 
         # Load the data types from the JSON file
-        with open(BOVADA_DF_DATATYPES_PATH, 'r') as file:
-            datatypes = json.load(file)
+        try:
+            with open('/var/www/html/Website/bovada_df_datatypes.json', 'r') as file:
+                datatypes = json.load(file)
+        except:
+            with open(BOVADA_DF_DATATYPES_PATH, 'r') as file:
+                datatypes = json.load(file)
         self.bovada_df = load_previous_data()['bovada_data']
         # Set the data types of the columns in the DataFrame
         for column, dtype in datatypes.items():

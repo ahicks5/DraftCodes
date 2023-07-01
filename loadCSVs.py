@@ -7,7 +7,7 @@ PATHS_LOCAL = {
     'espn_data': 'ESPN_Data.csv',
     'ind_data': 'Indicator_Data.csv',
     'sport_ref': 'Sport_Reference.csv',
-    'team_ref': 'Team_Reference.csv'
+    'team_ref': 'Team_Reference.csv',
 }
 
 AWS_PATH = '/var/www/html/Website/'
