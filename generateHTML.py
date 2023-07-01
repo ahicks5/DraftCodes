@@ -205,8 +205,8 @@ class HtmlTable:
             home_ml_cell = f'<td sharp_ind="{-sharp_indicator}" espn_pred_ind="{-espn_pred}" espn_stk_ind="{-espn_streak}">{value_2}</td>'
         elif sharp_indicator < 0:
             sharp_indicator = abs(sharp_indicator)
-            away_ml_cell = f'<td sharp_ind="{-sharp_indicator}" espn_pred_ind="{-espn_pred}" espn_stk_ind="{-espn_streak}">{value_1}</td>'
-            home_ml_cell = f'<td sharp_ind="{sharp_indicator}" espn_pred_ind="{espn_pred}" espn_stk_ind="{espn_streak}">{value_2}</td>'
+            away_ml_cell = f'<td sharp_ind="{-sharp_indicator}" espn_pred_ind="{espn_pred}" espn_stk_ind="{-espn_streak}">{value_1}</td>'
+            home_ml_cell = f'<td sharp_ind="{sharp_indicator}" espn_pred_ind="{-espn_pred}" espn_stk_ind="{espn_streak}">{value_2}</td>'
         else:
             away_ml_cell = f'<td>{value_1}</td>'
             home_ml_cell = f'<td>{value_2}</td>'
