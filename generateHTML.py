@@ -7,6 +7,7 @@ from connectSources import find_ref_dfs
 from clean_files import cleanFiles
 
 team_ref_df, sport_ref_df, espn_schedule_df, bovada_df = find_ref_dfs()
+central = pytz.timezone('America/Chicago')
 
 class HtmlTable:
     prod_web_path = '/var/www/html/Website/'
@@ -168,7 +169,10 @@ class HtmlTable:
         row_html = f'<tr><td>{row["game_date"].strftime("%m/%d/%y")}</td><td>{row["competitor_2"]}</td>'
         row_html += away_sp_cell + away_ml_cell + over_cell + '</tr>'
 
-        row_html += f'<tr><td>{row["game_startTime_cst"].strftime("%I:%M %p %Z")}</td><td>{row["competitor_1"]}</td>'
+        localized_datetime = central.normalize(row['game_startTime_cst'].astimezone(central))
+        formatted_time = localized_datetime.strftime("%I:%M %p %Z")
+
+        row_html += f'<tr><td>{formatted_time}</td><td>{row["competitor_1"]}</td>'
         row_html += home_sp_cell + home_ml_cell + under_cell + '</tr>' + space_row_html
 
         return row_html

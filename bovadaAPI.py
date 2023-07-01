@@ -3,33 +3,32 @@ import requests
 import pytz
 from datetime import datetime, timedelta
 import json
-from connectSources import find_ref_dfs
+from loadCSVs import load_previous_data
+from bovadaHelperFunctions import two_way_hcap, two_way_12, three_way_1X2, two_way_OU
 
-team_ref_df, sport_ref_df, espn_schedule_df, bovada_df = find_ref_dfs()
+# Constants
+BOVADA_DF_DATATYPES_PATH = 'bovada_df_datatypes.json'
+BOVADA_DATA_CSV_PATH = 'Bovada_Data.csv'
+MISSING_TEAMS_SPORTS_CSV = 'bovada_missing_teams_sports.csv'
+LOOKAHEAD_DAYS = 300
+UTC = 'UTC'
+CST = 'America/Chicago'
+CLEAN_TIME_FORMAT = '%I:%M %p'
 
 
 class PullBovada:
-    # build a dataframe with all upcoming games
-    pregame_sport_links = {
-        #'nba': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/basketball/nba?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'mlb': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/baseball/mlb?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        #'epl': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/europe/england/premier-league?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        #'spainLaLiga': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/europe/spain/la-liga?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        #'italySerieA': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/europe/italy/serie-a?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        #'nhl': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/hockey/nhl?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'nfl': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/football/nfl?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'tableTennis': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/table-tennis?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'LoL': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/esports/league-of-legends?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'mls': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/soccer/north-america/united-states/mls?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'cfb': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/football/college-football?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'wnba': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/basketball/wnba?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'cfl': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/football/cfl?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en',
-        'usfl': 'https://www.bovada.lv/services/sports/event/coupon/events/A/description/football/usfl?marketFilterId=def&preMatchOnly=true&eventsLimit=5000&lang=en'
-    }
-
     def __init__(self):
         self.session = requests.Session()
-        self.bovada_df = bovada_df
+        self.pregame_sport_links = load_previous_data()['bovada_links'].set_index('Sport')['Link'].to_dict()
+        self.team_ref = load_previous_data()['team_ref']
+
+        # Load the data types from the JSON file
+        with open(BOVADA_DF_DATATYPES_PATH, 'r') as file:
+            datatypes = json.load(file)
+        self.bovada_df = load_previous_data()['bovada_data']
+        # Set the data types of the columns in the DataFrame
+        for column, dtype in datatypes.items():
+            self.bovada_df[column] = self.bovada_df[column].astype(dtype)
 
     def get_json(self, url):
         headers = {
@@ -50,57 +49,6 @@ class PullBovada:
                 f'competitor_{i + 1}': competitor['name'],
                 f'competitor_{i + 1}_home': competitor['home']
             })
-
-        def two_way_hcap(mkt):
-            try:
-                price0, price1 = mkt['outcomes'][0]['price'], mkt['outcomes'][1]['price']
-                return {'team_1_hcap': price0['handicap'],
-                        'team_1_hcap_odds': price0['american'],
-                        'team_2_hcap': price1['handicap'],
-                        'team_2_hcap_odds': price1['american']}
-            except Exception as e:
-                print(f"Error in two_way_hcap: {e}")
-                return {'team_1_hcap': 'nan', 'team_1_hcap_odds': 'nan', 'team_2_hcap': 'nan',
-                        'team_2_hcap_odds': 'nan'}
-
-        def two_way_12(mkt):
-            try:
-                price0, price1 = mkt['outcomes'][0]['price'], mkt['outcomes'][1]['price']
-                return {'team_1_ml_odds': price0['american'],
-                        'team_2_ml_odds': price1['american']}
-            except Exception as e:
-                print(f"Error in two_way_ml: {e}")
-                return {'team_1_ml_odds': 'nan',
-                        'team_2_ml_odds': 'nan'}
-
-        def three_way_1X2(mkt):
-            price0, price1, price2 = mkt['outcomes'][0]['price'], mkt['outcomes'][1]['price'], mkt['outcomes'][2][
-                'price']
-            return {'team_1_ml_odds': price0['american'],
-                    'team_2_ml_odds': price1['american'],
-                    'draw_ml_odds': price2['american']}
-
-        def two_way_OU(mkt):
-            try:
-                price0, price1 = mkt['outcomes'][0]['price'], mkt['outcomes'][1]['price']
-                return {f'{mkt["outcomes"][0]["description"]}_line': price0['handicap'],
-                        f'{mkt["outcomes"][0]["description"]}_odds': price0['american'],
-                        f'{mkt["outcomes"][1]["description"]}_line': price1['handicap'],
-                        f'{mkt["outcomes"][1]["description"]}_odds': price1['american']}
-            except Exception as e:
-                print(f"Error in two_way_OU: {e}")
-                try:
-                    description0 = mkt["outcomes"][0]["description"]
-                except Exception:
-                    description0 = 'nan'
-                try:
-                    description1 = mkt["outcomes"][1]["description"]
-                except Exception:
-                    description1 = 'nan'
-                return {f'{description0}_line': 'nan',
-                        f'{description0}_odds': 'nan',
-                        f'{description1}_line': 'nan',
-                        f'{description1}_odds': 'nan'}
 
         key_map = {
             '2W-HCAP': two_way_hcap,
@@ -128,14 +76,10 @@ class PullBovada:
         return df
 
     def add_date_columns(self, df):
-        # Convert the time column from milliseconds to datetime
         df['game_startTime'] = pd.to_datetime(df['game_startTime'], unit='ms')
-        # Convert UTC to Central Time
-        df['game_startTime_cst'] = df['game_startTime'].dt.tz_localize('UTC').dt.tz_convert('America/Chicago')
-        # Create a date column
+        df['game_startTime_cst'] = df['game_startTime'].dt.tz_localize(UTC).dt.tz_convert(CST)
         df['game_date'] = df['game_startTime_cst'].dt.date
-        # Create a time column
-        df['game_time'] = df['game_startTime_cst'].dt.strftime('%I:%M %p')
+        df['game_time'] = df['game_startTime_cst'].dt.strftime(CLEAN_TIME_FORMAT)
 
         return df
 
@@ -163,7 +107,7 @@ class PullBovada:
 
     def add_bov_ref_names(self, df):
         # merge away team
-        team_ref_df_bov = team_ref_df[['Bovada Names', 'Final Names']]
+        team_ref_df_bov = self.team_ref[['Bovada Names', 'Final Names']]
 
         df = df.merge(team_ref_df_bov, left_on='competitor_2', right_on='Bovada Names', how='left')
         df = df.rename(columns={'Final Names': 'away_team_clean'})
@@ -174,6 +118,17 @@ class PullBovada:
         df = df.drop(columns=['Bovada Names'])
 
         return df
+
+    def combine_old_and_new(self, new_df):
+        new_df['game_id'] = new_df['game_id'].astype('int64')
+
+        # Filter out rows in the old DataFrame that have the same game_id as in the new DataFrame
+        filtered_old_df = self.bovada_df.loc[~self.bovada_df['game_id'].isin(new_df['game_id'])]
+
+        # Concatenate the new DataFrame with the filtered old DataFrame
+        final_df = pd.concat([new_df, filtered_old_df]).reset_index(drop=True)
+
+        return final_df
 
     def scrape_main_sports(self):
         league_lists = []
@@ -193,23 +148,10 @@ class PullBovada:
         df = self.generate_game_date_ID(df)
 
         # check missing refs
-        self.show_missing_refs(df, team_ref_df)
+        self.show_missing_refs(df, self.team_ref)
 
-        # Set 'game_id' as the index
-        bovada_df = self.bovada_df
-        bovada_df = bovada_df.drop_duplicates(subset='game_id')
-        bovada_df = bovada_df.copy()
-        df = df.copy()
-        bovada_df['game_id'] = bovada_df['game_id'].astype(int)
-        df['game_id'] = df['game_id'].astype(int)
-        bovada_df.set_index('game_id', inplace=True)
-        df.set_index('game_id', inplace=True)
-
-        # Remove the rows in bovada_df that are in df
-        bovada_df = bovada_df.loc[~bovada_df.index.isin(df.index)]
-
-        # Append df to bovada_df
-        final_df = pd.concat([bovada_df, df]).reset_index()
+        # combine
+        final_df = self.combine_old_and_new(df)
 
         # Save to csv
         try:
