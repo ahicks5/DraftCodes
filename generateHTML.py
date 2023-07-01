@@ -186,7 +186,7 @@ class HtmlTable:
             away_sp_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="{espn_streak}">{value_1}</td>'
             home_sp_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="{-espn_streak}">{value_2}</td>'
         elif indicator < 0:
-            indicator = abs(indicator)
+            indicator, espn_streak = abs(indicator), abs(espn_streak)
             away_sp_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="{-espn_streak}">{value_1}</td>'
             home_sp_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="{espn_streak}">{value_2}</td>'
         else:
@@ -204,9 +204,9 @@ class HtmlTable:
             away_ml_cell = f'<td sharp_ind="{sharp_indicator}" espn_pred_ind="{espn_pred}" espn_stk_ind="{espn_streak}">{value_1}</td>'
             home_ml_cell = f'<td sharp_ind="{-sharp_indicator}" espn_pred_ind="{-espn_pred}" espn_stk_ind="{-espn_streak}">{value_2}</td>'
         elif sharp_indicator < 0:
-            sharp_indicator = abs(sharp_indicator)
-            away_ml_cell = f'<td sharp_ind="{-sharp_indicator}" espn_pred_ind="{espn_pred}" espn_stk_ind="{-espn_streak}">{value_1}</td>'
-            home_ml_cell = f'<td sharp_ind="{sharp_indicator}" espn_pred_ind="{-espn_pred}" espn_stk_ind="{espn_streak}">{value_2}</td>'
+            sharp_indicator, espn_pred, espn_streak = abs(sharp_indicator), abs(espn_pred), abs(espn_streak)
+            away_ml_cell = f'<td sharp_ind="{-sharp_indicator}" espn_pred_ind="{-espn_pred}" espn_stk_ind="{-espn_streak}">{value_1}</td>'
+            home_ml_cell = f'<td sharp_ind="{sharp_indicator}" espn_pred_ind="{espn_pred}" espn_stk_ind="{espn_streak}">{value_2}</td>'
         else:
             away_ml_cell = f'<td>{value_1}</td>'
             home_ml_cell = f'<td>{value_2}</td>'
