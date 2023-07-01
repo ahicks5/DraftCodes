@@ -44,6 +44,12 @@ class Indicators:
         # streaks
         merged_df['espn_streak_ind'] = merged_df.apply(self.espn_streaks, axis=1)
 
+        # Save to csv
+        try:
+            merged_df.to_csv('/var/www/html/Website/Indicator_Data.csv', index=False)
+        except:
+            merged_df.to_csv('Indicator_Data.csv', index=False)
+
         return merged_df
 
     def add_espn_ml_spread(self, df):
