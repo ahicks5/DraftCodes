@@ -45,7 +45,7 @@ class sendTweet:
         filtered_df.to_csv("test_filter.csv", index=False)
 
         # only certain sports
-        filtered_df = filtered_df[(filtered_df['Clean_Sport'] == 'Baseball') | (filtered_df['Clean_Sport'] == 'Basketball')]
+        filtered_df = filtered_df[(filtered_df['Clean_Sport'] == 'Baseball') | (filtered_df['Clean_Sport'] == 'Basketball') | (filtered_df['Clean_Sport'] == 'Soccer')]
 
         if len(filtered_df) == 0:
              print('No tweets sent, no games')
