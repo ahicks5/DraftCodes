@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from connectSources import find_ref_dfs
 import numpy as np
+import pytz
 
 team_ref_df, sport_ref_df, espn_df, bovada_df = find_ref_dfs()
 
@@ -336,16 +337,42 @@ class PullESPN:
 
         # assemble game and predictions
         game_list = []
+
+        # Define the timezone for CDT
+        cdt = pytz.timezone('America/Chicago')
+
         for link in links:
             gameId = int(link.split('gameId=')[1].strip())
+
             if gameId in cur_df['gameID'].unique().tolist():
                 row = cur_df[cur_df['gameID'] == gameId]
                 team1_pred = row['team1_pred'].iloc[0]
+
                 game_time = pd.to_datetime(row['game_time'].iloc[0])
+
+                # Convert game_time to CDT if it's timezone-aware, otherwise localize it to CDT
+                if game_time.tzinfo is not None:
+                    game_time = game_time.astimezone(cdt)
+                else:
+                    game_time = cdt.localize(game_time)
+
                 lastMod = pd.to_datetime(row['lastMod_ESPNpred'].iloc[0])
-                current_time = datetime.now()
+
+                # Get current time as timezone-aware in CDT
+                current_time = datetime.now(cdt)
+
+                # Create one_week_ahead as timezone-aware in CDT
                 one_week_ahead = current_time + timedelta(weeks=2)
+
+                # Convert lastMod to CDT if it's timezone-aware, otherwise localize it to CDT
+                if lastMod.tzinfo is not None:
+                    lastMod = lastMod.astimezone(cdt)
+                else:
+                    lastMod = cdt.localize(lastMod)
+
+                # Create next_refresh as timezone-aware in CDT
                 next_refresh = lastMod + timedelta(hours=2)
+
                 if pd.isna(team1_pred):
                     continue
                 elif (game_time > one_week_ahead) and not pd.isna(team1_pred):
@@ -354,7 +381,7 @@ class PullESPN:
                     continue
 
             game_dict = self.parse_game_stats(link)
-            game_dict['lastMod_ESPNpred'] = datetime.now().strftime("%m/%d/%Y %I:%M:%S %p")
+            game_dict['lastMod_ESPNpred'] = datetime.now(cdt).strftime("%m/%d/%Y %I:%M:%S %p")
             game_list.append(game_dict)
 
         pred_df = pd.DataFrame(game_list)

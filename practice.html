@@ -1,5 +1,46 @@
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .legend {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .legend-item {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .color-1 { background-color: #2D9CDB; }
+        .color-2 { background-color: #6FCF97; }
+        .color-3 { background-color: #F2C94C; }
+        .color-4 { background-color: #FF7E67; }
+        .color-5 { background-color: #EB5757; }
+        .color-6 { background-color: #B4161B; }
+    </style>
+</head>
+<body>
+    <h2>Confidence Levels</h2>
+    <div class="legend">
+        <div class="legend-item color-1">1</div>
+        <div class="legend-item color-2">2</div>
+        <div class="legend-item color-3">3</div>
+        <div class="legend-item color-4">4</div>
+        <div class="legend-item color-5">5</div>
+        <div class="legend-item color-6">6</div>
+    </div>
+    <p>1 - Lowest Confidence, 6 - Highest Confidence</p>
+</body>
+</html>

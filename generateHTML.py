@@ -89,12 +89,12 @@ class HtmlTable:
                     <script>
                         document.addEventListener("DOMContentLoaded", function () {
                         const greenShades = {
-                            1: '#008000',
-                            2: '#32CD32',
-                            3: '#ADFF2F',
-                            4: '#FFD700',
-                            5: '#FFA500',
-                            6: '#FF0000',                            
+                            1: '#2D9CDB',
+                            2: '#6FCF97',
+                            3: '#F2C94C',
+                            4: '#FF7E67',
+                            5: '#EB5757',
+                            6: '#B4161B',                            
                         };
                     
                         const sharpCheckbox = document.getElementById("sharp_checkbox");
@@ -239,14 +239,14 @@ class HtmlTable:
 
         for sport in page_dict:
             if sport not in fin_dict:
-                template_html = self.prod_web_path + 'Templates/' + page_dict[sport]
+                template_html = self.prod_web_path + 'Templates/sport_general.html'
                 with open(template_html, 'r') as f:
                     html_content = f.read()
 
                 modified_html = html_content.replace('~Place Table Here~', 'No Games Available')
 
                 # replace sport header
-                modified_html = modified_html.replace('~Sport~', sport)
+                modified_html = modified_html.replace('{sport_header}', sport)
 
                 current_datetime = datetime.datetime.now(pytz.timezone('US/Central'))
                 current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%m/%d/%Y %I:%M %p") + ' CDT'
@@ -259,14 +259,14 @@ class HtmlTable:
                 with open(final_html, 'w') as f:
                     f.write(modified_html)
             else:
-                template_html = self.prod_web_path + 'Templates/' + page_dict[sport]
+                template_html = self.prod_web_path + 'Templates/sport_general.html'
                 with open(template_html, 'r') as f:
                     html_content = f.read()
 
                 modified_html = html_content.replace('~Place Table Here~', fin_dict[sport])
 
-                #replace sport header
-                modified_html = modified_html.replace('~Sport~', sport)
+                # replace sport header
+                modified_html = modified_html.replace('{sport_header}', sport)
 
                 current_datetime = datetime.datetime.now(pytz.timezone('US/Central'))
                 current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%m/%d/%Y %I:%M %p") + ' CDT'

@@ -62,7 +62,7 @@ class sendTweet:
                     continue
 
                 tweet = self.generate_tweets(away_team=away_team, home_team=home_team)
-                #self.send_tweet(tweet)
+                self.send_tweet(tweet)
 
                 new_row = pd.DataFrame({'gameID': [row['game_id']], 'tweet_status': ['Complete']})
                 track_df = pd.concat([track_df, new_row], ignore_index=True)
