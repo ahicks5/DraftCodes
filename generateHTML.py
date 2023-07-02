@@ -4,7 +4,7 @@ import datetime
 import pytz
 import pandas as pd
 from connectSources import find_ref_dfs
-from clean_files import cleanFiles
+from clean_files import CleanFiles
 
 team_ref_df, sport_ref_df, espn_schedule_df, bovada_df = find_ref_dfs()
 central = pytz.timezone('America/Chicago')
@@ -63,7 +63,7 @@ class HtmlTable:
         self.df = ind.sharp_indicator()
         self.df['game_date'] = pd.to_datetime(self.df['game_date'])
         self.df['game_startTime_cst'] = pd.to_datetime(self.df['game_startTime_cst'])
-        self.clean = cleanFiles()
+        self.clean = CleanFiles()
         try:
             self.df.to_csv('/var/www/html/Website/Indicator_Data.csv', index=False)
         except:

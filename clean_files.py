@@ -5,20 +5,33 @@ import pytz
 from loadCSVs import load_previous_data
 
 
-class cleanFiles:
+# Function to localize naive timestamps and convert all to a specific timezone
+def handle_timezones(timestamp, timezone='America/Chicago'):
+    # Assuming CDT corresponds to 'America/Chicago'
+    tz = pytz.timezone(timezone)
+
+    # If the timestamp is naive, assume it's in the specified timezone
+    if timestamp.tzinfo is None or timestamp.tzinfo.utcoffset(timestamp) is None:
+        timestamp = tz.localize(timestamp)
+    # Convert the timestamp to the specified timezone
+    return timestamp.astimezone(tz)
+
+
+class CleanFiles:
     def __init__(self):
         self.espn_df = load_previous_data()['espn_data']
         self.bovada_df = load_previous_data()['bovada_data']
 
     def clean_all(self):
         cdt = pytz.timezone('America/Chicago')
-        today = datetime.now(pytz.utc).replace(hour=0, minute=0, second=0, microsecond=0)
-        today = today.astimezone(cdt)
+
+        # Set today as midnight in CDT timezone
+        today = datetime.now(cdt).replace(hour=0, minute=0, second=0, microsecond=0)
 
         # For ESPN Data
-        self.espn_df['game_time'] = pd.to_datetime(self.espn_df['game_time'])
+        self.espn_df['game_time'] = pd.to_datetime(self.espn_df['game_time'], format='mixed')
         # Convert to timezone-aware
-        self.espn_df['game_time'] = self.espn_df['game_time'].apply(lambda x: cdt.localize(x))
+        self.espn_df['game_time'] = self.espn_df['game_time'].apply(handle_timezones)
         # Filter
         new_espn = self.espn_df[self.espn_df['game_time'] >= today]
 
@@ -27,7 +40,6 @@ class cleanFiles:
             new_espn.to_csv('/var/www/html/Website/' + 'ESPN_Data.csv', index=False)
         except:
             new_espn.to_csv('ESPN_Data.csv', index=False)
-
 
         # For Bovada Data
         self.bovada_df['game_startTime_cst'] = pd.to_datetime(self.bovada_df['game_startTime_cst'])
@@ -44,5 +56,5 @@ class cleanFiles:
 
 
 if __name__ == '__main__':
-    clean = cleanFiles()
+    clean = CleanFiles()
     clean.clean_all()
