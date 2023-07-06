@@ -162,10 +162,10 @@ class HtmlTable:
     def generate_row(self, row):
         space_row_html = '<tr><td colspan="5" style="border:none;"></td></tr>'
 
-        away_sp_cell, home_sp_cell = self.spread_sharp_tags(row['sharp_spread_ind'], row['espn_streak_ind'], row['team_1_hcap'], row['team_2_hcap'])
-        away_ml_cell, home_ml_cell = self.ml_sharp_tags(row['sharp_moneyline_ind'], row['espn_moneyline_ind'],  row['espn_streak_ind'], row['team_1_ml_odds'],
+        away_sp_cell, home_sp_cell = self.spread_sharp_tags(row['sharp_spread_ind'], row['espn_streak_ind'], row['espn_avg_sp_ind'], row['team_1_hcap'], row['team_2_hcap'])
+        away_ml_cell, home_ml_cell = self.ml_sharp_tags(row['sharp_moneyline_ind'], row['espn_moneyline_ind'],  row['espn_streak_ind'], row['espn_avg_ml_ind'], row['team_1_ml_odds'],
                                                             row['team_2_ml_odds'])
-        over_cell, under_cell = self.total_sharp_tags(row['sharp_total_ind'], row['total_over'],
+        over_cell, under_cell = self.total_sharp_tags(row['sharp_total_ind'], row['espn_avg_ou_ind'], row['total_over'],
                                                             row['total_under'])
 
         row_html = f'<tr><td>{row["game_date"].strftime("%m/%d/%y")}</td><td>{row["competitor_2"]}</td>'
@@ -179,54 +179,54 @@ class HtmlTable:
 
         return row_html
 
-    def spread_sharp_tags(self, indicator, espn_streak, value_1, value_2):
+    def spread_sharp_tags(self, indicator, espn_streak, espn_avg_spread, value_1, value_2):
         if (pd.isna(value_1)) or (pd.isna(value_2)):
             indicator = 0
             value_1 = value_2 = '-'
 
         if indicator > 0:
-            away_sp_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="{espn_streak}">{value_1}</td>'
-            home_sp_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="{-espn_streak}">{value_2}</td>'
+            away_sp_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="{espn_streak}" espn_avg_ind="{espn_avg_spread}">{value_1}</td>'
+            home_sp_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="{-espn_streak}" espn_avg_ind="{-espn_avg_spread}">{value_2}</td>'
         elif indicator < 0:
-            indicator, espn_streak = abs(indicator), abs(espn_streak)
-            away_sp_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="{-espn_streak}">{value_1}</td>'
-            home_sp_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="{espn_streak}">{value_2}</td>'
+            indicator, espn_streak, espn_avg_spread = abs(indicator), abs(espn_streak), abs(espn_avg_spread)
+            away_sp_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="{-espn_streak}" espn_avg_ind="{-espn_avg_spread}">{value_1}</td>'
+            home_sp_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="{espn_streak}" espn_avg_ind="{espn_avg_spread}">{value_2}</td>'
         else:
             away_sp_cell = f'<td>{value_1}</td>'
             home_sp_cell = f'<td>{value_2}</td>'
 
         return away_sp_cell, home_sp_cell
 
-    def ml_sharp_tags(self, sharp_indicator, espn_pred, espn_streak, value_1, value_2):
+    def ml_sharp_tags(self, sharp_indicator, espn_pred, espn_streak, espn_avg_ml, value_1, value_2):
         if (pd.isna(value_1)) or (pd.isna(value_2)):
             sharp_indicator = 0
             value_1 = value_2 = '-'
 
         if sharp_indicator > 0:
-            away_ml_cell = f'<td sharp_ind="{sharp_indicator}" espn_pred_ind="{espn_pred}" espn_stk_ind="{espn_streak}">{value_1}</td>'
-            home_ml_cell = f'<td sharp_ind="{-sharp_indicator}" espn_pred_ind="{-espn_pred}" espn_stk_ind="{-espn_streak}">{value_2}</td>'
+            away_ml_cell = f'<td sharp_ind="{sharp_indicator}" espn_pred_ind="{espn_pred}" espn_stk_ind="{espn_streak}" espn_avg_ind="{espn_avg_ml}">{value_1}</td>'
+            home_ml_cell = f'<td sharp_ind="{-sharp_indicator}" espn_pred_ind="{-espn_pred}" espn_stk_ind="{-espn_streak}" espn_avg_ind="{-espn_avg_ml}">{value_2}</td>'
         elif sharp_indicator < 0:
-            sharp_indicator, espn_pred, espn_streak = abs(sharp_indicator), abs(espn_pred), abs(espn_streak)
-            away_ml_cell = f'<td sharp_ind="{-sharp_indicator}" espn_pred_ind="{-espn_pred}" espn_stk_ind="{-espn_streak}">{value_1}</td>'
-            home_ml_cell = f'<td sharp_ind="{sharp_indicator}" espn_pred_ind="{espn_pred}" espn_stk_ind="{espn_streak}">{value_2}</td>'
+            sharp_indicator, espn_pred, espn_streak, espn_avg_ml = abs(sharp_indicator), abs(espn_pred), abs(espn_streak), abs(espn_avg_ml)
+            away_ml_cell = f'<td sharp_ind="{-sharp_indicator}" espn_pred_ind="{-espn_pred}" espn_stk_ind="{-espn_streak}" espn_avg_ind="{-espn_avg_ml}">{value_1}</td>'
+            home_ml_cell = f'<td sharp_ind="{sharp_indicator}" espn_pred_ind="{espn_pred}" espn_stk_ind="{espn_streak}" espn_avg_ind="{espn_avg_ml}">{value_2}</td>'
         else:
             away_ml_cell = f'<td>{value_1}</td>'
             home_ml_cell = f'<td>{value_2}</td>'
 
         return away_ml_cell, home_ml_cell
 
-    def total_sharp_tags(self, indicator, value_1, value_2):
+    def total_sharp_tags(self, indicator, espn_avg_tot, value_1, value_2):
         if (pd.isna(value_1)) or (pd.isna(value_2)):
             indicator = 0
             value_1 = value_2 = '-'
 
         if indicator > 0:
-            over_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="0">{value_1}</td>'
-            under_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="0">{value_2}</td>'
+            over_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="0" espn_avg_ind="{espn_avg_tot}">{value_1}</td>'
+            under_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="0" espn_avg_ind="{-espn_avg_tot}">{value_2}</td>'
         elif indicator < 0:
-            indicator = abs(indicator)
-            over_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="0">{value_1}</td>'
-            under_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="0">{value_2}</td>'
+            indicator, espn_avg_tot = abs(indicator), abs(espn_avg_tot)
+            over_cell = f'<td sharp_ind="{-indicator}" espn_pred_ind="0" espn_stk_ind="0"  espn_avg_ind="{-espn_avg_tot}">{value_1}</td>'
+            under_cell = f'<td sharp_ind="{indicator}" espn_pred_ind="0" espn_stk_ind="0" espn_avg_ind="{espn_avg_tot}">{value_2}</td>'
         else:
             over_cell = f'<td>{value_1}</td>'
             under_cell = f'<td>{value_2}</td>'
@@ -281,54 +281,6 @@ class HtmlTable:
 
         #self.clean.clean_all()
         print('Python has updated all pages!')
-
-    def replace_production(self):
-        table = self.generate_table()
-
-        template_html = '/var/www/html/Website/Templates/subscribetemplate.html'
-        identifier = '{Upcoming Sports}'
-        final_html = '/var/www/html/Website/subscribe.html'
-
-        with open(template_html, 'r') as f:
-            html_content = f.read()
-
-        modified_html = html_content.replace(identifier, table)
-
-        current_datetime = datetime.datetime.now(pytz.timezone('US/Central'))
-        current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%m/%d/%Y %I:%M %p") + ' CST'
-
-        modified_html = modified_html.replace('{This is a placeholder}', current_datetime_str)
-
-        # add time
-
-        with open(final_html, 'w') as f:
-            f.write(modified_html)
-
-        print('Python script ran and is done!')
-
-    def replace_local(self):
-        table = self.generate_table()
-
-        template_html = 'practice_template.html'
-        identifier = '{Upcoming Sports}'
-        final_html = 'practice_main.html'
-
-        with open(template_html, 'r') as f:
-            html_content = f.read()
-
-        modified_html = html_content.replace(identifier, table)
-
-        current_datetime = datetime.datetime.now()
-        current_datetime_str = 'Last Refreshed: ' + current_datetime.strftime("%m/%d/%Y %I:%M %p")
-
-        modified_html = modified_html.replace('{This is a placeholder}', current_datetime_str)
-
-        # add time
-
-        with open(final_html, 'w') as f:
-            f.write(modified_html)
-
-        print('Python script ran and is done!')
 
 
 if __name__ == '__main__':

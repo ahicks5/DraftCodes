@@ -44,6 +44,11 @@ class Indicators:
         # streaks
         merged_df['espn_streak_ind'] = merged_df.apply(self.espn_streaks, axis=1)
 
+        # espn avgs
+        merged_df['espn_avg_ml_ind'] = merged_df.apply(self.espn_avg_ml, axis=1)
+        merged_df['espn_avg_ou_ind'] = merged_df.apply(self.espn_avg_ou, axis=1)
+        merged_df['espn_avg_sp_ind'] = merged_df.apply(self.espn_avg_sp, axis=1)
+
         # Save to csv
         try:
             merged_df.to_csv('/var/www/html/Website/Indicator_Data.csv', index=False)
@@ -173,6 +178,64 @@ class Indicators:
             elif row['H_espn_home_streak'][0] == 'L' and int(row['H_espn_home_streak'][1:]) >= 3:
                 final_score += 1
 
+            return final_score
+
+        except:
+            return 0
+
+    def espn_avg_ml(self, row):
+        try:
+            final_score = 0
+
+            if row['A_espn_avg_pt_for'] > row['H_espn_avg_pt_for']:
+                final_score += 1
+            elif row['A_espn_avg_pt_for'] < row['H_espn_avg_pt_for']:
+                final_score += -1
+
+            if row['A_espn_avg_pt_ag'] < row['H_espn_avg_pt_ag']:
+                final_score += 1
+            elif row['A_espn_avg_pt_for'] > row['H_espn_avg_pt_ag']:
+                final_score += -1
+
+            return final_score
+
+        except:
+            return 0
+
+    def espn_avg_ou(self, row):
+        try:
+            final_score = 0
+
+            proj_score = ((row['A_espn_avg_pt_for'] + row['H_espn_avg_pt_ag']) / 2) + ((row['A_espn_avg_pt_ag'] + row['H_espn_avg_pt_for']) / 2)
+
+            if proj_score > row['Over_line']:
+                final_score += 1
+            elif proj_score < row['Over_line']:
+                final_score += -1
+
+            return final_score
+
+        except:
+            return 0
+
+    def espn_avg_sp(self, row):
+        try:
+            final_score = 0
+
+            away_team_proj = (row['A_espn_avg_pt_for'] + row['H_espn_avg_pt_ag']) / 2
+            home_team_proj = (row['H_espn_avg_pt_for'] + row['A_espn_avg_pt_ag']) / 2
+            proj_spread = away_team_proj - home_team_proj
+
+            if row['team_2_hcap'] > 0:
+                if proj_spread > row['team_2_hcap']:
+                    final_score += 1
+                elif proj_spread < row['team_2_hcap']:
+                    final_score += -1
+            elif row['team_2_hcap'] < 0:
+                if proj_spread < row['team_2_hcap']:
+                    final_score += -1
+                elif proj_spread > row['team_2_hcap']:
+                    final_score += 1
             return final_score
 
         except:
