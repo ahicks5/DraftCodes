@@ -49,9 +49,10 @@ class HtmlTable:
             background-color: blue;
           }
         </style>
-        <input type="checkbox" id="sharp_checkbox"><label for="sharp_checkbox"> Sharps</label>
-        <input type="checkbox" id="espn_pred_checkbox"><label for="espn_pred_checkbox"> ESPN</label>
-        <input type="checkbox" id="espn_streak_checkbox"><label for="espn_streak_checkbox"> Streaks</label>
+        <input type="checkbox" id="sharp_checkbox"><label for="sharp_checkbox">Sharps</label>
+        <input type="checkbox" id="espn_pred_checkbox"><label for="espn_pred_checkbox">ESPN</label>
+        <input type="checkbox" id="espn_streak_checkbox"><label for="espn_streak_checkbox">Streaks</label>
+        <input type="checkbox" id="espn_avg_checkbox"><label for="espn_avg_checkbox">Averages</label>
         <div class="table-container">
             <table id="myTable">
         '''
@@ -100,6 +101,7 @@ class HtmlTable:
                         const sharpCheckbox = document.getElementById("sharp_checkbox");
                         const espnPredCheckbox = document.getElementById("espn_pred_checkbox");
                         const espnStreakIndCheckbox = document.getElementById("espn_streak_checkbox");
+                        const espnAvgIndCheckbox = document.getElementById("espn_avg_checkbox");
                     
                         function updateCellColors() {
                             const table = document.getElementById("myTable");
@@ -109,6 +111,7 @@ class HtmlTable:
                                 let sharpInd = parseInt(cell.getAttribute("sharp_ind"));
                                 let espnPredInd = parseInt(cell.getAttribute("espn_pred_ind"));
                                 let espnStreakInd = parseInt(cell.getAttribute("espn_stk_ind"));
+                                let espnAvgInd = parseInt(cell.getAttribute("espn_avg_ind"));
                                 let sum = 0;
                     
                                 if (sharpCheckbox.checked) {
@@ -119,6 +122,15 @@ class HtmlTable:
                                 }
                                 if (espnStreakIndCheckbox.checked) {
                                     sum += espnStreakInd;
+                                }
+                                
+                                if (espnAvgIndCheckbox.checked) {
+                                    sum += espnAvgInd;
+                                }
+                                
+                                // If sum is greater than 6, set it to 6
+                                if (sum > 6) {
+                                    sum = 6;
                                 }
                     
                                 if (sum > 0 && greenShades[sum]) {
@@ -132,6 +144,7 @@ class HtmlTable:
                         sharpCheckbox.addEventListener("change", updateCellColors);
                         espnPredCheckbox.addEventListener("change", updateCellColors);
                         espnStreakIndCheckbox.addEventListener("change", updateCellColors);
+                        espnAvgIndCheckbox.addEventListener("change", updateCellColors);
                     });
                     </script>
             '''
