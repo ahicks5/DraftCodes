@@ -8,7 +8,6 @@ from connectSources import find_ref_dfs
 team_ref_df, sport_ref_df, espn_schedule_df, bovada_df = find_ref_dfs()
 
 class VsinSharp:
-
     def __init__(self):
         self.url = 'https://stats.vsinstats.com/pageviewer/vsinstats.php?pageid=vsindksplits'
 
