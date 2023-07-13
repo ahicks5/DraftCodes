@@ -64,6 +64,14 @@ def post_updated_bballref(df):
     df.to_sql(name='baseball_reference_season_games', con=engine, if_exists='replace', index=False)
 
 
+def generate_game_date_ID(df):
+    """use MMDDYYYY-Away-Home clean team names as ID"""
+    df['game_date'] = pd.to_datetime(df['game_date'])  # Convert to datetime
+    df['DC_Game_ID'] = df['game_date'].dt.strftime('%m%d%Y') + '-' + df['away_team_clean'] + '-' + df['home_team_clean']
+
+    return df
+
+
 class BaseballReference:
     def __init__(self):
         self.season_year = '2023'
@@ -119,6 +127,31 @@ class BaseballReference:
         final_df = pd.DataFrame(game_list)
         return final_df
 
+    def get_teamrefs_from_db(self):
+        cursor = self.connection.cursor()
+        query = "SELECT * FROM team_reference"
+        cursor.execute(query)
+        columns = [column[0] for column in cursor.description]
+        rows = cursor.fetchall()
+        df = pd.DataFrame(rows, columns=columns)
+
+        cursor.close()
+
+        return df
+
+    def add_bball_ref_names(self, df):
+        team_ref_df_bov = self.get_teamrefs_from_db()[['Sports Reference Names', 'Final Names']]
+
+        df = df.merge(team_ref_df_bov, left_on='a_team', right_on='Sports Reference Names', how='left')
+        df = df.rename(columns={'Final Names': 'away_team_clean'})
+        df = df.drop(columns=['Sports Reference Names'])
+
+        df = df.merge(team_ref_df_bov, left_on='h_team', right_on='Sports Reference Names', how='left')
+        df = df.rename(columns={'Final Names': 'home_team_clean'})
+        df = df.drop(columns=['Sports Reference Names'])
+
+        return df
+
     def refresh_and_update_baseball_season_games(self):
         old_df = self.get_season_baseball_from_db()
         old_df = old_df.drop_duplicates()
@@ -140,14 +173,19 @@ class BaseballReference:
             return
 
         final_df = self.pull_games(new_games)
-        self.close_sql()
 
         final_df = pd.concat([old_df, final_df], ignore_index=True)
 
         print('New games assembled!')
 
+        # add clean names and ids
+        final_df = self.add_bball_ref_names(final_df)
+        final_df = generate_game_date_ID(final_df)
+        self.close_sql()
+
         # upload to sql
         post_updated_bballref(final_df)
+
         print('Added to database!')
 
 

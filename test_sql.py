@@ -1,6 +1,7 @@
 import mysql.connector
 import pandas as pd
 from sqlalchemy import create_engine
+from combineDBs import load_database
 
 # Create a connection to the database
 #connection = mysql.connector.connect(
@@ -16,14 +17,17 @@ user = 'root_pc'
 password = 'pAsSwOrD1!2?3$'
 database = 'draftcodes'
 
+#df = load_database('baseball_reference_season_games')
+
+#df.to_csv('bball_ref.csv', index=False)
+
 # Create a SQLAlchemy engine
 engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
 
-df = pd.read_csv('New_ESPN_Data.csv')
+df = pd.read_csv('Current_Team_Reference.csv')
 
 # Upload the DataFrame to MySQL as a new table
-df.to_sql(name='espn_data', con=engine, if_exists='replace', index=False)
-
+df.to_sql(name='team_reference', con=engine, if_exists='replace', index=False)
 
 # Create a cursor object
 #cursor = connection.cursor()
