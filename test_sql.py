@@ -17,17 +17,17 @@ user = 'root_pc'
 password = 'pAsSwOrD1!2?3$'
 database = 'draftcodes'
 
-#df = load_database('baseball_reference_season_games')
+##df = load_database('bovada_data')
 
-#df.to_csv('bball_ref.csv', index=False)
+##df.to_csv('bov_test.csv', index=False)
 
 # Create a SQLAlchemy engine
 engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
 
-df = pd.read_csv('Current_Team_Reference.csv')
+df = pd.read_csv('bov_test.csv')
 
 # Upload the DataFrame to MySQL as a new table
-df.to_sql(name='team_reference', con=engine, if_exists='replace', index=False)
+df.to_sql(name='bovada_data', con=engine, if_exists='replace', index=False)
 
 # Create a cursor object
 #cursor = connection.cursor()
@@ -49,3 +49,5 @@ df.to_sql(name='team_reference', con=engine, if_exists='replace', index=False)
 
 # Close the connection
 #connection.close()
+
+#df.to_csv('team_ref_72623.csv', index=False)

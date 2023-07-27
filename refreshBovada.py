@@ -50,11 +50,11 @@ class RefreshBovada:
     def add_bov_ref_names(self, df):
         team_ref_df_bov = self.get_teamrefs_from_db()[['Bovada Names', 'Final Names']]
 
-        df = df.merge(team_ref_df_bov, left_on='bovada_home_team', right_on='Bovada Names', how='left')
+        df = df.merge(team_ref_df_bov, left_on='bovada_away_team', right_on='Bovada Names', how='left')
         df = df.rename(columns={'Final Names': 'away_team_clean'})
         df = df.drop(columns=['Bovada Names'])
 
-        df = df.merge(team_ref_df_bov, left_on='bovada_away_team', right_on='Bovada Names', how='left')
+        df = df.merge(team_ref_df_bov, left_on='bovada_home_team', right_on='Bovada Names', how='left')
         df = df.rename(columns={'Final Names': 'home_team_clean'})
         df = df.drop(columns=['Bovada Names'])
 

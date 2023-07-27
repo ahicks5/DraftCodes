@@ -157,6 +157,7 @@ class BaseballReference:
         old_df = old_df.drop_duplicates()
         old_games = old_df['game_link'].unique().tolist()
         boxscores = self.pull_boxscore_links()
+        print('Boxscores have been pulled...')
 
         new_games = []
 
@@ -178,6 +179,9 @@ class BaseballReference:
 
         print('New games assembled!')
 
+        # clear and redo ids
+        final_df = final_df.drop(['away_team_clean', 'home_team_clean', 'DC_Game_ID'], axis=1)
+
         # add clean names and ids
         final_df = self.add_bball_ref_names(final_df)
         final_df = generate_game_date_ID(final_df)
@@ -190,5 +194,8 @@ class BaseballReference:
 
 
 if __name__ == '__main__':
+    start = time.time()
     br = BaseballReference()
     br.refresh_and_update_baseball_season_games()
+    end = time.time()
+    print(f"Baseball Reference time taken: {end - start:.2f} seconds")
