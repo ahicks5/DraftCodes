@@ -1,0 +1,188 @@
+vsin_away_team,vsin_home_team,away_spread,home_spread,away_spread_handle,home_spread_handle,away_spread_bets,home_spread_bets,total_over,total_under,total_over_handle,total_under_handle,total_over_bets,total_under_bets,away_ml,home_ml,away_ml_handle,home_ml_handle,away_ml_bets,home_ml_bets,game_date,Sport,away_team_clean,home_team_clean,DC_Game_ID
+DET Lions,KC Chiefs,+7,-7,0.4,0.6,0.43,0.57,55,55,0.48,0.52,0.59,0.41,+245,-295,0.35,0.65,0.17,0.83,2023-09-07,NFL,Detroit Lions,Kansas City Chiefs,09072023-Detroit Lions-Kansas City Chiefs
+HOU Texans,BAL Ravens,+9,-9,0.18,0.82,0.36,0.64,44.5,44.5,0.24,0.76,0.45,0.55,+330,-410,0.09,0.91,0.07,0.93,2023-09-10,NFL,Houston Texans,Baltimore Ravens,09102023-Houston Texans-Baltimore Ravens
+CIN Bengals,CLE Browns,-2.5,+2.5,0.84,0.16,0.8,0.2,47,47,0.48,0.52,0.53,0.47,-130,+110,0.7,0.3,0.78,0.22,2023-09-10,NFL,Cincinnati Bengals,Cleveland Browns,09102023-Cincinnati Bengals-Cleveland Browns
+SF 49ers,PIT Steelers,-3,+3,0.32,0.68,0.66,0.34,40.5,40.5,0.32,0.68,0.5,0.5,-150,+130,0.59,0.41,0.73,0.27,2023-09-10,NFL,San Francisco 49ers,Pittsburgh Steelers,09102023-San Francisco 49ers-Pittsburgh Steelers
+JAX Jaguars,IND Colts,-3.5,+3.5,0.75,0.25,0.77,0.23,43.5,43.5,0.58,0.42,0.59,0.41,-165,+140,0.85,0.15,0.82,0.18,2023-09-10,NFL,Jacksonville Jaguars,Indianapolis Colts,09102023-Jacksonville Jaguars-Indianapolis Colts
+ARI Cardinals,WAS Commanders,+6,-6,0.31,0.69,0.49,0.51,40.5,40.5,0.32,0.68,0.55,0.45,+195,-230,0.14,0.86,0.25,0.75,2023-09-10,NFL,Arizona Cardinals,Washington Commanders,09102023-Arizona Cardinals-Washington Commanders
+TB Buccaneers,MIN Vikings,+6.5,-6.5,0.58,0.42,0.31,0.69,45.5,45.5,0.28,0.72,0.4,0.6,+230,-275,0.23,0.77,0.11,0.89,2023-09-10,NFL,Tampa Bay Buccaneers,Minnesota Vikings,09102023-Tampa Bay Buccaneers-Minnesota Vikings
+CAR Panthers,ATL Falcons,+3,-3,0.2,0.8,0.52,0.48,42.5,42.5,0.21,0.79,0.47,0.53,+135,-155,0.44,0.56,0.48,0.52,2023-09-10,NFL,Carolina Panthers,Atlanta Falcons,09102023-Carolina Panthers-Atlanta Falcons
+TEN Titans,NO Saints,+3,-3,0.65,0.35,0.53,0.47,41.5,41.5,0.45,0.55,0.55,0.45,+145,-170,0.47,0.53,0.35,0.65,2023-09-10,NFL,Tennessee Titans,New Orleans Saints,09102023-Tennessee Titans-New Orleans Saints
+PHI Eagles,NE Patriots,-4.5,+4.5,0.73,0.27,0.79,0.21,45,45,0.43,0.57,0.53,0.47,-195,+165,0.68,0.32,0.9,0.1,2023-09-10,NFL,Philadelphia Eagles,New England Patriots,09102023-Philadelphia Eagles-New England Patriots
+LV Raiders,DEN Broncos,+4,-4,0.61,0.39,0.49,0.51,44.5,44.5,0.22,0.78,0.35,0.65,+155,-180,0.29,0.71,0.32,0.68,2023-09-10,NFL,Las Vegas Raiders,Denver Broncos,09102023-Las Vegas Raiders-Denver Broncos
+MIA Dolphins,LA Chargers,+2.5,-2.5,0.54,0.46,0.57,0.43,50,50,0.79,0.21,0.66,0.34,+120,-140,0.75,0.25,0.6,0.4,2023-09-10,NFL,Miami Dolphins,Los Angeles Chargers,09102023-Miami Dolphins-Los Angeles Chargers
+DAL Cowboys,NY Giants,-3,+3,0.68,0.32,0.61,0.39,46.5,46.5,0.32,0.68,0.46,0.54,-165,+140,0.72,0.28,0.68,0.32,2023-09-10,NFL,Dallas Cowboys,New York Giants,09102023-Dallas Cowboys-New York Giants
+GB Packers,CHI Bears,+3,-3,0.44,0.56,0.25,0.75,44,44,0.49,0.51,0.43,0.57,+125,-145,0.32,0.68,0.28,0.72,2023-09-10,NFL,Green Bay Packers,Chicago Bears,09102023-Green Bay Packers-Chicago Bears
+LA Rams,SEA Seahawks,+5,-5,0.39,0.61,0.55,0.45,47,47,0.38,0.62,0.4,0.6,+180,-210,0.37,0.63,0.27,0.73,2023-09-10,NFL,Los Angeles Rams,Seattle Seahawks,09102023-Los Angeles Rams-Seattle Seahawks
+BUF Bills,NY Jets,-1.5,+1.5,0.61,0.39,0.74,0.26,47,47,0.28,0.72,0.56,0.44,-120,+100,0.49,0.51,0.65,0.35,2023-09-11,NFL,Buffalo Bills,New York Jets,09112023-Buffalo Bills-New York Jets
+MIN Vikings,PHI Eagles,+7,-7,0.06,0.94,0.2,0.8,51,,1.0,0.0,1.0,0.0,+250,-300,0.46,0.54,0.16,0.84,2023-09-14,NFL,Minnesota Vikings,Philadelphia Eagles,09142023-Minnesota Vikings-Philadelphia Eagles
+LV Raiders,BUF Bills,+8,-8,0.12,0.88,0.4,0.6,,,0.0,0.0,0.0,0.0,+295,-360,0.49,0.51,0.08,0.92,2023-09-17,NFL,Las Vegas Raiders,Buffalo Bills,09172023-Las Vegas Raiders-Buffalo Bills
+BAL Ravens,CIN Bengals,+3.5,-3.5,0.97,0.03,0.65,0.35,,,0.0,0.0,0.0,0.0,+155,-180,0.63,0.37,0.44,0.56,2023-09-17,NFL,Baltimore Ravens,Cincinnati Bengals,09172023-Baltimore Ravens-Cincinnati Bengals
+IND Colts,HOU Texans,+1,,1.0,0.0,1.0,0.0,,,0.0,0.0,0.0,0.0,,,0.0,0.0,0.0,0.0,2023-09-17,NFL,Indianapolis Colts,Houston Texans,09172023-Indianapolis Colts-Houston Texans
+KC Chiefs,JAX Jaguars,-3,+3,0.82,0.18,0.83,0.17,,,0.0,0.0,0.0,0.0,-150,+130,0.78,0.22,0.88,0.12,2023-09-17,NFL,Kansas City Chiefs,Jacksonville Jaguars,09172023-Kansas City Chiefs-Jacksonville Jaguars
+LA Chargers,TEN Titans,-3.5,+3.5,0.19,0.81,0.53,0.47,,,0.0,0.0,0.0,0.0,-180,+155,0.82,0.18,0.85,0.15,2023-09-17,NFL,Los Angeles Chargers,Tennessee Titans,09172023-Los Angeles Chargers-Tennessee Titans
+SEA Seahawks,DET Lions,+2,-2,0.01,0.99,0.19,0.81,,,0.0,0.0,0.0,0.0,+110,-130,0.2,0.8,0.47,0.53,2023-09-17,NFL,Seattle Seahawks,Detroit Lions,09172023-Seattle Seahawks-Detroit Lions
+GB Packers,ATL Falcons,-1,+1,0.19,0.81,0.45,0.55,,,0.0,0.0,0.0,0.0,-115,-105,0.06,0.94,0.58,0.42,2023-09-17,NFL,Green Bay Packers,Atlanta Falcons,09172023-Green Bay Packers-Atlanta Falcons
+CHI Bears,TB Buccaneers,-1.5,+1.5,0.99,0.01,0.94,0.06,,,0.0,0.0,0.0,0.0,-120,+100,0.99,0.01,0.79,0.21,2023-09-17,NFL,Chicago Bears,Tampa Bay Buccaneers,09172023-Chicago Bears-Tampa Bay Buccaneers
+NY Giants,ARI Cardinals,-4,+4,0.99,0.01,0.76,0.24,,,0.0,0.0,0.0,0.0,-195,+165,0.91,0.09,0.9,0.1,2023-09-17,NFL,New York Giants,Arizona Cardinals,09172023-New York Giants-Arizona Cardinals
+SF 49ers,LA Rams,-4.5,+4.5,0.99,0.01,0.8,0.2,,,0.0,0.0,0.0,0.0,-205,+175,1.0,0.0,0.93,0.07,2023-09-17,NFL,San Francisco 49ers,Los Angeles Rams,09172023-San Francisco 49ers-Los Angeles Rams
+WAS Commanders,DEN Broncos,+3.5,-3.5,0.08,0.92,0.28,0.72,,,0.0,0.0,0.0,0.0,+145,-170,0.04,0.96,0.18,0.82,2023-09-17,NFL,Washington Commanders,Denver Broncos,09172023-Washington Commanders-Denver Broncos
+NY Jets,DAL Cowboys,+2,-2,0.02,0.98,0.33,0.67,,,0.0,0.0,0.0,0.0,+105,-125,0.09,0.91,0.57,0.43,2023-09-17,NFL,New York Jets,Dallas Cowboys,09172023-New York Jets-Dallas Cowboys
+MIA Dolphins,NE Patriots,-1,+1,0.73,0.27,0.75,0.25,,,0.0,0.0,0.0,0.0,-115,-105,0.98,0.02,0.8,0.2,2023-09-17,NFL,Miami Dolphins,New England Patriots,09172023-Miami Dolphins-New England Patriots
+NO Saints,CAR Panthers,+1,-1,0.16,0.84,0.8,0.2,,,0.0,0.0,0.0,0.0,-115,-105,0.65,0.35,0.67,0.33,2023-09-18,NFL,New Orleans Saints,Carolina Panthers,09182023-New Orleans Saints-Carolina Panthers
+CLE Browns,PIT Steelers,+1,-1,0.1,0.9,0.29,0.71,,,0.0,0.0,0.0,0.0,-105,-115,0.08,0.92,0.24,0.76,2023-09-18,NFL,Cleveland Browns,Pittsburgh Steelers,09182023-Cleveland Browns-Pittsburgh Steelers
+NY Giants,SF 49ers,+4.5,-4.5,0.0,1.0,0.14,0.86,,,0.0,0.0,0.0,0.0,--200,,0.0,1.0,0.0,1.0,2023-09-21,NFL,New York Giants,San Francisco 49ers,09212023-New York Giants-San Francisco 49ers
+DEN Broncos,MIA Dolphins,+3.5,-3.5,0.39,0.61,0.43,0.57,,,0.0,0.0,0.0,0.0,+145,-170,0.0,1.0,0.1,0.9,2023-09-24,NFL,Denver Broncos,Miami Dolphins,09242023-Denver Broncos-Miami Dolphins
+NE Patriots,NY Jets,+3.5,-3.5,0.1,0.9,0.37,0.63,,,0.0,0.0,0.0,0.0,+150,-175,0.29,0.71,0.8,0.2,2023-09-24,NFL,New England Patriots,New York Jets,09242023-New England Patriots-New York Jets
+IND Colts,BAL Ravens,+7,-7,0.02,0.98,0.41,0.59,,,0.0,0.0,0.0,0.0,+245,-295,0.05,0.95,0.25,0.75,2023-09-24,NFL,Indianapolis Colts,Baltimore Ravens,09242023-Indianapolis Colts-Baltimore Ravens
+TEN Titans,CLE Browns,+4.5,-4.5,0.86,0.14,0.57,0.43,,,0.0,0.0,0.0,0.0,+165,-195,0.25,0.75,0.04,0.96,2023-09-24,NFL,Tennessee Titans,Cleveland Browns,09242023-Tennessee Titans-Cleveland Browns
+HOU Texans,JAX Jaguars,+7,-7,0.01,0.99,0.43,0.57,,,0.0,0.0,0.0,0.0,+250,-300,0.34,0.66,0.2,0.8,2023-09-24,NFL,Houston Texans,Jacksonville Jaguars,09242023-Houston Texans-Jacksonville Jaguars
+BUF Bills,WAS Commanders,-4.5,+4.5,0.99,0.01,0.9,0.1,,,0.0,0.0,0.0,0.0,-195,+165,0.81,0.19,0.93,0.07,2023-09-24,NFL,Buffalo Bills,Washington Commanders,09242023-Buffalo Bills-Washington Commanders
+ATL Falcons,DET Lions,+5,-5,0.03,0.97,0.15,0.85,,,0.0,0.0,0.0,0.0,+180,-210,0.12,0.88,0.12,0.88,2023-09-24,NFL,Atlanta Falcons,Detroit Lions,09242023-Atlanta Falcons-Detroit Lions
+NO Saints,GB Packers,+1,-1,0.58,0.42,0.71,0.29,,,0.0,0.0,0.0,0.0,-105,-115,0.88,0.12,0.62,0.38,2023-09-24,NFL,New Orleans Saints,Green Bay Packers,09242023-New Orleans Saints-Green Bay Packers
+LA Chargers,MIN Vikings,-1.5,+1.5,0.4,0.6,0.33,0.67,,,0.0,0.0,0.0,0.0,-120,+100,0.79,0.21,0.67,0.33,2023-09-24,NFL,Los Angeles Chargers,Minnesota Vikings,09242023-Los Angeles Chargers-Minnesota Vikings
+CAR Panthers,SEA Seahawks,+4,-4,0.89,0.11,0.38,0.62,,,0.0,0.0,0.0,0.0,--190,,0.0,1.0,0.0,1.0,2023-09-24,NFL,Carolina Panthers,Seattle Seahawks,09242023-Carolina Panthers-Seattle Seahawks
+CHI Bears,KC Chiefs,+9.5,-9.5,0.76,0.24,0.82,0.18,,,0.0,0.0,0.0,0.0,+330,-410,0.64,0.36,0.29,0.71,2023-09-24,NFL,Chicago Bears,Kansas City Chiefs,09242023-Chicago Bears-Kansas City Chiefs
+DAL Cowboys,ARI Cardinals,-6.5,+6.5,1.0,0.0,0.91,0.09,,,0.0,0.0,0.0,0.0,-265,+225,0.78,0.22,0.87,0.13,2023-09-24,NFL,Dallas Cowboys,Arizona Cardinals,09242023-Dallas Cowboys-Arizona Cardinals
+PIT Steelers,LV Raiders,+1.5,-1.5,0.96,0.04,0.58,0.42,,,0.0,0.0,0.0,0.0,+100,-120,0.98,0.02,0.76,0.24,2023-09-24,NFL,Pittsburgh Steelers,Las Vegas Raiders,09242023-Pittsburgh Steelers-Las Vegas Raiders
+PHI Eagles,TB Buccaneers,-6,+6,0.99,0.01,0.89,0.11,,,0.0,0.0,0.0,0.0,-250,+210,0.99,0.01,0.9,0.1,2023-09-25,NFL,Philadelphia Eagles,Tampa Bay Buccaneers,09252023-Philadelphia Eagles-Tampa Bay Buccaneers
+LA Rams,CIN Bengals,+7,-7,0.02,0.98,0.33,0.67,,,0.0,0.0,0.0,0.0,+255,-305,0.18,0.82,0.09,0.91,2023-09-25,NFL,Los Angeles Rams,Cincinnati Bengals,09252023-Los Angeles Rams-Cincinnati Bengals
+DET Lions,GB Packers,-1.5,+1.5,0.94,0.06,0.93,0.07,,,0.0,0.0,0.0,0.0,-120,+100,0.96,0.04,0.71,0.29,2023-09-28,NFL,Detroit Lions,Green Bay Packers,09282023-Detroit Lions-Green Bay Packers
+ATL Falcons,JAX Jaguars,+4,-4,0.02,0.98,0.11,0.89,,,0.0,0.0,0.0,0.0,+155,-180,0.64,0.36,0.12,0.88,2023-10-01,NFL,Atlanta Falcons,Jacksonville Jaguars,10012023-Atlanta Falcons-Jacksonville Jaguars
+MIA Dolphins,BUF Bills,+3.5,-3.5,0.18,0.82,0.5,0.5,,,0.0,0.0,0.0,0.0,+150,-175,0.12,0.88,0.44,0.56,2023-10-01,NFL,Miami Dolphins,Buffalo Bills,10012023-Miami Dolphins-Buffalo Bills
+BAL Ravens,CLE Browns,+1,,1.0,0.0,1.0,0.0,,,0.0,0.0,0.0,0.0,-105,-115,0.65,0.35,0.6,0.4,2023-10-01,NFL,Baltimore Ravens,Cleveland Browns,10012023-Baltimore Ravens-Cleveland Browns
+PIT Steelers,HOU Texans,-3.5,+3.5,0.95,0.05,0.88,0.12,,,0.0,0.0,0.0,0.0,-175,+150,0.82,0.18,0.75,0.25,2023-10-01,NFL,Pittsburgh Steelers,Houston Texans,10012023-Pittsburgh Steelers-Houston Texans
+LA Rams,IND Colts,-1,+1,0.16,0.84,0.5,0.5,,,0.0,0.0,0.0,0.0,-115,-105,0.8,0.2,0.6,0.4,2023-10-01,NFL,Los Angeles Rams,Indianapolis Colts,10012023-Los Angeles Rams-Indianapolis Colts
+CIN Bengals,TEN Titans,-4.5,+4.5,0.99,0.01,0.91,0.09,,,0.0,0.0,0.0,0.0,-195,-,1.0,0.0,1.0,0.0,2023-10-01,NFL,Cincinnati Bengals,Tennessee Titans,10012023-Cincinnati Bengals-Tennessee Titans
+WAS Commanders,PHI Eagles,+7,-7,0.04,0.96,0.2,0.8,,,0.0,0.0,0.0,0.0,+255,-305,0.79,0.21,0.21,0.79,2023-10-01,NFL,Washington Commanders,Philadelphia Eagles,10012023-Washington Commanders-Philadelphia Eagles
+DEN Broncos,CHI Bears,-+1.5,,0.0,1.0,0.0,1.0,,,0.0,0.0,0.0,0.0,-120,+100,0.09,0.91,0.38,0.62,2023-10-01,NFL,Denver Broncos,Chicago Bears,10012023-Denver Broncos-Chicago Bears
+MIN Vikings,CAR Panthers,-1.5,+1.5,0.96,0.04,0.8,0.2,,,0.0,0.0,0.0,0.0,-120,+100,0.98,0.02,0.78,0.22,2023-10-01,NFL,Minnesota Vikings,Carolina Panthers,10012023-Minnesota Vikings-Carolina Panthers
+TB Buccaneers,NO Saints,+3.5,-3.5,0.01,0.99,0.27,0.73,,,0.0,0.0,0.0,0.0,--175,,0.0,1.0,0.0,1.0,2023-10-01,NFL,Tampa Bay Buccaneers,New Orleans Saints,10012023-Tampa Bay Buccaneers-New Orleans Saints
+LV Raiders,LA Chargers,+4.5,-4.5,0.81,0.19,0.5,0.5,,,0.0,0.0,0.0,0.0,--205,,0.0,1.0,0.0,1.0,2023-10-01,NFL,Las Vegas Raiders,Los Angeles Chargers,10012023-Las Vegas Raiders-Los Angeles Chargers
+NE Patriots,DAL Cowboys,+3.5,-3.5,0.05,0.95,0.42,0.58,,,0.0,0.0,0.0,0.0,+150,-175,0.0,1.0,0.07,0.93,2023-10-01,NFL,New England Patriots,Dallas Cowboys,10012023-New England Patriots-Dallas Cowboys
+ARI Cardinals,SF 49ers,+9.5,-9.5,0.02,0.98,0.45,0.55,,,0.0,0.0,0.0,0.0,+330,-410,0.29,0.71,0.12,0.88,2023-10-01,NFL,Arizona Cardinals,San Francisco 49ers,10012023-Arizona Cardinals-San Francisco 49ers
+KC Chiefs,NY Jets,-1,+1,0.99,0.01,0.93,0.07,,,0.0,0.0,0.0,0.0,-115,-105,0.96,0.04,0.91,0.09,2023-10-01,NFL,Kansas City Chiefs,New York Jets,10012023-Kansas City Chiefs-New York Jets
+SEA Seahawks,NY Giants,+1,-1,0.47,0.53,0.33,0.67,,,0.0,0.0,0.0,0.0,-105,-115,0.99,0.01,0.4,0.6,2023-10-02,NFL,Seattle Seahawks,New York Giants,10022023-Seattle Seahawks-New York Giants
+CHI Bears,WAS Commanders,+1.5,-1.5,0.97,0.03,0.83,0.17,,,0.0,0.0,0.0,0.0,+100,-,1.0,0.0,1.0,0.0,2023-10-05,NFL,Chicago Bears,Washington Commanders,10052023-Chicago Bears-Washington Commanders
+JAX Jaguars,BUF Bills,+3.5,-3.5,0.72,0.28,0.56,0.44,,,0.0,0.0,0.0,0.0,+145,-170,0.81,0.19,0.38,0.62,2023-10-08,NFL,Jacksonville Jaguars,Buffalo Bills,10082023-Jacksonville Jaguars-Buffalo Bills
+NY Giants,MIA Dolphins,--4.5,,0.0,1.0,0.0,1.0,,,0.0,0.0,0.0,0.0,+170,-200,0.2,0.8,0.12,0.88,2023-10-08,NFL,New York Giants,Miami Dolphins,10082023-New York Giants-Miami Dolphins
+NO Saints,NE Patriots,+3,-3,0.99,0.01,0.55,0.45,,,0.0,0.0,0.0,0.0,+130,-150,0.43,0.57,0.25,0.75,2023-10-08,NFL,New Orleans Saints,New England Patriots,10082023-New Orleans Saints-New England Patriots
+BAL Ravens,PIT Steelers,-1,+1,0.89,0.11,0.83,0.17,,,0.0,0.0,0.0,0.0,-115,-105,0.04,0.96,0.29,0.71,2023-10-08,NFL,Baltimore Ravens,Pittsburgh Steelers,10082023-Baltimore Ravens-Pittsburgh Steelers
+TEN Titans,IND Colts,+1,-1,0.98,0.02,0.62,0.38,,,0.0,0.0,0.0,0.0,-105,-115,0.74,0.26,0.57,0.43,2023-10-08,NFL,Tennessee Titans,Indianapolis Colts,10082023-Tennessee Titans-Indianapolis Colts
+CAR Panthers,DET Lions,+5,-5,0.14,0.86,0.14,0.86,,,0.0,0.0,0.0,0.0,+180,-210,0.69,0.31,0.45,0.55,2023-10-08,NFL,Carolina Panthers,Detroit Lions,10082023-Carolina Panthers-Detroit Lions
+HOU Texans,ATL Falcons,+3,-3,0.0,1.0,0.29,0.71,,,0.0,0.0,0.0,0.0,+130,-150,0.01,0.99,0.17,0.83,2023-10-08,NFL,Houston Texans,Atlanta Falcons,10082023-Houston Texans-Atlanta Falcons
+CIN Bengals,ARI Cardinals,-7.5,+7.5,1.0,0.0,0.71,0.29,,,0.0,0.0,0.0,0.0,-340,+280,0.46,0.54,0.62,0.38,2023-10-08,NFL,Cincinnati Bengals,Arizona Cardinals,10082023-Cincinnati Bengals-Arizona Cardinals
+PHI Eagles,LA Rams,-4.5,+4.5,1.0,0.0,0.94,0.06,,,0.0,0.0,0.0,0.0,-200,-,1.0,0.0,1.0,0.0,2023-10-08,NFL,Philadelphia Eagles,Los Angeles Rams,10082023-Philadelphia Eagles-Los Angeles Rams
+NY Jets,DEN Broncos,-1,+1,0.97,0.03,0.75,0.25,,,0.0,0.0,0.0,0.0,-115,-105,0.62,0.38,0.8,0.2,2023-10-08,NFL,New York Jets,Denver Broncos,10082023-New York Jets-Denver Broncos
+KC Chiefs,MIN Vikings,-4,+4,0.91,0.09,0.64,0.36,,,0.0,0.0,0.0,0.0,-190,-,1.0,0.0,1.0,0.0,2023-10-08,NFL,Kansas City Chiefs,Minnesota Vikings,10082023-Kansas City Chiefs-Minnesota Vikings
+DAL Cowboys,SF 49ers,+2,-2,0.0,1.0,0.33,0.67,,,0.0,0.0,0.0,0.0,+105,-125,0.0,1.0,0.14,0.86,2023-10-08,NFL,Dallas Cowboys,San Francisco 49ers,10082023-Dallas Cowboys-San Francisco 49ers
+GB Packers,LV Raiders,+1.5,-1.5,0.31,0.69,0.5,0.5,,,0.0,0.0,0.0,0.0,+100,-120,0.02,0.98,0.21,0.79,2023-10-09,NFL,Green Bay Packers,Las Vegas Raiders,10092023-Green Bay Packers-Las Vegas Raiders
+DEN Broncos,KC Chiefs,+7,-7,0.36,0.64,0.46,0.54,,,0.0,0.0,0.0,0.0,+255,-305,0.83,0.17,0.42,0.58,2023-10-12,NFL,Denver Broncos,Kansas City Chiefs,10122023-Denver Broncos-Kansas City Chiefs
+BAL Ravens,TEN Titans,-5.5,+5.5,0.79,0.21,0.81,0.19,,,0.0,0.0,0.0,0.0,-215,+185,0.43,0.57,0.67,0.33,2023-10-15,NFL,Baltimore Ravens,Tennessee Titans,10152023-Baltimore Ravens-Tennessee Titans
+Navy,Notre Dame,+20,-20,0.67,0.33,0.39,0.61,49,49,0.62,0.38,0.69,0.31,+800,-1250,0.3,0.7,0.07,0.93,2023-08-26,CFB,Navy,Notre Dame,08262023-Navy-Notre Dame
+UTEP,Jacksonville ST,+1.5,-1.5,0.85,0.15,0.79,0.21,51.5,51.5,0.74,0.26,0.64,0.36,+105,-125,0.92,0.08,0.57,0.43,2023-08-26,CFB,UTEP,Jacksonville State,08262023-UTEP-Jacksonville State
+Massachusetts,New Mexico ST,+9,-9,0.92,0.08,0.2,0.8,43,43,0.01,0.99,0.45,0.55,+280,-340,0.1,0.9,0.11,0.89,2023-08-26,CFB,Massachusetts,New Mexico State,08262023-Massachusetts-New Mexico State
+Ohio,San Diego ST,+4,-4,0.84,0.16,0.21,0.79,49,49,0.66,0.34,0.62,0.38,+155,-180,0.56,0.44,0.21,0.79,2023-08-26,CFB,Ohio,San Diego State,08262023-Ohio-San Diego State
+Hawaii,Vanderbilt,+18.5,-18.5,0.07,0.93,0.11,0.89,53.5,53.5,0.05,0.95,0.54,0.46,+700,-1050,0.14,0.86,0.09,0.91,2023-08-26,CFB,Hawaii,Vanderbilt,08262023-Hawaii-Vanderbilt
+San Jose ST,USC,+30.5,-30.5,0.07,0.93,0.18,0.82,63,63,0.86,0.14,0.72,0.28,,,0.0,0.0,0.0,0.0,2023-08-26,CFB,San Jose State,USC,08262023-San Jose State-USC
+FIU,Louisiana Tech,+10,-10,0.7,0.3,0.41,0.59,59,59,0.7,0.3,0.54,0.46,+290,-350,0.4,0.6,0.17,0.83,2023-08-26,CFB,Florida International,Louisiana Tech,08262023-Florida International-Louisiana Tech
+Kent ST,UCF,+33.5,-33.5,0.17,0.83,0.53,0.47,58.5,58.5,0.61,0.39,0.75,0.25,,,0.0,0.0,0.0,0.0,2023-08-31,CFB,Kent State,Central Florida,08312023-Kent State-Central Florida
+North Carolina ST,UConn,-16.5,+16.5,0.66,0.34,0.57,0.43,48,48,0.01,0.99,0.47,0.53,-750,+550,0.87,0.13,0.92,0.08,2023-08-31,CFB,,,
+Nebraska,Minnesota,+7,-7,0.89,0.11,0.74,0.26,46.5,46.5,0.16,0.84,0.62,0.38,+230,-275,0.67,0.33,0.37,0.63,2023-08-31,CFB,Nebraska,Minnesota ,08312023-Nebraska-Minnesota 
+Florida,Utah,+9,-9,0.54,0.46,0.54,0.46,49,49,0.14,0.86,0.75,0.25,+260,-315,0.37,0.63,0.27,0.73,2023-08-31,CFB,Florida ,Utah,08312023-Florida -Utah
+Miami OH,Miami FL,+17.5,-17.5,0.07,0.93,0.16,0.84,48.5,48.5,0.59,0.41,0.89,0.11,+650,-950,0.0,1.0,0.01,0.99,2023-09-01,CFB,Miami Ohio,Miami Florida ,09012023-Miami Ohio-Miami Florida 
+Central Michigan,Michigan ST,+14.5,-14.5,0.37,0.63,0.21,0.79,51,51,0.29,0.71,0.67,0.33,+420,-540,0.11,0.89,0.07,0.93,2023-09-01,CFB,,Michigan State,
+Louisville,Georgia Tech,-8.5,+8.5,0.65,0.35,0.6,0.4,51.5,51.5,0.42,0.58,0.76,0.24,-295,+245,0.86,0.14,0.93,0.07,2023-09-01,CFB,Louisville,Georgia Tech,09012023-Louisville-Georgia Tech
+Stanford,Hawaii,-10,+10,0.2,0.8,0.68,0.32,58,58,0.05,0.95,0.57,0.43,-350,-,1.0,0.0,1.0,0.0,2023-09-01,CFB,Stanford,Hawaii,09012023-Stanford-Hawaii
+Northern Illinois,Boston College,+10.5,-10.5,0.46,0.54,0.06,0.94,52,52,0.45,0.55,0.62,0.38,+295,-360,0.05,0.95,0.12,0.88,2023-09-02,CFB,Northern Illinois,Boston College,09022023-Northern Illinois-Boston College
+Utah ST,Iowa,+23,-23,0.05,0.95,0.27,0.73,43.5,43.5,0.43,0.57,0.54,0.46,+1200,-2400,0.03,0.97,0.02,0.98,2023-09-02,CFB,Utah State,Iowa,09022023-Utah State-Iowa
+Ball ST,Kentucky,+26.5,-26.5,0.33,0.67,0.33,0.67,48,48,0.84,0.16,0.91,0.09,--6000,,0.0,1.0,0.0,1.0,2023-09-02,CFB,Ball State,Kentucky,09022023-Ball State-Kentucky
+East Carolina,Michigan,+35.5,-35.5,0.21,0.79,0.27,0.73,52.5,52.5,0.99,0.01,0.95,0.05,,,0.0,0.0,0.0,0.0,2023-09-02,CFB,East Carolina,Michigan,09022023-East Carolina-Michigan
+Arkansas ST,Oklahoma,+33.5,-33.5,0.16,0.84,0.15,0.85,61,61,0.76,0.24,0.84,0.16,,,0.0,0.0,0.0,0.0,2023-09-02,CFB,Arkansas State,Oklahoma ,09022023-Arkansas State-Oklahoma 
+Fresno ST,Purdue,+5.5,-5.5,0.25,0.75,0.11,0.89,53,53,0.07,0.93,0.72,0.28,--215,,0.0,1.0,0.0,1.0,2023-09-02,CFB,Fresno State,Purdue,09022023-Fresno State-Purdue
+Louisiana Tech,SMU,+16.5,-16.5,0.35,0.65,0.04,0.96,65,65,0.99,0.01,0.85,0.15,--675,,0.0,1.0,0.0,1.0,2023-09-02,CFB,Louisiana Tech,SMU,09022023-Louisiana Tech-SMU
+Colorado,TCU,+19.5,-19.5,0.67,0.33,0.69,0.31,59,59,0.12,0.88,0.49,0.51,+700,-1050,0.94,0.06,0.46,0.54,2023-09-02,CFB,Colorado,TCU,09022023-Colorado-TCU
+Virginia,Tennessee,+28,-28,0.25,0.75,0.26,0.74,58.5,58.5,0.9,0.1,0.92,0.08,,,0.0,0.0,0.0,0.0,2023-09-02,CFB,Virginia,Tennessee,09022023-Virginia-Tennessee
+Bowling Green,Liberty,+12.5,-12.5,0.7,0.3,0.39,0.61,51.5,51.5,0.96,0.04,0.91,0.09,+350,-435,0.01,0.99,0.06,0.94,2023-09-02,CFB,Bowling Green,Liberty,09022023-Bowling Green-Liberty
+Akron,Temple,+10.5,-10.5,0.33,0.67,0.06,0.94,54,54,0.97,0.03,0.72,0.28,+295,-360,0.02,0.98,0.11,0.89,2023-09-02,CFB,Akron,Temple,09022023-Akron-Temple
+Massachusetts,Auburn,+39.5,-39.5,0.3,0.7,0.14,0.86,53.5,53.5,0.85,0.15,0.86,0.14,,,0.0,0.0,0.0,0.0,2023-09-02,CFB,Massachusetts,Auburn,09022023-Massachusetts-Auburn
+Ohio ST,Indiana,-28.5,+28.5,0.95,0.05,0.69,0.31,60,60,0.98,0.02,0.93,0.07,,,0.0,0.0,0.0,0.0,2023-09-02,CFB,Ohio State,Indiana,09022023-Ohio State-Indiana
+Rice,Texas,+34.5,-34.5,0.13,0.87,0.12,0.88,59,59,0.99,0.01,0.89,0.11,,,0.0,0.0,0.0,0.0,2023-09-02,CFB,Rice,Texas,09022023-Rice-Texas
+Boise ST,Washington,+14.5,-14.5,0.29,0.71,0.08,0.92,58.5,58.5,0.99,0.01,0.84,0.16,+450,-600,0.0,1.0,0.01,0.99,2023-09-02,CFB,Boise State,Washington,09022023-Boise State-Washington
+Buffalo,Wisconsin,+23.5,-23.5,0.06,0.94,0.19,0.81,54.5,54.5,0.88,0.12,0.72,0.28,--3500,,0.0,1.0,0.0,1.0,2023-09-02,CFB,Buffalo,Wisconsin ,09022023-Buffalo-Wisconsin 
+South Florida,Western Kentucky,+14,-14,0.98,0.02,0.38,0.62,71,71,0.0,1.0,0.21,0.79,--500,,0.0,1.0,0.0,1.0,2023-09-02,CFB,South Florida,Western Kentucky,09022023-South Florida-Western Kentucky
+California,North Texas,-9.5,+9.5,0.98,0.02,0.79,0.21,58,58,0.83,0.17,0.52,0.48,-365,+300,0.95,0.05,0.85,0.15,2023-09-02,CFB,California,North Texas,09022023-California-North Texas
+Nevada,USC,+38,-38,0.1,0.9,0.16,0.84,63.5,63.5,0.06,0.94,0.69,0.31,,,0.0,0.0,0.0,0.0,2023-09-02,CFB,Nevada,USC,09022023-Nevada-USC
+Texas ST,Baylor,+26,-26,0.88,0.12,0.2,0.8,57,57,1.0,0.0,0.94,0.06,--6000,,0.0,1.0,0.0,1.0,2023-09-02,CFB,Texas State,Baylor,09022023-Texas State-Baylor
+Washington ST,Colorado ST,-14.5,+14.5,0.08,0.92,0.77,0.23,57,57,0.3,0.7,0.57,0.43,-625,-,1.0,0.0,1.0,0.0,2023-09-02,CFB,Washington State,Colorado State,09022023-Washington State-Colorado State
+UTSA,Houston,00,,0.79,0.21,0.12,0.88,61,61,0.97,0.03,0.86,0.14,,,0.0,0.0,0.0,0.0,2023-09-02,CFB,UTSA,Houston,09022023-UTSA-Houston
+Army West Point,ULM,-7.5,+7.5,1.0,0.0,0.91,0.09,48.5,48.5,0.15,0.85,0.18,0.82,,,0.0,0.0,0.0,0.0,2023-09-02,CFB,Army,UL Monroe,09022023-Army-UL Monroe
+New Mexico,Texas A&M,+39,-39,0.47,0.53,0.18,0.82,49,49,1.0,0.0,0.98,0.02,,,0.0,0.0,0.0,0.0,2023-09-02,CFB,New Mexico,Texas A&M ,09022023-New Mexico-Texas A&M 
+Middle Tennessee,Alabama,+38,-38,0.05,0.95,0.08,0.92,55.5,55.5,0.85,0.15,0.93,0.07,,,0.0,0.0,0.0,0.0,2023-09-02,CFB,Middle Tennessee State,Alabama,09022023-Middle Tennessee State-Alabama
+Toledo,Illinois,+10,-10,0.06,0.94,0.06,0.94,49,49,0.14,0.86,0.82,0.18,+320,-390,0.77,0.23,0.2,0.8,2023-09-02,CFB,Toledo,Illinois,09022023-Toledo-Illinois
+West Virginia,Penn ST,+20,-20,0.42,0.58,0.4,0.6,53,53,0.56,0.44,0.8,0.2,+1000,-1800,0.9,0.1,0.64,0.36,2023-09-02,CFB,West Virginia,Penn State,09022023-West Virginia-Penn State
+North Carolina,South Carolina,-2.5,+2.5,0.78,0.22,0.62,0.38,61,61,0.99,0.01,0.86,0.14,-135,+115,0.15,0.85,0.37,0.63,2023-09-02,CFB,North Carolina,South Carolina,09022023-North Carolina-South Carolina
+Texas Tech,Wyoming,-13.5,+13.5,0.43,0.57,0.92,0.08,53,53,0.44,0.56,0.91,0.09,-580,+440,1.0,0.0,0.97,0.03,2023-09-02,CFB,Texas Tech,Wyoming,09022023-Texas Tech-Wyoming
+South Alabama,Tulane,+7,-7,0.02,0.98,0.05,0.95,54,54,0.99,0.01,0.9,0.1,+210,-250,0.03,0.97,0.02,0.98,2023-09-02,CFB,South Alabama,Tulane,09022023-South Alabama-Tulane
+Old Dominion,Virginia Tech,+13.5,-13.5,0.1,0.9,0.13,0.87,49,49,1.0,0.0,0.62,0.38,+400,-500,0.29,0.71,0.09,0.91,2023-09-02,CFB,Old Dominion,Virginia Tech ,09022023-Old Dominion-Virginia Tech 
+Sam Houston,BYU,+23.5,-23.5,0.84,0.16,0.07,0.93,51.5,51.5,0.44,0.56,0.94,0.06,--2400,,0.0,1.0,0.0,1.0,2023-09-02,CFB,Sam Houston State,BYU,09022023-Sam Houston State-BYU
+Coastal Carolina,UCLA,+16.5,-16.5,0.3,0.7,0.1,0.9,64.5,64.5,0.98,0.02,0.78,0.22,+550,-750,0.43,0.57,0.11,0.89,2023-09-02,CFB,Coastal Carolina,UCLA,09022023-Coastal Carolina-UCLA
+Oregon ST,San Jose ST,-16.5,+16.5,0.99,0.01,0.92,0.08,55.5,55.5,0.02,0.98,0.77,0.23,-850,-,1.0,0.0,1.0,0.0,2023-09-03,CFB,Oregon State,San Jose State,09032023-Oregon State-San Jose State
+LSU,Florida ST,-2.5,+2.5,0.92,0.08,0.79,0.21,55.5,55.5,0.35,0.65,0.78,0.22,-140,+120,0.89,0.11,0.84,0.16,2023-09-03,CFB,LSU,Florida State,09032023-LSU-Florida State
+Clemson,Duke,-12,+12,0.79,0.21,0.91,0.09,57,57,0.42,0.58,0.69,0.31,-450,+360,0.92,0.08,0.99,0.01,2023-09-04,CFB,Clemson,Duke,09042023-Clemson-Duke
+Texas,Alabama,+7,-7,0.64,0.36,0.27,0.73,,,0.0,0.0,0.0,0.0,,,0.0,0.0,0.0,0.0,2023-09-09,CFB,Texas,Alabama,09092023-Texas-Alabama
+Texas A&M,Miami FL,-6.5,+6.5,0.88,0.12,0.75,0.25,,,0.0,0.0,0.0,0.0,,,0.0,0.0,0.0,0.0,2023-09-09,CFB,Texas A&M ,Miami Florida ,09092023-Texas A&M -Miami Florida 
+Tennessee,Florida,-7.5,+7.5,0.42,0.58,0.74,0.26,,,0.0,0.0,0.0,0.0,,,0.0,0.0,0.0,0.0,2023-09-16,CFB,Tennessee,Florida ,09162023-Tennessee-Florida 
+South Carolina,Georgia,+24,-24,0.66,0.34,0.51,0.49,,,0.0,0.0,0.0,0.0,,,0.0,0.0,0.0,0.0,2023-09-16,CFB,South Carolina,,
+Washington,Michigan ST,-12,+12,0.95,0.05,0.8,0.2,,,0.0,0.0,0.0,0.0,,,0.0,0.0,0.0,0.0,2023-09-16,CFB,Washington,Michigan State,09162023-Washington-Michigan State
+LSU,Mississippi ST,-9,+9,0.97,0.03,0.9,0.1,,,0.0,0.0,0.0,0.0,,,0.0,0.0,0.0,0.0,2023-09-16,CFB,LSU,Mississippi State,09162023-LSU-Mississippi State
+NY Jets,CLE Browns,+1.5,-1.5,0.9,0.1,0.65,0.35,33.5,33.5,0.02,0.98,0.18,0.82,+100,-120,0.46,0.54,0.84,0.16,2023-08-03,XFB,New York Jets,Cleveland Browns,08032023-New York Jets-Cleveland Browns
+ARI DBacks,ATL Braves,+1.5,-1.5,0.32,0.68,0.28,0.72,9,9,0.2,0.8,0.43,0.57,+180,-210,0.29,0.71,0.25,0.75,2023-07-20,MLB,Arizona Diamondbacks,Atlanta Braves,07202023-Arizona Diamondbacks-Atlanta Braves
+MIL Brewers,PHI Phillies,-1.5,+1.5,0.4,0.6,0.26,0.74,9,9,0.35,0.65,0.36,0.64,-110,-110,0.37,0.63,0.46,0.54,2023-07-20,MLB,Milwaukee Brewers,Philadelphia Phillies,07202023-Milwaukee Brewers-Philadelphia Phillies
+SF Giants,CIN Reds,-1.5,+1.5,0.22,0.78,0.24,0.76,9.5,9.5,0.17,0.83,0.34,0.66,-110,-110,0.34,0.66,0.42,0.58,2023-07-20,MLB,San Francisco Giants,Cincinnati Reds,07202023-San Francisco Giants-Cincinnati Reds
+SD Padres,TOR Blue Jays,-1.5,+1.5,0.45,0.55,0.4,0.6,8.5,8.5,0.54,0.46,0.4,0.6,-120,+100,0.49,0.51,0.58,0.42,2023-07-20,MLB,San Diego Padres,Toronto Blue Jays,07202023-San Diego Padres-Toronto Blue Jays
+CHI White Sox,NY Mets,+1.5,-1.5,0.1,0.9,0.38,0.62,9.5,9.5,0.59,0.41,0.51,0.49,+140,-165,0.33,0.67,0.28,0.72,2023-07-20,MLB,Chicago White Sox,New York Mets,07202023-Chicago White Sox-New York Mets
+DET Tigers,KC Royals,-1.5,+1.5,0.88,0.12,0.63,0.37,9,9,0.56,0.44,0.52,0.48,-135,+115,0.75,0.25,0.78,0.22,2023-07-20,MLB,Detroit Tigers,Kansas City Royals,07202023-Detroit Tigers-Kansas City Royals
+MIN Twins,SEA Mariners,+1.5,-1.5,0.24,0.76,0.53,0.47,7.5,7.5,0.64,0.36,0.71,0.29,+105,-125,0.32,0.68,0.46,0.54,2023-07-20,MLB,Minnesota Twins,Seattle Mariners,07202023-Minnesota Twins-Seattle Mariners
+BAL Orioles,TB Rays,+1.5,-1.5,0.44,0.56,0.51,0.49,8,8,0.68,0.32,0.7,0.3,+145,-170,0.48,0.52,0.45,0.55,2023-07-20,MLB,Baltimore Orioles,Tampa Bay Rays,07202023-Baltimore Orioles-Tampa Bay Rays
+STL Cardinals,CHI Cubs,+1.5,-1.5,0.23,0.77,0.3,0.7,9,9,0.74,0.26,0.75,0.25,+100,-120,0.31,0.69,0.28,0.72,2023-07-20,MLB,St. Louis Cardinals,Chicago Cubs,07202023-St. Louis Cardinals-Chicago Cubs
+HOU Astros,OAK Athletics,-1.5,+1.5,0.94,0.06,0.91,0.09,8.5,8.5,0.78,0.22,0.73,0.27,-215,+185,0.93,0.07,0.91,0.09,2023-07-20,MLB,Houston Astros,OAK Athletics,07202023-Houston Astros-OAK Athletics
+STL Cardinals,CHI Cubs,,,0.0,0.0,0.0,0.0,,,0.0,0.0,0.0,0.0,+100,-120,0.42,0.58,0.44,0.56,2023-07-21,MLB,St. Louis Cardinals,Chicago Cubs,07212023-St. Louis Cardinals-Chicago Cubs
+BAL Orioles,TB Rays,+1.5,-1.5,0.2,0.8,0.5,0.5,8,8,0.62,0.38,0.73,0.27,+125,-145,0.46,0.54,0.39,0.61,2023-07-21,MLB,Baltimore Orioles,Tampa Bay Rays,07212023-Baltimore Orioles-Tampa Bay Rays
+SD Padres,DET Tigers,-1.5,+1.5,0.94,0.06,0.71,0.29,9,9,0.62,0.38,0.36,0.64,-140,+120,0.74,0.26,0.73,0.27,2023-07-21,MLB,San Diego Padres,Detroit Tigers,07212023-San Diego Padres-Detroit Tigers
+KC Royals,NY Yankees,+1.5,-1.5,0.02,0.98,0.15,0.85,9,9,0.58,0.42,0.4,0.6,+175,-205,0.1,0.9,0.16,0.84,2023-07-21,MLB,Kansas City Royals,New York Yankees,07212023-Kansas City Royals-New York Yankees
+SF Giants,WAS Nationals,-1.5,+1.5,0.61,0.39,0.65,0.35,10,10,0.54,0.46,0.38,0.62,-155,+135,0.92,0.08,0.72,0.28,2023-07-21,MLB,San Francisco Giants,Washington Nationals,07212023-San Francisco Giants-Washington Nationals
+NY Mets,BOS Red Sox,+1.5,-1.5,0.23,0.77,0.4,0.6,9.5,9.5,0.54,0.46,0.32,0.68,+105,-125,0.47,0.53,0.38,0.62,2023-07-21,MLB,New York Mets,Boston Red Sox,07212023-New York Mets-Boston Red Sox
+PHI Phillies,CLE Guardians,-1.5,+1.5,0.45,0.55,0.38,0.62,8.5,8.5,0.18,0.82,0.64,0.36,-120,+100,0.61,0.39,0.54,0.46,2023-07-21,MLB,Philadelphia Phillies,Cleveland Guardians,07212023-Philadelphia Phillies-Cleveland Guardians
+ARI DBacks,CIN Reds,+1.5,-1.5,0.41,0.59,0.57,0.43,10.5,10.5,0.76,0.24,0.39,0.61,+100,-120,0.53,0.47,0.47,0.53,2023-07-21,MLB,Arizona Diamondbacks,Cincinnati Reds,07212023-Arizona Diamondbacks-Cincinnati Reds
+LA Dodgers,TEX Rangers,-1.5,+1.5,0.19,0.81,0.32,0.68,9.5,9.5,0.94,0.06,0.54,0.46,-110,-110,0.38,0.62,0.49,0.51,2023-07-21,MLB,Los Angeles Dodgers,Texas Rangers,07212023-Los Angeles Dodgers-Texas Rangers
+CHI White Sox,MIN Twins,+1.5,-1.5,0.38,0.62,0.4,0.6,8,8,0.26,0.74,0.52,0.48,+140,-165,0.2,0.8,0.31,0.69,2023-07-21,MLB,Chicago White Sox,Minnesota Twins,07212023-Chicago White Sox-Minnesota Twins
+ATL Braves,MIL Brewers,-1.5,+1.5,0.86,0.14,0.66,0.34,9,9,0.94,0.06,0.68,0.32,-125,+105,0.77,0.23,0.75,0.25,2023-07-21,MLB,Atlanta Braves,Milwaukee Brewers,07212023-Atlanta Braves-Milwaukee Brewers
+PIT Pirates,LA Angels,+1.5,-1.5,0.03,0.97,0.11,0.89,8,8,0.89,0.11,0.73,0.27,+165,-195,0.04,0.96,0.13,0.87,2023-07-21,MLB,Pittsburgh Pirates,Los Angeles Angels,07212023-Pittsburgh Pirates-Los Angeles Angels
+HOU Astros,OAK Athletics,-1.5,+1.5,0.95,0.05,0.84,0.16,7.5,7.5,0.91,0.09,0.85,0.15,-265,+225,0.97,0.03,0.88,0.12,2023-07-21,MLB,Houston Astros,OAK Athletics,07212023-Houston Astros-OAK Athletics
+TOR Blue Jays,SEA Mariners,+1.5,-1.5,0.9,0.1,0.6,0.4,8,8,0.89,0.11,0.65,0.35,+105,-125,0.26,0.74,0.5,0.5,2023-07-21,MLB,Toronto Blue Jays,Seattle Mariners,07212023-Toronto Blue Jays-Seattle Mariners
+ATL Dream,CON Sun,+5.5,-5.5,0.63,0.37,0.6,0.4,169,169,0.62,0.38,0.61,0.39,+190,-225,0.5,0.5,0.26,0.74,2023-07-20,WNBA,Atlanta Dream,Connecticut Sun,07202023-Atlanta Dream-Connecticut Sun
+LA Sparks,MIN Lynx,+3,-3,0.17,0.83,0.28,0.72,165,165,0.57,0.43,0.57,0.43,+135,-155,0.12,0.88,0.21,0.79,2023-07-20,WNBA,Los Angeles Sparks,Minnesota Lynx,07202023-Los Angeles Sparks-Minnesota Lynx
+CHI Sky,PHO Mercury,-1.5,+1.5,0.58,0.42,0.55,0.45,155,155,0.29,0.71,0.58,0.42,-130,+110,0.46,0.54,0.44,0.56,2023-07-20,WNBA,Chicago Sky,Phoenix Mercury,07202023-Chicago Sky-Phoenix Mercury
+LV Aces,SEA Storm,-16.5,+16.5,0.88,0.12,0.76,0.24,171,171,0.78,0.22,0.65,0.35,-2100,+1100,0.89,0.11,0.78,0.22,2023-07-20,WNBA,Las Vegas Aces,Seattle Storm,07202023-Las Vegas Aces-Seattle Storm
+NY Liberty,WAS Mystics,-9,+9,0.66,0.34,0.52,0.48,160,160,0.95,0.05,0.7,0.3,-410,+330,0.68,0.32,0.82,0.18,2023-07-21,WNBA,New York Liberty,Washington Mystics,07212023-New York Liberty-Washington Mystics
+EDM Elks,WPG Blue Bombers,+15,-15,0.78,0.22,0.56,0.44,46.5,46.5,0.63,0.37,0.73,0.27,+750,-1150,0.15,0.85,0.11,0.89,2023-07-20,CFL,Edmonton Elks,Winnipeg Blue Bombers,07202023-Edmonton Elks-Winnipeg Blue Bombers
+TOR Argonauts,HAM Tiger-Cats,-9,+9,0.94,0.06,0.77,0.23,49.5,49.5,0.45,0.55,0.66,0.34,-390,+320,0.82,0.18,0.9,0.1,2023-07-21,CFL,Toronto Argonauts,Hamilton Tiger-Cats,07212023-Toronto Argonauts-Hamilton Tiger-Cats
+SSK Roughriders,BC Lions,+10,-10,0.03,0.97,0.31,0.69,45.5,45.5,0.95,0.05,0.81,0.19,+350,-435,0.23,0.77,0.13,0.87,2023-07-22,CFL,Saskatchewan Roughriders,British Columbia Lions,07222023-Saskatchewan Roughriders-British Columbia Lions
+OTT REDBLACKS,CGY Stampeders,+4.5,-4.5,0.16,0.84,0.5,0.5,45,45,0.99,0.01,0.89,0.11,+175,-205,0.04,0.96,0.19,0.81,2023-07-23,CFL,Ottawa Redblacks,Calgary Stampeders,07232023-Ottawa Redblacks-Calgary Stampeders
+Norway [W],New Zealand [W],-1.25,+1.25,0.56,0.44,0.74,0.26,2.5,2.5,0.42,0.58,0.59,0.41,-245,+650,0.87,0.13,0.9,0.1,2023-07-20,WC,,,
+Ireland [W],Australia [W],+1,-1,0.37,0.63,0.26,0.74,2.5,2.5,0.54,0.46,0.45,0.55,+650,-235,0.09,0.91,0.09,0.91,2023-07-20,WC,,,
+Switzerland [W],Philippines [W],-1.75,+1.75,0.87,0.13,0.82,0.18,3,3,0.59,0.41,0.43,0.57,-525,+1200,0.84,0.16,0.88,0.12,2023-07-20,WC,,,
+Canada [W],Nigeria [W],-1.25,+1.25,0.68,0.32,0.61,0.39,2.25,2.25,0.85,0.15,0.72,0.28,-265,+800,0.85,0.15,0.86,0.14,2023-07-20,WC,,,
+Costa Rica [W],Spain [W],+4.25,-4.25,0.36,0.64,0.41,0.59,5,5,0.74,0.26,0.72,0.28,+5500,-20000,0.86,0.14,0.27,0.73,2023-07-21,WC,,,
+Vietnam [W],USA [W],+6,-6,0.26,0.74,0.32,0.68,6.25,6.25,0.63,0.37,0.58,0.42,+5500,-20000,0.1,0.9,0.26,0.74,2023-07-21,WC,,,
+Japan [W],Zambia [W],-1.75,+1.75,0.59,0.41,0.8,0.2,3.75,,1.0,0.0,1.0,0.0,-425,+800,0.9,0.1,0.91,0.09,2023-07-22,WC,,,
+Haiti [W],England [W],+4,-4,0.26,0.74,0.28,0.72,4.75,4.5,0.2,0.8,0.73,0.27,+4500,-20000,0.63,0.37,0.18,0.82,2023-07-22,WC,,,
+China [W],Denmark [W],+0.75,-0.75,0.05,0.95,0.26,0.74,2.5,2.5,0.23,0.77,0.67,0.33,+425,-155,0.2,0.8,0.19,0.81,2023-07-22,WC,,,
+South Africa [W],Sweden [W],+2.5,-2.5,0.01,0.99,0.11,0.89,3.25,3.25,0.79,0.21,0.7,0.3,+2200,-1400,0.35,0.65,0.14,0.86,2023-07-22,WC,,,
+Jamaica [W],France [W],+3.5,-3.5,0.29,0.71,0.43,0.57,4.5,,1.0,0.0,1.0,0.0,+4000,-20000,0.72,0.28,0.15,0.85,2023-07-23,WC,,,
+Argentina [W],Italy [W],+1,-1,0.93,0.07,0.62,0.38,2.5,2.5,0.55,0.45,0.75,0.25,+400,-190,0.36,0.64,0.28,0.72,2023-07-23,WC,,,
+Portugal [W],Netherlands [W],+1,-1,0.85,0.15,0.55,0.45,2.75,2.75,0.39,0.61,0.75,0.25,+500,-220,0.2,0.8,0.18,0.82,2023-07-23,WC,,,
+Morocco [W],Germany [W],+3,-3,0.4,0.6,0.32,0.68,3.5,3.5,0.98,0.02,0.92,0.08,+2800,-4000,0.74,0.26,0.24,0.76,2023-07-24,WC,,,
+Panama [W],Brazil [W],+4.25,-4.5,0.47,0.53,0.35,0.65,4.75,,1.0,0.0,1.0,0.0,+4000,-20000,0.7,0.3,0.11,0.89,2023-07-24,WC,,,
+South Korea [W],Colombia [W],0,,1.0,0.0,1.0,0.0,2.25,2.25,0.99,0.01,0.88,0.12,+155,+175,0.45,0.55,0.53,0.47,2023-07-24,WC,,,
