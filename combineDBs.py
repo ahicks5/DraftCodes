@@ -2,6 +2,16 @@ import pandas as pd
 import mysql.connector
 from SQL_Auth import host, user, password, database
 from IndicatorUtils import *
+from sqlalchemy import create_engine
+import time
+
+
+def post_updated_combined(df):
+    # Create a SQLAlchemy engine
+    engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
+
+    # Upload the DataFrame to MySQL as a new table
+    df.to_sql(name='combined_data', con=engine, if_exists='replace', index=False)
 
 
 def load_database(datatable):
@@ -172,24 +182,24 @@ class Indicators:
         self.bballref_df = load_database('baseball_reference_season_games')
         self.bovada_df = load_database('bovada_data')
         self.espn_df = load_database('espn_data')
-        self.vsin_df = load_database('vsin_data')
+        self.vsin_df = load_database('vsin_data_mlb')
 
     def link_all(self):
         bov_df = self.bovada_df.dropna(subset=['DC_Game_ID'])
         vsin_df = self.vsin_df.dropna(subset=['DC_Game_ID'])
         espn_df = self.espn_df.dropna(subset=['DC_Game_ID'])
 
-        df = bov_df.merge(vsin_df, how='outer', on='DC_Game_ID')
+        df = bov_df.merge(vsin_df, how='left', on='DC_Game_ID')
         df = df.merge(espn_df, how='left', on='DC_Game_ID')
 
         return df
 
     def add_indicators(self):
         df = self.link_all()
-        #df = add_vsin_columns(df)
-        df = add_espn_columns(df)
-        df = self.add_bballref_columns(df)
-        df.to_csv('added_ind.csv', index=False)
+        print('Bovada, VSIN, ESPN data combined...')
+
+        post_updated_combined(df)
+        print('Combined Df Posted...')
 
         return df
 
@@ -246,8 +256,13 @@ class Indicators:
         }
 
 
-
-if __name__ == '__main__':
+def combine_all():
+    start = time.time()
     ind = Indicators()
     ind.add_indicators()
-    #ind.add_indicators()
+    end = time.time()
+    print(f"Combination time taken: {end - start:.2f} seconds")
+
+
+if __name__ == '__main__':
+    combine_all()

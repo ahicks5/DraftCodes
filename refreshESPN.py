@@ -1,5 +1,4 @@
-import pandas as pd
-from datetime import datetime, timedelta
+from SQL_Auth import host, user, password, database
 import pytz
 from ESPNHelperFunctions import *
 import mysql.connector
@@ -75,6 +74,18 @@ class RefreshESPN:
 
         return df
 
+    def remove_old_data(self, df):
+        # Convert the cst_game_date column to a datetime dtype
+        df['game_time'] = pd.to_datetime(df['game_time'])
+
+        # Get today's date
+        today = pd.Timestamp.now().normalize()
+
+        # Filter out dates that are in the past (not including today)
+        filtered_df = df[df['game_time'] >= today]
+
+        return filtered_df
+
     def close_sql(self):
         self.connection.close()
 
@@ -91,14 +102,21 @@ class RefreshESPN:
         final_df = final_df.drop_duplicates()
         print("Combined with old...")
 
+        final_df = self.remove_old_data(final_df)
+        print('Old data removed...')
+
         self.close_sql()
         post_updated_espn(final_df)
         print("~~ESPN Updated to Database~~")
 
 
-if __name__ == '__main__':
+def update_ESPN():
     start = time.time()
     espn = RefreshESPN()
     espn.generate_and_refresh_espn()
     end = time.time()
     print(f"ESPN time taken: {end - start:.2f} seconds")
+
+
+if __name__ == '__main__':
+    update_ESPN()

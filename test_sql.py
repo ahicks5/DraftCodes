@@ -17,37 +17,25 @@ user = 'root_pc'
 password = 'pAsSwOrD1!2?3$'
 database = 'draftcodes'
 
-##df = load_database('bovada_data')
 
-##df.to_csv('bov_test.csv', index=False)
+def download_db(db_name, db_csv):
+    df = load_database(db_name)
+    df.to_csv(db_csv, index=False)
+    print('DB Saved')
 
-# Create a SQLAlchemy engine
-engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
 
-df = pd.read_csv('bov_test.csv')
+def upload_db(db_name, db_csv):
+    # Create a SQLAlchemy engine
+    engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
 
-# Upload the DataFrame to MySQL as a new table
-df.to_sql(name='bovada_data', con=engine, if_exists='replace', index=False)
+    df = pd.read_csv(db_csv)
 
-# Create a cursor object
-#cursor = connection.cursor()
+    # Upload the DataFrame to MySQL as a new table
+    df.to_sql(name=db_name, con=engine, if_exists='replace', index=False)
 
-# Execute a SQL query
-#cursor.execute("""
-#    SHOW TABLES;
-#""")
+    print('DB Uploaded')
 
-# Fetch all rows
-#rows = cursor.fetchall()
 
-# Loop through rows
-#for row in rows:
-#    print(row)
-
-# Close the cursor
-#cursor.close()
-
-# Close the connection
-#connection.close()
-
-#df.to_csv('team_ref_72623.csv', index=False)
+if __name__ == '__main__':
+    download_db('combined_data', 'combined_data_8623.csv')
+    #upload_db()

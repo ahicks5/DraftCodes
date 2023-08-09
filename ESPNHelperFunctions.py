@@ -9,10 +9,10 @@ pregame_sport_links = {
     #'soccer': 'https://www.espn.com/soccer/schedule/_/date/',
     #'nhl': 'https://www.espn.com/nhl/schedule/_/date/',
     #'nba': 'https://www.espn.com/nba/schedule/_/date/',
-    'nfl': 'https://www.espn.com/nfl/schedule/_/date/',
+    #'nfl': 'https://www.espn.com/nfl/schedule/_/date/',
     'mlb': 'https://www.espn.com/mlb/schedule/_/date/',
-    'wnba': 'https://www.espn.com/wnba/schedule/_/date/',
-    'cfb': 'https://www.espn.com/college-football/schedule/_/date'
+    #'wnba': 'https://www.espn.com/wnba/schedule/_/date/',
+    #'cfb': 'https://www.espn.com/college-football/schedule/_/date'
 }
 
 
@@ -96,7 +96,11 @@ def get_teams_and_predictions(soup):
 def get_soup(url):
     """Fetch the page content and convert it into BeautifulSoup object"""
     try:
-        response = requests.get(url)
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+            'Accept': 'application/json'
+        }
+        response = requests.get(url, headers=headers)
         response.raise_for_status()
         soup = BeautifulSoup(response.content, 'html.parser')
     except requests.exceptions.RequestException as e:
@@ -141,7 +145,7 @@ def today_tom_date_url():
     today_str = today.strftime('%Y%m%d')
 
     # Get tomorrow's date
-    tomorrow = today + timedelta(days=300)
+    tomorrow = today + timedelta(days=3)
 
     # Format tomorrow's date as 'YYYYMMDD'
     tomorrow_str = tomorrow.strftime('%Y%m%d')

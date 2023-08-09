@@ -84,8 +84,8 @@ def moneyline_to_probability_1(row):
     if pd.isna(row['team_1_ml_odds']) or pd.isna(row['team_2_ml_odds']):
         return 0
 
-    moneyline1 = int(row['team_1_ml_odds'])
-    moneyline2 = int(row['team_2_ml_odds'])
+    moneyline1 = float(row['team_1_ml_odds'])
+    moneyline2 = float(row['team_2_ml_odds'])
 
     if moneyline1 > 0:
         prob1 = 100 / (moneyline1 + 100)
@@ -109,8 +109,8 @@ def moneyline_to_probability_2(row):
     if pd.isna(row['team_1_ml_odds']) or pd.isna(row['team_2_ml_odds']):
         return 0
 
-    moneyline1 = int(row['team_1_ml_odds'])
-    moneyline2 = int(row['team_2_ml_odds'])
+    moneyline1 = float(row['team_1_ml_odds'])
+    moneyline2 = float(row['team_2_ml_odds'])
 
     if moneyline1 > 0:
         prob1 = 100 / (moneyline1 + 100)

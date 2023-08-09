@@ -91,9 +91,13 @@ class RefreshVSIN:
         print('~~VSIN Updated to Database~~')
 
 
-if __name__ == '__main__':
+def update_vsin():
     start = time.time()
     vsin = RefreshVSIN()
     vsin.generate_and_update_vsin()
     end = time.time()
     print(f"VSIN time taken: {end - start:.2f} seconds")
+
+
+if __name__ == '__main__':
+    update_vsin()

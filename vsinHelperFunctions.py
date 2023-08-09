@@ -3,6 +3,7 @@ import re
 from dateutil import parser
 from SQL_Auth import host, user, password, database
 from sqlalchemy import create_engine
+from bs4 import BeautifulSoup
 
 
 def post_updated_vsin(df):
@@ -10,7 +11,7 @@ def post_updated_vsin(df):
     engine = create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{database}")
 
     # Upload the DataFrame to MySQL as a new table
-    df.to_sql(name='vsin_data', con=engine, if_exists='replace', index=False)
+    df.to_sql(name='vsin_data_mlb', con=engine, if_exists='replace', index=False)
 
 
 def parse_html_table(table):
@@ -24,15 +25,12 @@ def parse_html_table(table):
 
 def generate_game_date_ID(df):
     """use MMDDYYYY-Away-Home clean team names as ID"""
-    current_year = pd.to_datetime('today').year  # get current year
-    df['game_date'] = df['game_date'] + ', ' + str(current_year)  # append current year to each date
 
     # Convert all values in 'game_time' to datetime objects, setting errors='coerce' to handle unconvertable values
-    df['game_date'] = pd.to_datetime(df['game_date'], format='%A, %B %d, %Y', errors='coerce')
+    df['game_date'] = pd.to_datetime(df['game_date'], format='%Y%m%d', errors='coerce')
 
     # Create 'DC_Game_ID' column
-    df['DC_Game_ID'] = df['game_date'].dt.strftime('%m%d%Y') + '-' + df['away_team_clean'] + '-' + df[
-        'home_team_clean']
+    df['DC_Game_ID'] = df['game_date'].dt.strftime('%m%d%Y') + '-' + df['away_team_clean'] + '-' + df['home_team_clean']
 
     return df
 
@@ -188,3 +186,12 @@ def clean_total(total_string):
         under = total_string.split('Un')[1].strip()
 
     return over, under
+
+
+def clean_over_under(over_under_soup):
+    divs = over_under_soup.find_all('div')
+
+    score_1 = divs[0].text.strip()
+    score_2 = divs[1].text.strip()
+
+    return score_1, score_2

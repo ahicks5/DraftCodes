@@ -1,6 +1,8 @@
 import mysql.connector
 from bovadaHelperFunctions import *
 import time
+from SQL_Auth import host, user, password, database
+
 
 class RefreshBovada:
     def __init__(self):
@@ -63,7 +65,11 @@ class RefreshBovada:
     def generate_new_bovada_df(self):
         league_lists = []
         sport_dict = self.get_sport_links_from_db()
+
+        # only focus on mlb for now
         for sport in sport_dict:
+            if sport != 'mlb':
+                continue
             league_lists.append(scrape_single_page(sport_dict[sport]))
 
         all_games = [game for league in league_lists for game in league]
@@ -98,6 +104,18 @@ class RefreshBovada:
 
         return final_df
 
+    def remove_old_data(self, df):
+        # Convert the cst_game_date column to a datetime dtype
+        df['cst_game_date'] = pd.to_datetime(df['cst_game_date'])
+
+        # Get today's date and subtract one day to get yesterday's date
+        yesterday = pd.Timestamp.now().normalize() - pd.Timedelta(days=1)
+
+        # Filter out dates that are before yesterday
+        filtered_df = df[df['cst_game_date'] > yesterday]
+
+        return filtered_df
+
     def close_sql(self):
         self.connection.close()
 
@@ -107,14 +125,20 @@ class RefreshBovada:
         print('New Bovada Generated...')
         df = self.consolidate_new_old(df)
         print('Old and New Bovada Combined...')
+        df = self.remove_old_data(df)
+        print('All Games Prior to Today Removed...')
         self.close_sql()
         post_updated_bovada(df)
         print('~~Bovada Updated to Database~~')
 
 
-if __name__ == '__main__':
+def update_bovada():
     start = time.time()
     bov = RefreshBovada()
     bov.generate_and_update_bovada()
     end = time.time()
     print(f"Bovada time taken: {end - start:.2f} seconds")
+
+
+if __name__ == '__main__':
+    update_bovada()
