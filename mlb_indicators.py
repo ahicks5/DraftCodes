@@ -29,7 +29,7 @@ class BaseballIndicators:
 
     def generate_mlb_indicator_db(self):
         # first generate base of indicator db
-        ind_df = self.df[['DC_Game_ID', 'away_team_clean', 'home_team_clean', 'cst_game_date', 'cst_game_time', 'team_1_hcap', 'team_2_hcap', 'team_1_ml_odds', 'team_2_ml_odds', 'Over_line', 'Under_line']]
+        ind_df = self.df[['DC_Game_ID', 'away_team_clean', 'home_team_clean', 'bovada_sport', 'bovada_league', 'cst_game_date', 'cst_game_time', 'team_1_hcap', 'team_2_hcap', 'team_1_ml_odds', 'team_2_ml_odds', 'Over_line', 'Under_line']]
 
         # create indicator columns on original df, and eventually clean and relink
         df = self.df

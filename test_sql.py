@@ -37,5 +37,5 @@ def upload_db(db_name, db_csv):
 
 
 if __name__ == '__main__':
-    download_db('combined_data', 'combined_data_8623.csv')
-    #upload_db()
+    download_db('bovada_sport_links', 'links.csv')
+    #upload_db('team_reference', 'teams.csv')

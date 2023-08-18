@@ -16,16 +16,20 @@ class RefreshVSIN:
         )
 
     def get_vsin_links(self):
-        url = 'https://data.vsin.com/draftkings/betting-splits/?view=mlb'
-        page = requests.get(url)
-        soup = BeautifulSoup(page.text, 'lxml')
-
+        urls = ['https://data.vsin.com/draftkings/betting-splits/?view=mlb',
+                'https://data.vsin.com/draftkings/betting-splits/?view=nfl',
+                'https://data.vsin.com/draftkings/betting-splits/?view=cfb']
+                #'https://data.vsin.com/draftkings/betting-splits/?view=epl'
         final_links = []
-        all_links = soup.find_all('a')
-        for link in all_links:
-            a = link['href']
-            if 'modalpage=dksplitsgame' in a:
-                final_links.append(f'https://data.vsin.com{a}')
+        for url in urls:
+            page = requests.get(url)
+            soup = BeautifulSoup(page.text, 'lxml')
+
+            all_links = soup.find_all('a')
+            for link in all_links:
+                a = link['href']
+                if 'modalpage=dksplitsgame' in a:
+                    final_links.append(f'https://data.vsin.com{a}')
 
         final_links = list(set(final_links))
 

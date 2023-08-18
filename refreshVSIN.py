@@ -85,7 +85,6 @@ class RefreshVSIN:
     def generate_and_update_vsin(self):
         df = self.generate_new_vsin_df()
         print('New VSIN Generated...')
-        df.to_csv('vsin_csv.csv', index=False)
         self.close_sql()
         post_updated_vsin(df)
         print('~~VSIN Updated to Database~~')

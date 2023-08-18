@@ -34,6 +34,7 @@ def apply_all_indicators(df):
         'fade_public_ml': fade_public_ml,
         'fade_public_sp': fade_public_spread,
         'fade_public_tot': fade_public_total,
+        'espn_prediction': espn_prediction,
     }
 
     for ind in ind_dict:
@@ -59,6 +60,10 @@ def better_record(row):
     if check_data(row, ['away_record', 'home_record']):
         away_wins = row['away_record'].split('-')[0]
         away_losses = row['away_record'].split('-')[1]
+
+        if int(away_losses) == 0 and int(away_wins) == 0:
+            return 0
+
         away_win_percent = int(away_wins) / (int(away_wins) + int(away_losses))
 
         home_wins = row['home_record'].split('-')[0]
@@ -78,8 +83,8 @@ def better_record(row):
 # better profit
 def better_profit(row):
     if check_data(row, ['away_profit', 'home_profit']):
-        away_profit = int(row['away_profit'][1:].replace(",", '').replace('$', '').strip())
-        home_profit = int(row['home_profit'][1:].replace(",", '').replace('$', '').strip())
+        away_profit = int(row['away_profit'][1:].replace(",", '').replace('$', '').replace('+', '').strip())
+        home_profit = int(row['home_profit'][1:].replace(",", '').replace('$', '').replace('+', '').strip())
         if away_profit > home_profit:
             return 1
         elif home_profit > away_profit:
@@ -154,9 +159,9 @@ def vsin_model_prediction_ml(row):
     if check_data(row, ['away_est_score', 'home_est_score']):
         away_score = float(row['away_est_score'])
         home_score = float(row['home_est_score'])
-        if away_score < home_score:
+        if away_score > home_score:
             return 1
-        elif home_score < away_score:
+        elif home_score > away_score:
             return -1
         else:
             return 0
@@ -165,14 +170,14 @@ def vsin_model_prediction_ml(row):
 
 
 def vsin_model_prediction_spread(row):
-    if check_data(row, ['away_est_score', 'home_est_score', 'away_money']):
+    if check_data(row, ['away_est_score', 'home_est_score', 'team_1_hcap']):
         away_score = float(row['away_est_score'])
         home_score = float(row['home_est_score'])
-        away_spread = float(row['away_money']) * -1
+        away_spread = float(row['team_1_hcap']) * -1
         away_diff = away_score - home_score
         if away_diff > away_spread:
             return 1
-        elif away_spread < away_diff:
+        elif away_spread > away_diff:
             return -1
         else:
             return 0
@@ -188,7 +193,7 @@ def vsin_model_prediction_total(row):
         game_total = float(row['Over_line'])
         if pred_total > game_total:
             return 1
-        elif game_total < pred_total:
+        elif game_total > pred_total:
             return -1
         else:
             return 0
@@ -202,7 +207,7 @@ def follow_sharps_spread(row):
         home_handle = float(row['home_spread_handle'])
         if away_handle > home_handle:
             return 1
-        elif home_handle < away_handle:
+        elif home_handle > away_handle:
             return -1
         else:
             return 0
@@ -220,7 +225,7 @@ def follow_sharps_ml(row):
         home_handle = float(row['home_money_handle'])
         if away_handle > home_handle:
             return 1
-        elif home_handle < away_handle:
+        elif home_handle > away_handle:
             return -1
         else:
             return 0
@@ -238,7 +243,7 @@ def follow_sharps_total(row):
         under_handle = float(row['under_total_handle'])
         if over_handle > under_handle:
             return 1
-        elif under_handle < over_handle:
+        elif under_handle > over_handle:
             return -1
         else:
             return 0
@@ -256,7 +261,7 @@ def follow_public_spread(row):
         home_bets = float(row['home_spread_bets'])
         if away_bets > home_bets:
             return 1
-        elif home_bets < away_bets:
+        elif home_bets > away_bets:
             return -1
         else:
             return 0
@@ -274,7 +279,7 @@ def follow_public_ml(row):
         home_bets = float(row['home_money_bets'])
         if away_bets > home_bets:
             return 1
-        elif home_bets < away_bets:
+        elif home_bets > away_bets:
             return -1
         else:
             return 0
@@ -292,7 +297,7 @@ def follow_public_total(row):
         under_bets = float(row['under_total_bets'])
         if over_bets > under_bets:
             return 1
-        elif under_bets < over_bets:
+        elif under_bets > over_bets:
             return -1
         else:
             return 0
@@ -305,14 +310,47 @@ def fade_public_total(row):
 
 
 def espn_prediction(row):
-    if check_data(row, ['team1_pred', 'team2_pred']):
-        away_pred = float(row['team1_pred'])
-        home_pred = float(row['team2_pred'])
-        if away_pred > home_pred:
+    if check_data(row, ['team1_pred', 'team2_pred', 'team_1_ml_odds', 'team_2_ml_odds']):
+        away_implied, home_implied = get_implied_probabilities(int(row['team_1_ml_odds']), int(row['team_2_ml_odds']))
+
+        away_pred = float(row['team1_pred'].strip('%')) / 100
+        home_pred = float(row['team2_pred'].strip('%')) / 100
+
+        if away_pred > away_implied:
             return 1
-        elif home_pred < away_pred:
+        elif away_implied > away_pred:
             return -1
         else:
             return 0
     else:
         return 0
+
+
+def calculate_implied_probability(odds):
+    if odds > 0:
+        return (100 / (odds / 100 + 1)) / 100
+    elif odds < 0:
+        return - (odds) / (- odds + 100)
+    else:
+        return None
+
+
+def get_implied_probabilities(team1_odds, team2_odds):
+    # Check if the input odds are in correct format
+    if not (isinstance(team1_odds, int) and isinstance(team2_odds, int)):
+        return "NA", "NA"
+
+    # Calculate raw implied probabilities
+    team1_prob = calculate_implied_probability(team1_odds)
+    team2_prob = calculate_implied_probability(team2_odds)
+
+    if team1_prob is None or team2_prob is None:
+        return "NA", "NA"
+
+    # Adjust for overround (sum of probabilities > 100 due to bookmaker margin)
+    total_prob = team1_prob + team2_prob
+    team1_prob = team1_prob / total_prob
+    team2_prob = team2_prob / total_prob
+
+    return team1_prob, team2_prob
+

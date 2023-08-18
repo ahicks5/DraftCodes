@@ -103,6 +103,7 @@ class RefreshESPN:
         print("Combined with old...")
 
         final_df = self.remove_old_data(final_df)
+        final_df = final_df.drop_duplicates(subset='DC_Game_ID', keep='last')
         print('Old data removed...')
 
         self.close_sql()

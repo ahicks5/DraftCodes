@@ -107,12 +107,18 @@ def scrape_single_page(url):
     return [parse_game_data(game) for game in site_json[0]['events']]
 
 
+def extract_segments(url):
+    segments = url.split("/")
+    return segments[1], segments[2] if len(segments) > 2 else None
+
+
 def clean_bovada_df(df):
     # clean up dataframe
     # even to odds
     df = df.replace('EVEN', 100)
 
     # add date columns
+    df['bovada_sport'], df['bovada_league'] = zip(*df['game_link'].apply(extract_segments))
     df['game_startTime'] = pd.to_datetime(df['game_startTime'], unit='ms')
     df['cst_game_startTime'] = df['game_startTime'].dt.tz_localize('UTC').dt.tz_convert('America/Chicago')
     df['cst_game_date'] = df['cst_game_startTime'].dt.date

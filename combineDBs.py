@@ -192,6 +192,13 @@ class Indicators:
         df = bov_df.merge(vsin_df, how='left', on='DC_Game_ID')
         df = df.merge(espn_df, how='left', on='DC_Game_ID')
 
+        # make unique by bovada ID to bandaid double-headers
+        df = df.drop_duplicates(subset='game_id', keep='first')
+        df = df.drop_duplicates(subset='DC_Game_ID', keep='first')
+
+        #take out games if team names don't show
+        df = df.dropna(subset=['away_team_clean'])
+
         return df
 
     def add_indicators(self):

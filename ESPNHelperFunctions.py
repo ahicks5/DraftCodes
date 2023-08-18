@@ -9,10 +9,10 @@ pregame_sport_links = {
     #'soccer': 'https://www.espn.com/soccer/schedule/_/date/',
     #'nhl': 'https://www.espn.com/nhl/schedule/_/date/',
     #'nba': 'https://www.espn.com/nba/schedule/_/date/',
-    #'nfl': 'https://www.espn.com/nfl/schedule/_/date/',
+    'nfl': 'https://www.espn.com/nfl/schedule/_/date/',
     'mlb': 'https://www.espn.com/mlb/schedule/_/date/',
     #'wnba': 'https://www.espn.com/wnba/schedule/_/date/',
-    #'cfb': 'https://www.espn.com/college-football/schedule/_/date'
+    'cfb': 'https://www.espn.com/college-football/schedule/_/date'
 }
 
 

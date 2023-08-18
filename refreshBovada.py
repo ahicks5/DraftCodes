@@ -68,9 +68,10 @@ class RefreshBovada:
 
         # only focus on mlb for now
         for sport in sport_dict:
-            if sport != 'mlb':
+            if sport in ['mlb', 'nfl', 'cfb', 'epl']:
+                league_lists.append(scrape_single_page(sport_dict[sport]))
+            else:
                 continue
-            league_lists.append(scrape_single_page(sport_dict[sport]))
 
         all_games = [game for league in league_lists for game in league]
         df = pd.DataFrame(all_games)
@@ -108,11 +109,17 @@ class RefreshBovada:
         # Convert the cst_game_date column to a datetime dtype
         df['cst_game_date'] = pd.to_datetime(df['cst_game_date'])
 
-        # Get today's date and subtract one day to get yesterday's date
-        yesterday = pd.Timestamp.now().normalize() - pd.Timedelta(days=1)
+        # Make sure the column is timezone-naive before localizing
+        df['cst_game_date'] = df['cst_game_date'].dt.tz_localize(None).dt.tz_localize('America/Chicago')
 
-        # Filter out dates that are before yesterday
-        filtered_df = df[df['cst_game_date'] > yesterday]
+        # Get the current UTC timestamp
+        today_utc = pd.Timestamp.utcnow()
+
+        # Convert it directly to CDT (Central Time, which accounts for both CST and CDT)
+        today_cdt = today_utc.tz_convert('America/Chicago').normalize()
+
+        # Filter out dates that are before today
+        filtered_df = df[df['cst_game_date'] >= today_cdt]
 
         return filtered_df
 
